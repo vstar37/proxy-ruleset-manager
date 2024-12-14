@@ -7,7 +7,7 @@ geosite:
   - "https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mega.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-github.srs"
-  - "https://github.com/vstar37/sing-box-geosite/raw/refs/heads/main/geosite-download@amos.json"
+  - "https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-download@amos.json"
 
 geoip:
   - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"  # 第一个 geosip 链接
