@@ -30,8 +30,7 @@ jobs:
         pip install pandas requests pyyaml
 
     - name: Run script
-      run: python ../main.py
-      working-directory: ./rule/
+      run: python main.py
     - name: Commit and push config.json
       run: |
         git config --global user.email "action@github.com"
