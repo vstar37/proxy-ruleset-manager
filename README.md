@@ -1,4 +1,5 @@
 # sing-box-geosite
+个人使用 请勿推广
 
 在./source/xx.yaml 添加规则集源文件链接
 遵循 geosite 与 geoip 进行分类, 源文件支持 sing-box 的 srs, json。 以及其它工具的规则。
