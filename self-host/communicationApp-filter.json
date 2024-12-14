@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "process_name": [
+        "Telegram",
+        "Dsicord"
+      ]
+    }
+  ]
+}

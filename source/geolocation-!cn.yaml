@@ -1,0 +1,5 @@
+geosite:
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs"
+geoip:
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
+  - "https://github.com/vstar37/sing-box-geosite/raw/refs/heads/main/geoip-direct@amos.json"

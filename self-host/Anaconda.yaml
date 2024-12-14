@@ -1,0 +1,9 @@
+payload:
+  - DOMAIN-SUFFIX,anaconda.cloud
+  - DOMAIN-SUFFIX,anaconda.com
+  - DOMAIN-SUFFIX,anaconda.org
+  - DOMAIN-SUFFIX,conda.io
+  - DOMAIN-SUFFIX,conda-forge.org
+  - DOMAIN-SUFFIX,repo.anaconda.com
+  - DOMAIN-SUFFIX,conda.anaconda.org
+  - DOMAIN-SUFFIX,pytorch.org

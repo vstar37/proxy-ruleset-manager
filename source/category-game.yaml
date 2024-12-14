@@ -1,0 +1,5 @@
+geosite:
+  - "https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml"  # 第一个 geosite 链接
+
+geoip:
+  - "https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml"  # 第一个 geosip 链接

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+          "download-cdn.jetbrains.com", 
+          "huggingface.co", 
+          "wallhaven.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".wallhaven.cc"
+    ]
+    }
+  ]
+}

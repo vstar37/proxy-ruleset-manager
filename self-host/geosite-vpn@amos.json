@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cmp2-hkg1.steamserver.net",
+        "ipv6check-udp.steamserver.net",
+        "greencloudvps.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".steamserver.net"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+          "www.littlecreekhosting.com", 
+          "yxvm.com", 
+          "hellogithub.com",
+          "weekly.tw93.fun",
+          "app.alice.ws"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".hellogithub.com",
+        ".tw93.fun",
+        ".icloud-content.com",
+        ".mubu.com",
+        ".aliyuncs.com",
+        ".max-c.com",
+        ".mxbc.net",
+        ".leshuazf.com",
+        ".tastientech.com",
+        ".55tuan.com",
+        ".frdic.com"
+    ]
+    }
+  ]
+}

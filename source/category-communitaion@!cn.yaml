@@ -1,0 +1,10 @@
+geosite:
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-linkedin.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-discord.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-messenger.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-line.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-signal.srs"
+geoip:
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
