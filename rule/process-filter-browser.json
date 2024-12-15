@@ -4,12 +4,12 @@
         {
             "process_name": [
                 "Chrome",
+                "Firefox",
                 "firefox.exe",
+                "com.apple.WebKit.Networking",
                 "Google Chrome Helper",
                 "Safari",
-                "chrome.exe",
-                "Firefox",
-                "com.apple.WebKit.Networking"
+                "chrome.exe"
             ]
         }
     ]
