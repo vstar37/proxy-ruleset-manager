@@ -155,26 +155,37 @@ class Trie:
     def __init__(self):
         self.root = TrieNode()
 
-    def insert(self, word):
+    def insert(self, suffix):
+        """ 插入 domain_suffix，确保不包含前导 . """
+        suffix = suffix.lstrip('.')
         node = self.root
-        for char in reversed(word):  # 从后往前插入域名后缀
+        for char in reversed(suffix):  # 倒序插入，方便匹配后缀
             if char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.is_end = True
 
-    def search_suffix(self, word):
+    def has_suffix(self, domain):
+        """ 检查 domain 是否匹配某个 domain_suffix """
         node = self.root
-        for char in reversed(word):  # 从后往前匹配域名
+        for char in reversed(domain):  # 倒序遍历 domain
+            if node.is_end:
+                return True  # 已匹配到一个 domain_suffix
             if char not in node.children:
                 return False
             node = node.children[char]
-            if node.is_end:
-                return True
-        return False
+        return node.is_end
 
 def filter_domains_with_trie(domains, domain_suffixes):
+    """
+    使用 Trie 过滤掉被 domain_suffix 覆盖的 domain。
+    :param domains: 需要去重的 domain 集合
+    :param domain_suffixes: domain_suffix 集合
+    :return: 过滤后的 domains 和被过滤的数量
+    """
     trie = Trie()
+
+    # 统一插入 domain_suffix，去除前导 .
     for suffix in domain_suffixes:
         trie.insert(suffix)
 
@@ -182,9 +193,10 @@ def filter_domains_with_trie(domains, domain_suffixes):
     filtered_count = 0
 
     for domain in domains:
-        if trie.search_suffix(domain):  # 使用 Trie 判断后缀是否匹配
-            filtered_count += 1
-        else:
+        # 在匹配时，确保在 domain 前加上 . 进行严格匹配
+        if not trie.has_suffix(domain):
             filtered_domains.add(domain)
+        else:
+            filtered_count += 1
 
     return filtered_domains, filtered_count
