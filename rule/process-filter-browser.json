@@ -3,13 +3,13 @@
     "rules": [
         {
             "process_name": [
-                "chrome.exe",
                 "Safari",
-                "Firefox",
+                "firefox.exe",
+                "chrome.exe",
+                "Chrome",
                 "com.apple.WebKit.Networking",
                 "Google Chrome Helper",
-                "firefox.exe",
-                "Chrome"
+                "Firefox"
             ]
         }
     ]
