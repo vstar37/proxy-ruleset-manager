@@ -1,5 +1,5 @@
 {
-  "log": {"disabled": false, "level": "info", "output": "box.log", "timestamp": true},
+  "log": {"disabled": true, "level": "info", "output": "box.log", "timestamp": true},
   "experimental": {
       "cache_file": {
           "enabled": true,
