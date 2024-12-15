@@ -13,7 +13,7 @@ class Config:
 
         # manual
         self.ls_index = 1
-        self.ls_keyword = ["little-snitch", "adobe-blocklist"]
+        self.ls_keyword = ["little-snitch", "adobe-blocklist"] # little snitch 链接关键字
         self.map_dict = {
             'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
             'DOMAIN-KEYWORD': 'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
