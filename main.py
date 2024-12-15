@@ -13,7 +13,7 @@ config = Config()
 
 class RuleParser:
     def __init__(self):
-        self.ls_index = config.ls_index
+        self.ls_index = 1
 
     def parse_littlesnitch_file(self, link):
         """
@@ -163,7 +163,7 @@ class RuleParser:
 
         return self.merge_json(json_file_list, output_file)
 
-    def merge_json(self, json_file_list, output_file, enable_trie_filtering=True):
+    def merge_json(self, json_file_list, output_file, enable_trie_filtering=config.enable_trie_filtering):
         """
         合并 JSON 文件并进行去重（第二轮 Trie 去重为可选）。
 

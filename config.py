@@ -13,6 +13,7 @@ class Config:
 
         # manual
         self.ls_index = 1
+        self.enable_trie_filtering = [True, False][0] # 是否按照 domain_suffix 剔除重复的 domain
         self.ls_keyword = ["little-snitch", "adobe-blocklist"] # little snitch 链接关键字
         self.map_dict = {
             'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
