@@ -190,7 +190,13 @@ class RuleParser:
                     if isinstance(rule, dict):
                         for category, values in rule.items():
                             if category in merged_rules and values:
-                                merged_rules[category].update(values)
+                                # 确保 values 是列表，避免将字符串拆分成单个字符
+                                if isinstance(values, list):
+                                    merged_rules[category].update(values)
+                                elif isinstance(values, str):  # 如果是字符串，视作单个域名
+                                    merged_rules[category].add(values)
+                                else:
+                                    logging.warning(f"跳过无效的 {category} 值: {values}")
             except Exception as e:
                 logging.error(f"解析 JSON 数据时出错: {e}")
 
