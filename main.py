@@ -169,7 +169,7 @@ class RuleParser:
 
         :param json_file_list: 输入的 JSON 文件数据列表
         :param output_file: 输出合并后的 JSON 文件路径
-        :param enable_trie_filtering: 是否启用基于 domain_suffix 的 Trie 去重，默认启用
+        :param enable_trie_filtering: 是否启用基于 domain_suffix 的 Trie 去重，默认禁用
         """
         logging.debug(f"正在合并 JSON 文件: {json_file_list}")
 
@@ -178,7 +178,8 @@ class RuleParser:
             "process_name": set(),
             "domain": set(),
             "domain_suffix": set(),
-            "ip_cidr": set()
+            "ip_cidr": set(),
+            "domain_regex": set()  # 新增 domain_regex 字段
         }
 
         # 第一轮合并与去重
@@ -215,7 +216,11 @@ class RuleParser:
         merged_rules["domain"] = final_domains
 
         # 将合并后的规则从集合转换回列表
-        final_rules = [{category: list(values)} for category, values in merged_rules.items() if values]
+        final_rules = [
+            {category: list(values)}
+            for category, values in merged_rules.items()
+            if values
+        ]
 
         if enable_trie_filtering and original_domain_count > 0:
             logging.info(f"去重完成，domain 被过滤掉的条目数量: {filtered_count}")
