@@ -163,9 +163,17 @@ class RuleParser:
 
         return self.merge_json(json_file_list, output_file)
 
-    def merge_json(self, json_file_list, output_file):
+    def merge_json(self, json_file_list, output_file, enable_trie_filtering=False):
+        """
+        合并 JSON 文件并进行去重（第二轮 Trie 去重为可选）。
+
+        :param json_file_list: 输入的 JSON 文件数据列表
+        :param output_file: 输出合并后的 JSON 文件路径
+        :param enable_trie_filtering: 是否启用基于 domain_suffix 的 Trie 去重，默认启用
+        """
         logging.debug(f"正在合并 JSON 文件: {json_file_list}")
 
+        # 初始化合并规则，使用集合去重
         merged_rules = {
             "process_name": set(),
             "domain": set(),
@@ -185,30 +193,42 @@ class RuleParser:
             except Exception as e:
                 logging.error(f"解析 JSON 数据时出错: {e}")
 
-        # 第二轮去重：基于 domain_suffix 使用 Trie 去除被覆盖的 domain
+        # 第二轮去重：基于 domain_suffix 使用 Trie 去除被覆盖的 domain（可选）
         original_domain_count = len(merged_rules.get("domain", set()))
         filtered_count = 0
         final_domains = set()
 
-        if merged_rules.get("domain_suffix"):
-            if merged_rules.get("domain"):
-                final_domains, filtered_count = filter_domains_with_trie(
-                    merged_rules["domain"], merged_rules["domain_suffix"]
-                )
+        if enable_trie_filtering:
+            logging.info("启用基于 domain_suffix 的 Trie 去重。")
+            if merged_rules.get("domain_suffix"):
+                if merged_rules.get("domain"):
+                    final_domains, filtered_count = filter_domains_with_trie(
+                        merged_rules["domain"], merged_rules["domain_suffix"]
+                    )
+            else:
+                final_domains = merged_rules.get("domain", set())
         else:
+            logging.info("跳过基于 domain_suffix 的 Trie 去重。")
             final_domains = merged_rules.get("domain", set())
 
+        # 更新合并后的 domain 规则
         merged_rules["domain"] = final_domains
 
         # 将合并后的规则从集合转换回列表
         final_rules = [{category: list(values)} for category, values in merged_rules.items() if values]
 
-        # 保存结果
-        with open(output_file, 'w', encoding='utf-8') as file:
-            json.dump({"version": 1, "rules": final_rules}, file, ensure_ascii=False, indent=4)
-
-        if original_domain_count > 0:
+        if enable_trie_filtering and original_domain_count > 0:
             logging.info(f"去重完成，domain 被过滤掉的条目数量: {filtered_count}")
+
+        # 保存结果
+        try:
+            with open(output_file, 'w', encoding='utf-8') as file:
+                json.dump({"version": 1, "rules": final_rules}, file, ensure_ascii=False, indent=4)
+                logging.info(f"合并后的规则已保存至: {output_file}")
+        except Exception as e:
+            logging.error(f"保存 JSON 文件时出错: {e}")
+
+
 
     def decompile_srs_to_json(self, srs_file_url):
         """
