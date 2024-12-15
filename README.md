@@ -1,4 +1,4 @@
-# sing-box-geosite  
+# sing-box-ruleset self-host manager  
 **个人使用，请勿推广**
 
 ## 功能概述  
