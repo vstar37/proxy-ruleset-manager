@@ -11,7 +11,8 @@
 ## 使用说明  
 1. 在 `./source/xx.yaml` 中添加规则集源文件链接。  
 2. 自动合并和去重规则，生成 **sing-box Source Format** 文件。  
-3. 规则集遵循 `geosite` 与 `geoip` 分类，支持按需自定义。  
+3. 规则集遵循 `geosite` 与 `geoip` 分类，支持按需自定义。
+4. 遵循 **仓库配置**  
 
 ---
 
