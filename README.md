@@ -3,7 +3,7 @@
 
 ## 功能概述  
 本仓库用于自动化合并和去重规则集，生成 **sing-box** 支持的 **Source Format** 文件。  
-支持 `srs`、`json` 及其他工具 (Clash, Loon, QX, Shadowrocket, Little Snitch)规则文件的格式转换。  
+支持 `srs`、`json` 及其他工具 (Clash, Loon, QX, Surge, Little Snitch)规则文件的格式转换。  
 使用者可自行 fork 本仓库，并在 `./source/xx.yaml` 中添加需要转换的规则集链接。  
 
 ---
