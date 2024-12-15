@@ -163,7 +163,7 @@ class RuleParser:
 
         return self.merge_json(json_file_list, output_file)
 
-    def merge_json(self, json_file_list, output_file, enable_trie_filtering=False):
+    def merge_json(self, json_file_list, output_file, enable_trie_filtering=True):
         """
         合并 JSON 文件并进行去重（第二轮 Trie 去重为可选）。
 
