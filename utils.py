@@ -166,14 +166,26 @@ class Trie:
         node.is_end = True
 
     def has_suffix(self, domain):
-        """ 检查 domain 是否匹配某个 domain_suffix """
+        """ 检查 domain 是否匹配某个完整的 domain_suffix """
         node = self.root
-        for char in reversed(domain):  # 倒序遍历 domain
-            if node.is_end:
-                return True  # 已匹配到一个 domain_suffix
+        domain = '.' + domain  # 加入前导点进行后缀匹配
+
+        # 从尾部倒序遍历 domain
+        for i in range(len(domain)):
+            char = domain[-(i + 1)]
+            if node.is_end and i != 0:  # 如果已经匹配到后缀，且 i != 0，代表匹配到完整后缀
+                # 确保匹配的后缀是完整的二级域名
+                if i == len(domain) - 1:  # 完全匹配
+                    return True
+                elif domain[-(i + 1)] == '.':  # 确保后缀结束在域名边界
+                    return True
+                else:
+                    return False  # 如果有更多字符，且未结束，说明匹配是部分的
             if char not in node.children:
                 return False
             node = node.children[char]
+
+        # 完全匹配一个后缀时，结束条件
         return node.is_end
 
 def filter_domains_with_trie(domains, domain_suffixes):
@@ -189,14 +201,23 @@ def filter_domains_with_trie(domains, domain_suffixes):
     for suffix in domain_suffixes:
         trie.insert(suffix)
 
-    filtered_domains = set()
+    filtered_domains = set()  # 存储未被匹配的域名
     filtered_count = 0
 
     for domain in domains:
-        # 在匹配时，确保在 domain 前加上 . 进行严格匹配
-        if not trie.has_suffix(domain):
-            filtered_domains.add(domain)
+        if trie.has_suffix(domain):
+            filtered_count += 1  # 被过滤的数量增加
         else:
-            filtered_count += 1
+            filtered_domains.add(domain)  # 将没有匹配到后缀的域名保留
 
     return filtered_domains, filtered_count
+
+'''# 测试数据
+domains = ["xp.apple.com", "example.com", "xp.apple"]
+domain_suffixes = ["apple"]
+
+final_domains, filtered_count = filter_domains_with_trie(domains, domain_suffixes)
+
+print(f"过滤后的 domains: {final_domains}")
+print(f"被过滤的数量: {filtered_count}")
+'''
