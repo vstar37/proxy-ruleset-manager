@@ -5,7 +5,8 @@
       "domain": [
           "download-cdn.jetbrains.com", 
           "huggingface.co", 
-          "wallhaven.cc"
+          "wallhaven.cc",
+          "psv4.userapi.com"
       ]
     },
     {
