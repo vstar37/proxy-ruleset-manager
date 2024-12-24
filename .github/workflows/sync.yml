@@ -41,14 +41,17 @@ jobs:
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
+        
+        # 添加log.txt和规则文件
         git add ./rule/*.json
         git add ./rule/*.srs
-
+        git add ./log.txt
+    
         # 检查是否有文件被修改
         if git diff --staged --quiet; then
           echo "No changes to commit"
           exit 0
         else
-          git commit -m "Update rules"
+          git commit -m "Update rules and log file"
           git push
         fi
