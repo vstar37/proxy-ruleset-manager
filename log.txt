@@ -1,17 +1,14 @@
-2024-12-24 04:10:19,145 - INFO - category-communitaion@!cn 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 195
-2024-12-24 04:10:20,469 - INFO - category-video@!cn 规则整理完成，domain 被过滤掉的条目数量: 1. 剩余规则总数: 875
-2024-12-24 04:10:20,881 - INFO - filter-nsfw 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 12841
-2024-12-24 04:10:21,123 - INFO - filter-fakeip 规则整理完成，domain 被过滤掉的条目数量: 14. 剩余规则总数: 158
-2024-12-24 04:10:21,565 - INFO - category-game@cn 规则整理完成，domain 被过滤掉的条目数量: 16. 剩余规则总数: 297
-2024-12-24 04:10:27,182 - INFO - category-direct 规则整理完成，domain 被过滤掉的条目数量: 88. 剩余规则总数: 193528
-2024-12-24 04:10:29,145 - INFO - category-download@!cn 规则整理完成，domain 被过滤掉的条目数量: 2. 剩余规则总数: 238
-2024-12-24 04:10:29,166 - INFO - category-media@cn 规则整理完成，domain 被过滤掉的条目数量: 2. 剩余规则总数: 408
-2024-12-24 04:10:30,031 - ERROR - 下载 https://adrules.top/adrules-singbox.srs 时出错: 403 Client Error: Forbidden for url: https://adrules.top/adrules-singbox.srs
-2024-12-24 04:10:30,031 - ERROR - 下载 .srs 文件失败: https://adrules.top/adrules-singbox.srs
-2024-12-24 04:10:30,287 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2024-12-24 04:10:33,142 - INFO - filter-trash 规则整理完成，domain 被过滤掉的条目数量: 151445. 剩余规则总数: 317828
-2024-12-24 04:10:33,805 - INFO - category-media@!cn 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 1118
-2024-12-24 04:10:33,927 - INFO - category-game 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 1086
-2024-12-24 04:10:34,787 - INFO - category-vpn 规则整理完成，domain 被过滤掉的条目数量: 451. 剩余规则总数: 6198
-2024-12-24 04:10:34,892 - INFO - category-media 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 2766
-2024-12-24 04:10:35,355 - INFO - geolocation-!cn 规则整理完成，domain 被过滤掉的条目数量: 434. 剩余规则总数: 51566
+2024-12-24 04:13:11,112 - INFO - category-communitaion@!cn 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 195
+2024-12-24 04:13:12,092 - INFO - category-video@!cn 规则整理完成，domain 被过滤掉的条目数量: 1. 剩余规则总数: 875
+2024-12-24 04:13:12,382 - INFO - filter-nsfw 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 12841
+2024-12-24 04:13:12,546 - INFO - filter-fakeip 规则整理完成，domain 被过滤掉的条目数量: 14. 剩余规则总数: 158
+2024-12-24 04:13:12,847 - INFO - category-game@cn 规则整理完成，domain 被过滤掉的条目数量: 16. 剩余规则总数: 297
+2024-12-24 04:13:18,597 - INFO - category-direct 规则整理完成，domain 被过滤掉的条目数量: 88. 剩余规则总数: 193528
+2024-12-24 04:13:20,059 - INFO - category-download@!cn 规则整理完成，domain 被过滤掉的条目数量: 2. 剩余规则总数: 238
+2024-12-24 04:13:20,093 - INFO - category-media@cn 规则整理完成，domain 被过滤掉的条目数量: 2. 剩余规则总数: 408
+2024-12-24 04:13:32,850 - INFO - filter-trash 规则整理完成，domain 被过滤掉的条目数量: 191858. 剩余规则总数: 512768
+2024-12-24 04:13:33,474 - INFO - category-media@!cn 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 1118
+2024-12-24 04:13:33,618 - INFO - category-game 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 1086
+2024-12-24 04:13:34,404 - INFO - category-vpn 规则整理完成，domain 被过滤掉的条目数量: 451. 剩余规则总数: 6198
+2024-12-24 04:13:34,547 - INFO - category-media 规则整理完成，domain 被过滤掉的条目数量: 0. 剩余规则总数: 2766
+2024-12-24 04:13:34,843 - INFO - geolocation-!cn 规则整理完成，domain 被过滤掉的条目数量: 434. 剩余规则总数: 51566
