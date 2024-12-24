@@ -17,14 +17,14 @@ def read_yaml_from_url(url):
     response = requests.get(url)
     response.raise_for_status()
     yaml_data = yaml.safe_load(response.text)
-    logging.info(f"成功读取 YAML 数据 {url}")
+    # logging.info(f"成功读取 YAML 数据 {url}")
     return yaml_data
 
 
 def read_list_from_url(url):
     try:
         df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other', 'other2', 'other3'])
-        logging.info(f"成功读取列表数据 {url}")
+        # logging.info(f"成功读取列表数据 {url}")
     except Exception as e:
         logging.error(f"读取 {url} 时出错：{e}")
         return pd.DataFrame(), []
@@ -130,7 +130,7 @@ def parse_and_convert_to_dataframe(link):
         logging.error(f"解析 {link} 时出错：{e}")
         return pd.DataFrame(), []
 
-    logging.info(f"成功解析链接 {link}")
+    # logging.info(f"成功解析链接 {link}")
     return df, rules
 
 

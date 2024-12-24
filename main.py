@@ -1,6 +1,8 @@
 import os
 import json
 import logging
+import subprocess
+import time
 import yaml
 import concurrent.futures
 from utils import *
@@ -15,31 +17,123 @@ class RuleParser:
     def __init__(self):
         self.ls_index = 1
 
-    def parse_littlesnitch_file(self, link):
+    def parse_adguard_file(self, link):
         """
-        处理 Little Snitch 链接并返回解析后的 JSON 数据。
+        处理 AdGuard 链接并返回解析后的 JSON 数据。
         """
         try:
-            logging.debug(f"正在处理 Little Snitch 链接: {link}")
+            logging.debug(f"正在处理 AdGuard 链接: {link}")
+
+            # 第一步：获取 AdGuard 规则文件
             response = requests.get(link)
             response.raise_for_status()
 
             raw_data = response.text
             logging.debug(f"获取到的原始数据: {raw_data[:500]}")  # 打印前 500 个字符
 
+            # 创建临时目录
+            tmp_dir = tempfile.mkdtemp()
+            logging.debug(f"创建临时目录: {tmp_dir}")
+
+            # 将原始数据写入临时文件，并检查第一行是否为 '[Adblock Plus 2.0]'
+            adguard_file_path = os.path.join(tmp_dir, "adguard_file.txt")
+            with open(adguard_file_path, "w") as f:
+                lines = raw_data.splitlines()  # 按行分割原始数据
+                if lines and lines[0].startswith("["):  # 如果第一行以 "[" 开头
+                    lines[0] = "!" + lines[0]  # 在第一行加上 "!"
+                # 将修改后的内容写回文件
+                f.write("\n".join(lines))
+
+            # 第二步：使用 sing-box 进行转换为 srs 格式
+            srs_file_path = os.path.join(tmp_dir, "output.srs")
+            conversion_command = [
+                "sing-box", "rule-set", "convert", "--type", "adguard",
+                "--output", srs_file_path, adguard_file_path
+            ]
+            logging.debug(f"执行转换命令: {' '.join(conversion_command)}")
+
+            result = subprocess.run(conversion_command, capture_output=True, text=True)
+            if result.returncode != 0:
+                logging.error(f"转换命令失败，错误信息: {result.stderr}")
+                return None
+
+            # 确认 .srs 文件已经生成
+            if not os.path.exists(srs_file_path):
+                logging.error(f"转换失败，没有找到生成的 SRS 文件: {srs_file_path}")
+                return None
+
+            # 第三步：使用 sing-box 反编译 srs 文件为 JSON 数据 (暂不支持)
+            decompile_command = [
+                "sing-box", "rule-set", "decompile", srs_file_path
+            ]
+            logging.debug(f"执行反编译命令: {' '.join(decompile_command)}")
+
+            result = subprocess.run(decompile_command, capture_output=True, text=True)
+            if result.returncode != 0:
+                logging.error(f"反编译命令失败，错误信息: {result.stderr}")
+                return None
+
+            # 解析返回的 JSON 数据
+            try:
+                data = json.loads(result.stdout)
+                logging.debug(f"解析后的 JSON 数据: {data}")
+            except json.JSONDecodeError as e:
+                logging.error(f"JSON 解析失败: {e}")
+                return None
+
+            # 清理临时文件
+            os.remove(adguard_file_path)
+            os.remove(srs_file_path)
+            os.rmdir(tmp_dir)  # 删除临时目录
+
+            return data
+
+        except Exception as e:
+            logging.error(f"处理 AdGuard 链接 {link} 时出错: {e}")
+            return None
+
+    def parse_littlesnitch_file(self, link, retries=3, delay=5):
+        """
+        处理 Little Snitch 链接并返回解析后的 JSON 数据。
+        """
+        try:
+            logging.debug(f"正在处理 Little Snitch 链接: {link}")
+
+            for attempt in range(retries):
+                try:
+                    response = requests.get(link)
+                    response.raise_for_status()  # 如果请求失败，抛出异常
+                    break  # 请求成功，退出循环
+                except requests.exceptions.RequestException as e:
+                    logging.error(f"请求失败: {e}")
+                    if attempt < retries - 1:  # 如果不是最后一次尝试
+                        # logging.info(f"等待 {delay} 秒后重试...")
+                        time.sleep(delay)  # 等待一段时间再重试
+                    else:
+                        logging.error(f"已达到最大重试次数 ({retries})，停止请求。")
+                        return None
+
+            raw_data = response.text
+            logging.debug(f"获取到的原始数据: {raw_data[:500]}")  # 打印前 500 个字符
+
+            # 清理数据
             cleaned_raw_data = clean_json_data(raw_data)
             logging.debug(f"清理后的数据: {cleaned_raw_data[:500]}")
 
+            # 解析 JSON 数据
             data = json.loads(cleaned_raw_data)
             logging.debug(f"解析后的 JSON 数据: {data}")
 
+            # 获取被拒绝的域名
             denied_domains = data.get("denied-remote-domains", [])
             cleaned_denied_domains = clean_denied_domains(denied_domains)
 
+            # 检查是否找到了有效的拒绝域名数据
             if not (cleaned_denied_domains["domain"] or cleaned_denied_domains["domain_suffix"]):
                 logging.warning(f"从 {link} 未找到 'denied-remote-domains' 数据")
                 return None
 
+            # 准备输出数据
             output_data = {
                 "rules": [
                     {
@@ -53,9 +147,6 @@ class RuleParser:
             logging.debug(f"成功解析链接 {link}，生成 JSON 数据")
             return output_data
 
-        except requests.exceptions.RequestException as e:
-            logging.error(f'处理特定链接 {link} 时出错：{e}')
-            return None
         except json.JSONDecodeError:
             logging.error(f"解析 JSON 时出错，从链接 {link} 读取的内容可能不是有效的 JSON。")
             return None
@@ -67,7 +158,13 @@ class RuleParser:
         """
         解析 YAML 文件中的链接，并根据类别生成相应的 JSON 文件。
         """
-        logging.info(f"正在解析 YAML 文件: {yaml_file}")
+        # 提取文件名（不包括路径）
+        file_name = os.path.basename(yaml_file)
+        # 去除文件扩展名（.yaml 或 .yml）
+        rule_set_name = os.path.splitext(file_name)[0]
+        # 输出规则集的名称
+        # logging.info(f"正在创建规则集：{rule_set_name}")
+
         with open(yaml_file, 'r') as file:
             data = yaml.safe_load(file)
             logging.debug(f"解析的 YAML 数据: {data}")
@@ -84,13 +181,13 @@ class RuleParser:
 
         # 检查每个类别的链接是否为空，若为空则跳过文件生成
         if geosite_links:
-            self.generate_json_file(geosite_links, geosite_file)
+            self.generate_json_file(geosite_links, geosite_file, rule_set_name)
 
         if geoip_links:
-            self.generate_json_file(geoip_links, geoip_file)
+            self.generate_json_file(geoip_links, geoip_file, rule_set_name)
 
         if process_links:
-            self.generate_json_file(process_links, process_file)
+            self.generate_json_file(process_links, process_file, rule_set_name)
 
     def download_srs_file(self, url):
         """
@@ -150,7 +247,7 @@ class RuleParser:
 
         return None
 
-    def generate_json_file(self, links, output_file):
+    def generate_json_file(self, links, output_file, rule_set_name):
         """
         生成合并后的 JSON 文件
         """
@@ -161,9 +258,9 @@ class RuleParser:
             json_file = self.parse_link_file_to_json(link)
             json_file_list.append(json_file)
 
-        return self.merge_json(json_file_list, output_file)
+        return self.merge_json(json_file_list, output_file, rule_set_name = rule_set_name)
 
-    def merge_json(self, json_file_list, output_file, enable_trie_filtering=config.enable_trie_filtering):
+    def merge_json(self, json_file_list, output_file, rule_set_name, enable_trie_filtering=config.enable_trie_filtering):
         """
         合并 JSON 文件并进行去重（第二轮 Trie 去重为可选）。
 
@@ -206,7 +303,7 @@ class RuleParser:
         final_domains = set()
 
         if enable_trie_filtering:
-            logging.info("启用基于 domain_suffix 的 Trie 去重。")
+            # logging.info("启用基于 domain_suffix 的 Trie 去重。")
             if merged_rules.get("domain_suffix"):
                 if merged_rules.get("domain"):
                     final_domains, filtered_count = filter_domains_with_trie(
@@ -215,7 +312,7 @@ class RuleParser:
             else:
                 final_domains = merged_rules.get("domain", set())
         else:
-            logging.info("跳过基于 domain_suffix 的 Trie 去重。")
+            # logging.info("跳过基于 domain_suffix 的 Trie 去重。")
             final_domains = merged_rules.get("domain", set())
 
         # 更新合并后的 domain 规则
@@ -229,17 +326,16 @@ class RuleParser:
         ]
 
         if enable_trie_filtering and original_domain_count > 0:
-            logging.info(f"去重完成，domain 被过滤掉的条目数量: {filtered_count}")
+            # 输出去重后统计信息
+            logging.info(f"{rule_set_name} 规则整理完成，domain 被过滤掉的条目数量: {filtered_count}. 剩余规则总数: {len(merged_rules['domain'])+len(merged_rules['domain_suffix'])+len(merged_rules['ip_cidr'])+len(merged_rules['domain_suffix'])+len(merged_rules['domain_regex'])}")
 
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
                 json.dump({"version": 1, "rules": final_rules}, file, ensure_ascii=False, indent=4)
-                logging.info(f"合并后的规则已保存至: {output_file}")
+                # logging.info(f"合并后的规则已保存至: {output_file}")
         except Exception as e:
             logging.error(f"保存 JSON 文件时出错: {e}")
-
-
 
     def decompile_srs_to_json(self, srs_file_url):
         """
@@ -280,7 +376,7 @@ class RuleParser:
         解析给定的链接并返回处理后的 JSON 数据。
         """
         try:
-            logging.info(f"正在解析链接: {link}")
+            # logging.info(f"正在解析链接: {link}")
 
             if link.endswith('.json'):
                 logging.debug(f"检测到 JSON 文件 {link}，直接返回内容")
@@ -293,6 +389,10 @@ class RuleParser:
 
             if any(keyword in link for keyword in config.ls_keyword):
                 json_file = self.parse_littlesnitch_file(link)
+                return json_file
+
+            if any(keyword in link for keyword in config.adg_keyword):
+                json_file = self.parse_adguard_file(link)
                 return json_file
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
