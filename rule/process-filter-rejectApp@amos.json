@@ -4,23 +4,23 @@
         {
             "process_name": [
                 "Squirrel",
+                "Snipaste",
+                "Command X",
+                "DevToys",
+                "BLEUnlock",
+                "DevToys Networking",
+                "Ice",
+                "CodeRunner",
+                "Scroll Reverser",
+                "Apple Juice",
+                "TextSniper",
+                "Swish",
                 "Little Snitch Agent",
+                "Find Any File",
+                "Snipaste.exe",
                 "Shifty",
                 "Clop",
-                "BLEUnlock",
-                "Snipaste.exe",
-                "ProcessSpy",
-                "Find Any File",
-                "DevToys Networking",
-                "Apple Juice",
-                "Scroll Reverser",
-                "Swish",
-                "CodeRunner",
-                "DevToys",
-                "TextSniper",
-                "Ice",
-                "Snipaste",
-                "Command X"
+                "ProcessSpy"
             ]
         }
     ]
