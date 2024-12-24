@@ -158,13 +158,6 @@ class RuleParser:
         """
         解析 YAML 文件中的链接，并根据类别生成相应的 JSON 文件。
         """
-        # 提取文件名（不包括路径）
-        file_name = os.path.basename(yaml_file)
-        # 去除文件扩展名（.yaml 或 .yml）
-        rule_set_name = os.path.splitext(file_name)[0]
-        # 输出规则集的名称
-        # logging.info(f"正在创建规则集：{rule_set_name}")
-
         with open(yaml_file, 'r') as file:
             data = yaml.safe_load(file)
             logging.debug(f"解析的 YAML 数据: {data}")
@@ -175,9 +168,10 @@ class RuleParser:
         process_links = data.get('process', [])
 
         # 定义生成文件的路径
-        geosite_file = os.path.join(output_directory, f"geosite-{os.path.basename(yaml_file).split('.')[0]}.json")
-        geoip_file = os.path.join(output_directory, f"geoip-{os.path.basename(yaml_file).split('.')[0]}.json")
-        process_file = os.path.join(output_directory, f"process-{os.path.basename(yaml_file).split('.')[0]}.json")
+        rule_set_name = os.path.basename(yaml_file).split('.')[0]
+        geosite_file = os.path.join(output_directory, f"geosite-{rule_set_name}.json")
+        geoip_file = os.path.join(output_directory, f"geoip-{rule_set_name}.json")
+        process_file = os.path.join(output_directory, f"process-{rule_set_name}.json")
 
         # 检查每个类别的链接是否为空，若为空则跳过文件生成
         if geosite_links:
@@ -188,6 +182,7 @@ class RuleParser:
 
         if process_links:
             self.generate_json_file(process_links, process_file, rule_set_name)
+
 
     def download_srs_file(self, url):
         """
@@ -325,7 +320,7 @@ class RuleParser:
             if values
         ]
 
-        if enable_trie_filtering and original_domain_count > 0:
+        if enable_trie_filtering > 0:
             # 输出去重后统计信息
             logging.info(f"{rule_set_name} 规则整理完成，domain 被过滤掉的条目数量: {filtered_count}. 剩余规则总数: {len(merged_rules['domain'])+len(merged_rules['domain_suffix'])+len(merged_rules['ip_cidr'])+len(merged_rules['domain_suffix'])+len(merged_rules['domain_regex'])}")
 
