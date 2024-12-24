@@ -170,19 +170,44 @@ class RuleParser:
 
         # 定义生成文件的路径
         rule_set_name = os.path.basename(yaml_file).split('.')[0]
+
         geosite_file = os.path.join(output_directory, f"geosite-{rule_set_name}.json")
         geoip_file = os.path.join(output_directory, f"geoip-{rule_set_name}.json")
         process_file = os.path.join(output_directory, f"process-{rule_set_name}.json")
 
-        # 检查每个类别的链接是否为空，若为空则跳过文件生成
+        # 初始化结果存储
+        final_results = []
+
+        # 处理 geosite
         if geosite_links:
-            self.generate_json_file(geosite_links, geosite_file, rule_set_name)
+            geosite_result = self.generate_json_file(geosite_links, geosite_file, rule_set_name)
+            final_results.append(("geosite", geosite_result))
 
+        # 处理 geoip
         if geoip_links:
-            self.generate_json_file(geoip_links, geoip_file, rule_set_name)
+            geoip_result = self.generate_json_file(geoip_links, geoip_file, rule_set_name)
+            final_results.append(("geoip", geoip_result))
 
+        # 处理 process
         if process_links:
-            self.generate_json_file(process_links, process_file, rule_set_name)
+            process_result = self.generate_json_file(process_links, process_file, rule_set_name)
+            final_results.append(("process", process_result))
+
+        # 输出最终处理结果
+        logging.info(f"{rule_set_name} 规则整理完成:")
+        for result_type, result_data in final_results:
+            logging.info(
+                f"类型: {result_type}\n"
+                f"domain 被过滤掉的条目数量: {result_data['filtered_count']}\n"
+                f"剩余规则总数: {result_data['total_rules']}\n"
+                f"规则分析:\n"
+                f"  domain 条目数: {result_data['domain_count']}\n"
+                f"  domain_suffix 条目数: {result_data['domain_suffix_count']}\n"
+                f"  ip_cidr 条目数: {result_data['ip_cidr_count']}\n"
+                f"  process_name 条目数: {result_data['process_name_count']}\n"
+                f"  domain_regex 条目数: {result_data['domain_regex_count']}\n"
+                f"{'-' * 50}"
+            )
 
 
     def download_srs_file(self, url):
@@ -245,7 +270,7 @@ class RuleParser:
 
     def generate_json_file(self, links, output_file, rule_set_name):
         """
-        生成合并后的 JSON 文件
+        生成合并后的 JSON 文件并返回处理统计信息。
         """
         unique_links = list(set(links))  # 链接去重
 
@@ -254,93 +279,81 @@ class RuleParser:
             json_file = self.parse_link_file_to_json(link)
             json_file_list.append(json_file)
 
-        return self.merge_json(json_file_list, output_file, rule_set_name = rule_set_name)
+        # 调用 merge_json 并返回结果统计信息
+        return self.merge_json(json_file_list, output_file, rule_set_name=rule_set_name)
 
-    def merge_json(self, json_file_list, output_file, rule_set_name, enable_trie_filtering=config.enable_trie_filtering):
+    def merge_json(self, json_file_list, output_file, rule_set_name,
+                   enable_trie_filtering=config.enable_trie_filtering):
         """
-        合并 JSON 文件并进行去重（第二轮 Trie 去重为可选）。
-
-        :param json_file_list: 输入的 JSON 文件数据列表
-        :param output_file: 输出合并后的 JSON 文件路径
-        :param enable_trie_filtering: 是否启用基于 domain_suffix 的 Trie 去重，默认禁用
+        合并 JSON 文件并返回规则统计信息。
         """
         logging.debug(f"正在合并 JSON 文件: {json_file_list}")
 
-        # 初始化合并规则，使用集合去重
+        # 初始化合并规则
         merged_rules = {
             "process_name": set(),
             "domain": set(),
             "domain_suffix": set(),
             "ip_cidr": set(),
-            "domain_regex": set()  # 新增 domain_regex 字段
+            "domain_regex": set()
         }
 
         # 第一轮合并与去重
         for json_file in json_file_list:
             try:
-                logging.debug(f"正在处理数据: {json_file}")
                 for rule in json_file.get("rules", []):
                     if isinstance(rule, dict):
                         for category, values in rule.items():
                             if category in merged_rules and values:
-                                # 确保 values 是列表，避免将字符串拆分成单个字符
                                 if isinstance(values, list):
                                     merged_rules[category].update(values)
-                                elif isinstance(values, str):  # 如果是字符串，视作单个域名
+                                elif isinstance(values, str):
                                     merged_rules[category].add(values)
-                                else:
-                                    logging.warning(f"跳过无效的 {category} 值: {values}")
             except Exception as e:
                 logging.error(f"解析 JSON 数据时出错: {e}")
 
-        # 第二轮去重：基于 domain_suffix 使用 Trie 去除被覆盖的 domain（可选）
+        # 基于 domain_suffix 的 Trie 去重
         original_domain_count = len(merged_rules.get("domain", set()))
         filtered_count = 0
         final_domains = set()
 
-        if enable_trie_filtering:
-            # logging.info("启用基于 domain_suffix 的 Trie 去重。")
-            if merged_rules.get("domain_suffix"):
-                if merged_rules.get("domain"):
-                    final_domains, filtered_count = filter_domains_with_trie(
-                        merged_rules["domain"], merged_rules["domain_suffix"]
-                    )
+        if enable_trie_filtering and merged_rules.get("domain_suffix"):
+            if merged_rules.get("domain"):
+                final_domains, filtered_count = filter_domains_with_trie(
+                    merged_rules["domain"], merged_rules["domain_suffix"]
+                )
             else:
                 final_domains = merged_rules.get("domain", set())
         else:
-            # logging.info("跳过基于 domain_suffix 的 Trie 去重。")
             final_domains = merged_rules.get("domain", set())
 
         # 更新合并后的 domain 规则
         merged_rules["domain"] = final_domains
 
-        # 将合并后的规则从集合转换回列表
+        # 转换为最终规则列表
         final_rules = [
             {category: list(values)}
             for category, values in merged_rules.items()
             if values
         ]
 
-        if enable_trie_filtering:
-            logging.info(f"{rule_set_name} 规则整理完成 - "
-                         f"domain 被过滤掉的条目数量: {filtered_count}. "
-                         f"剩余规则总数: "
-                         f"{len(merged_rules['domain']) + len(merged_rules['domain_suffix']) + len(merged_rules['ip_cidr']) + len(merged_rules['process_name']) + len(merged_rules['domain_regex'])}.\n"
-                         f"{'-' * 50}\n"
-                         f"规则分析:\n"
-                         f"domain 条目数: {len(merged_rules['domain'])},\n"
-                         f"domain_suffix 条目数: {len(merged_rules['domain_suffix'])},\n"
-                         f"ip_cidr 条目数: {len(merged_rules['ip_cidr'])},\n"
-                         f"process_name 条目数: {len(merged_rules['process_name'])},\n"
-                         f"domain_regex 条目数: {len(merged_rules['domain_regex'])}\n"
-                         f"{'-' * 50}")
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
                 json.dump({"version": 1, "rules": final_rules}, file, ensure_ascii=False, indent=4)
-                # logging.info(f"合并后的规则已保存至: {output_file}")
         except Exception as e:
             logging.error(f"保存 JSON 文件时出错: {e}")
+
+        # 返回统计信息
+        return {
+            "filtered_count": filtered_count,
+            "total_rules": sum(len(values) for values in merged_rules.values()),
+            "domain_count": len(merged_rules["domain"]),
+            "domain_suffix_count": len(merged_rules["domain_suffix"]),
+            "ip_cidr_count": len(merged_rules["ip_cidr"]),
+            "process_name_count": len(merged_rules["process_name"]),
+            "domain_regex_count": len(merged_rules["domain_regex"])
+        }
 
     def decompile_srs_to_json(self, srs_file_url):
         """
