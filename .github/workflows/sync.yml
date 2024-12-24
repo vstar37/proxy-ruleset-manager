@@ -29,6 +29,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas requests pyyaml
 
+    - name: Prepare log file
+      run: |
+        # 创建log.txt并设置读写权限
+        touch ./log.txt
+        chmod 666 ./log.txt
+
     - name: Run script
       run: python main.py
     - name: Commit and push config.json
