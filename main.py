@@ -1,3 +1,4 @@
+import configparser
 import os
 import json
 import logging
@@ -320,10 +321,19 @@ class RuleParser:
             if values
         ]
 
-        if enable_trie_filtering > 0:
-            # 输出去重后统计信息
-            logging.info(f"{rule_set_name} 规则整理完成，domain 被过滤掉的条目数量: {filtered_count}. 剩余规则总数: {len(merged_rules['domain'])+len(merged_rules['domain_suffix'])+len(merged_rules['ip_cidr'])+len(merged_rules['domain_suffix'])+len(merged_rules['domain_regex'])}")
-
+        if enable_trie_filtering:
+            logging.info(f"{rule_set_name} 规则整理完成 - "
+                         f"domain 被过滤掉的条目数量: {filtered_count}. "
+                         f"剩余规则总数: "
+                         f"{len(merged_rules['domain']) + len(merged_rules['domain_suffix']) + len(merged_rules['ip_cidr']) + len(merged_rules['process_name']) + len(merged_rules['domain_regex'])}.\n"
+                         f"{'-' * 50}\n"
+                         f"规则分析:\n"
+                         f"domain 条目数: {len(merged_rules['domain'])},\n"
+                         f"domain_suffix 条目数: {len(merged_rules['domain_suffix'])},\n"
+                         f"ip_cidr 条目数: {len(merged_rules['ip_cidr'])},\n"
+                         f"process_name 条目数: {len(merged_rules['process_name'])},\n"
+                         f"domain_regex 条目数: {len(merged_rules['domain_regex'])}\n"
+                         f"{'-' * 50}")
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
@@ -444,6 +454,14 @@ class RuleParser:
             os.system(f"sing-box rule-set compile --output {srs_path} {json_file_path}")
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
 
+class ConfigParser:
+    def __init__(self):
+        self.config = configparser.ConfigParser()
+        self.config.read('config.ini')
+        self.enable_trie_filtering = self.config.getint('DEFAULT', 'enable_trie_filtering')
+        self.map_dict = self.config['DEFAULT']['map_dict']
+        self.ls_keyword = self.config['DEFAULT']['ls_keyword'].split(',')
+        self.adg_keyword = self.config['DEFAULT']['adg_keyword'].split(',')
 
 if __name__ == "__main__":
     # 使用类的实例
