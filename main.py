@@ -336,6 +336,14 @@ class RuleParser:
         output_directory = "./rule"
         yaml_files = [f for f in os.listdir(source_directory) if f.endswith('.yaml')]
 
+        # 配置日志文件和日志级别
+        logging.basicConfig(
+            filename='log.txt',  # 指定日志文件路径
+            filemode='w',  # 写入模式，覆盖旧内容
+            level=logging.DEBUG,  # 设置日志级别为 DEBUG 以捕获所有日志信息
+            format='%(asctime)s - %(levelname)s - %(message)s'  # 设置日志格式
+        )
+
         for yaml_file in yaml_files:
             print('正在处理{}'.format(yaml_file))
             yaml_file_path = os.path.join(source_directory, yaml_file)
