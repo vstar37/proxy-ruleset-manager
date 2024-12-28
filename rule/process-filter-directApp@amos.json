@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "QQ",
+                "wegame.exe",
+                "App Store",
+                "iCloudDrive.exe",
+                "qbittorrent",
+                "vidhub",
+                "Eudb_en_free",
+                "WeChat",
+                "infuse",
+                "WeChatAppEx Helper",
+                "cloudd",
+                "幕布 Helper",
+                "TencentMeeting",
+                "Music",
+                "BitComet",
+                "115Browser",
+                "115Browser Helper"
+            ]
+        }
+    ]
+}

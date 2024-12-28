@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "Snipaste.exe",
+                "Apple Juice",
+                "DevToys",
+                "BLEUnlock",
+                "TextSniper",
+                "Command X",
+                "Swish",
+                "Squirrel",
+                "Little Snitch Agent",
+                "Find Any File",
+                "Shifty",
+                "Snipaste",
+                "ProcessSpy",
+                "CodeRunner",
+                "Scroll Reverser",
+                "Clop",
+                "DevToys Networking",
+                "Ice"
+            ]
+        }
+    ]
+}
