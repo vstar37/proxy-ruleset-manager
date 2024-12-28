@@ -148,11 +148,11 @@ def sort_dict(obj):
 def subtract_rules(base_data, subtract_data):
     """从 base_data 中剔除 subtract_data 的规则"""
     for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
-        # 获取 base_data 和 subtract_data 中的规则，确保它们是可哈希的
-        base_list = base_data["rules"].get(key, [])
-        subtract_list = subtract_data["rules"].get(key, [])
+        # 处理 base_data 和 subtract_data 中的规则，检查它们的类型
+        base_list = base_data["rules"].get(key, []) if isinstance(base_data["rules"], dict) else base_data["rules"]
+        subtract_list = subtract_data["rules"].get(key, []) if isinstance(subtract_data["rules"], dict) else subtract_data["rules"]
 
-        # 将元素转换为可哈希类型（例如元组），避免字典等不可哈希的类型
+        # 如果是字典元素，转为元组来避免字典不可哈希的问题
         base_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in base_list)
         subtract_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in subtract_list)
 
