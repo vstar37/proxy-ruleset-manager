@@ -148,13 +148,31 @@ def sort_dict(obj):
 def subtract_rules(base_data, subtract_data):
     """从 base_data 中剔除 subtract_data 的规则"""
     for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
-        # 处理 base_data 和 subtract_data 中的规则，检查它们的类型
+        # 获取 base_list 和 subtract_list 的数据
         base_list = base_data["rules"].get(key, []) if isinstance(base_data["rules"], dict) else base_data["rules"]
         subtract_list = subtract_data["rules"].get(key, []) if isinstance(subtract_data["rules"], dict) else subtract_data["rules"]
 
-        # 如果是字典元素，转为元组来避免字典不可哈希的问题
-        base_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in base_list)
-        subtract_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in subtract_list)
+        # 处理 base_list 和 subtract_list 中的元素
+        base_set = set()
+        for item in base_list:
+            if isinstance(item, dict):
+                # 如果 item 是字典，转换为元组
+                base_set.add(tuple(item.items()))
+            elif isinstance(item, list):
+                # 如果 item 是列表，将列表转换为元组
+                base_set.add(tuple(item))
+            else:
+                # 其他类型的元素直接加入集合
+                base_set.add(item)
+
+        subtract_set = set()
+        for item in subtract_list:
+            if isinstance(item, dict):
+                subtract_set.add(tuple(item.items()))
+            elif isinstance(item, list):
+                subtract_set.add(tuple(item))
+            else:
+                subtract_set.add(item)
 
         # 更新 base_data["rules"][key] 为去重后的列表
         base_data["rules"][key] = list(base_set - subtract_set)
