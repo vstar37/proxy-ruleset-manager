@@ -1,5 +1,5 @@
-2024-12-27 12:21:12,998 - INFO - category-communitaion@!cn 规则整理完成:
-2024-12-27 12:21:12,998 - INFO - 类型: geosite
+2024-12-28 07:20:26,631 - INFO - category-communitaion@!cn 规则整理完成:
+2024-12-28 07:20:26,631 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 100
 规则分析:
@@ -9,7 +9,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:12,998 - INFO - 类型: geoip
+2024-12-28 07:20:26,631 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 12
 规则分析:
@@ -19,8 +19,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:13,136 - INFO - filter-communicationApp@amos 规则整理完成:
-2024-12-27 12:21:13,136 - INFO - 类型: process
+2024-12-28 07:20:26,908 - INFO - filter-communicationApp@amos 规则整理完成:
+2024-12-28 07:20:26,908 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 2
 规则分析:
@@ -30,8 +30,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 2
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:13,800 - INFO - category-video@!cn 规则整理完成:
-2024-12-27 12:21:13,800 - INFO - 类型: geosite
+2024-12-28 07:20:28,756 - INFO - category-video@!cn 规则整理完成:
+2024-12-28 07:20:28,756 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 1
 剩余规则总数: 461
 规则分析:
@@ -41,7 +41,7 @@ domain 被过滤掉的条目数量: 1
   process_name 条目数: 0
   domain_regex 条目数: 5
 --------------------------------------------------
-2024-12-27 12:21:13,800 - INFO - 类型: geoip
+2024-12-28 07:20:28,756 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1120
 规则分析:
@@ -51,30 +51,22 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:13,961 - INFO - filter-nsfw 规则整理完成:
-2024-12-27 12:21:13,961 - INFO - 类型: geosite
+2024-12-28 07:20:29,000 - ERROR - 解析 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml 时出错：404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
+2024-12-28 07:20:29,002 - ERROR - 解析链接 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml 出现错误: 'pattern'
+2024-12-28 07:20:29,002 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2024-12-28 07:20:29,002 - INFO - filter-fakeip 规则整理完成:
+2024-12-28 07:20:29,002 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 6490
+剩余规则总数: 0
 规则分析:
-  domain 条目数: 3
-  domain_suffix 条目数: 6351
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 136
---------------------------------------------------
-2024-12-27 12:21:14,099 - INFO - filter-fakeip 规则整理完成:
-2024-12-27 12:21:14,099 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 14
-剩余规则总数: 104
-规则分析:
-  domain 条目数: 50
-  domain_suffix 条目数: 54
+  domain 条目数: 0
+  domain_suffix 条目数: 0
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:14,447 - INFO - category-game@cn 规则整理完成:
-2024-12-27 12:21:14,447 - INFO - 类型: geosite
+2024-12-28 07:20:30,047 - INFO - category-game@cn 规则整理完成:
+2024-12-28 07:20:30,047 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 16
 剩余规则总数: 155
 规则分析:
@@ -84,8 +76,8 @@ domain 被过滤掉的条目数量: 16
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:20,239 - INFO - category-direct 规则整理完成:
-2024-12-27 12:21:20,239 - INFO - 类型: geosite
+2024-12-28 07:20:38,341 - INFO - category-direct 规则整理完成:
+2024-12-28 07:20:38,341 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 88
 剩余规则总数: 97013
 规则分析:
@@ -95,18 +87,18 @@ domain 被过滤掉的条目数量: 88
   process_name 条目数: 0
   domain_regex 条目数: 39
 --------------------------------------------------
-2024-12-27 12:21:20,239 - INFO - 类型: geoip
+2024-12-28 07:20:38,341 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18215
+剩余规则总数: 18229
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18215
+  ip_cidr 条目数: 18229
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:21,075 - INFO - category-download@!cn 规则整理完成:
-2024-12-27 12:21:21,075 - INFO - 类型: geosite
+2024-12-28 07:20:40,167 - INFO - category-download@!cn 规则整理完成:
+2024-12-28 07:20:40,167 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 125
 规则分析:
@@ -116,8 +108,19 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2024-12-27 12:21:21,093 - INFO - category-media@cn 规则整理完成:
-2024-12-27 12:21:21,093 - INFO - 类型: geosite
+2024-12-28 07:20:40,421 - INFO - category-nsfw 规则整理完成:
+2024-12-28 07:20:40,421 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 6490
+规则分析:
+  domain 条目数: 3
+  domain_suffix 条目数: 6351
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 136
+--------------------------------------------------
+2024-12-28 07:20:40,463 - INFO - category-media@cn 规则整理完成:
+2024-12-28 07:20:40,463 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 204
 规则分析:
@@ -127,19 +130,19 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:33,955 - INFO - filter-trash 规则整理完成:
-2024-12-27 12:21:33,955 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 190372
-剩余规则总数: 292144
+2024-12-28 07:20:53,513 - INFO - filter-trash 规则整理完成:
+2024-12-28 07:20:53,513 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 189817
+剩余规则总数: 291939
 规则分析:
-  domain 条目数: 69122
-  domain_suffix 条目数: 223022
+  domain 条目数: 69170
+  domain_suffix 条目数: 222769
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:34,073 - INFO - filter-rejectApp@amos 规则整理完成:
-2024-12-27 12:21:34,073 - INFO - 类型: process
+2024-12-28 07:20:53,752 - INFO - filter-rejectApp@amos 规则整理完成:
+2024-12-28 07:20:53,752 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 18
 规则分析:
@@ -149,8 +152,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 18
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:34,497 - INFO - category-vpn@!cn 规则整理完成:
-2024-12-27 12:21:34,497 - INFO - 类型: geosite
+2024-12-28 07:20:54,808 - INFO - category-vpn@!cn 规则整理完成:
+2024-12-28 07:20:54,808 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 86
 规则分析:
@@ -160,8 +163,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2024-12-27 12:21:34,586 - INFO - filter-browser 规则整理完成:
-2024-12-27 12:21:34,587 - INFO - 类型: process
+2024-12-28 07:20:55,047 - INFO - filter-browser 规则整理完成:
+2024-12-28 07:20:55,047 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 7
 规则分析:
@@ -171,8 +174,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 7
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:34,703 - INFO - filter-directApp@amos 规则整理完成:
-2024-12-27 12:21:34,704 - INFO - 类型: process
+2024-12-28 07:20:55,244 - INFO - filter-directApp@amos 规则整理完成:
+2024-12-28 07:20:55,244 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 17
 规则分析:
@@ -182,8 +185,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 17
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:34,870 - INFO - category-media@!cn 规则整理完成:
-2024-12-27 12:21:34,870 - INFO - 类型: geosite
+2024-12-28 07:20:55,674 - INFO - category-media@!cn 规则整理完成:
+2024-12-28 07:20:55,674 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 561
 规则分析:
@@ -193,8 +196,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:35,116 - INFO - category-game 规则整理完成:
-2024-12-27 12:21:35,116 - INFO - 类型: geosite
+2024-12-28 07:20:56,183 - INFO - category-game 规则整理完成:
+2024-12-28 07:20:56,183 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 547
 规则分析:
@@ -204,7 +207,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:35,116 - INFO - 类型: geoip
+2024-12-28 07:20:56,183 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 46
 规则分析:
@@ -214,8 +217,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:35,419 - INFO - category-vpn 规则整理完成:
-2024-12-27 12:21:35,419 - INFO - 类型: geosite
+2024-12-28 07:20:56,738 - INFO - category-vpn 规则整理完成:
+2024-12-28 07:20:56,738 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 451
 剩余规则总数: 3167
 规则分析:
@@ -225,8 +228,8 @@ domain 被过滤掉的条目数量: 451
   process_name 条目数: 0
   domain_regex 条目数: 12
 --------------------------------------------------
-2024-12-27 12:21:35,517 - INFO - category-media 规则整理完成:
-2024-12-27 12:21:35,517 - INFO - 类型: geosite
+2024-12-28 07:20:56,944 - INFO - category-media 规则整理完成:
+2024-12-28 07:20:56,944 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1395
 规则分析:
@@ -236,8 +239,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:36,057 - INFO - geolocation-!cn 规则整理完成:
-2024-12-27 12:21:36,057 - INFO - 类型: geosite
+2024-12-28 07:20:58,031 - INFO - geolocation-!cn 规则整理完成:
+2024-12-28 07:20:58,032 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 434
 剩余规则总数: 25893
 规则分析:
@@ -247,18 +250,18 @@ domain 被过滤掉的条目数量: 434
   process_name 条目数: 0
   domain_regex 条目数: 155
 --------------------------------------------------
-2024-12-27 12:21:36,057 - INFO - 类型: geoip
+2024-12-28 07:20:58,032 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18191
+剩余规则总数: 18205
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18191
+  ip_cidr 条目数: 18205
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2024-12-27 12:21:36,160 - INFO - geolocation-jp@amos 规则整理完成:
-2024-12-27 12:21:36,160 - INFO - 类型: geoip
+2024-12-28 07:20:58,226 - INFO - geolocation-jp@amos 规则整理完成:
+2024-12-28 07:20:58,226 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 2
 规则分析:
