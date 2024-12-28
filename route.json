@@ -98,6 +98,13 @@
       },
       {
         "rule_set":[
+          "geoip-category-communication@!cn"
+        ],
+        "action":"route",
+        "outbound":"Communication Service"
+      },
+      {
+        "rule_set":[
           "geosite-category-media@!cn"
         ],
         "action":"route",
@@ -130,6 +137,13 @@
         ],
         "action":"route",
         "outbound":"VPN"
+      },
+      {
+        "rule_set":[
+          "geosite-category-communication@!cn"
+        ],
+        "action":"route",
+        "outbound":"Communication Service"
       },
       {
         "rule_set":[
@@ -268,6 +282,13 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"geoip-category-communication@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-communication@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"geosite-blocker-trash",
         "type":"remote",
         "format":"binary",
@@ -328,6 +349,13 @@
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-vpn@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-communication@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-communication@!cn.srs",
         "download_detour":"VPN"
       }
     ],
