@@ -8,6 +8,7 @@ import yaml
 import concurrent.futures
 from utils import *
 from config import Config
+from collections import defaultdict
 import tempfile
 
 
@@ -208,7 +209,6 @@ class RuleParser:
                 f"  domain_regex 条目数: {result_data['domain_regex_count']}\n"
                 f"{'-' * 50}"
             )
-
 
     def download_srs_file(self, url):
         """
@@ -449,6 +449,140 @@ class RuleParser:
             logging.error(f"解析链接 {link} 出现错误: {e}")
             return None
 
+    def process_category_files(self, directory):
+        # 找到包含 category 的文件并按类别分组
+        category_files = [f for f in os.listdir(directory) if "category" in f and f.endswith('.json')]
+        grouped_files = defaultdict(list)
+
+        # 按类别分组文件，例如 geoip-category-communitaion.json -> geoip-category-communitaion
+        for file in category_files:
+            base_name = file.split("@")[0].replace(".json", "")
+            grouped_files[base_name].append(file)
+
+        # 分别处理每一组文件
+        for category, files in grouped_files.items():
+            logging.info(f"处理类别：{category}")
+            self.process_single_category(directory, category, files)
+
+    def process_single_category(self, directory, category, files):
+        # 分组文件
+        general_files = [f for f in files if "@" not in f]
+        non_cn_files = [f for f in files if "@!cn" in f]
+        cn_files = [f for f in files if "@cn" in f]
+
+        # 如果没有全体文件，跳过
+        if not general_files:
+            logging.info(f"跳过处理 {category}，因为没有全体文件")
+            return
+
+        # 加载全体文件
+        general_file_path = os.path.join(directory, general_files[0])
+        general_data = load_json(general_file_path)
+
+        # 标记全体文件是否已处理
+        general_file_processed = False
+
+        # 用于存储去重后的文件数据
+        final_non_cn_data = None
+        final_cn_data = None
+
+        # 如果同时有 @cn 和 @!cn 文件
+        if cn_files and non_cn_files:
+            # 优先处理非 cn 文件
+            cn_path = os.path.join(directory, cn_files[0])
+            non_cn_path = os.path.join(directory, non_cn_files[0])
+
+            cn_data = load_json(cn_path)
+
+            # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
+            updated_non_cn_data = subtract_rules(general_data, cn_data)
+
+            # 如果 @!cn 文件已存在，则增量更新
+            if os.path.exists(non_cn_path):
+                non_cn_data = load_json(non_cn_path)
+                updated_non_cn_data = self.merge_rules(non_cn_data, updated_non_cn_data)
+
+            final_non_cn_data = updated_non_cn_data  # 保存更新后的非cn数据
+            final_cn_data = cn_data  # 保留原始的cn数据
+            general_file_processed = True
+
+        # 只有 @cn 文件
+        elif cn_files and not non_cn_files:
+            cn_path = os.path.join(directory, cn_files[0])
+            cn_data = load_json(cn_path)
+
+            # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
+            non_cn_data = subtract_rules(general_data, cn_data)
+            non_cn_file = f"{category}@!cn.json"
+            non_cn_path = os.path.join(directory, non_cn_file)
+
+            final_non_cn_data = non_cn_data  # 保存非cn数据
+            final_cn_data = cn_data  # 保留原始的cn数据
+
+            general_file_processed = True
+
+        # 只有 @!cn 文件
+        elif non_cn_files and not cn_files:
+            non_cn_path = os.path.join(directory, non_cn_files[0])
+            non_cn_data = load_json(non_cn_path)
+
+            # 从全体文件中剔除 非cn 文件的规则，更新 cn 文件
+            cn_data = subtract_rules(general_data, non_cn_data)
+            cn_file = f"{category}@cn.json"
+            cn_path = os.path.join(directory, cn_file)
+
+            final_non_cn_data = non_cn_data  # 保留原始的非cn数据
+            final_cn_data = cn_data  # 更新后的cn数据
+
+            general_file_processed = True
+
+        # 如果既没有 @cn 也没有 @!cn 文件，跳过
+        if not cn_files and not non_cn_files:
+            logging.info(f"跳过处理 {category}，因为没有 @cn 或 @!cn 文件")
+            return
+
+        # 删除全体文件（如果处理过）
+        if general_file_processed:
+            try:
+                os.remove(general_file_path)
+                logging.info(f"已删除全体文件 {general_files[0]}")
+            except OSError as e:
+                logging.error(f"删除全体文件 {general_files[0]} 失败: {e}")
+
+        # 在去重前保留最终数据，先对数据进行去重
+        if final_cn_data:
+            final_cn_data = deduplicate_json(final_cn_data)  # 调用 deduplicate_json 进行去重
+            cn_path = os.path.join(directory, f"{category}@cn.json")
+            # 保存去重后的cn文件
+            try:
+                save_json(final_cn_data, cn_path)
+                logging.info(f"去重并保存 CN 文件 {category}@cn.json")
+            except Exception as e:
+                logging.error(f"保存去重文件 {category}@cn.json 时出错: {e}")
+
+        if final_non_cn_data:
+            final_non_cn_data = deduplicate_json(final_non_cn_data)  # 调用 deduplicate_json 进行去重
+            non_cn_path = os.path.join(directory, f"{category}@!cn.json")
+            # 保存去重后的非cn文件
+            try:
+                save_json(final_non_cn_data, non_cn_path)
+                logging.info(f"去重并保存 非CN 文件 {category}@!cn.json")
+            except Exception as e:
+                logging.error(f"保存去重文件 {category}@!cn.json 时出错: {e}")
+
+    def merge_rules(self, existing_data, new_data):
+        """
+        合并两个规则集，避免重复。
+        """
+        merged_data = {
+            "process_name": set(existing_data.get("process_name", [])) | set(new_data.get("process_name", [])),
+            "domain": set(existing_data.get("domain", [])) | set(new_data.get("domain", [])),
+            "domain_suffix": set(existing_data.get("domain_suffix", [])) | set(new_data.get("domain_suffix", [])),
+            "ip_cidr": set(existing_data.get("ip_cidr", [])) | set(new_data.get("ip_cidr", [])),
+            "domain_regex": set(existing_data.get("domain_regex", [])) | set(new_data.get("domain_regex", []))
+        }
+        return merged_data
+
     def main(self):
         source_directory = "./source"
         output_directory = "./rule"
@@ -460,6 +594,7 @@ class RuleParser:
             self.parse_yaml_file(yaml_file_path, output_directory)
 
         # 生成 SRS 文件
+        self.process_category_files(output_directory) # 拆分!cn规则 与 cn规则
         json_files = [f for f in os.listdir(output_directory) if f.endswith('.json')]
         for json_file in json_files:
             json_file_path = os.path.join(output_directory, json_file)

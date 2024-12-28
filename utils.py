@@ -145,6 +145,97 @@ def sort_dict(obj):
         return obj
 
 
+def subtract_rules(base_data, subtract_data):
+    """从 base_data 中剔除 subtract_data 的规则"""
+    for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
+        base_set = set(base_data["rules"].get(key, []))
+        subtract_set = set(subtract_data["rules"].get(key, []))
+        base_data["rules"][key] = list(base_set - subtract_set)
+
+
+def load_json( filepath):
+    """加载 JSON 文件"""
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def save_json(data, filepath):
+    """保存 JSON 文件"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+
+def deduplicate_json(data, enable_trie_filtering=False):
+    """
+    对输入的 JSON 数据进行三轮去重操作：
+    1. 第一轮去重：检查 process_name, domain, domain_suffix, ip_cidr, domain_regex 中是否有完全一致的条目。
+    2. 第二轮去重：使用 domain_regex 清洗 domain 和 domain_suffix。
+    3. 第三轮去重：使用 domain_suffix 去重 domain，基于 Trie 进行去重。
+    """
+
+    # 第一轮去重：完全一致的条目去重
+    merged_rules = {
+        "process_name": set(),
+        "domain": set(),
+        "domain_suffix": set(),
+        "ip_cidr": set(),
+        "domain_regex": set()
+    }
+
+    for rule in data.get("rules", []):
+        if isinstance(rule, dict):
+            for category, values in rule.items():
+                if category in merged_rules and values:
+                    if isinstance(values, list):
+                        merged_rules[category].update(values)
+                    elif isinstance(values, str):
+                        merged_rules[category].add(values)
+
+    # 第二轮去重：使用 domain_regex 清洗 domain 和 domain_suffix
+    final_domains = merged_rules["domain"].copy()
+    domain_suffix = merged_rules["domain_suffix"]
+    domain_regex = merged_rules["domain_regex"]
+
+    # 用 domain_regex 去重 domain 和 domain_suffix
+    if domain_regex:
+        # 清洗 domain
+        for regex in domain_regex:
+            final_domains = {domain for domain in final_domains if not match_domain_regex(domain, regex)}
+
+        # 清洗 domain_suffix
+        for regex in domain_regex:
+            domain_suffix = {suffix for suffix in domain_suffix if not match_domain_suffix_regex(suffix, regex)}
+
+    merged_rules["domain"] = final_domains
+    merged_rules["domain_suffix"] = domain_suffix
+
+    # 第三轮去重：使用 Trie 对 domain_suffix 去重，并清洗 domain
+    final_domains = filter_domains_with_trie(merged_rules["domain"], merged_rules["domain_suffix"])
+    merged_rules["domain"] = final_domains
+
+    # 返回最终去重后的数据
+    final_rules = [
+        {category: list(values)}
+        for category, values in merged_rules.items()
+        if values
+    ]
+    return final_rules
+
+
+def match_domain_regex(domain, regex):
+    """
+    根据 domain 和 domain_regex 判断是否匹配
+    假设这里是简单的正则匹配，你可以根据实际情况调整
+    """
+    return bool(re.search(regex, domain))
+
+
+def match_domain_suffix_regex(suffix, regex):
+    """
+    用于匹配 domain_suffix 的正则表达式，确保是匹配后缀
+    """
+    return bool(re.match(f"^{regex}$", suffix))
+
+
 # json去重算法
 class TrieNode:
     def __init__(self):
