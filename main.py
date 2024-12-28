@@ -5,6 +5,7 @@ import logging
 import subprocess
 import time
 import yaml
+import re
 import concurrent.futures
 from utils import *
 from config import Config
@@ -568,14 +569,181 @@ class RuleParser:
 
 class ConfigParser:
     def __init__(self):
-        self.config = configparser.ConfigParser()
-        self.config.read('config.ini')
-        self.enable_trie_filtering = self.config.getint('DEFAULT', 'enable_trie_filtering')
-        self.map_dict = self.config['DEFAULT']['map_dict']
-        self.ls_keyword = self.config['DEFAULT']['ls_keyword'].split(',')
-        self.adg_keyword = self.config['DEFAULT']['adg_keyword'].split(',')
+        self.config = config
+
+    def generate_singbox_route(self):
+        # 固定字段
+        fixed_rules = [
+            {"inbound": ["tun-in", "mixed-in"], "action": "sniff", "timeout": "1s"},
+            {"clash_mode": "Global", "action": "route", "outbound": "GLOBAL"},
+            {"clash_mode": "Direct", "action": "route", "outbound": "Direct-Out"},
+            {"type": "logical", "mode": "or", "rules": [{"protocol": "dns"}, {"port": 53}], "action": "hijack-dns"},
+            {"port": 853, "network": "tcp", "action": "reject", "method": "default", "no_drop": False},
+            {"port": 443, "network": "udp", "action": "reject", "method": "default", "no_drop": False}
+        ]
+
+        # 动态生成的规则
+        rules = []
+        rule_set = []
+
+        for file in os.listdir('./rule'):
+            if file.endswith('.srs'):
+                tag = os.path.splitext(file)[0]
+                # 添加规则集
+                rule_set.append({
+                    "tag": tag,
+                    "type": "remote",
+                    "format": "binary",
+                    "url": f"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/{file}",
+                    "download_detour": "VPN"
+                })
+
+                # 排除 fakeip 和 @cn规则
+                if 'fakeip' in tag or 'geolocation-!cn' in tag:
+                    continue
+
+                # 判断规则类型并生成相应的动作
+                if 'blocker' in tag:
+                    rules.append({"rule_set": [tag], "action": "reject", "method": "default", "no_drop": False})
+                elif 'direct' in tag or '@cn' in tag:
+                    rules.append({"rule_set": [tag], "action": "route", "outbound": "Direct-Out"})
+                elif 'category' in tag:
+                    outbound = self.determine_outbound(tag)
+                    rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
+                elif 'process' in tag:
+                    match = re.search(r'process-filter-([^@]+)', tag)  # 匹配 'process-' 后的部分，直到遇到 '@'
+                    if match:
+                        process_tag = match.group(1)  # 提取的部分是 'communicationApp'
+                        # 提取 'communication' 作为关键词
+                        process_keyword = process_tag.lower().replace('app',
+                                                                      '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
+                        # 根据关键字确定outbound
+                        outbound = self.determine_outbound(process_keyword)
+
+                        # 将生成的规则添加到规则列表
+                        rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
+                elif 'geoip-geolocation' in tag:
+                    match = re.search(r'geoip-geolocation-(\w+)', tag)  # 匹配 'geoip-geolocation-' 后的国家代码
+                    if match:
+                        country_code = match.group(1)  # 提取国家编号（如 jp）
+                        outbound = self.determine_geolocation_outbound(country_code)  # 根据国家编号确定 outbound
+                        rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
+
+        # 组合所有规则
+        all_rules = fixed_rules + rules
+
+        # 按规则分类排序
+        all_rules = sorted(all_rules, key=self.rule_priority)
+
+        route_config = {
+            "route": {
+                "rules": all_rules,
+                "rule_set": rule_set,
+                "auto_detect_interface": True,
+                "final": "Others"
+            }
+        }
+
+        # 写入带换行的紧凑 JSON
+        with open('route.json', 'w') as f:
+            json.dump(route_config, f, separators=(',', ':'), indent=2)
+
+    def merge_geosite_geoip_rules(all_rules):
+        # 创建一个字典来存储规则，按 'category' 分组
+        merged_rules = defaultdict(lambda: {"geoip": [], "geosite": [], "outbound": None})
+
+        for rule in all_rules:
+            for tag in rule.get("rule_set", []):
+                if "category" in tag:
+                    # 只关注包含 'category' 的标签
+                    category_type = tag.split('-')[1]  # 获取 category 类型，例如 'video'
+                    # 将该规则加入对应的 geoip 或 geosite 列表
+                    if "geoip" in tag:
+                        merged_rules[category_type]["geoip"].append(rule)
+                    elif "geosite" in tag:
+                        merged_rules[category_type]["geosite"].append(rule)
+                    # 确定 outbound 类型（此处假设 geoip 和 geosite 的 outbound 相同）
+                    if not merged_rules[category_type]["outbound"]:
+                        merged_rules[category_type]["outbound"] = rule.get("outbound")
+
+        # 合并 geoip 和 geosite 规则
+        merged_all_rules = []
+        for category_type, rule_data in merged_rules.items():
+            if rule_data["geoip"] and rule_data["geosite"]:
+                # 合并 geoip 和 geosite 的规则
+                merged_rule = {
+                    "rule_set": [f"geoip-category-{category_type}", f"geosite-category-{category_type}"],
+                    "action": "route",
+                    "outbound": rule_data["outbound"]
+                }
+                merged_all_rules.append(merged_rule)
+            # 添加 geoip 或 geosite 规则（如果只有一种存在）
+            elif rule_data["geoip"]:
+                merged_all_rules.extend(rule_data["geoip"])
+            elif rule_data["geosite"]:
+                merged_all_rules.extend(rule_data["geosite"])
+
+        return merged_all_rules
+
+    def determine_outbound(self, tag):
+        # 根据tag关键字确定outbound
+        if 'video' in tag:
+            return "Video Service"
+        if 'download' in tag:
+            return "Download Service"
+        if 'communication' in tag:
+            return "Communication Service"
+        if 'game' in tag:
+            return "Game Service"
+        if 'vpn' in tag:
+            return "VPN"
+        if 'media' in tag:
+            return "Media Service"
+        if 'direct' in tag:
+            return "Direct-Out"
+        return "Direct-Out"
+
+    def rule_priority(self, rule):
+        # 定义规则的优先级
+        if "inbound" in rule:
+            return 0
+        if "clash_mode" in rule:
+            return 1
+        if "type" in rule and rule["type"] == "logical":
+            return 2
+        if "port" in rule:
+            return 3
+        if "rule_set" in rule:
+            if 'blocker' in rule["rule_set"][0] and 'process' not in rule["rule_set"][0]:
+                return 4
+            if 'geolocation' in rule["rule_set"][0]:
+                return 5
+            if '@cn' in rule["rule_set"][0]:
+                return 6
+            if 'category' in rule["rule_set"][0] and 'direct' not in rule["rule_set"][0]:
+                return 7
+            if 'direct' in rule["rule_set"][0]:
+                return 8
+            if 'process' in rule["rule_set"][0]:
+                return 9
+            return 10
+        return 11
+
+    def determine_geolocation_outbound(self, country_code):
+        # 根据国家编号确定outbound
+        geolocation_map = {
+            'jp': 'Japan',
+            'us': 'United States',
+            'cn': 'China',
+            'uk': 'United Kingdom',
+            # 可以添加更多国家映射
+        }
+        return geolocation_map.get(country_code, "Other")
 
 if __name__ == "__main__":
     # 使用类的实例
-    rule_parser = RuleParser()
-    rule_parser.main()
+    #rule_parser = RuleParser()
+    #rule_parser.main()
+
+    ConfigParser = ConfigParser()
+    ConfigParser.generate_singbox_route()
