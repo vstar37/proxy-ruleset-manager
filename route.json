@@ -59,25 +59,32 @@
           "geoip-geolocation-jp@amos"
         ],
         "action":"route",
-        "outbound":"Japan"
+        "outbound":"JP Proxy"
       },
       {
         "rule_set":[
-          "geosite-category-media@cn"
+          "geosite-category-download@!cn"
+        ],
+        "action":"route",
+        "outbound":"Download Service"
+      },
+      {
+        "rule_set":[
+          "geoip-category-video@!cn"
+        ],
+        "action":"route",
+        "outbound":"Video Service"
+      },
+      {
+        "rule_set":[
+          "geosite-category-communitaion@!cn"
         ],
         "action":"route",
         "outbound":"Direct-Out"
       },
       {
         "rule_set":[
-          "geosite-category-game@cn"
-        ],
-        "action":"route",
-        "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
-          "geosite-category-vpn@cn"
+          "geoip-category-communitaion@!cn"
         ],
         "action":"route",
         "outbound":"Direct-Out"
@@ -91,31 +98,17 @@
       },
       {
         "rule_set":[
-          "geosite-category-video@!cn"
+          "geosite-category-media@!cn"
         ],
         "action":"route",
-        "outbound":"Video Service"
+        "outbound":"Media Service"
       },
       {
         "rule_set":[
-          "geoip-category-video@!cn"
+          "geosite-category-nsfw"
         ],
         "action":"route",
-        "outbound":"Video Service"
-      },
-      {
-        "rule_set":[
-          "geoip-category-communitaion@!cn"
-        ],
-        "action":"route",
-        "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
-          "geosite-category-vpn@!cn"
-        ],
-        "action":"route",
-        "outbound":"VPN"
+        "outbound":"NSFW Content"
       },
       {
         "rule_set":[
@@ -126,35 +119,21 @@
       },
       {
         "rule_set":[
-          "geosite-category-download@!cn"
+          "geosite-category-video@!cn"
         ],
         "action":"route",
-        "outbound":"Download Service"
+        "outbound":"Video Service"
       },
       {
         "rule_set":[
-          "geosite-category-nsfw"
+          "geosite-category-vpn@!cn"
         ],
         "action":"route",
-        "outbound":"Direct-Out"
+        "outbound":"VPN"
       },
       {
         "rule_set":[
-          "geosite-category-communitaion@!cn"
-        ],
-        "action":"route",
-        "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
-          "geosite-category-media@!cn"
-        ],
-        "action":"route",
-        "outbound":"Media Service"
-      },
-      {
-        "rule_set":[
-          "process-filter-directApp@amos"
+          "geoip-category-direct"
         ],
         "action":"route",
         "outbound":"Direct-Out"
@@ -168,17 +147,10 @@
       },
       {
         "rule_set":[
-          "geoip-category-direct"
+          "process-filter-directApp@amos"
         ],
         "action":"route",
         "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
-          "process-filter-communicationApp@amos"
-        ],
-        "action":"route",
-        "outbound":"Communication Service"
       },
       {
         "rule_set":[
@@ -187,77 +159,21 @@
         "action":"reject",
         "method":"default",
         "no_drop":false
+      },
+      {
+        "rule_set":[
+          "process-filter-communicationApp@amos"
+        ],
+        "action":"route",
+        "outbound":"Communication Service"
       }
     ],
     "rule_set":[
       {
-        "tag":"geosite-category-game@!cn",
+        "tag":"geoip-category-direct",
         "type":"remote",
         "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-game@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"process-filter-communicationApp@amos",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/process-filter-communicationApp@amos.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-category-media@cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-media@cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-geolocation-jp@amos",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-geolocation-jp@amos.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"process-filter-directApp@amos",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/process-filter-directApp@amos.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-category-video@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-video@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-category-video@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-video@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-category-communitaion@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-communitaion@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-category-vpn@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-vpn@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-category-game",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-game.srs",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-direct.srs",
         "download_detour":"VPN"
       },
       {
@@ -268,38 +184,17 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"geoip-geolocation-jp@amos",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-geolocation-jp@amos.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"geosite-category-game@cn",
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-game@cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-geolocation-!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-geolocation-!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-category-nsfw",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-nsfw.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-category-communitaion@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-communitaion@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-blocker-trash",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-blocker-trash.srs",
         "download_detour":"VPN"
       },
       {
@@ -324,10 +219,24 @@
         "download_detour":"VPN"
       },
       {
-        "tag":"geoip-category-direct",
+        "tag":"geoip-category-video@!cn",
         "type":"remote",
         "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-direct.srs",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-video@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-communitaion@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-communitaion@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geoip-category-communitaion@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-communitaion@!cn.srs",
         "download_detour":"VPN"
       },
       {
@@ -338,6 +247,13 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"geosite-category-game@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-game@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"process-blocker-rejectApp@amos",
         "type":"remote",
         "format":"binary",
@@ -345,10 +261,73 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"geoip-geolocation-!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-geolocation-!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-blocker-trash",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-blocker-trash.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"process-filter-communicationApp@amos",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/process-filter-communicationApp@amos.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"geosite-category-media@!cn",
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-media@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-nsfw",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-nsfw.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geoip-category-game",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-game.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-video@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-video@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"process-filter-directApp@amos",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/process-filter-directApp@amos.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-media@cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-media@cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"geosite-category-vpn@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-vpn@!cn.srs",
         "download_detour":"VPN"
       }
     ],
