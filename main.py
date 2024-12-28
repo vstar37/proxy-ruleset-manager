@@ -477,14 +477,7 @@ class RuleParser:
 
         # 加载全体文件
         general_file_path = os.path.join(directory, general_files[0])
-        general_data = load_json(general_file_path)
-
-        # 标记全体文件是否已处理
-        general_file_processed = False
-
-        # 用于存储去重后的文件数据
-        final_non_cn_data = None
-        final_cn_data = None
+        general_data = load_json(general_file_path).get("rules",[])
 
         # 如果同时有 @cn 和 @!cn 文件
         if cn_files and non_cn_files:
@@ -492,96 +485,67 @@ class RuleParser:
             cn_path = os.path.join(directory, cn_files[0])
             non_cn_path = os.path.join(directory, non_cn_files[0])
 
-            cn_data = load_json(cn_path)
+            cn_data = load_json(cn_path).get("rules",[])
 
             # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
             updated_non_cn_data = subtract_rules(general_data, cn_data)
 
-            # 如果 @!cn 文件已存在，则增量更新
-            if os.path.exists(non_cn_path):
-                non_cn_data = load_json(non_cn_path)
-                updated_non_cn_data = self.merge_rules(non_cn_data, updated_non_cn_data)
+            # @!cn 文件已存在，增量更新.
+            non_cn_data = load_json(non_cn_path).get("rules",[])
+            updated_non_cn_data = merge_rules(non_cn_data, updated_non_cn_data)
 
-            final_non_cn_data = updated_non_cn_data  # 保存更新后的非cn数据
-            final_cn_data = cn_data  # 保留原始的cn数据
-            general_file_processed = True
+            # !cn 增量更新，cn不变
+            final_non_cn_data = updated_non_cn_data
+            final_cn_data = cn_data
+
+            final_non_cn_data = deduplicate_json(final_non_cn_data)
+            final_non_cn_data = convert_sets_to_lists(final_non_cn_data)
+
+            # 保存去重后的非cn文件
+            save_json(final_non_cn_data, non_cn_path)
+            save_json(final_cn_data, cn_path)
 
         # 只有 @cn 文件
         elif cn_files and not non_cn_files:
             cn_path = os.path.join(directory, cn_files[0])
-            cn_data = load_json(cn_path)
+            cn_data = load_json(cn_path).get("rules",[])
 
             # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
             non_cn_data = subtract_rules(general_data, cn_data)
-            non_cn_file = f"{category}@!cn.json"
-            non_cn_path = os.path.join(directory, non_cn_file)
+            non_cn_path = os.path.join(directory, f"{category}@!cn.json")
 
             final_non_cn_data = non_cn_data  # 保存非cn数据
             final_cn_data = cn_data  # 保留原始的cn数据
 
-            general_file_processed = True
+            # 无须去重
+            save_json(final_non_cn_data, non_cn_path)
+            save_json(final_cn_data, cn_path)
 
         # 只有 @!cn 文件
         elif non_cn_files and not cn_files:
             non_cn_path = os.path.join(directory, non_cn_files[0])
-            non_cn_data = load_json(non_cn_path)
+            non_cn_data = load_json(non_cn_path).get("rules",[])
 
             # 从全体文件中剔除 非cn 文件的规则，更新 cn 文件
             cn_data = subtract_rules(general_data, non_cn_data)
-            cn_file = f"{category}@cn.json"
-            cn_path = os.path.join(directory, cn_file)
+            cn_path = os.path.join(directory, f"{category}@cn.json")
 
             final_non_cn_data = non_cn_data  # 保留原始的非cn数据
             final_cn_data = cn_data  # 更新后的cn数据
 
-            general_file_processed = True
+            # 无须去重
+            save_json(final_non_cn_data, non_cn_path)
+            save_json(final_cn_data, cn_path)
 
-        # 如果既没有 @cn 也没有 @!cn 文件，跳过
-        if not cn_files and not non_cn_files:
+        else:
             logging.info(f"跳过处理 {category}，因为没有 @cn 或 @!cn 文件")
             return
 
-        # 删除全体文件（如果处理过）
-        if general_file_processed:
-            try:
-                os.remove(general_file_path)
-                logging.info(f"已删除全体文件 {general_files[0]}")
-            except OSError as e:
-                logging.error(f"删除全体文件 {general_files[0]} 失败: {e}")
+        try:
+            os.remove(general_file_path)
+        except OSError as e:
+            logging.error(f"删除全体文件 {general_files[0]} 失败: {e}")
 
-        # 在去重前保留最终数据，先对数据进行去重
-        if final_cn_data:
-            final_cn_data = deduplicate_json(final_cn_data)  # 调用 deduplicate_json 进行去重
-            cn_path = os.path.join(directory, f"{category}@cn.json")
-            # 保存去重后的cn文件
-            try:
-                save_json(final_cn_data, cn_path)
-                logging.info(f"去重并保存 CN 文件 {category}@cn.json")
-            except Exception as e:
-                logging.error(f"保存去重文件 {category}@cn.json 时出错: {e}")
-
-        if final_non_cn_data:
-            final_non_cn_data = deduplicate_json(final_non_cn_data)  # 调用 deduplicate_json 进行去重
-            non_cn_path = os.path.join(directory, f"{category}@!cn.json")
-            # 保存去重后的非cn文件
-            try:
-                save_json(final_non_cn_data, non_cn_path)
-                logging.info(f"去重并保存 非CN 文件 {category}@!cn.json")
-            except Exception as e:
-                logging.error(f"保存去重文件 {category}@!cn.json 时出错: {e}")
-
-    def merge_rules(self, existing_data, new_data):
-        """
-        合并两个规则集，避免重复。
-        """
-        merged_data = {
-            "process_name": set(existing_data.get("process_name", [])) | set(new_data.get("process_name", [])),
-            "domain": set(existing_data.get("domain", [])) | set(new_data.get("domain", [])),
-            "domain_suffix": set(existing_data.get("domain_suffix", [])) | set(new_data.get("domain_suffix", [])),
-            "ip_cidr": set(existing_data.get("ip_cidr", [])) | set(new_data.get("ip_cidr", [])),
-            "domain_regex": set(existing_data.get("domain_regex", [])) | set(new_data.get("domain_regex", []))
-        }
-        return merged_data
 
     def main(self):
         source_directory = "./source"

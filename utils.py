@@ -13,6 +13,31 @@ from config import Config
 config = Config()
 
 
+def merge_rules(existing_data, new_data):
+    """
+    合并两个规则集，不进行去重。
+    如果传入的数据是列表，则直接合并。
+    如果传入的数据是字典，按字段进行合并。
+    """
+    # 如果输入数据是列表，直接合并
+    if isinstance(existing_data, list) and isinstance(new_data, list):
+        return existing_data + new_data
+
+    # 否则，按字段进行合并
+    merged_data = {
+        "process_name": (existing_data.get("process_name", []) if isinstance(existing_data, dict) else [])
+                        + (new_data.get("process_name", []) if isinstance(new_data, dict) else []),
+        "domain": (existing_data.get("domain", []) if isinstance(existing_data, dict) else [])
+                  + (new_data.get("domain", []) if isinstance(new_data, dict) else []),
+        "domain_suffix": (existing_data.get("domain_suffix", []) if isinstance(existing_data, dict) else [])
+                         + (new_data.get("domain_suffix", []) if isinstance(new_data, dict) else []),
+        "ip_cidr": (existing_data.get("ip_cidr", []) if isinstance(existing_data, dict) else [])
+                   + (new_data.get("ip_cidr", []) if isinstance(new_data, dict) else []),
+        "domain_regex": (existing_data.get("domain_regex", []) if isinstance(existing_data, dict) else [])
+                         + (new_data.get("domain_regex", []) if isinstance(new_data, dict) else [])
+    }
+    return merged_data
+
 def read_yaml_from_url(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -145,37 +170,52 @@ def sort_dict(obj):
         return obj
 
 
+def make_hashable(item):
+    """递归地将可变类型（如列表）转换为元组，以便它们可以添加到集合中"""
+    if isinstance(item, dict):
+        # 如果是字典，将其转换为元组
+        return tuple((key, make_hashable(value)) for key, value in item.items())
+    elif isinstance(item, list):
+        # 如果是列表，将每个元素递归转换为元组
+        return tuple(make_hashable(i) for i in item)
+    else:
+        # 如果是其他不可变类型，直接返回
+        return item
+
+
 def subtract_rules(base_data, subtract_data):
-    """从 base_data 中剔除 subtract_data 的规则"""
-    for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
-        # 获取 base_list 和 subtract_list 的数据
-        base_list = base_data["rules"].get(key, []) if isinstance(base_data["rules"], dict) else base_data["rules"]
-        subtract_list = subtract_data["rules"].get(key, []) if isinstance(subtract_data["rules"], dict) else subtract_data["rules"]
+    """从 base_data 中剔除 subtract_data 的规则，并且加入步骤以保存数据"""
 
-        # 处理 base_list 和 subtract_list 中的元素
-        base_set = set()
-        for item in base_list:
-            if isinstance(item, dict):
-                # 如果 item 是字典，转换为元组
-                base_set.add(tuple(item.items()))
-            elif isinstance(item, list):
-                # 如果 item 是列表，将列表转换为元组
-                base_set.add(tuple(item))
-            else:
-                # 其他类型的元素直接加入集合
-                base_set.add(item)
+    # 1. 保存 subtract_data 中的条目到 saved_data
+    saved_data = {
+        "process_name": [],
+        "domain": [],
+        "domain_suffix": [],
+        "ip_cidr": [],
+        "domain_regex": []
+    }
 
-        subtract_set = set()
-        for item in subtract_list:
-            if isinstance(item, dict):
-                subtract_set.add(tuple(item.items()))
-            elif isinstance(item, list):
-                subtract_set.add(tuple(item))
-            else:
-                subtract_set.add(item)
+    # 收集 subtract_data 中的条目
+    for key in saved_data.keys():
+        # 将 subtract_data 中的对应规则添加到 saved_data
+        for rule in subtract_data:
+            if isinstance(rule, dict) and key in rule:
+                saved_data[key].extend(rule[key])
 
-        # 更新 base_data["rules"][key] 为去重后的列表
-        base_data["rules"][key] = list(base_set - subtract_set)
+    # 2. 合并 base_data 和 subtract_data
+    merged_data = merge_rules(base_data, subtract_data)
+    # 3. 调用 deduplicate_json 去重
+    deduplicated_data = deduplicate_json(merged_data)
+
+    # 4. 从去重后的数据中剔除 saved_data 中的条目
+    for key in saved_data.keys():
+        if saved_data[key]:
+            for item in deduplicated_data:
+                if isinstance(item, dict) and key in item:
+                    item[key] = [val for val in item[key] if val not in saved_data[key]]
+
+    # 返回最终处理后的数据
+    return deduplicated_data
 
 def load_json(filepath):
     """加载 JSON 文件"""
@@ -184,10 +224,18 @@ def load_json(filepath):
 
 def save_json(data, filepath):
     """保存 JSON 文件"""
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+    try:
+        # 假设 data 已经是一个包含规则的列表，如：{"domain": [...]}, {"ip_cidr": [...]}, ...
+        result = {
+            "version": 1,
+            "rules": data
+        }
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        logging.error(f"保存 JSON 文件时出错: {e}")
 
-def deduplicate_json(data, enable_trie_filtering=False):
+def deduplicate_json(data):
     """
     对输入的 JSON 数据进行三轮去重操作：
     1. 第一轮去重：检查 process_name, domain, domain_suffix, ip_cidr, domain_regex 中是否有完全一致的条目。
@@ -195,7 +243,7 @@ def deduplicate_json(data, enable_trie_filtering=False):
     3. 第三轮去重：使用 domain_suffix 去重 domain，基于 Trie 进行去重。
     """
 
-    # 第一轮去重：完全一致的条目去重
+    # 第一轮去重：初始化合并规则
     merged_rules = {
         "process_name": set(),
         "domain": set(),
@@ -204,10 +252,11 @@ def deduplicate_json(data, enable_trie_filtering=False):
         "domain_regex": set()
     }
 
-    for rule in data.get("rules", []):
-        if isinstance(rule, dict):
+    # 遍历输入列表，逐一合并规则
+    for rule in data:
+        if isinstance(rule, dict):  # 确保条目是字典
             for category, values in rule.items():
-                if category in merged_rules and values:
+                if category in merged_rules:
                     if isinstance(values, list):
                         merged_rules[category].update(values)
                     elif isinstance(values, str):
@@ -232,17 +281,27 @@ def deduplicate_json(data, enable_trie_filtering=False):
     merged_rules["domain_suffix"] = domain_suffix
 
     # 第三轮去重：使用 Trie 对 domain_suffix 去重，并清洗 domain
-    final_domains = filter_domains_with_trie(merged_rules["domain"], merged_rules["domain_suffix"])
+    final_domains, _ = filter_domains_with_trie(merged_rules["domain"], merged_rules["domain_suffix"])
     merged_rules["domain"] = final_domains
 
-    # 返回最终去重后的数据
-    final_rules = [
-        {category: list(values)}
-        for category, values in merged_rules.items()
-        if values
-    ]
+    # 构造最终的输出列表
+    final_rules = []
+    for category, values in merged_rules.items():
+        if values:
+            final_rules.append({category: list(values)})
+
     return final_rules
 
+def convert_sets_to_lists(data):
+    """递归地将字典中的所有 set 转换为 list"""
+    if isinstance(data, dict):
+        return {key: convert_sets_to_lists(value) for key, value in data.items()}
+    elif isinstance(data, list):
+        return [convert_sets_to_lists(item) for item in data]
+    elif isinstance(data, set):
+        return list(data)
+    else:
+        return data
 
 def match_domain_regex(domain, regex):
     """
