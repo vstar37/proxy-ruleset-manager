@@ -615,8 +615,7 @@ class ConfigParser:
                     if match:
                         process_tag = match.group(1)  # 提取的部分是 'communicationApp'
                         # 提取 'communication' 作为关键词
-                        process_keyword = process_tag.lower().replace('app',
-                                                                      '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
+                        process_keyword = process_tag.lower().replace('app', '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
                         # 根据关键字确定outbound
                         outbound = self.determine_outbound(process_keyword)
 
@@ -628,6 +627,9 @@ class ConfigParser:
                         country_code = match.group(1)  # 提取国家编号（如 jp）
                         outbound = self.determine_geolocation_outbound(country_code)  # 根据国家编号确定 outbound
                         rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
+
+        # 合并 geosite 和 geoip 规则
+        rules = self.merge_geosite_geoip_rules(rules)
 
         # 组合所有规则
         all_rules = fixed_rules + rules
@@ -648,42 +650,42 @@ class ConfigParser:
         with open('route.json', 'w') as f:
             json.dump(route_config, f, separators=(',', ':'), indent=2)
 
-    def merge_geosite_geoip_rules(all_rules):
-        # 创建一个字典来存储规则，按 'category' 分组
-        merged_rules = defaultdict(lambda: {"geoip": [], "geosite": [], "outbound": None})
+    def merge_geosite_geoip_rules(self, rules):
+        """检查并合并 geosite 和 geoip 规则"""
+        merged_rules = []
+        seen_tags = set()
 
-        for rule in all_rules:
-            for tag in rule.get("rule_set", []):
-                if "category" in tag:
-                    # 只关注包含 'category' 的标签
-                    category_type = tag.split('-')[1]  # 获取 category 类型，例如 'video'
-                    # 将该规则加入对应的 geoip 或 geosite 列表
-                    if "geoip" in tag:
-                        merged_rules[category_type]["geoip"].append(rule)
-                    elif "geosite" in tag:
-                        merged_rules[category_type]["geosite"].append(rule)
-                    # 确定 outbound 类型（此处假设 geoip 和 geosite 的 outbound 相同）
-                    if not merged_rules[category_type]["outbound"]:
-                        merged_rules[category_type]["outbound"] = rule.get("outbound")
+        for rule in rules:
+            rule_set = rule.get('rule_set', [])
+            if not rule_set:
+                merged_rules.append(rule)
+                continue
 
-        # 合并 geoip 和 geosite 规则
-        merged_all_rules = []
-        for category_type, rule_data in merged_rules.items():
-            if rule_data["geoip"] and rule_data["geosite"]:
-                # 合并 geoip 和 geosite 的规则
-                merged_rule = {
-                    "rule_set": [f"geoip-category-{category_type}", f"geosite-category-{category_type}"],
-                    "action": "route",
-                    "outbound": rule_data["outbound"]
-                }
-                merged_all_rules.append(merged_rule)
-            # 添加 geoip 或 geosite 规则（如果只有一种存在）
-            elif rule_data["geoip"]:
-                merged_all_rules.extend(rule_data["geoip"])
-            elif rule_data["geosite"]:
-                merged_all_rules.extend(rule_data["geosite"])
+            tag = rule_set[0]
+            if tag in seen_tags:
+                continue
 
-        return merged_all_rules
+            # 尝试找出对应的 geosite 和 geoip 规则
+            geosite_tag = tag.replace('geoip', 'geosite')
+            geoip_tag = tag.replace('geosite', 'geoip')
+
+            # 检查是否有相同的规则
+            matching_rule = None
+            for r in merged_rules:
+                if geosite_tag in r.get('rule_set', []) or geoip_tag in r.get('rule_set', []):
+                    matching_rule = r
+                    break
+
+            if matching_rule:
+                # 如果有匹配的规则，将当前规则的 tags 合并
+                matching_rule['rule_set'].extend(rule_set)
+            else:
+                # 没有匹配的规则，直接添加当前规则
+                merged_rules.append(rule)
+
+            seen_tags.add(tag)
+
+        return merged_rules
 
     def determine_outbound(self, tag):
         # 根据tag关键字确定outbound
@@ -724,7 +726,7 @@ class ConfigParser:
                 return 6
             if 'category' in rule["rule_set"][0] and 'direct' not in rule["rule_set"][0]:
                 return 7
-            if 'direct' in rule["rule_set"][0]:
+            if 'direct' in rule["rule_set"][0] and 'process' not in rule["rule_set"][0]:
                 return 8
             if 'process' in rule["rule_set"][0]:
                 return 9
@@ -744,8 +746,8 @@ class ConfigParser:
 
 if __name__ == "__main__":
     # 使用类的实例
-    rule_parser = RuleParser()
-    rule_parser.main()
+    #rule_parser = RuleParser()
+    #rule_parser.main()
 
     ConfigParser = ConfigParser()
     ConfigParser.generate_singbox_route()
