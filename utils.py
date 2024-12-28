@@ -148,12 +148,14 @@ def sort_dict(obj):
 def subtract_rules(base_data, subtract_data):
     """从 base_data 中剔除 subtract_data 的规则"""
     for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
-        base_set = set(base_data["rules"].get(key, []))
-        subtract_set = set(subtract_data["rules"].get(key, []))
+        # 确保 base_data["rules"] 和 subtract_data["rules"] 都是列表
+        base_set = set(base_data["rules"].get(key, [])) if isinstance(base_data["rules"], dict) else set(base_data["rules"])
+        subtract_set = set(subtract_data["rules"].get(key, [])) if isinstance(subtract_data["rules"], dict) else set(subtract_data["rules"])
+
+        # 更新 base_data["rules"][key] 为去重后的列表
         base_data["rules"][key] = list(base_set - subtract_set)
 
-
-def load_json( filepath):
+def load_json(filepath):
     """加载 JSON 文件"""
     with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
