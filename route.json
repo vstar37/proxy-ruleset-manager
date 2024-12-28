@@ -84,13 +84,6 @@
       },
       {
         "rule_set":[
-          "geoip-category-communitaion@!cn"
-        ],
-        "action":"route",
-        "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
           "geosite-category-game@!cn"
         ],
         "action":"route",
@@ -244,13 +237,6 @@
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-communitaion@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geoip-category-communitaion@!cn",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-communitaion@!cn.srs",
         "download_detour":"VPN"
       },
       {
