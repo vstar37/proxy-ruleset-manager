@@ -148,9 +148,13 @@ def sort_dict(obj):
 def subtract_rules(base_data, subtract_data):
     """从 base_data 中剔除 subtract_data 的规则"""
     for key in ["process_name", "domain", "domain_suffix", "ip_cidr", "domain_regex"]:
-        # 确保 base_data["rules"] 和 subtract_data["rules"] 都是列表
-        base_set = set(base_data["rules"].get(key, [])) if isinstance(base_data["rules"], dict) else set(base_data["rules"])
-        subtract_set = set(subtract_data["rules"].get(key, [])) if isinstance(subtract_data["rules"], dict) else set(subtract_data["rules"])
+        # 获取 base_data 和 subtract_data 中的规则，确保它们是可哈希的
+        base_list = base_data["rules"].get(key, [])
+        subtract_list = subtract_data["rules"].get(key, [])
+
+        # 将元素转换为可哈希类型（例如元组），避免字典等不可哈希的类型
+        base_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in base_list)
+        subtract_set = set(tuple(item.items()) if isinstance(item, dict) else item for item in subtract_list)
 
         # 更新 base_data["rules"][key] 为去重后的列表
         base_data["rules"][key] = list(base_set - subtract_set)
@@ -164,7 +168,6 @@ def save_json(data, filepath):
     """保存 JSON 文件"""
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-
 
 def deduplicate_json(data, enable_trie_filtering=False):
     """
