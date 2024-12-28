@@ -699,6 +699,8 @@ class ConfigParser:
             return "VPN"
         if 'media' in tag:
             return "Media Service"
+        if 'nsfw' in tag:
+            return "NSFW Content"
         if 'direct' in tag:
             return "Direct-Out"
         return "Direct-Out"
