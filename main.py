@@ -599,7 +599,7 @@ class ConfigParser:
                 })
 
                 # 排除 fakeip 和 @cn规则
-                if 'fakeip' in tag or 'geolocation-!cn' in tag:
+                if 'fakeip' in tag or 'geolocation-!cn' in tag or '@cn' in tag:
                     continue
 
                 # 判断规则类型并生成相应的动作
@@ -744,8 +744,8 @@ class ConfigParser:
 
 if __name__ == "__main__":
     # 使用类的实例
-    #rule_parser = RuleParser()
-    #rule_parser.main()
+    rule_parser = RuleParser()
+    rule_parser.main()
 
     ConfigParser = ConfigParser()
     ConfigParser.generate_singbox_route()
