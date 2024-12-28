@@ -4,61 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea35a59-fb4e-4df2-be0c-669618e1bd81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-communitaion@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-communitaion@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-direct.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-direct.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-game.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-game.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-video@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-category-video@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-jp@amos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-jp@amos.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-communitaion@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-communitaion@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-direct.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-direct.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-download@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-download@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-nsfw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-nsfw.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-video@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-video@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-fakeip.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-fakeip.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-trash.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-trash.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-geolocation-!cn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/geosite-geolocation-!cn.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-browser.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-browser.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-communicationApp@amos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-communicationApp@amos.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-directApp@amos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-directApp@amos.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-rejectApp@amos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule/process-filter-rejectApp@amos.srs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/filter-browser.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/disabled/filter-browser.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/filter-rejectApp@amos.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/blocker-rejectApp@amos.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/filter-trash.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/blocker-trash.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="7ea35a59-fb4e-4df2-be0c-669618e1bd81" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +89,7 @@
       <workItem from="1735195779766" duration="1286000" />
       <workItem from="1735281625098" duration="21549000" />
       <workItem from="1735389478851" duration="3217000" />
-      <workItem from="1735392720621" duration="1452000" />
+      <workItem from="1735392720621" duration="1958000" />
     </task>
     <servers />
   </component>
@@ -152,7 +98,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sing_box_ruleset$utils.coverage" NAME="utils Coverage Results" MODIFIED="1735388775807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/sing_box_ruleset$main.coverage" NAME="main Coverage Results" MODIFIED="1735394169655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sing_box_ruleset$main.coverage" NAME="main Coverage Results" MODIFIED="1735394292370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sing_box_ruleset$test.coverage" NAME="test Coverage Results" MODIFIED="1734759070975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sing_box_ruleset$testing.coverage" NAME="testing Coverage Results" MODIFIED="1735386993377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

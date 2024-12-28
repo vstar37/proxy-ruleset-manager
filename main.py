@@ -734,10 +734,10 @@ class ConfigParser:
     def determine_geolocation_outbound(self, country_code):
         # 根据国家编号确定outbound
         geolocation_map = {
-            'jp': 'Japan',
-            'us': 'United States',
-            'cn': 'China',
-            'uk': 'United Kingdom',
+            'jp': 'JP Proxy',
+            'us': 'US Proxy',
+            'cn': 'CN Proxy',
+            'uk': 'UK Proxy',
             # 可以添加更多国家映射
         }
         return geolocation_map.get(country_code, "Other")
