@@ -282,7 +282,7 @@ class RuleParser:
             json_file_list.append(json_file)
 
         # 如果只有一个 JSON 文件，直接保存，不调用 merge_json
-        if len(json_file_list) == 1:
+        if len(json_file_list) == 1 and config.trust_upstream:
             single_file_stats = json_file_list[0]
             final_rules = single_file_stats
 
