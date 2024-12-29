@@ -746,8 +746,8 @@ class ConfigParser:
 
 if __name__ == "__main__":
     # 使用类的实例
-    #rule_parser = RuleParser()
-    #rule_parser.main()
+    rule_parser = RuleParser()
+    rule_parser.main()
 
     ConfigParser = ConfigParser()
     ConfigParser.generate_singbox_route()
