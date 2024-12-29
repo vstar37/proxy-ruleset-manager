@@ -1,27 +1,42 @@
 {
     "version": 1,
-    "rules": [
-        {
-            "process_name": [
-                "DevToys",
-                "Find Any File",
-                "Scroll Reverser",
-                "Snipaste.exe",
-                "Command X",
-                "DevToys Networking",
-                "Squirrel",
-                "Shifty",
-                "Clop",
-                "Swish",
-                "Ice",
-                "ProcessSpy",
-                "Little Snitch Agent",
-                "Snipaste",
-                "Apple Juice",
-                "TextSniper",
-                "CodeRunner",
-                "BLEUnlock"
-            ]
-        }
-    ]
+    "rule_set_name": "blocker-rejectApp@amos",
+    "description": "Generated rules for blocker-rejectApp@amos",
+    "generated_time": "2024-12-29T02:53:24.672099",
+    "statistics": {
+        "filtered_count": 0,
+        "total_rules": 2,
+        "domain_count": 0,
+        "domain_suffix_count": 0,
+        "ip_cidr_count": 0,
+        "process_name_count": 0,
+        "domain_regex_count": 0
+    },
+    "rules": {
+        "version": 1,
+        "rules": [
+            {
+                "process_name": [
+                    "Command X",
+                    "Squirrel",
+                    "DevToys",
+                    "DevToys Networking",
+                    "Apple Juice",
+                    "BLEUnlock",
+                    "TextSniper",
+                    "Shifty",
+                    "Swish",
+                    "Clop",
+                    "Scroll Reverser",
+                    "Snipaste",
+                    "Snipaste.exe",
+                    "Ice",
+                    "ProcessSpy",
+                    "Little Snitch Agent",
+                    "CodeRunner",
+                    "Find Any File"
+                ]
+            }
+        ]
+    }
 }
