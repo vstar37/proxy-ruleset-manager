@@ -382,6 +382,8 @@ class RuleParser:
             for category, values in merged_rules.items()
             if values
         ]
+
+
         # 顶层信息
         wrapped_data = {
             "version": 1,
@@ -390,16 +392,15 @@ class RuleParser:
             "generated_time": self.generated_time,
             "statistics": {
                 "filtered_count": filtered_count,
-                "total_rules": len(final_rules),
-                "domain_count": len(merged_rules["domain"]),
-                "domain_suffix_count": len(merged_rules["domain_suffix"]),
-                "ip_cidr_count": len(merged_rules["ip_cidr_count"]),
-                "process_name_count":  len(merged_rules["process_name_count"]),
-                "domain_regex_count":  len(merged_rules["domain_regex_count"])
+                "total_rules": sum(len(values) for values in merged_rules.values()),
+                "domain_count": len(merged_rules.get("domain", [])),
+                "domain_suffix_count": len(merged_rules.get("domain_suffix", [])),
+                "ip_cidr_count": len(merged_rules.get("ip_cidr", [])),
+                "process_name_count": len(merged_rules.get("process_name", [])),
+                "domain_regex_count": len(merged_rules.get("domain_regex", []))
             },
             "rules": final_rules
         }
-
 
         # 保存结果
         try:
