@@ -295,6 +295,7 @@ class RuleParser:
 
             # 顶层信息
             statistics = {
+                "filtered_count": 0,
                 "total_rules": len(final_rules),
                 "domain_count": domain_count,
                 "domain_suffix_count": domain_suffix_count,
