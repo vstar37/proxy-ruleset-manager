@@ -319,7 +319,7 @@ class RuleParser:
 
             try:
                 with open(output_file, 'w', encoding='utf-8') as file:
-                    json.dump(wrapped_data.get("sing-box rule-set",[]), file, ensure_ascii=False, indent=4)
+                    json.dump(wrapped_data['sing-box rule-set'], file, ensure_ascii=False, indent=4)
             except Exception as e:
                 logging.error(f"保存 JSON 文件时出错: {e}")
                 return {"error": str(e)}
@@ -407,7 +407,7 @@ class RuleParser:
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
-                json.dump(wrapped_data.get('rules',[]), file, ensure_ascii=False, indent=4)
+                json.dump(wrapped_data['rules'], file, ensure_ascii=False, indent=4)
         except Exception as e:
             logging.error(f"保存 JSON 文件时出错: {e}")
 
