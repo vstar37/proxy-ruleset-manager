@@ -290,6 +290,7 @@ class RuleParser:
             final_rules = single_file_stats
 
             # 统计信息
+            filtered_count = single_file_stats.get("filtered_count", 0)
             domain_count = len(single_file_stats.get("domain", []))
             domain_suffix_count = len(single_file_stats.get("domain_suffix", []))
             ip_cidr_count = len(single_file_stats.get("ip_cidr", []))
@@ -303,6 +304,7 @@ class RuleParser:
                 "description": f"Generated rules for {rule_set_name}",
                 "generated_time": self.generated_time,
                 "statistics": {
+                    "filtered_count": filtered_count,
                     "total_rules": len(final_rules),
                     "domain_count": domain_count,
                     "domain_suffix_count": domain_suffix_count,
@@ -380,7 +382,6 @@ class RuleParser:
             for category, values in merged_rules.items()
             if values
         ]
-
         # 顶层信息
         wrapped_data = {
             "version": 1,
@@ -388,6 +389,7 @@ class RuleParser:
             "description": f"Generated rules for {rule_set_name}",
             "generated_time": self.generated_time,
             "statistics": {
+                "filtered_count": filtered_count,
                 "total_rules": len(final_rules),
                 "domain_count": len(merged_rules["domain"]),
                 "domain_suffix_count": len(merged_rules["domain_suffix"]),
