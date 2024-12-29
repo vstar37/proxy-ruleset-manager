@@ -1,41 +1,26 @@
 {
     "version": 1,
-    "rule_set_name": "filter-directApp@amos",
-    "description": "Generated rules for filter-directApp@amos",
-    "generated_time": "2024-12-29T02:53:24.672099",
-    "statistics": {
-        "filtered_count": 0,
-        "total_rules": 2,
-        "domain_count": 0,
-        "domain_suffix_count": 0,
-        "ip_cidr_count": 0,
-        "process_name_count": 0,
-        "domain_regex_count": 0
-    },
-    "rules": {
-        "version": 1,
-        "rules": [
-            {
-                "process_name": [
-                    "QQ",
-                    "WeChat",
-                    "WeChatAppEx Helper",
-                    "cloudd",
-                    "iCloudDrive.exe",
-                    "App Store",
-                    "Music",
-                    "wegame.exe",
-                    "幕布 Helper",
-                    "qbittorrent",
-                    "BitComet",
-                    "115Browser Helper",
-                    "115Browser",
-                    "vidhub",
-                    "infuse",
-                    "Eudb_en_free",
-                    "TencentMeeting"
-                ]
-            }
-        ]
-    }
+    "rules": [
+        {
+            "process_name": [
+                "QQ",
+                "WeChat",
+                "WeChatAppEx Helper",
+                "cloudd",
+                "iCloudDrive.exe",
+                "App Store",
+                "Music",
+                "wegame.exe",
+                "幕布 Helper",
+                "qbittorrent",
+                "BitComet",
+                "115Browser Helper",
+                "115Browser",
+                "vidhub",
+                "infuse",
+                "Eudb_en_free",
+                "TencentMeeting"
+            ]
+        }
+    ]
 }

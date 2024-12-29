@@ -1,26 +1,11 @@
 {
     "version": 1,
-    "rule_set_name": "geolocation-jp@amos",
-    "description": "Generated rules for geolocation-jp@amos",
-    "generated_time": "2024-12-29T02:53:24.672099",
-    "statistics": {
-        "filtered_count": 0,
-        "total_rules": 2,
-        "domain_count": 0,
-        "domain_suffix_count": 0,
-        "ip_cidr_count": 0,
-        "process_name_count": 0,
-        "domain_regex_count": 0
-    },
-    "rules": {
-        "version": 1,
-        "rules": [
-            {
-                "ip_cidr": [
-                    "141.98.198.169",
-                    "109.107.140.192"
-                ]
-            }
-        ]
-    }
+    "rules": [
+        {
+            "ip_cidr": [
+                "141.98.198.169",
+                "109.107.140.192"
+            ]
+        }
+    ]
 }
