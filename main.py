@@ -11,6 +11,7 @@ from utils import *
 from config import Config
 from collections import defaultdict
 import tempfile
+import datetime
 
 
 config = Config()
@@ -19,6 +20,8 @@ config = Config()
 class RuleParser:
     def __init__(self):
         self.ls_index = 1
+        self.generated_time = datetime.datetime.now().isoformat()
+
 
     def parse_adguard_file(self, link):
         """
@@ -273,15 +276,55 @@ class RuleParser:
         """
         生成合并后的 JSON 文件并返回处理统计信息。
         """
-        unique_links = list(set(links))  # 链接去重
+        # 去重链接
+        unique_links = list(set(links))
 
         json_file_list = []
         for link in unique_links:
             json_file = self.parse_link_file_to_json(link)
             json_file_list.append(json_file)
 
-        # 调用 merge_json 并返回结果统计信息
-        return self.merge_json(json_file_list, output_file, rule_set_name=rule_set_name)
+        # 如果只有一个 JSON 文件，直接保存，不调用 merge_json
+        if len(json_file_list) == 1:
+            single_file_stats = json_file_list[0]
+            final_rules = single_file_stats
+
+            # 统计信息
+            domain_count = len(single_file_stats.get("domain", []))
+            domain_suffix_count = len(single_file_stats.get("domain_suffix", []))
+            ip_cidr_count = len(single_file_stats.get("ip_cidr", []))
+            process_name_count = len(single_file_stats.get("process_name", []))
+            domain_regex_count = len(single_file_stats.get("domain_regex", []))
+
+            # 顶层信息
+            wrapped_data = {
+                "version": 1,
+                "rule_set_name": rule_set_name,
+                "description": f"Generated rules for {rule_set_name}",
+                "generated_time": self.generated_time,
+                "statistics": {
+                    "total_rules": len(final_rules),
+                    "domain_count": domain_count,
+                    "domain_suffix_count": domain_suffix_count,
+                    "ip_cidr_count": ip_cidr_count,
+                    "process_name_count": process_name_count,
+                    "domain_regex_count": domain_regex_count
+                },
+                "rules": final_rules
+            }
+
+            try:
+                with open(output_file, 'w', encoding='utf-8') as file:
+                    json.dump(wrapped_data, file, ensure_ascii=False, indent=4)
+            except Exception as e:
+                logging.error(f"保存 JSON 文件时出错: {e}")
+                return {"error": str(e)}
+
+            # 返回统计信息
+            return wrapped_data["statistics"]
+        # 否则调用 merge_json
+        else:
+            return self.merge_json(json_file_list, output_file, rule_set_name=rule_set_name)
 
     def merge_json(self, json_file_list, output_file, rule_set_name,
                    enable_trie_filtering=config.enable_trie_filtering):
@@ -338,23 +381,33 @@ class RuleParser:
             if values
         ]
 
+        # 顶层信息
+        wrapped_data = {
+            "version": 1,
+            "rule_set_name": rule_set_name,
+            "description": f"Generated rules for {rule_set_name}",
+            "generated_time": self.generated_time,
+            "statistics": {
+                "total_rules": len(final_rules),
+                "domain_count": len(merged_rules["domain"]),
+                "domain_suffix_count": len(merged_rules["domain_suffix"]),
+                "ip_cidr_count": len(merged_rules["ip_cidr_count"]),
+                "process_name_count":  len(merged_rules["process_name_count"]),
+                "domain_regex_count":  len(merged_rules["domain_regex_count"])
+            },
+            "rules": final_rules
+        }
+
+
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
-                json.dump({"version": 1, "rules": final_rules}, file, ensure_ascii=False, indent=4)
+                json.dump(wrapped_data, file, ensure_ascii=False, indent=4)
         except Exception as e:
             logging.error(f"保存 JSON 文件时出错: {e}")
 
         # 返回统计信息
-        return {
-            "filtered_count": filtered_count,
-            "total_rules": sum(len(values) for values in merged_rules.values()),
-            "domain_count": len(merged_rules["domain"]),
-            "domain_suffix_count": len(merged_rules["domain_suffix"]),
-            "ip_cidr_count": len(merged_rules["ip_cidr"]),
-            "process_name_count": len(merged_rules["process_name"]),
-            "domain_regex_count": len(merged_rules["domain_regex"])
-        }
+        return wrapped_data["statistics"]
 
     def decompile_srs_to_json(self, srs_file_url):
         """
