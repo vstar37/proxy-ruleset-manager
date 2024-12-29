@@ -300,9 +300,6 @@ class RuleParser:
             # 顶层信息
             wrapped_data = {
                 "version": 1,
-                "rule_set_name": rule_set_name,
-                "description": f"Generated rules for {rule_set_name}",
-                "generated_time": self.generated_time,
                 "statistics": {
                     "filtered_count": filtered_count,
                     "total_rules": len(final_rules),
@@ -312,12 +309,17 @@ class RuleParser:
                     "process_name_count": process_name_count,
                     "domain_regex_count": domain_regex_count
                 },
-                "rules": final_rules
+                "sing-box rule-set":
+                {
+                    "version": 1,
+                    "rules": final_rules
+
+                }
             }
 
             try:
                 with open(output_file, 'w', encoding='utf-8') as file:
-                    json.dump(wrapped_data, file, ensure_ascii=False, indent=4)
+                    json.dump(wrapped_data.get("sing-box rule-set",[]), file, ensure_ascii=False, indent=4)
             except Exception as e:
                 logging.error(f"保存 JSON 文件时出错: {e}")
                 return {"error": str(e)}
@@ -405,7 +407,7 @@ class RuleParser:
         # 保存结果
         try:
             with open(output_file, 'w', encoding='utf-8') as file:
-                json.dump(wrapped_data, file, ensure_ascii=False, indent=4)
+                json.dump(wrapped_data.get('rules',[]), file, ensure_ascii=False, indent=4)
         except Exception as e:
             logging.error(f"保存 JSON 文件时出错: {e}")
 
