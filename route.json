@@ -271,6 +271,13 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"geosite-trash@adguard",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-trash@adguard.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"geoip-category-game",
         "type":"remote",
         "format":"binary",
