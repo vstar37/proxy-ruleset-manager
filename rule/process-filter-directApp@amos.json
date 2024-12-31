@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "Eudb_en_free",
+                "幕布 Helper",
+                "Music",
+                "wegame.exe",
+                "qbittorrent",
+                "BitComet",
+                "115Browser",
+                "cloudd",
+                "vidhub",
+                "infuse",
+                "iCloudDrive.exe",
+                "WeChatAppEx Helper",
+                "QQ",
+                "App Store",
+                "115Browser Helper",
+                "WeChat",
+                "TencentMeeting"
+            ]
+        }
+    ]
+}
