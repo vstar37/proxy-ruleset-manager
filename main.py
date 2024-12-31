@@ -47,8 +47,8 @@ class RuleParser:
                 # 将修改后的内容写回文件
                 f.write("\n".join(lines))
 
-            # 第二步：使用 sing-box 进行转换为 srs 格式
-            srs_file_path = os.path.join(tmp_dir, "output.srs")
+            # 第二步：使用 sing-box 进行转换为 srs 格式 保存到 rule 路径下
+            srs_file_path = os.path.join('./rule', "geosite-trash@adguard.srs")
             conversion_command = [
                 "sing-box", "rule-set", "convert", "--type", "adguard",
                 "--output", srs_file_path, adguard_file_path
@@ -65,31 +65,9 @@ class RuleParser:
                 logging.error(f"转换失败，没有找到生成的 SRS 文件: {srs_file_path}")
                 return None
 
-            # 第三步：使用 sing-box 反编译 srs 文件为 JSON 数据 (暂不支持)
-            decompile_command = [
-                "sing-box", "rule-set", "decompile", srs_file_path
-            ]
-            logging.debug(f"执行反编译命令: {' '.join(decompile_command)}")
-
-            result = subprocess.run(decompile_command, capture_output=True, text=True)
-            if result.returncode != 0:
-                logging.error(f"反编译命令失败，错误信息: {result.stderr}")
-                return None
-
-            # 解析返回的 JSON 数据
-            try:
-                data = json.loads(result.stdout)
-                logging.debug(f"解析后的 JSON 数据: {data}")
-            except json.JSONDecodeError as e:
-                logging.error(f"JSON 解析失败: {e}")
-                return None
-
             # 清理临时文件
             os.remove(adguard_file_path)
-            os.remove(srs_file_path)
             os.rmdir(tmp_dir)  # 删除临时目录
-
-            return data
 
         except Exception as e:
             logging.error(f"处理 AdGuard 链接 {link} 时出错: {e}")
@@ -445,8 +423,7 @@ class RuleParser:
                 return json_file
 
             if any(keyword in link for keyword in config.adg_keyword):
-                json_file = self.parse_adguard_file(link)
-                return json_file
+                self.parse_adguard_file(link)
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 results = list(executor.map(parse_and_convert_to_dataframe, [link]))
