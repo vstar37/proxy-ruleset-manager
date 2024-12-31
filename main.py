@@ -48,7 +48,7 @@ class RuleParser:
                 f.write("\n".join(lines))
 
             # 第二步：使用 sing-box 进行转换为 srs 格式 保存到 rule 路径下
-            srs_file_path = os.path.join('./rule', "geosite-trash@adguard.srs")
+            srs_file_path = os.path.join('./rule', "geosite-blocker-adguard.srs")
             conversion_command = [
                 "sing-box", "rule-set", "convert", "--type", "adguard",
                 "--output", srs_file_path, adguard_file_path
