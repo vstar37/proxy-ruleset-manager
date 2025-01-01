@@ -16,7 +16,7 @@ class Config:
         self.ls_index = 1
         self.enable_trie_filtering = [True, False][0] # 是否按照 domain_suffix 剔除重复的 domain
         self.ls_keyword = ["little-snitch", "adobe-blocklist"] # little snitch 链接关键字
-        self.adg_keyword = ["AdguardTeam", "https://adrules.top/dns.txt"] # adguard 链接关键字
+        self.adg_keyword = ["AdguardTeam", "https://adrules.top/dns.txt","https://easylist.to/easylist/easyprivacy.txt"] # adguard 链接关键字
         self.map_dict = {
             'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
             'DOMAIN-KEYWORD': 'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',

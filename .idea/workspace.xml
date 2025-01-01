@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea35a59-fb4e-4df2-be0c-669618e1bd81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disabled/filter-browser.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/disabled/filter-browser.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/blocker-trash.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/blocker-trash.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +103,8 @@
       <workItem from="1735631151128" duration="93000" />
       <workItem from="1735744722500" duration="601000" />
       <workItem from="1735745869152" duration="311000" />
-      <workItem from="1735746191632" duration="1588000" />
+      <workItem from="1735746191632" duration="2056000" />
+      <workItem from="1735750539929" duration="297000" />
     </task>
     <servers />
   </component>
