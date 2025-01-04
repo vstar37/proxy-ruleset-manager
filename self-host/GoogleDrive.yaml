@@ -17,5 +17,6 @@ payload:
 #  - PROCESS-NAME,BackupandSync
   - DOMAIN-SUFFIX,nexusmods.com
   - DOMAIN-SUFFIX,escapefromtarkov.com
+  - DOMAIN,us.nomaba.top
 
 
