@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+          "browser-intake-datadoghq.com"
+      ]
+    }
+  ]
+}
