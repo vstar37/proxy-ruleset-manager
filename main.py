@@ -575,7 +575,7 @@ class RuleParser:
             print('正在处理{}'.format(yaml_file))
             yaml_file_path = os.path.join(source_directory, yaml_file)
             # 检查 adg文件
-            if config.adg_keyword in yaml_file:
+            if any(keyword in yaml_file for keyword in config.adg_keyword):
                 self.parse_adguard_file(yaml_file_path, output_directory)
             else:
                 self.parse_yaml_file(yaml_file_path, output_directory)
