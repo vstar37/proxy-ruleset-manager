@@ -48,7 +48,31 @@
       },
       {
         "rule_set":[
+          "adguard-blocker@mobile"
+        ],
+        "action":"reject",
+        "method":"default",
+        "no_drop":false
+      },
+      {
+        "rule_set":[
+          "adguard-blocker@privacy"
+        ],
+        "action":"reject",
+        "method":"default",
+        "no_drop":false
+      },
+      {
+        "rule_set":[
           "geosite-blocker-trash"
+        ],
+        "action":"reject",
+        "method":"default",
+        "no_drop":false
+      },
+      {
+        "rule_set":[
+          "adguard-blocker@full"
         ],
         "action":"reject",
         "method":"default",
@@ -180,6 +204,13 @@
         "download_detour":"VPN"
       },
       {
+        "tag":"adguard-blocker@mobile",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/adguard-blocker@mobile.srs",
+        "download_detour":"VPN"
+      },
+      {
         "tag":"geosite-category-direct",
         "type":"remote",
         "format":"binary",
@@ -205,6 +236,13 @@
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-video@!cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"adguard-blocker@privacy",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/adguard-blocker@privacy.srs",
         "download_detour":"VPN"
       },
       {
@@ -296,6 +334,13 @@
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-category-media@cn.srs",
+        "download_detour":"VPN"
+      },
+      {
+        "tag":"adguard-blocker@full",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/adguard-blocker@full.srs",
         "download_detour":"VPN"
       },
       {
