@@ -48,22 +48,6 @@
       },
       {
         "rule_set":[
-          "geosite-blocker-adguard"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "geosite-blocker-adguard@mobile"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
           "geosite-blocker-trash"
         ],
         "action":"reject",
@@ -217,24 +201,10 @@
         "download_detour":"VPN"
       },
       {
-        "tag":"geosite-blocker-adguard",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-blocker-adguard.srs",
-        "download_detour":"VPN"
-      },
-      {
         "tag":"geoip-category-video@!cn",
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geoip-category-video@!cn.srs",
-        "download_detour":"VPN"
-      },
-      {
-        "tag":"geosite-blocker-adguard@mobile",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/geosite-blocker-adguard@mobile.srs",
         "download_detour":"VPN"
       },
       {
