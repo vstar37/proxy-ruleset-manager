@@ -5,8 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea35a59-fb4e-4df2-be0c-669618e1bd81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/blocker-trash.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/blocker-trash.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-communication@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-communication@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-direct.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-direct.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-game.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-game.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-video@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-category-video@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-jp@amos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geoip-geolocation-jp@amos.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-blocker-adguard.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-blocker-adguard@mobile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-blocker-adguard@mobile.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-blocker-trash.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-blocker-trash.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-communication@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-communication@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-direct.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-direct.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-download@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-download@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-game@cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-media@cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-nsfw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-nsfw.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-video@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-video@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-category-vpn@cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-fakeip.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-filter-fakeip.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-geolocation-!cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/geosite-geolocation-!cn.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-blocker-rejectApp@amos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-blocker-rejectApp@amos.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-filter-communicationApp@amos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-filter-communicationApp@amos.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-filter-directApp@amos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule/process-filter-directApp@amos.srs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/blocker-adguard@mobile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/blocker-adguard@mobile.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +72,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vstar37"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vstar37&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>

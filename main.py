@@ -20,35 +20,46 @@ class RuleParser:
     def __init__(self):
         self.ls_index = 1
 
-    def parse_adguard_file(self, link):
+    def parse_adguard_file(self, yaml_file_path, output_directory):
         """
         处理 AdGuard 链接并返回解析后的 JSON 数据。
         """
         try:
-            logging.debug(f"正在处理 AdGuard 链接: {link}")
+            with open(yaml_file_path, 'r') as file:
+                data = yaml.safe_load(file)
+                logging.debug(f"解析的 YAML 数据: {data}")
 
-            # 第一步：获取 AdGuard 规则文件
-            response = requests.get(link)
-            response.raise_for_status()
+            rule_set_name = os.path.basename(yaml_file_path).split('.')[0]
+            adg_links = data.get('adguard', [])
+            unique_lines = set()
 
-            raw_data = response.text
-            logging.debug(f"获取到的原始数据: {raw_data[:500]}")  # 打印前 500 个字符
+            # 遍历每个 AdGuard 规则文件链接，获取并处理数据
+            for link in adg_links:
+                try:
+                    response = requests.get(link)
+                    response.raise_for_status()
+                    raw_data = response.text
 
-            # 创建临时目录
+                    # 将数据按行分割，并添加到集合中去重
+                    lines = raw_data.splitlines()
+                    for line in lines:
+                        if line.strip():  # 过滤掉空行
+                            unique_lines.add(line.strip())
+
+                except requests.RequestException as e:
+                    logging.error(f"获取链接 {link} 时出错: {e}")
+
+            # 创建临时目录和文件
             tmp_dir = tempfile.mkdtemp()
             logging.debug(f"创建临时目录: {tmp_dir}")
+            adguard_file_path = os.path.join(tmp_dir, "adguard_combined.txt")
 
-            # 将原始数据写入临时文件，并检查第一行是否为 '[Adblock Plus 2.0]'
-            adguard_file_path = os.path.join(tmp_dir, "adguard_file.txt")
+            # 将去重后的行写入临时文件
             with open(adguard_file_path, "w") as f:
-                lines = raw_data.splitlines()  # 按行分割原始数据
-                if lines and lines[0].startswith("["):  # 如果第一行以 "[" 开头
-                    lines[0] = "!" + lines[0]  # 在第一行加上 "!"
-                # 将修改后的内容写回文件
-                f.write("\n".join(lines))
+                f.write("\n".join(sorted(unique_lines)))  # 排序并写入文件
 
-            # 第二步：使用 sing-box 进行转换为 srs 格式 保存到 rule 路径下
-            srs_file_path = os.path.join('./rule', "geosite-blocker-adguard.srs")
+            # 执行 sing-box 转换为 srs 格式
+            srs_file_path = os.path.join(output_directory, "{}.srs".format(rule_set_name))
             conversion_command = [
                 "sing-box", "rule-set", "convert", "--type", "adguard",
                 "--output", srs_file_path, adguard_file_path
@@ -70,7 +81,7 @@ class RuleParser:
             os.rmdir(tmp_dir)  # 删除临时目录
 
         except Exception as e:
-            logging.error(f"处理 AdGuard 链接 {link} 时出错: {e}")
+            logging.error(f"处理 AdGuard 文件时出错: {e}")
             return None
 
     def parse_littlesnitch_file(self, link, retries=3, delay=5):
@@ -422,9 +433,6 @@ class RuleParser:
                 json_file = self.parse_littlesnitch_file(link)
                 return json_file
 
-            if any(keyword in link for keyword in config.adg_keyword):
-                self.parse_adguard_file(link)
-
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 results = list(executor.map(parse_and_convert_to_dataframe, [link]))
                 dfs = [df for df, rules in results]
@@ -563,11 +571,14 @@ class RuleParser:
         source_directory = "./source"
         output_directory = "./rule"
         yaml_files = [f for f in os.listdir(source_directory) if f.endswith('.yaml')]
-
         for yaml_file in yaml_files:
             print('正在处理{}'.format(yaml_file))
             yaml_file_path = os.path.join(source_directory, yaml_file)
-            self.parse_yaml_file(yaml_file_path, output_directory)
+            # 检查 adg文件
+            if config.adg_keyword in yaml_file:
+                self.parse_adguard_file(yaml_file_path, output_directory)
+            else:
+                self.parse_yaml_file(yaml_file_path, output_directory)
 
         # 生成 SRS 文件
         self.process_category_files(output_directory) # 拆分!cn规则 与 cn规则
