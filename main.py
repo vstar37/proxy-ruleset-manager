@@ -11,6 +11,8 @@ from utils import *
 from config import Config
 from collections import defaultdict
 import tempfile
+import shutil
+
 
 
 config = Config()
@@ -570,6 +572,12 @@ class RuleParser:
     def main(self):
         source_directory = "./source"
         output_directory = "./rule"
+
+        # 清空 output_directory
+        if os.path.exists(output_directory):
+            shutil.rmtree(output_directory)
+        os.makedirs(output_directory)
+
         yaml_files = [f for f in os.listdir(source_directory) if f.endswith('.yaml')]
         for yaml_file in yaml_files:
             print('正在处理{}'.format(yaml_file))
