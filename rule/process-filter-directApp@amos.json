@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "vidhub",
+                "BitComet",
+                "cloudd",
+                "Eudb_en_free",
+                "qbittorrent",
+                "115Browser",
+                "Music",
+                "wegame.exe",
+                "App Store",
+                "幕布 Helper",
+                "115Browser Helper",
+                "TencentMeeting",
+                "iCloudDrive.exe",
+                "WeChat",
+                "infuse",
+                "WeChatAppEx Helper",
+                "QQ"
+            ]
+        }
+    ]
+}
