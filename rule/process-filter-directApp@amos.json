@@ -4,22 +4,22 @@
         {
             "process_name": [
                 "TencentMeeting",
-                "iCloudDrive.exe",
-                "115Browser",
-                "infuse",
-                "Eudb_en_free",
-                "Music",
-                "cloudd",
-                "幕布 Helper",
                 "115Browser Helper",
-                "WeChat",
-                "wegame.exe",
                 "BitComet",
+                "iCloudDrive.exe",
+                "cloudd",
                 "QQ",
-                "qbittorrent",
-                "vidhub",
+                "Music",
+                "WeChatAppEx Helper",
                 "App Store",
-                "WeChatAppEx Helper"
+                "qbittorrent",
+                "115Browser",
+                "vidhub",
+                "infuse",
+                "wegame.exe",
+                "幕布 Helper",
+                "WeChat",
+                "Eudb_en_free"
             ]
         }
     ]
