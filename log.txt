@@ -1,11 +1,11 @@
-2025-02-04 02:15:58,527 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:15:58,530 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 出现错误: 'pattern'
-2025-02-04 02:15:58,530 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:15:58,932 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:15:58,933 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 出现错误: 'pattern'
-2025-02-04 02:15:58,933 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:15:58,933 - INFO - category-game 规则整理完成:
-2025-02-04 02:15:58,933 - INFO - 类型: geosite
+2025-02-04 02:19:34,154 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:19:34,156 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 出现错误: 'pattern'
+2025-02-04 02:19:34,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:19:34,523 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:19:34,525 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 出现错误: 'pattern'
+2025-02-04 02:19:34,525 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:19:34,525 - INFO - category-game 规则整理完成:
+2025-02-04 02:19:34,525 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 0
 规则分析:
@@ -15,7 +15,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:15:58,933 - INFO - 类型: geoip
+2025-02-04 02:19:34,525 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 0
 规则分析:
@@ -25,14 +25,14 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:01,600 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:16:01,601 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
-2025-02-04 02:16:02,019 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:16:02,020 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
-2025-02-04 02:16:06,279 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:16:06,279 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:16:08,489 - INFO - category-direct 规则整理完成:
-2025-02-04 02:16:08,489 - INFO - 类型: geosite
+2025-02-04 02:19:40,572 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:19:40,573 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-02-04 02:19:40,876 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:19:40,877 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-02-04 02:19:42,228 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:19:42,228 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:19:43,937 - INFO - category-direct 规则整理完成:
+2025-02-04 02:19:43,937 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 77
 剩余规则总数: 96734
 规则分析:
@@ -42,7 +42,7 @@ domain 被过滤掉的条目数量: 77
   process_name 条目数: 0
   domain_regex 条目数: 39
 --------------------------------------------------
-2025-02-04 02:16:08,489 - INFO - 类型: geoip
+2025-02-04 02:19:43,937 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 18420
 规则分析:
@@ -52,8 +52,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:10,318 - INFO - category-vpn@!cn 规则整理完成:
-2025-02-04 02:16:10,318 - INFO - 类型: geosite
+2025-02-04 02:19:45,603 - INFO - category-vpn@!cn 规则整理完成:
+2025-02-04 02:19:45,603 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 86
 规则分析:
@@ -63,8 +63,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2025-02-04 02:16:10,746 - INFO - blocker-rejectApp@amos 规则整理完成:
-2025-02-04 02:16:10,746 - INFO - 类型: process
+2025-02-04 02:19:45,927 - INFO - blocker-rejectApp@amos 规则整理完成:
+2025-02-04 02:19:45,927 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 18
 规则分析:
@@ -74,8 +74,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 18
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:14,346 - INFO - category-video@!cn 规则整理完成:
-2025-02-04 02:16:14,346 - INFO - 类型: geosite
+2025-02-04 02:19:49,215 - INFO - category-video@!cn 规则整理完成:
+2025-02-04 02:19:49,215 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 1
 剩余规则总数: 462
 规则分析:
@@ -85,7 +85,7 @@ domain 被过滤掉的条目数量: 1
   process_name 条目数: 0
   domain_regex 条目数: 5
 --------------------------------------------------
-2025-02-04 02:16:14,346 - INFO - 类型: geoip
+2025-02-04 02:19:49,215 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1120
 规则分析:
@@ -95,8 +95,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:14,944 - INFO - category-media@!cn 规则整理完成:
-2025-02-04 02:16:14,944 - INFO - 类型: geosite
+2025-02-04 02:19:49,913 - INFO - category-media@!cn 规则整理完成:
+2025-02-04 02:19:49,914 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 561
 规则分析:
@@ -106,8 +106,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:15,344 - INFO - filter-fakeip 规则整理完成:
-2025-02-04 02:16:15,344 - INFO - 类型: geosite
+2025-02-04 02:19:50,173 - INFO - filter-fakeip 规则整理完成:
+2025-02-04 02:19:50,173 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 9
 剩余规则总数: 108
 规则分析:
@@ -117,8 +117,8 @@ domain 被过滤掉的条目数量: 9
   process_name 条目数: 0
   domain_regex 条目数: 28
 --------------------------------------------------
-2025-02-04 02:16:15,921 - INFO - category-vpn 规则整理完成:
-2025-02-04 02:16:15,922 - INFO - 类型: geosite
+2025-02-04 02:19:50,787 - INFO - category-vpn 规则整理完成:
+2025-02-04 02:19:50,787 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 451
 剩余规则总数: 3167
 规则分析:
@@ -128,19 +128,19 @@ domain 被过滤掉的条目数量: 451
   process_name 条目数: 0
   domain_regex 条目数: 12
 --------------------------------------------------
-2025-02-04 02:16:22,286 - INFO - blocker-trash 规则整理完成:
-2025-02-04 02:16:22,286 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 1
-剩余规则总数: 113295
+2025-02-04 02:19:59,737 - INFO - blocker-trash 规则整理完成:
+2025-02-04 02:19:59,737 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 88562
+剩余规则总数: 182305
 规则分析:
-  domain 条目数: 0
-  domain_suffix 条目数: 113295
+  domain 条目数: 32219
+  domain_suffix 条目数: 150086
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:22,711 - INFO - filter-communicationApp@amos 规则整理完成:
-2025-02-04 02:16:22,711 - INFO - 类型: process
+2025-02-04 02:20:00,050 - INFO - filter-communicationApp@amos 规则整理完成:
+2025-02-04 02:20:00,050 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 2
 规则分析:
@@ -150,8 +150,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 2
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:22,754 - INFO - category-media@cn 规则整理完成:
-2025-02-04 02:16:22,754 - INFO - 类型: geosite
+2025-02-04 02:20:00,134 - INFO - category-media@cn 规则整理完成:
+2025-02-04 02:20:00,135 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 204
 规则分析:
@@ -161,8 +161,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:23,614 - INFO - geolocation-!cn 规则整理完成:
-2025-02-04 02:16:23,614 - INFO - 类型: geosite
+2025-02-04 02:20:00,848 - INFO - geolocation-!cn 规则整理完成:
+2025-02-04 02:20:00,848 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 434
 剩余规则总数: 25907
 规则分析:
@@ -172,7 +172,7 @@ domain 被过滤掉的条目数量: 434
   process_name 条目数: 0
   domain_regex 条目数: 155
 --------------------------------------------------
-2025-02-04 02:16:23,614 - INFO - 类型: geoip
+2025-02-04 02:20:00,848 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 18396
 规则分析:
@@ -182,8 +182,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:24,064 - INFO - geolocation-jp@amos 规则整理完成:
-2025-02-04 02:16:24,064 - INFO - 类型: geoip
+2025-02-04 02:20:01,192 - INFO - geolocation-jp@amos 规则整理完成:
+2025-02-04 02:20:01,192 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 2
 规则分析:
@@ -193,8 +193,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:24,293 - INFO - category-nsfw 规则整理完成:
-2025-02-04 02:16:24,293 - INFO - 类型: geosite
+2025-02-04 02:20:01,691 - INFO - category-nsfw 规则整理完成:
+2025-02-04 02:20:01,691 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 6490
 规则分析:
@@ -204,8 +204,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 136
 --------------------------------------------------
-2025-02-04 02:16:26,825 - INFO - category-communication@!cn 规则整理完成:
-2025-02-04 02:16:26,826 - INFO - 类型: geosite
+2025-02-04 02:20:04,120 - INFO - category-communication@!cn 规则整理完成:
+2025-02-04 02:20:04,120 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 100
 规则分析:
@@ -215,7 +215,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:26,826 - INFO - 类型: geoip
+2025-02-04 02:20:04,120 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 12
 规则分析:
@@ -225,8 +225,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:29,861 - INFO - category-media 规则整理完成:
-2025-02-04 02:16:29,861 - INFO - 类型: geosite
+2025-02-04 02:20:05,400 - INFO - category-media 规则整理完成:
+2025-02-04 02:20:05,400 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1395
 规则分析:
@@ -236,14 +236,14 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:29,904 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:16:29,905 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
-2025-02-04 02:16:29,937 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
-2025-02-04 02:16:29,938 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
-2025-02-04 02:16:30,265 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:16:30,265 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-02-04 02:16:30,266 - INFO - category-game@cn 规则整理完成:
-2025-02-04 02:16:30,266 - INFO - 类型: geosite
+2025-02-04 02:20:05,423 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:20:05,424 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-02-04 02:20:05,742 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：'NoneType' object has no attribute 'get'
+2025-02-04 02:20:05,743 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-02-04 02:20:05,743 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:20:05,743 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-02-04 02:20:05,744 - INFO - category-game@cn 规则整理完成:
+2025-02-04 02:20:05,744 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 5
 剩余规则总数: 155
 规则分析:
@@ -253,8 +253,8 @@ domain 被过滤掉的条目数量: 5
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:33,617 - INFO - category-download@!cn 规则整理完成:
-2025-02-04 02:16:33,617 - INFO - 类型: geosite
+2025-02-04 02:20:08,396 - INFO - category-download@!cn 规则整理完成:
+2025-02-04 02:20:08,396 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 127
 规则分析:
@@ -264,8 +264,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2025-02-04 02:16:34,045 - INFO - filter-directApp@amos 规则整理完成:
-2025-02-04 02:16:34,045 - INFO - 类型: process
+2025-02-04 02:20:08,743 - INFO - filter-directApp@amos 规则整理完成:
+2025-02-04 02:20:08,743 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 17
 规则分析:
@@ -275,24 +275,24 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 17
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-02-04 02:16:34,045 - INFO - 处理类别：geosite-category-communication
-2025-02-04 02:16:34,045 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
-2025-02-04 02:16:34,045 - INFO - 处理类别：geosite-category-vpn
-2025-02-04 02:16:34,091 - INFO - 处理类别：geosite-category-game
-2025-02-04 02:16:34,093 - INFO - 处理类别：geoip-category-video
-2025-02-04 02:16:34,093 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
-2025-02-04 02:16:34,093 - INFO - 处理类别：geoip-category-game
-2025-02-04 02:16:34,093 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
-2025-02-04 02:16:34,093 - INFO - 处理类别：geosite-category-media
-2025-02-04 02:16:34,126 - INFO - 处理类别：geosite-category-video
-2025-02-04 02:16:34,126 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
-2025-02-04 02:16:34,126 - INFO - 处理类别：geosite-category-direct
-2025-02-04 02:16:34,133 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
-2025-02-04 02:16:34,135 - INFO - 处理类别：geosite-category-download
-2025-02-04 02:16:34,135 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
-2025-02-04 02:16:34,135 - INFO - 处理类别：geoip-category-direct
-2025-02-04 02:16:34,136 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
-2025-02-04 02:16:34,136 - INFO - 处理类别：geosite-category-nsfw
-2025-02-04 02:16:34,137 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
-2025-02-04 02:16:34,137 - INFO - 处理类别：geoip-category-communication
-2025-02-04 02:16:34,137 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
+2025-02-04 02:20:08,743 - INFO - 处理类别：geosite-category-communication
+2025-02-04 02:20:08,743 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
+2025-02-04 02:20:08,743 - INFO - 处理类别：geosite-category-vpn
+2025-02-04 02:20:08,814 - INFO - 处理类别：geosite-category-game
+2025-02-04 02:20:08,815 - INFO - 处理类别：geoip-category-video
+2025-02-04 02:20:08,815 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
+2025-02-04 02:20:08,815 - INFO - 处理类别：geoip-category-game
+2025-02-04 02:20:08,815 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
+2025-02-04 02:20:08,815 - INFO - 处理类别：geosite-category-media
+2025-02-04 02:20:08,835 - INFO - 处理类别：geosite-category-video
+2025-02-04 02:20:08,835 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
+2025-02-04 02:20:08,835 - INFO - 处理类别：geosite-category-direct
+2025-02-04 02:20:08,842 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
+2025-02-04 02:20:08,843 - INFO - 处理类别：geosite-category-download
+2025-02-04 02:20:08,843 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
+2025-02-04 02:20:08,843 - INFO - 处理类别：geoip-category-direct
+2025-02-04 02:20:08,845 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
+2025-02-04 02:20:08,845 - INFO - 处理类别：geosite-category-nsfw
+2025-02-04 02:20:08,846 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
+2025-02-04 02:20:08,846 - INFO - 处理类别：geoip-category-communication
+2025-02-04 02:20:08,846 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
