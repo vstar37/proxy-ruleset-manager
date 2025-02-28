@@ -4,23 +4,23 @@
         {
             "process_name": [
                 "ProcessSpy",
-                "Swish",
-                "Ice",
+                "Shifty",
                 "Squirrel",
                 "DevToys Networking",
-                "TextSniper",
-                "Command X",
-                "Clop",
-                "Snipaste",
-                "Snipaste.exe",
-                "Little Snitch Agent",
                 "CodeRunner",
-                "Find Any File",
+                "Clop",
                 "Scroll Reverser",
-                "Shifty",
-                "DevToys",
+                "Find Any File",
                 "Apple Juice",
-                "BLEUnlock"
+                "Little Snitch Agent",
+                "BLEUnlock",
+                "DevToys",
+                "Snipaste.exe",
+                "Ice",
+                "Snipaste",
+                "Command X",
+                "TextSniper",
+                "Swish"
             ]
         }
     ]
