@@ -4,22 +4,22 @@
         {
             "process_name": [
                 "cloudd",
-                "iCloudDrive.exe",
-                "App Store",
-                "Music",
-                "WeChat",
                 "幕布 Helper",
-                "qbittorrent",
-                "infuse",
-                "115Browser",
                 "Eudb_en_free",
-                "TencentMeeting",
-                "vidhub",
+                "iCloudDrive.exe",
+                "QQ",
                 "115Browser Helper",
                 "wegame.exe",
-                "WeChatAppEx Helper",
-                "QQ",
-                "BitComet"
+                "vidhub",
+                "infuse",
+                "qbittorrent",
+                "App Store",
+                "BitComet",
+                "115Browser",
+                "WeChat",
+                "TencentMeeting",
+                "Music",
+                "WeChatAppEx Helper"
             ]
         }
     ]
