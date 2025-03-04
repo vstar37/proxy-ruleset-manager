@@ -14,7 +14,8 @@
     {
       "domain_suffix": [
         ".wallhaven.cc",
-        ".nexus-cdn.com"
+        ".nexus-cdn.com",
+        ".mediafire.com"
     ]
     }
   ]
