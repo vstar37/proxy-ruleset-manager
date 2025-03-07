@@ -24,7 +24,8 @@
         "MATLAB",
         "MathWorksService",
         "MATLABWebUI (GPU)",
-        "MATLABWebUl (Renderer)"
+        "MATLABWebUl (Renderer)",
+        "BetterDisplay"
       ]
     }
   ]
