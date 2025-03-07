@@ -20,7 +20,11 @@
         "ProcessSpy",
         "Little Snitch Agent",
         "CodeRunner",
-        "Find Any File"
+        "Find Any File",
+        "MATLAB",
+        "MathWorksService",
+        "MATLABWebUI (GPU)",
+        "MATLABWebUl (Renderer)"
       ]
     }
   ]
