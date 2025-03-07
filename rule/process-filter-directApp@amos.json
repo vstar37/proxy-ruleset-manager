@@ -3,23 +3,23 @@
     "rules": [
         {
             "process_name": [
-                "qbittorrent",
-                "Eudb_en_free",
-                "WeChatAppEx Helper",
-                "QQ",
-                "WeChat",
-                "iCloudDrive.exe",
-                "115Browser",
-                "TencentMeeting",
-                "cloudd",
-                "wegame.exe",
-                "BitComet",
-                "115Browser Helper",
-                "infuse",
                 "vidhub",
-                "Music",
                 "幕布 Helper",
-                "App Store"
+                "App Store",
+                "WeChat",
+                "cloudd",
+                "WeChatAppEx Helper",
+                "BitComet",
+                "115Browser",
+                "infuse",
+                "QQ",
+                "Eudb_en_free",
+                "TencentMeeting",
+                "qbittorrent",
+                "115Browser Helper",
+                "iCloudDrive.exe",
+                "wegame.exe",
+                "Music"
             ]
         }
     ]

@@ -3,24 +3,28 @@
     "rules": [
         {
             "process_name": [
-                "Find Any File",
-                "DevToys Networking",
-                "Little Snitch Agent",
-                "Shifty",
-                "Apple Juice",
-                "Swish",
-                "Scroll Reverser",
-                "Ice",
-                "DevToys",
-                "BLEUnlock",
-                "Squirrel",
-                "CodeRunner",
-                "TextSniper",
-                "Snipaste.exe",
-                "Clop",
+                "MATLAB",
                 "ProcessSpy",
+                "Ice",
+                "MATLABWebUI (GPU)",
+                "Swish",
+                "DevToys",
+                "Snipaste.exe",
+                "MATLABWebUl (Renderer)",
+                "BLEUnlock",
+                "Shifty",
+                "Snipaste",
+                "CodeRunner",
+                "Apple Juice",
+                "Find Any File",
+                "Little Snitch Agent",
+                "Squirrel",
+                "TextSniper",
+                "DevToys Networking",
+                "Clop",
                 "Command X",
-                "Snipaste"
+                "Scroll Reverser",
+                "MathWorksService"
             ]
         }
     ]
