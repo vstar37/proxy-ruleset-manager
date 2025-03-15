@@ -385,12 +385,34 @@ def filter_domains_with_trie(domains, domain_suffixes):
 
     return filtered_domains, filtered_count
 
-'''# 测试数据
-domains = ["xp.apple.com", "example.com", "xp.apple"]
-domain_suffixes = ["apple"]
+def convert_json_to_surge(input_dir="./rule", output_dir="./rule/surge"):
+    """
+    读取指定目录下的所有 JSON 文件，将其转换为 Surge 规则，并存储在 output_dir 目录下。
+    """
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-final_domains, filtered_count = filter_domains_with_trie(domains, domain_suffixes)
+    for filename in os.listdir(input_dir):
+        if filename.endswith(".json"):
+            input_path = os.path.join(input_dir, filename)
+            output_path = os.path.join(output_dir, filename.replace(".json", ".list"))
 
-print(f"过滤后的 domains: {final_domains}")
-print(f"被过滤的数量: {filtered_count}")
-'''
+            try:
+                with open(input_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                surge_rules = []
+                for rule in data.get("rules", []):
+                    for rule_type, values in rule.items():
+                        if rule_type in config.MAP_REVERSE:
+                            surge_type = config.MAP_REVERSE[rule_type]
+                            for value in values:
+                                surge_rules.append(f"{surge_type},{value}")
+
+                with open(output_path, "w", encoding="utf-8") as f:
+                    f.write("\n".join(surge_rules))
+
+                logging.info(f"转换完成: {input_path} → {output_path}")
+
+            except Exception as e:
+                logging.error(f"转换 {input_path} 时出错: {e}")

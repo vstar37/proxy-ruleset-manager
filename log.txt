@@ -1,38 +1,8 @@
-2025-03-14 12:22:34,103 - INFO - category-media@!cn 规则整理完成:
-2025-03-14 12:22:34,103 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 573
-规则分析:
-  domain 条目数: 4
-  domain_suffix 条目数: 569
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:34,647 - INFO - category-game@cn 规则整理完成:
-2025-03-14 12:22:34,647 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 16
-剩余规则总数: 156
-规则分析:
-  domain 条目数: 13
-  domain_suffix 条目数: 143
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:35,033 - INFO - filter-communicationApp@amos 规则整理完成:
-2025-03-14 12:22:35,033 - INFO - 类型: process
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 2
-规则分析:
-  domain 条目数: 0
-  domain_suffix 条目数: 0
-  ip_cidr 条目数: 0
-  process_name 条目数: 2
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:35,172 - INFO - geolocation-jp@amos 规则整理完成:
-2025-03-14 12:22:35,172 - INFO - 类型: geoip
+2025-03-15 15:33:18,363 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-porn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-porn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27130>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,363 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-porn.srs
+2025-03-15 15:33:18,363 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:18,363 - INFO - category-nsfw 规则整理完成:
+2025-03-15 15:33:18,363 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 0
 规则分析:
@@ -42,127 +12,51 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:35,295 - INFO - blocker-rejectApp@amos 规则整理完成:
-2025-03-14 12:22:35,295 - INFO - 类型: process
+2025-03-15 15:33:18,365 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/offlineApp-filter.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/offlineApp-filter.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b276d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,365 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:18,365 - INFO - blocker-rejectApp@amos 规则整理完成:
+2025-03-15 15:33:18,365 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 23
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
   ip_cidr 条目数: 0
-  process_name 条目数: 23
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:35,451 - INFO - category-nsfw 规则整理完成:
-2025-03-14 12:22:35,452 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 6515
-规则分析:
-  domain 条目数: 3
-  domain_suffix 条目数: 6376
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 136
---------------------------------------------------
-2025-03-14 12:22:35,560 - INFO - category-media 规则整理完成:
-2025-03-14 12:22:35,560 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 1397
-规则分析:
-  domain 条目数: 24
-  domain_suffix 条目数: 1373
-  ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:35,661 - INFO - category-media@cn 规则整理完成:
-2025-03-14 12:22:35,661 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 2
-剩余规则总数: 204
-规则分析:
-  domain 条目数: 0
-  domain_suffix 条目数: 204
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:37,549 - INFO - category-vpn 规则整理完成:
-2025-03-14 12:22:37,549 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 457
-剩余规则总数: 3207
-规则分析:
-  domain 条目数: 126
-  domain_suffix 条目数: 3076
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 5
---------------------------------------------------
-2025-03-14 12:22:38,603 - INFO - geolocation-!cn 规则整理完成:
-2025-03-14 12:22:38,603 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 462
-剩余规则总数: 26077
-规则分析:
-  domain 条目数: 84
-  domain_suffix 条目数: 25844
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 149
---------------------------------------------------
-2025-03-14 12:22:38,603 - INFO - 类型: geoip
+2025-03-15 15:33:18,366 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/communicationApp-filter.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/communicationApp-filter.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66590>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,366 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:18,366 - INFO - filter-communicationApp@amos 规则整理完成:
+2025-03-15 15:33:18,366 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18454
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18454
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:38,950 - INFO - category-game 规则整理完成:
-2025-03-14 12:22:38,950 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 547
-规则分析:
-  domain 条目数: 8
-  domain_suffix 条目数: 539
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:38,950 - INFO - 类型: geoip
+2025-03-15 15:33:18,368 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-jp@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-jp@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b656f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,368 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:18,368 - INFO - geolocation-jp@amos 规则整理完成:
+2025-03-15 15:33:18,368 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 46
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 46
+  ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:40,141 - INFO - category-download@!cn 规则整理完成:
-2025-03-14 12:22:40,141 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 2
-剩余规则总数: 130
-规则分析:
-  domain 条目数: 12
-  domain_suffix 条目数: 117
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 1
---------------------------------------------------
-2025-03-14 12:22:40,233 - INFO - category-vpn@!cn 规则整理完成:
-2025-03-14 12:22:40,233 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 2
-剩余规则总数: 92
-规则分析:
-  domain 条目数: 15
-  domain_suffix 条目数: 76
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 1
---------------------------------------------------
-2025-03-14 12:22:40,469 - INFO - filter-fakeip 规则整理完成:
-2025-03-14 12:22:40,469 - INFO - 类型: geosite
+2025-03-15 15:33:18,369 - ERROR - 获取链接 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/SpywareFilter/sections/mobile.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /AdguardTeam/AdguardFilters/refs/heads/master/SpywareFilter/sections/mobile.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b278b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,370 - ERROR - 获取链接 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/specific_app.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /AdguardTeam/AdguardFilters/master/MobileFilter/sections/specific_app.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26e60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:18,395 - ERROR - 转换命令失败，错误信息: [31mFATAL[0m[0000] AdGuard rule-set is empty or all rules are unsupported
+
+2025-03-15 15:33:21,557 - INFO - filter-fakeip 规则整理完成:
+2025-03-15 15:33:21,557 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 117
 规则分析:
@@ -172,50 +66,117 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 29
 --------------------------------------------------
-2025-03-14 12:22:41,585 - INFO - category-communication@!cn 规则整理完成:
-2025-03-14 12:22:41,585 - INFO - 类型: geosite
+2025-03-15 15:33:21,561 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66ad0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,561 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs
+2025-03-15 15:33:21,563 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-apple.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b675b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,563 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple.srs
+2025-03-15 15:33:21,564 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-microsoft.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-microsoft.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65870>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,564 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-microsoft.srs
+2025-03-15 15:33:21,566 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67760>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,566 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs
+2025-03-15 15:33:21,568 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66650>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,568 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs
+2025-03-15 15:33:21,569 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-google.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64cd0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,569 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google.srs
+2025-03-15 15:33:21,571 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-reddit.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67ac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,571 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs
+2025-03-15 15:33:21,572 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-vpn@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-vpn@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64220>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,572 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:21,573 - INFO - category-vpn 规则整理完成:
+2025-03-15 15:33:21,573 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 100
-规则分析:
-  domain 条目数: 5
-  domain_suffix 条目数: 95
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:41,585 - INFO - 类型: geoip
-domain 被过滤掉的条目数量: 0
-剩余规则总数: 12
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 12
-  process_name 条目数: 0
-  domain_regex 条目数: 0
---------------------------------------------------
-2025-03-14 12:22:49,345 - INFO - blocker-trash 规则整理完成:
-2025-03-14 12:22:49,345 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 98745
-剩余规则总数: 186155
-规则分析:
-  domain 条目数: 33612
-  domain_suffix 条目数: 152543
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:50,439 - INFO - category-video@!cn 规则整理完成:
-2025-03-14 12:22:50,439 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 1
-剩余规则总数: 462
+2025-03-15 15:33:21,575 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64eb0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:21,578 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-03-15 15:33:24,369 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65c60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,370 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-03-15 15:33:24,370 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:24,370 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:24,372 - INFO - category-game@cn 规则整理完成:
+2025-03-15 15:33:24,372 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 156
 规则分析:
-  domain 条目数: 42
-  domain_suffix 条目数: 415
+  domain 条目数: 13
+  domain_suffix 条目数: 143
   ip_cidr 条目数: 0
   process_name 条目数: 0
-  domain_regex 条目数: 5
+  domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:50,439 - INFO - 类型: geoip
+2025-03-15 15:33:24,374 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/directApp-filter.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/directApp-filter.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27ee0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,374 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:24,375 - INFO - filter-directApp@amos 规则整理完成:
+2025-03-15 15:33:24,375 - INFO - 类型: process
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:24,376 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66ce0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,376 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs
+2025-03-15 15:33:24,376 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:24,376 - INFO - category-media@cn 规则整理完成:
+2025-03-15 15:33:24,376 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:24,378 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-youtube.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b663b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,378 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youtube.srs
+2025-03-15 15:33:24,380 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-netflix.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64550>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,380 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs
+2025-03-15 15:33:24,381 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-spotify.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27dc0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:24,381 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify.srs
+2025-03-15 15:33:26,975 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-primevideo.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-primevideo.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27790>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:26,976 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-primevideo.srs
+2025-03-15 15:33:26,977 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-disney.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-disney.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66350>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:26,977 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-disney.srs
+2025-03-15 15:33:26,979 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-twitch.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-twitch.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66320>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:26,979 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-twitch.srs
+2025-03-15 15:33:26,980 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hbo.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-hbo.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b670a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:26,980 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hbo.srs
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:26,980 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:29,883 - INFO - category-video@!cn 规则整理完成:
+2025-03-15 15:33:29,883 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 7
+规则分析:
+  domain 条目数: 6
+  domain_suffix 条目数: 1
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:29,883 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1120
 规则分析:
@@ -225,56 +186,340 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:50,548 - INFO - filter-directApp@amos 规则整理完成:
-2025-03-14 12:22:50,548 - INFO - 类型: process
+2025-03-15 15:33:29,886 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-media.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27160>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:29,886 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media.srs
+2025-03-15 15:33:29,886 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:29,886 - INFO - category-media 规则整理完成:
+2025-03-15 15:33:29,886 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 17
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
   ip_cidr 条目数: 0
-  process_name 条目数: 17
+  process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:56,730 - INFO - category-direct 规则整理完成:
-2025-03-14 12:22:56,730 - INFO - 类型: geosite
-domain 被过滤掉的条目数量: 103
-剩余规则总数: 96370
-规则分析:
-  domain 条目数: 468
-  domain_suffix 条目数: 95876
-  ip_cidr 条目数: 0
-  process_name 条目数: 0
-  domain_regex 条目数: 26
---------------------------------------------------
-2025-03-14 12:22:56,730 - INFO - 类型: geoip
+2025-03-15 15:33:31,875 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66fe0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,875 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_Domain.yaml 出现错误: 'pattern'
+2025-03-15 15:33:31,876 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,877 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b656c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,877 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/Game_OCD_IP.yaml 出现错误: 'pattern'
+2025-03-15 15:33:31,877 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,877 - INFO - category-game 规则整理完成:
+2025-03-15 15:33:31,877 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18472
+剩余规则总数: 0
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18472
+  ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-14 12:22:56,730 - INFO - 处理类别：geoip-category-direct
-2025-03-14 12:22:56,731 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
-2025-03-14 12:22:56,731 - INFO - 处理类别：geosite-category-media
-2025-03-14 12:22:56,765 - INFO - 处理类别：geosite-category-game
-2025-03-14 12:22:56,771 - INFO - 处理类别：geoip-category-game
-2025-03-14 12:22:56,771 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
-2025-03-14 12:22:56,771 - INFO - 处理类别：geosite-category-nsfw
-2025-03-14 12:22:56,771 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
-2025-03-14 12:22:56,772 - INFO - 处理类别：geoip-category-communication
-2025-03-14 12:22:56,772 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
-2025-03-14 12:22:56,772 - INFO - 处理类别：geosite-category-vpn
-2025-03-14 12:22:56,803 - INFO - 处理类别：geosite-category-communication
-2025-03-14 12:22:56,803 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
-2025-03-14 12:22:56,803 - INFO - 处理类别：geoip-category-video
-2025-03-14 12:22:56,803 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
-2025-03-14 12:22:56,803 - INFO - 处理类别：geosite-category-video
-2025-03-14 12:22:56,803 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
-2025-03-14 12:22:56,803 - INFO - 处理类别：geosite-category-direct
-2025-03-14 12:22:56,809 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
-2025-03-14 12:22:56,810 - INFO - 处理类别：geosite-category-download
-2025-03-14 12:22:56,810 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
+2025-03-15 15:33:31,877 - INFO - 类型: geoip
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:31,879 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27d60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,879 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs
+2025-03-15 15:33:31,880 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66080>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,880 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs
+2025-03-15 15:33:31,881 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67e50>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,881 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs
+2025-03-15 15:33:31,882 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-reddit.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64820>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,882 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs
+2025-03-15 15:33:31,882 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-vpn@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-vpn@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64a00>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,883 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,883 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,883 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,883 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,883 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:31,883 - INFO - category-vpn@!cn 规则整理完成:
+2025-03-15 15:33:31,883 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:31,884 - ERROR - 获取链接 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26dd0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,885 - ERROR - 获取链接 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers_firstparty.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers_firstparty.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66ad0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,886 - ERROR - 获取链接 https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66f20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,886 - ERROR - 获取链接 https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b676a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,887 - ERROR - 获取链接 https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /easylist/easylist/master/easyprivacy/easyprivacy_thirdparty.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67250>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,888 - ERROR - 获取链接 https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers_international.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /easylist/easylist/master/easyprivacy/easyprivacy_trackingservers_international.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27790>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,889 - ERROR - 获取链接 https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty_international.txt 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /easylist/easylist/master/easyprivacy/easyprivacy_thirdparty_international.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26e30>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,897 - ERROR - 转换命令失败，错误信息: [31mFATAL[0m[0000] AdGuard rule-set is empty or all rules are unsupported
+
+2025-03-15 15:33:31,898 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64880>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:31,898 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs
+2025-03-15 15:33:31,898 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,235 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-direct@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-direct@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b653f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,236 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,241 - INFO - geolocation-!cn 规则整理完成:
+2025-03-15 15:33:35,241 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:35,241 - INFO - 类型: geoip
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 18449
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 18449
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:35,243 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-linkedin.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-linkedin.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b671f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,243 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-linkedin.srs
+2025-03-15 15:33:35,244 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-signal.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-signal.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b273d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,244 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-signal.srs
+2025-03-15 15:33:35,245 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27e20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,245 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp.srs
+2025-03-15 15:33:35,246 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-telegram.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67d60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,246 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-telegram.srs
+2025-03-15 15:33:35,247 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-messenger.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-messenger.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b641c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,247 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-messenger.srs
+2025-03-15 15:33:35,248 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-discord.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-discord.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65f60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,248 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-discord.srs
+2025-03-15 15:33:35,249 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-line.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-line.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b273a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:35,249 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-line.srs
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:35,249 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:38,192 - INFO - category-communication@!cn 规则整理完成:
+2025-03-15 15:33:38,192 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:38,192 - INFO - 类型: geoip
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 12
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 12
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:38,195 - ERROR - 请求失败: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /leohidalgo/little-snitch---rule-groups/main/rules/hosts-unified.lsrules (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b644c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:43,205 - ERROR - 请求失败: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /leohidalgo/little-snitch---rule-groups/main/rules/hosts-unified.lsrules (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67280>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:48,201 - ERROR - 请求失败: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /leohidalgo/little-snitch---rule-groups/main/rules/hosts-unified.lsrules (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67ca0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:48,201 - ERROR - 已达到最大重试次数 (3)，停止请求。
+2025-03-15 15:33:51,109 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-blocklist@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-blocklist@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b277f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,115 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,119 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,142 - INFO - blocker-trash 规则整理完成:
+2025-03-15 15:33:51,142 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 112652
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 112652
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:51,145 - ERROR - 解析 https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/GoogleDrive.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/GoogleDrive.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65060>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,145 - ERROR - 解析链接 https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/GoogleDrive.yaml 出现错误: 'pattern'
+2025-03-15 15:33:51,146 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-python.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-python.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b665f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,146 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-python.srs
+2025-03-15 15:33:51,149 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ubuntu.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-ubuntu.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b645e0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,149 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ubuntu.srs
+2025-03-15 15:33:51,151 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mega.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-mega.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b277f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,151 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mega.srs
+2025-03-15 15:33:51,152 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pikpak.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-pikpak.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66f50>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,152 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pikpak.srs
+2025-03-15 15:33:51,153 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-nvidia.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-nvidia.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67820>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,153 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-nvidia.srs
+2025-03-15 15:33:51,154 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-anaconda.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-anaconda.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65d20>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,154 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-anaconda.srs
+2025-03-15 15:33:51,155 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-github.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-github.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64730>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,155 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-github.srs
+2025-03-15 15:33:51,156 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-download@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-download@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26c80>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:51,156 - INFO - category-download@!cn 规则整理完成:
+2025-03-15 15:33:51,156 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:33:51,158 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b677c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:51,158 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs
+2025-03-15 15:33:52,538 - ERROR - 下载 https://github.com/SagerNet/sing-geosite/raw/refs/heads/rule-set/geosite-microsoft@cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/refs/heads/rule-set/geosite-microsoft%40cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b643d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,538 - ERROR - 下载 .srs 文件失败: https://github.com/SagerNet/sing-geosite/raw/refs/heads/rule-set/geosite-microsoft@cn.srs
+2025-03-15 15:33:52,542 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b67730>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,543 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-03-15 15:33:52,546 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-private.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-private.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27790>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,546 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-private.srs
+2025-03-15 15:33:52,549 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-direct@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-direct@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b678e0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,552 - ERROR - 解析 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b641c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,553 - ERROR - 解析链接 https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml 出现错误: 'pattern'
+2025-03-15 15:33:52,556 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google@cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-google@cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b646a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,556 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google@cn.srs
+2025-03-15 15:33:52,559 - ERROR - 解析 https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt 时出错：HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /Loyalsoldier/clash-rules/release/direct.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26a40>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:52,560 - ERROR - 解析链接 https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt 出现错误: 'pattern'
+2025-03-15 15:33:55,639 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tencent@cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-tencent@cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b27520>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:55,639 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tencent@cn.srs
+2025-03-15 15:33:55,640 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b66a10>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:55,640 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-media-cn.srs
+2025-03-15 15:33:55,642 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple@cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-apple@cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b65fc0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:33:55,642 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple@cn.srs
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:33:55,642 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:34:01,976 - ERROR - 下载 JSON 文件失败: https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-direct@amos.json, 错误: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-direct@amos.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b26b30>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:34:01,979 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:34:01,985 - INFO - category-direct 规则整理完成:
+2025-03-15 15:34:01,985 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 156
+规则分析:
+  domain 条目数: 13
+  domain_suffix 条目数: 143
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:34:01,986 - INFO - 类型: geoip
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 18467
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 18467
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:34:01,987 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-social-media-!cn.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-category-social-media-!cn.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64730>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:34:01,987 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-social-media-!cn.srs
+2025-03-15 15:34:01,989 - ERROR - 下载 https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-facebook.srs 时出错: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /SagerNet/sing-geosite/rule-set/geosite-facebook.srs (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109b64ac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-15 15:34:01,989 - ERROR - 下载 .srs 文件失败: https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-facebook.srs
+2025-03-15 15:34:01,989 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:34:01,989 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
+2025-03-15 15:34:01,989 - INFO - category-media@!cn 规则整理完成:
+2025-03-15 15:34:01,989 - INFO - 类型: geosite
+domain 被过滤掉的条目数量: 0
+剩余规则总数: 0
+规则分析:
+  domain 条目数: 0
+  domain_suffix 条目数: 0
+  ip_cidr 条目数: 0
+  process_name 条目数: 0
+  domain_regex 条目数: 0
+--------------------------------------------------
+2025-03-15 15:34:01,989 - INFO - 处理类别：geosite-category-media
+2025-03-15 15:34:01,989 - INFO - 处理类别：geosite-category-vpn
+2025-03-15 15:34:01,991 - INFO - 处理类别：geoip-category-game
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geoip-category-communication
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geosite-category-video
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geosite-category-nsfw
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geosite-category-communication
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geosite-category-download
+2025-03-15 15:34:01,991 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
+2025-03-15 15:34:01,991 - INFO - 处理类别：geoip-category-direct
+2025-03-15 15:34:01,992 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
+2025-03-15 15:34:01,992 - INFO - 处理类别：geosite-category-game
+2025-03-15 15:34:01,994 - INFO - 处理类别：geosite-category-direct
+2025-03-15 15:34:01,994 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
+2025-03-15 15:34:01,994 - INFO - 处理类别：geoip-category-video
+2025-03-15 15:34:01,994 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
+2025-03-15 15:34:02,989 - INFO - 转换完成: ./rule/singbox/process-blocker-rejectApp@amos.json → ./rule/surge/process-blocker-rejectApp@amos.list
+2025-03-15 15:34:02,989 - INFO - 转换完成: ./rule/singbox/geosite-category-media@cn.json → ./rule/surge/geosite-category-media@cn.list
+2025-03-15 15:34:02,989 - INFO - 转换完成: ./rule/singbox/geosite-category-media@!cn.json → ./rule/surge/geosite-category-media@!cn.list
+2025-03-15 15:34:02,989 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@!cn.json → ./rule/surge/geosite-category-vpn@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-filter-fakeip.json → ./rule/surge/geosite-filter-fakeip.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geoip-category-game.json → ./rule/surge/geoip-category-game.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geoip-category-communication@!cn.json → ./rule/surge/geoip-category-communication@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-category-video@!cn.json → ./rule/surge/geosite-category-video@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-category-nsfw.json → ./rule/surge/geosite-category-nsfw.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-category-communication@!cn.json → ./rule/surge/geosite-category-communication@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-category-download@!cn.json → ./rule/surge/geosite-category-download@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geosite-category-game@!cn.json → ./rule/surge/geosite-category-game@!cn.list
+2025-03-15 15:34:02,990 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-jp@amos.json → ./rule/surge/geoip-geolocation-jp@amos.list
+2025-03-15 15:34:03,003 - INFO - 转换完成: ./rule/singbox/geosite-blocker-trash.json → ./rule/surge/geosite-blocker-trash.list
+2025-03-15 15:34:03,006 - INFO - 转换完成: ./rule/singbox/geoip-category-direct.json → ./rule/surge/geoip-category-direct.list
+2025-03-15 15:34:03,008 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-!cn.json → ./rule/surge/geoip-geolocation-!cn.list
+2025-03-15 15:34:03,008 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@cn.json → ./rule/surge/geosite-category-vpn@cn.list
+2025-03-15 15:34:03,008 - INFO - 转换完成: ./rule/singbox/process-filter-communicationApp@amos.json → ./rule/surge/process-filter-communicationApp@amos.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/process-filter-directApp@amos.json → ./rule/surge/process-filter-directApp@amos.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-category-game@cn.json → ./rule/surge/geosite-category-game@cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-geolocation-!cn.json → ./rule/surge/geosite-geolocation-!cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-category-direct.json → ./rule/surge/geosite-category-direct.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geoip-category-video@!cn.json → ./rule/surge/geoip-category-video@!cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/process-blocker-rejectApp@amos.json → ./rule/shadowrocket/process-blocker-rejectApp@amos.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-category-media@cn.json → ./rule/shadowrocket/geosite-category-media@cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-category-media@!cn.json → ./rule/shadowrocket/geosite-category-media@!cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@!cn.json → ./rule/shadowrocket/geosite-category-vpn@!cn.list
+2025-03-15 15:34:03,009 - INFO - 转换完成: ./rule/singbox/geosite-filter-fakeip.json → ./rule/shadowrocket/geosite-filter-fakeip.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geoip-category-game.json → ./rule/shadowrocket/geoip-category-game.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geoip-category-communication@!cn.json → ./rule/shadowrocket/geoip-category-communication@!cn.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geosite-category-video@!cn.json → ./rule/shadowrocket/geosite-category-video@!cn.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geosite-category-nsfw.json → ./rule/shadowrocket/geosite-category-nsfw.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geosite-category-communication@!cn.json → ./rule/shadowrocket/geosite-category-communication@!cn.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geosite-category-download@!cn.json → ./rule/shadowrocket/geosite-category-download@!cn.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geosite-category-game@!cn.json → ./rule/shadowrocket/geosite-category-game@!cn.list
+2025-03-15 15:34:03,010 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-jp@amos.json → ./rule/shadowrocket/geoip-geolocation-jp@amos.list
+2025-03-15 15:34:03,022 - INFO - 转换完成: ./rule/singbox/geosite-blocker-trash.json → ./rule/shadowrocket/geosite-blocker-trash.list
+2025-03-15 15:34:03,025 - INFO - 转换完成: ./rule/singbox/geoip-category-direct.json → ./rule/shadowrocket/geoip-category-direct.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-!cn.json → ./rule/shadowrocket/geoip-geolocation-!cn.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@cn.json → ./rule/shadowrocket/geosite-category-vpn@cn.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/process-filter-communicationApp@amos.json → ./rule/shadowrocket/process-filter-communicationApp@amos.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/process-filter-directApp@amos.json → ./rule/shadowrocket/process-filter-directApp@amos.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/geosite-category-game@cn.json → ./rule/shadowrocket/geosite-category-game@cn.list
+2025-03-15 15:34:03,027 - INFO - 转换完成: ./rule/singbox/geosite-geolocation-!cn.json → ./rule/shadowrocket/geosite-geolocation-!cn.list
+2025-03-15 15:34:03,028 - INFO - 转换完成: ./rule/singbox/geosite-category-direct.json → ./rule/shadowrocket/geosite-category-direct.list
+2025-03-15 15:34:03,028 - INFO - 转换完成: ./rule/singbox/geoip-category-video@!cn.json → ./rule/shadowrocket/geoip-category-video@!cn.list

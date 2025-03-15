@@ -570,14 +570,12 @@ class RuleParser:
 
 
     def main(self):
-        source_directory = "./source"
-        output_directory = "./rule"
-
-        # 清空 output_directory
+        #### 解析规则，生成sing-box规则集
+        source_directory = config.source_dir
+        output_directory = os.path.join(config.rule_dir,'singbox')
         if os.path.exists(output_directory):
             shutil.rmtree(output_directory)
         os.makedirs(output_directory)
-
         yaml_files = [f for f in os.listdir(source_directory) if f.endswith('.yaml')]
         for yaml_file in yaml_files:
             print('正在处理{}'.format(yaml_file))
@@ -596,6 +594,17 @@ class RuleParser:
             srs_path = json_file_path.replace(".json", ".srs")
             os.system(f"sing-box rule-set compile --output {srs_path} {json_file_path}")
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
+
+        #### 调用工具函数 将 sing-box 规则转化为 Surge/Shadowrocket 规则
+        surge_output_directory = os.path.join(config.rule_dir, 'surge')
+        shadowrocket_output_directory = os.path.join(config.rule_dir, 'shadowrocket')
+
+        convert_json_to_surge(output_directory, surge_output_directory)
+        logging.debug(f"成功生成 Surge 规则文件，存储于 {surge_output_directory}")
+
+        convert_json_to_surge(output_directory, shadowrocket_output_directory)
+        logging.debug(f"成功生成 Shadowrocket 规则文件，存储于 {shadowrocket_output_directory}")
+
 
 class ConfigParser:
     def __init__(self):

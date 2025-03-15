@@ -12,6 +12,8 @@ class Config:
                             format='%(asctime)s - %(levelname)s - %(message)s')
 
         # 规则设置
+        self.rule_dir = './rule'
+        self.source_dir = './source'
         self.trust_upstream = False
         self.ls_index = 1
         self.enable_trie_filtering = [True, False][0] # 是否按照 domain_suffix 剔除重复的 domain
@@ -23,4 +25,4 @@ class Config:
             'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 'IP6-CIDR': 'ip_cidr', 'SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip',
             'DST-PORT': 'port', 'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex", "DOMAIN-REGEX": "domain_regex"
         }
-
+        self.MAP_REVERSE = {v: k for k, v in self.map_dict.items()}
