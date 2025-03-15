@@ -60,6 +60,9 @@ class RuleParser:
             with open(adguard_file_path, "w") as f:
                 f.write("\n".join(sorted(unique_lines)))  # 排序并写入文件
 
+
+
+
             # 执行 sing-box 转换为 srs 格式
             srs_file_path = os.path.join(output_directory, "{}.srs".format(rule_set_name))
             conversion_command = [
@@ -77,6 +80,9 @@ class RuleParser:
             if not os.path.exists(srs_file_path):
                 logging.error(f"转换失败，没有找到生成的 SRS 文件: {srs_file_path}")
                 return None
+
+            # 读取 AdGuard 规则并转换为 Surge/Shadowrocket
+            convert_adguard_to_surge(adguard_file_path, rule_set_name)
 
             # 清理临时文件
             os.remove(adguard_file_path)
@@ -572,7 +578,7 @@ class RuleParser:
     def main(self):
         #### 解析规则，生成sing-box规则集
         source_directory = config.source_dir
-        output_directory = os.path.join(config.rule_dir,'singbox')
+        output_directory = config.singbox_output_directory
         if os.path.exists(output_directory):
             shutil.rmtree(output_directory)
         os.makedirs(output_directory)
@@ -596,14 +602,9 @@ class RuleParser:
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
 
         #### 调用工具函数 将 sing-box 规则转化为 Surge/Shadowrocket 规则
-        surge_output_directory = os.path.join(config.rule_dir, 'surge')
-        shadowrocket_output_directory = os.path.join(config.rule_dir, 'shadowrocket')
 
-        convert_json_to_surge(output_directory, surge_output_directory)
-        logging.debug(f"成功生成 Surge 规则文件，存储于 {surge_output_directory}")
 
-        convert_json_to_surge(output_directory, shadowrocket_output_directory)
-        logging.debug(f"成功生成 Shadowrocket 规则文件，存储于 {shadowrocket_output_directory}")
+        convert_json_to_surge(output_directory)
 
 
 class ConfigParser:

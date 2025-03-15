@@ -14,6 +14,11 @@ class Config:
         # 规则设置
         self.rule_dir = './rule'
         self.source_dir = './source'
+
+        self.singbox_output_directory = os.path.join(self.rule_dir, 'singbox')
+        self.surge_output_directory = os.path.join(self.rule_dir, 'surge')
+        self.shadowrocket_output_directory = os.path.join(self.rule_dir, 'shadowrocket')
+
         self.trust_upstream = False
         self.ls_index = 1
         self.enable_trie_filtering = [True, False][0] # 是否按照 domain_suffix 剔除重复的 domain

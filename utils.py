@@ -385,22 +385,27 @@ def filter_domains_with_trie(domains, domain_suffixes):
 
     return filtered_domains, filtered_count
 
-def convert_json_to_surge(input_dir="./rule", output_dir="./rule/surge"):
+def convert_json_to_surge(input_dir):
     """
-    读取指定目录下的所有 JSON 文件，将其转换为 Surge 规则，并存储在 output_dir 目录下。
+    读取指定目录下的所有 JSON 文件，将其转换为 Surge 和 Shadowrocket 规则，并存储在 config 指定的目录下。
     """
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    surge_output_dir = config.surge_output_directory
+    shadowrocket_output_dir = config.shadowrocket_output_directory
+
+    os.makedirs(surge_output_dir, exist_ok=True)
+    os.makedirs(shadowrocket_output_dir, exist_ok=True)
 
     for filename in os.listdir(input_dir):
         if filename.endswith(".json"):
             input_path = os.path.join(input_dir, filename)
-            output_path = os.path.join(output_dir, filename.replace(".json", ".list"))
+            surge_output_path = os.path.join(surge_output_dir, filename.replace(".json", ".list"))
+            shadowrocket_output_path = os.path.join(shadowrocket_output_dir, filename.replace(".json", ".list"))
 
             try:
                 with open(input_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
+                # **计算一次 `surge_rules`**
                 surge_rules = []
                 for rule in data.get("rules", []):
                     for rule_type, values in rule.items():
@@ -409,10 +414,88 @@ def convert_json_to_surge(input_dir="./rule", output_dir="./rule/surge"):
                             for value in values:
                                 surge_rules.append(f"{surge_type},{value}")
 
-                with open(output_path, "w", encoding="utf-8") as f:
-                    f.write("\n".join(surge_rules))
+                # **写入 Surge & Shadowrocket 规则文件**
+                rule_text = "\n".join(surge_rules)
+                with open(surge_output_path, "w", encoding="utf-8") as f1, \
+                     open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
+                    f1.write(rule_text)
+                    f2.write(rule_text)
 
-                logging.info(f"转换完成: {input_path} → {output_path}")
+                logging.info(f"转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
 
             except Exception as e:
                 logging.error(f"转换 {input_path} 时出错: {e}")
+
+
+def convert_adguard_to_surge(input_path, rule_set_name):
+    """
+    读取 AdGuard 规则文件，并转换为 Surge/Shadowrocket 规则。
+    结果分别存储在 `config.surge_output_dir` 和 `config.shadowrocket_output_dir` 目录下。
+    """
+    if not os.path.exists(input_path):
+        logging.error(f"文件不存在: {input_path}")
+        return
+
+    # 固定输出目录
+    surge_output_dir = config.surge_output_directory
+    shadowrocket_output_dir = config.shadowrocket_output_directory
+
+    os.makedirs(surge_output_dir, exist_ok=True)
+    os.makedirs(shadowrocket_output_dir, exist_ok=True)
+
+    # 生成输出文件名
+    output_filename = f"{rule_set_name}.list"
+    surge_output_path = os.path.join(surge_output_dir, output_filename)
+    shadowrocket_output_path = os.path.join(shadowrocket_output_dir, output_filename)
+
+    surge_rules = []
+    with open(input_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("!") or line.startswith("["):  # 忽略注释和无效行
+                continue
+
+            # 处理 DOMAIN-SUFFIX 规则 (||example.com^)
+            if line.startswith("||"):
+                domain = line[2:].split("^")[0]
+                surge_rules.append(f"DOMAIN-SUFFIX,{domain}")
+            # 处理 DOMAIN 规则 (example.com^)
+            elif line.endswith("^") and not line.startswith("|") and not line.startswith("@@"):
+                domain = line[:-1]
+                surge_rules.append(f"DOMAIN,{domain}")
+            # 处理 DOMAIN 规则 (|example.com)
+            elif line.startswith("|") and "/" not in line:
+                domain = line[1:]
+                surge_rules.append(f"DOMAIN,{domain}")
+
+            # 处理 URL 规则 (|http://example.com/ads.js)
+            elif line.startswith("|http"):
+                url = line[1:].replace(".", r"\.")  # 转义 .
+                surge_rules.append(f"URL-REGEX,^{url}$")
+
+            # 处理 URL 正则匹配规则 (/ads\.(js|php)/)
+            elif line.startswith("/") and line.endswith("/"):
+                regex = line[1:-1]  # 去掉前后的 /
+                surge_rules.append(f"URL-REGEX,{regex}")
+
+            # 处理 IP-CIDR 规则 (127.0.0.1)
+            elif re.match(r"^\d+\.\d+\.\d+\.\d+$", line):
+                surge_rules.append(f"IP-CIDR,{line}/32")
+
+            # 处理允许（白名单）规则 (@@||example.com^)
+            elif line.startswith("@@||"):
+                domain = line[4:].split("^")[0]
+                surge_rules.append(f"DOMAIN-SUFFIX,{domain},DIRECT")
+
+            # 其他规则忽略
+            else:
+                logging.warning(f"未识别的 AdGuard 规则: {line}")
+
+    # **写入 Surge & Shadowrocket 规则文件**
+    rule_text = "\n".join(surge_rules)
+    with open(surge_output_path, "w", encoding="utf-8") as f1, \
+         open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
+        f1.write(rule_text)
+        f2.write(rule_text)
+
+    logging.info(f"AdGuard 规则转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
