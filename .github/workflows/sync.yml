@@ -43,8 +43,7 @@ jobs:
         git config --global user.name "GitHub Action"
         
         # 添加log.txt和规则文件
-        git add ./rule/*.json
-        git add ./rule/*.srs
+        git add ./rule/
         git add ./log.txt
         git add ./route.json
     
