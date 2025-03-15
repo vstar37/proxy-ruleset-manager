@@ -1,0 +1,8 @@
+# 忽略 PyCharm 的配置目录
+.idea/
+
+# 忽略 Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
