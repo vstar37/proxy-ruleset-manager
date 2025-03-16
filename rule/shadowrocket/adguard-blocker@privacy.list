@@ -599,6 +599,7 @@ DOMAIN-SUFFIX,amazonaws.com/appmonitors/
 DOMAIN-SUFFIX,amazonaws.com/avsmetrics/
 DOMAIN-SUFFIX,amazonaws.com/beacon
 DOMAIN-SUFFIX,amazonaws.com/cdn.barilliance.com/
+DOMAIN-SUFFIX,amazonaws.com/default/tracking?url=
 DOMAIN-SUFFIX,amazonaws.com/iglu.acme.com.dev.clixtream/tracker.js
 DOMAIN-SUFFIX,amazonaws.com/j.kissinsights.com/
 DOMAIN-SUFFIX,amazonaws.com/js/reach.js
