@@ -1,5 +1,5 @@
-2025-03-16 12:20:48,157 - INFO - category-media@!cn 规则整理完成:
-2025-03-16 12:20:48,157 - INFO - 类型: geosite
+2025-03-17 12:24:15,667 - INFO - category-media@!cn 规则整理完成:
+2025-03-17 12:24:15,668 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 573
 规则分析:
@@ -9,8 +9,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:49,212 - INFO - category-game@cn 规则整理完成:
-2025-03-16 12:20:49,212 - INFO - 类型: geosite
+2025-03-17 12:24:16,123 - INFO - category-game@cn 规则整理完成:
+2025-03-17 12:24:16,123 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 16
 剩余规则总数: 156
 规则分析:
@@ -20,30 +20,30 @@ domain 被过滤掉的条目数量: 16
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:49,806 - WARNING - 未识别的 AdGuard 规则: $app=com.fiberhome.wifiserver
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.analytics
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.systemAdSolution
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: .ott.cibntv.net/youku/*.mp4?*&ykVideoShowType=2|$app=com.youku.phone
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /.*/$network,app=com.adups.fota.sysoper|com.adups.fota
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /^213\.180\./$network,app=com.dafftin.android.moon_phase
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /^5\.255\.255\.77/$network,app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|com.apkpure.aegon|kz.krisha|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|com.BARSinteractive.CodeZDayChronicles|com.BARSinteractive.Crusado|com.BARSinteractive.DeadEvil|com.BARSinteractive.FantasyHeroes|com.BARSinteractive.HungryZombies|com.BARSinteractive.IdleHeroRider|com.HardcoreGamesStudio.DoomZDay|com.HardcoreGamesStudio.Kongardion|com.HardcoreGamesStudio.LineRacer|com.HardcoreGamesStudio.Serious_Game|ru.pikabu.android|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.infoshell.recradio|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|ru.mangalib.lite|ru.libappc
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /^77\.88\./$network,app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|armworkout.armworkoutformen.armexercises|bloodpressuremonitor.bloodpressureapp.bpmonitor|bloodsugartracker.bloodsugartracking.diabetesapp|bmicalculator.bmi.calculator.weightlosstracker|bodyfast.zero.fastingtracker.weightloss|coach.leap.fitness.home.workout.training|com.eyefilter.nightmode.bluelightfilter|com.eyefilter.nightmode.bluelightfilterpro|com.northpark.drinkwater|com.popularapp.thirtydayfitnesschallenge|com.popularapp.thirtydayfitnesschallengepro|downloader.vitmate.downloaderapp|dumbbellworkout.dumbbellapp.homeworkout|fat.burnning.plank.fitness.loseweight|fitnesscoach.workoutplanner.weightloss|gymworkout.gym.gymlog.gymtrainer|habittracker.todolist.tickit.daily.planner|hd.video.downloader.app.hdvideodownloaderapp|heartrate.heartratemonitor.heartrateapp.heartratetracker|homeworkout.homeworkouts.noequipment|increaseheightworkout.heightincreaseexercise.tallerexercise|losebellyfat.flatstomach.absworkout.fatburning|loseweightapp.loseweightappforwomen.womenworkoutathome|menloseweight.loseweightappformen.weightlossformen|nightfilter.bluelightfilter.nightshift|pedometer.steptracker.calorieburner.stepcounter|periodtracker.pregnancy.ovulationtracker|qrcode.reader.qrscanner.barcode.scanner.qrcodereader|running.tracker.gps.map|runningforweightloss.runningapp.runningtracker|sixpack.sixpackabs.absworkout|sleepsounds.relaxandsleep.whitenoise|sleeptrakcer.sleeprecorder.sleepapp.sleep|splits.splitstraining.dothesplits.splitsin30days|steptracker.healthandfitness.walkingtracker.pedometer|stretching.stretch.exercises.back|walking.weightloss.walk.tracker|women.workout.female.fitness|workoutforwomen.femalefitness.womenworkout.loseweight|yogaworkout.dailyyoga.go.weightloss.loseweight|ru.learnwordswithmuttt.multiplicationtable|com.oxothukscan|ru.zen.android|ru.sports.f1|ru.tabor.search|com.balley|flipboard.app|black.wall7Fon|ru.mamba.client|se.scmv.belarus|ru.rp5.rp5weatherhorizontal|com.jagplay.client.android.app.thousand.hd|com.alex_ip.coins|an.osintsev.allcoinrus|an.osintsev.caesar|an.osintsev.flake|an.osintsev.ruscollector|an.osintsev.usaeurocoins|an.osintsev.worldbons|an.osintsev.germany|an.osintsev.bonrus|an.osintsev.sngcoins|an.osintsev.collection|an.osintsev.region|kz.tengrinews|com.DL.war.planes.inc.torpedo.bomber.fighter.aircraft.ww2|com.anyreads.patephone|com.jewels.gems.android|com.petrik.shifshedule|com.droid27.d3flipclockweather|com.infoshell.recradio|ru.topradio|ru.wall7Fon|com.narde.backgammon.game|org.aastudio.games.longnards|com.gazstation|kz.krisha|com.swiftsoft.anixartd|com.sshex.sberometr|com.region|com.metalsoft.trackchecker_mobile|com.indie.bustime|com.WildDrewGames.Galaganoid|com.WildDrewGames.BlockPuzzleClayWorld|com.WildDrewGames.SweetPopIt|ru.innim.my_finance|ru.idaprikol|com.olvic.gigiprikol|jabi.pdd2|ru.ria.ria|limehd.ru.ctv|ru.swc.yaplakalcom|ru.sports|com.nektome.talk|com.avito.android|ru.gdeposylka.delta|ru.alexeydubinin.holidays|ru.pikabu.android|molokov.TVGuide|com.zigzag_mobile.skorolek|ru.mail.love|ru.sports.primera|ru.sports.spartak|ru.sports.epl|ru.sports.barcelona|ru.sports.real|ru.sports.zenit|ru.sports.manutd|ru.sports.chelsea|ru.hh.android|bubble.shooter.pop.games.pet.rescue|bubble.shooter.pop.puzzle.game|color.sorting.games.ball.sort.puzzle|com.battle.deskmate|conquer.the.city.takeover.battle|sortpuz.water.sort.puzzle.game|tic.tac.toe.xoxo.xo.two.player|two.player.online.games.finger.tap.battle|two.three.four.player.game.mini.games|water.sorting.games.liquid.color.sort.puzzle|com.fingerlab.word.blockpuzzles|com.crypto.currency|com.fusionmedia.investing|com.holden.radio|com.memeglish.learn.english.language.words.by.memes|com.openmygame.games.android.jigsawpuzzle|drug.vokrug|monitor.kmv.multinotes|ru.tutu.etrains|ru.yandex.rasp|by.denchik.assyst|ru.profmedia.avtoradio|com.didenko.and.partners.durak|com.vertaler.rues|net.sit30.calories|ferp.android|ru.ideer.android|ru.centerion.fiesta_images|ru.centerion.beloved_man|ru.centerion.favorite_girl|ru.centerion.funny_greetings|org.aastudio.games.backgammon|video.player.videoplayer|su.stations.record|com.swiftsoft.anixartlt|com.tadiuzzz.tadius.mysalary|com.mobile_infographics_tools.mydrive|com.mobile_infographics_tools.patternmaker|com.mobile_infographics_tools.mydrive_ext|ru.sports.serie_a|com.merigotech.fillwords|com.linkdesks.jewellegend|com.linkdesks.slotking|com.linkdeskstudio.popcat|jewelblast.puzzlegame.toycrush.gem|linkdesks.bubblegames.bubbleshooter.run|linkdesks.classic.solitaire.klondike|linkdesks.pop.bubblegames.bubbleshooter|linkdesks.solitaire.ocean.fish|merged.jewels.jewelgames|com.lunappstudio.orderofwords|com.lunappstudio.wordomaze|com.merigotech.fillwordsthemes|com.lunappstudio.crossroyal|com.lunappstudio.squiz|com.lunappstudio.photoelephant|com.merigotech.chestofwords|com.quizuapp.history|com.lunappstudio.shift|com.lunappstudio.partybomb|com.indiez.amaze|com.indiez.monsters.puzzles|com.indiez.nonogram|com.indiez.pet.run|com.indiez.tile.connect|com.nostel.color.page|com.nostel.dot.line.puzzle|com.nostel.parking.car|com.nostel.pikachu|com.nostel.taxi.run|ru.fontanka.client|ru.ngs.app|ru.ngs.news|ru.ngs.news.e1|ru.ngs.news.ngs24|ru.ngs.news.ngs42|ru.ngs.news.ngs55|ru.ngs.news.nn|ru.sgp.news.chita|com.arpaplus.adminhands|com.arpaplus.kontakt|com.lovehoroscope.compatibility|com.temolder.calculator|ru.knnv.geometrycalcfree|ru.knnv.pilomaterial|software.clover.mathformulas
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /^77\.88\./$network,app=software.clover.physicsformulas|kz.kundelik.mobile|com.strict.mkenin.agf.cardgames2|com.Andrey.ElementsofNature|com.strict.mkenin.redball.spikeball2|com.strict.mkenin.spaceattack|com.strict.mkenin.spikeball|com.kaptan.blockpuzzlegame|com.strict.mkenin.angryfarm|com.strict.mkenin.redball.runnerball3|com.AlekseySudakov.LamberMilIdle|com.strict.mkenin.redball.runnerball|com.asmr.relaxing.anti.stress.games|com.GardenofDreams.SpeciesEvolution|com.strict.mkenin.redball.runnerball2|park.car.parking.games.master.mania|com.nektome.chatruletka.voice|com.mobilefootie.wc2010|com.gallery.photosgallery.videogallery.galaxy|com.apkpure.aegon|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|ru.babyk.android|ru.full.khd.app|com.droid27.transparentclockweather|com.candygrill.coinboom|com.electricfoal.buildingsformcpe|ru.mangalib.lite|one.belousov.wordgame|one.track.app|ru.photostrana.mobile|ru.cardsmobile.mw3|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|su.solovey.app|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|com.kursx.booze|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|com.dafftin.android.moon_phase|ru.libappc
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /ads|$app=system
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /app*_banner_*.jsp$app=com.ktcs.whowho
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /cpd|$app=system
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /cps|$app=system
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: /whowho_app/v*/collection/*$app=com.ktcs.whowho
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: 142.250.185.244:80$network,app=com.mobond.mindicator
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: 194.177.23.34$app=com.badmanners.murglar,network
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: 8.8.4.4^$network,app=com.zhiliaoapp.musically|com.zhiliao.musically.livewallpaper|com.ss.android.ugc.aweme
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: 8.8.8.8^$network,app=com.zhiliaoapp.musically|com.zhiliao.musically.livewallpaper|com.ss.android.ugc.aweme
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: ://yandex.ru^$app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|armworkout.armworkoutformen.armexercises|bloodpressuremonitor.bloodpressureapp.bpmonitor|bloodsugartracker.bloodsugartracking.diabetesapp|bmicalculator.bmi.calculator.weightlosstracker|bodyfast.zero.fastingtracker.weightloss|coach.leap.fitness.home.workout.training|com.eyefilter.nightmode.bluelightfilter|com.eyefilter.nightmode.bluelightfilterpro|com.northpark.drinkwater|com.popularapp.thirtydayfitnesschallenge|com.popularapp.thirtydayfitnesschallengepro|downloader.vitmate.downloaderapp|dumbbellworkout.dumbbellapp.homeworkout|fat.burnning.plank.fitness.loseweight|fitnesscoach.workoutplanner.weightloss|gymworkout.gym.gymlog.gymtrainer|habittracker.todolist.tickit.daily.planner|hd.video.downloader.app.hdvideodownloaderapp|heartrate.heartratemonitor.heartrateapp.heartratetracker|homeworkout.homeworkouts.noequipment|increaseheightworkout.heightincreaseexercise.tallerexercise|losebellyfat.flatstomach.absworkout.fatburning|loseweightapp.loseweightappforwomen.womenworkoutathome|menloseweight.loseweightappformen.weightlossformen|nightfilter.bluelightfilter.nightshift|pedometer.steptracker.calorieburner.stepcounter|periodtracker.pregnancy.ovulationtracker|qrcode.reader.qrscanner.barcode.scanner.qrcodereader|running.tracker.gps.map|runningforweightloss.runningapp.runningtracker|sixpack.sixpackabs.absworkout|sleepsounds.relaxandsleep.whitenoise|sleeptrakcer.sleeprecorder.sleepapp.sleep|splits.splitstraining.dothesplits.splitsin30days|steptracker.healthandfitness.walkingtracker.pedometer|stretching.stretch.exercises.back|walking.weightloss.walk.tracker|women.workout.female.fitness|workoutforwomen.femalefitness.womenworkout.loseweight|yogaworkout.dailyyoga.go.weightloss.loseweight|ru.learnwordswithmuttt.multiplicationtable|com.oxothukscan|ru.zen.android|ru.sports.f1|ru.tabor.search|com.balley|flipboard.app|black.wall7Fon|ru.mamba.client|se.scmv.belarus|ru.rp5.rp5weatherhorizontal|com.jagplay.client.android.app.thousand.hd|com.alex_ip.coins|an.osintsev.allcoinrus|an.osintsev.caesar|an.osintsev.flake|an.osintsev.ruscollector|an.osintsev.usaeurocoins|an.osintsev.worldbons|an.osintsev.germany|an.osintsev.bonrus|an.osintsev.sngcoins|an.osintsev.collection|an.osintsev.region|kz.tengrinews|com.DL.war.planes.inc.torpedo.bomber.fighter.aircraft.ww2|com.anyreads.patephone|com.jewels.gems.android|com.petrik.shifshedule|com.droid27.d3flipclockweather|com.infoshell.recradio|ru.topradio|ru.wall7Fon|com.narde.backgammon.game|org.aastudio.games.longnards|com.gazstation|kz.krisha|com.swiftsoft.anixartd|com.sshex.sberometr|com.region|com.metalsoft.trackchecker_mobile|com.indie.bustime|com.WildDrewGames.Galaganoid|com.WildDrewGames.BlockPuzzleClayWorld|com.WildDrewGames.SweetPopIt|ru.innim.my_finance|ru.idaprikol|com.olvic.gigiprikol|ru.yandex.mail|jabi.pdd2|ru.ria.ria|limehd.ru.ctv|ru.swc.yaplakalcom|ru.sports|com.nektome.talk|com.avito.android|ru.gdeposylka.delta|ru.alexeydubinin.holidays|ru.pikabu.android|molokov.TVGuide|com.zigzag_mobile.skorolek|ru.mail.love|ru.sports.primera|ru.sports.spartak|ru.sports.epl|ru.sports.barcelona|ru.sports.real|ru.sports.zenit|ru.sports.manutd|ru.sports.chelsea|ru.hh.android|bubble.shooter.pop.games.pet.rescue|bubble.shooter.pop.puzzle.game|color.sorting.games.ball.sort.puzzle|com.battle.deskmate|conquer.the.city.takeover.battle|sortpuz.water.sort.puzzle.game|tic.tac.toe.xoxo.xo.two.player|two.player.online.games.finger.tap.battle|two.three.four.player.game.mini.games|water.sorting.games.liquid.color.sort.puzzle|com.fingerlab.word.blockpuzzles|com.crypto.currency|com.fusionmedia.investing|com.holden.radio|com.memeglish.learn.english.language.words.by.memes|com.openmygame.games.android.jigsawpuzzle|drug.vokrug|monitor.kmv.multinotes|ru.tutu.etrains|ru.yandex.rasp|by.denchik.assyst|ru.profmedia.avtoradio|com.didenko.and.partners.durak|com.vertaler.rues|net.sit30.calories|ferp.android|ru.ideer.android|ru.centerion.fiesta_images|ru.centerion.beloved_man|ru.centerion.favorite_girl|ru.centerion.funny_greetings|org.aastudio.games.backgammon|video.player.videoplayer|su.stations.record|com.swiftsoft.anixartlt|com.tadiuzzz.tadius.mysalary|com.mobile_infographics_tools.mydrive|com.mobile_infographics_tools.patternmaker|com.mobile_infographics_tools.mydrive_ext|ru.sports.serie_a|com.merigotech.fillwords|com.linkdesks.jewellegend|com.linkdesks.slotking|com.linkdeskstudio.popcat|jewelblast.puzzlegame.toycrush.gem|linkdesks.bubblegames.bubbleshooter.run|linkdesks.classic.solitaire.klondike|linkdesks.pop.bubblegames.bubbleshooter|linkdesks.solitaire.ocean.fish|merged.jewels.jewelgames|com.lunappstudio.orderofwords|com.lunappstudio.wordomaze|com.merigotech.fillwordsthemes|com.lunappstudio.crossroyal|com.lunappstudio.squiz|com.lunappstudio.photoelephant|com.merigotech.chestofwords|com.quizuapp.history|com.lunappstudio.shift|com.lunappstudio.partybomb|com.indiez.amaze|com.indiez.monsters.puzzles|com.indiez.nonogram|com.indiez.pet.run|com.indiez.tile.connect|com.nostel.color.page|com.nostel.dot.line.puzzle|com.nostel.parking.car|com.nostel.pikachu|com.nostel.taxi.run|ru.fontanka.client|ru.ngs.app|ru.ngs.news|ru.ngs.news.e1|ru.ngs.news.ngs24|ru.ngs.news.ngs42|ru.ngs.news.ngs55|ru.ngs.news.nn|ru.sgp.news.chita|com.arpaplus.adminhands|com.arpaplus.kontakt|com.lovehoroscope.compatibility|com.temolder.calculator|ru.knnv.geometrycalcfree|ru.knnv.pilomaterial
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: ://yandex.ru^$app=software.clover.mathformulas|software.clover.physicsformulas|kz.kundelik.mobile|com.strict.mkenin.agf.cardgames2|com.Andrey.ElementsofNature|com.strict.mkenin.redball.spikeball2|com.strict.mkenin.spaceattack|com.strict.mkenin.spikeball|com.kaptan.blockpuzzlegame|com.strict.mkenin.angryfarm|com.strict.mkenin.redball.runnerball3|com.AlekseySudakov.LamberMilIdle|com.strict.mkenin.redball.runnerball|com.asmr.relaxing.anti.stress.games|com.GardenofDreams.SpeciesEvolution|com.strict.mkenin.redball.runnerball2|park.car.parking.games.master.mania|com.nektome.chatruletka.voice|com.mobilefootie.wc2010|com.gallery.photosgallery.videogallery.galaxy|com.apkpure.aegon|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|ru.babyk.android|ru.full.khd.app|com.droid27.transparentclockweather|com.candygrill.coinboom|com.electricfoal.buildingsformcpe|com.ilyin.alchemy|com.ilyin.foody|com.ilyin.geomi|com.ilyin.horoscope|com.ilyin.materialspacewallpaper|com.ilyin.reflectdefend|com.ilyin.secret_crate2|com.ilyin.solitaire|ru.subprogram.guitarsongs|dimonvideo.beep|ru.thousandcardgame.android|com.transportspb.app|ru.kraist.tvlist|com.fgcos.scanwords|com.BARSinteractive.CodeZDayChronicles|com.BARSinteractive.Crusado|com.BARSinteractive.DeadEvil|com.BARSinteractive.FantasyHeroes|com.BARSinteractive.HungryZombies|com.BARSinteractive.IdleHeroRider|com.HardcoreGamesStudio.DoomZDay|com.HardcoreGamesStudio.Kongardion|com.HardcoreGamesStudio.LineRacer|com.HardcoreGamesStudio.Serious_Game|ru.mangalib.lite|one.belousov.wordgame|one.track.app|ru.photostrana.mobile|com.appsteka.traceroute|ru.cardsmobile.mw3|ab.exchangerate|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|su.solovey.app|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|com.kursx.booze|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|com.dafftin.android.moon_phase|ru.libappc
-2025-03-16 12:20:49,807 - WARNING - 未识别的 AdGuard 规则: c0server.jags.co.jp/jss/img/banners/$app=jp.co.jags.android.Bokumaka
-2025-03-16 12:20:49,808 - INFO - AdGuard 规则转换完成: /tmp/tmpcavjm494/adguard_combined.txt → ./rule/surge/adguard-blocker@mobile.list, ./rule/shadowrocket/adguard-blocker@mobile.list
-2025-03-16 12:20:50,130 - INFO - filter-communicationApp@amos 规则整理完成:
-2025-03-16 12:20:50,130 - INFO - 类型: process
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: $app=com.fiberhome.wifiserver
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.analytics
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.systemAdSolution
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: .ott.cibntv.net/youku/*.mp4?*&ykVideoShowType=2|$app=com.youku.phone
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /.*/$network,app=com.adups.fota.sysoper|com.adups.fota
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /^213\.180\./$network,app=com.dafftin.android.moon_phase
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /^5\.255\.255\.77/$network,app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|com.apkpure.aegon|kz.krisha|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|com.BARSinteractive.CodeZDayChronicles|com.BARSinteractive.Crusado|com.BARSinteractive.DeadEvil|com.BARSinteractive.FantasyHeroes|com.BARSinteractive.HungryZombies|com.BARSinteractive.IdleHeroRider|com.HardcoreGamesStudio.DoomZDay|com.HardcoreGamesStudio.Kongardion|com.HardcoreGamesStudio.LineRacer|com.HardcoreGamesStudio.Serious_Game|ru.pikabu.android|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.infoshell.recradio|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|ru.mangalib.lite|ru.libappc
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /^77\.88\./$network,app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|armworkout.armworkoutformen.armexercises|bloodpressuremonitor.bloodpressureapp.bpmonitor|bloodsugartracker.bloodsugartracking.diabetesapp|bmicalculator.bmi.calculator.weightlosstracker|bodyfast.zero.fastingtracker.weightloss|coach.leap.fitness.home.workout.training|com.eyefilter.nightmode.bluelightfilter|com.eyefilter.nightmode.bluelightfilterpro|com.northpark.drinkwater|com.popularapp.thirtydayfitnesschallenge|com.popularapp.thirtydayfitnesschallengepro|downloader.vitmate.downloaderapp|dumbbellworkout.dumbbellapp.homeworkout|fat.burnning.plank.fitness.loseweight|fitnesscoach.workoutplanner.weightloss|gymworkout.gym.gymlog.gymtrainer|habittracker.todolist.tickit.daily.planner|hd.video.downloader.app.hdvideodownloaderapp|heartrate.heartratemonitor.heartrateapp.heartratetracker|homeworkout.homeworkouts.noequipment|increaseheightworkout.heightincreaseexercise.tallerexercise|losebellyfat.flatstomach.absworkout.fatburning|loseweightapp.loseweightappforwomen.womenworkoutathome|menloseweight.loseweightappformen.weightlossformen|nightfilter.bluelightfilter.nightshift|pedometer.steptracker.calorieburner.stepcounter|periodtracker.pregnancy.ovulationtracker|qrcode.reader.qrscanner.barcode.scanner.qrcodereader|running.tracker.gps.map|runningforweightloss.runningapp.runningtracker|sixpack.sixpackabs.absworkout|sleepsounds.relaxandsleep.whitenoise|sleeptrakcer.sleeprecorder.sleepapp.sleep|splits.splitstraining.dothesplits.splitsin30days|steptracker.healthandfitness.walkingtracker.pedometer|stretching.stretch.exercises.back|walking.weightloss.walk.tracker|women.workout.female.fitness|workoutforwomen.femalefitness.womenworkout.loseweight|yogaworkout.dailyyoga.go.weightloss.loseweight|ru.learnwordswithmuttt.multiplicationtable|com.oxothukscan|ru.zen.android|ru.sports.f1|ru.tabor.search|com.balley|flipboard.app|black.wall7Fon|ru.mamba.client|se.scmv.belarus|ru.rp5.rp5weatherhorizontal|com.jagplay.client.android.app.thousand.hd|com.alex_ip.coins|an.osintsev.allcoinrus|an.osintsev.caesar|an.osintsev.flake|an.osintsev.ruscollector|an.osintsev.usaeurocoins|an.osintsev.worldbons|an.osintsev.germany|an.osintsev.bonrus|an.osintsev.sngcoins|an.osintsev.collection|an.osintsev.region|kz.tengrinews|com.DL.war.planes.inc.torpedo.bomber.fighter.aircraft.ww2|com.anyreads.patephone|com.jewels.gems.android|com.petrik.shifshedule|com.droid27.d3flipclockweather|com.infoshell.recradio|ru.topradio|ru.wall7Fon|com.narde.backgammon.game|org.aastudio.games.longnards|com.gazstation|kz.krisha|com.swiftsoft.anixartd|com.sshex.sberometr|com.region|com.metalsoft.trackchecker_mobile|com.indie.bustime|com.WildDrewGames.Galaganoid|com.WildDrewGames.BlockPuzzleClayWorld|com.WildDrewGames.SweetPopIt|ru.innim.my_finance|ru.idaprikol|com.olvic.gigiprikol|jabi.pdd2|ru.ria.ria|limehd.ru.ctv|ru.swc.yaplakalcom|ru.sports|com.nektome.talk|com.avito.android|ru.gdeposylka.delta|ru.alexeydubinin.holidays|ru.pikabu.android|molokov.TVGuide|com.zigzag_mobile.skorolek|ru.mail.love|ru.sports.primera|ru.sports.spartak|ru.sports.epl|ru.sports.barcelona|ru.sports.real|ru.sports.zenit|ru.sports.manutd|ru.sports.chelsea|ru.hh.android|bubble.shooter.pop.games.pet.rescue|bubble.shooter.pop.puzzle.game|color.sorting.games.ball.sort.puzzle|com.battle.deskmate|conquer.the.city.takeover.battle|sortpuz.water.sort.puzzle.game|tic.tac.toe.xoxo.xo.two.player|two.player.online.games.finger.tap.battle|two.three.four.player.game.mini.games|water.sorting.games.liquid.color.sort.puzzle|com.fingerlab.word.blockpuzzles|com.crypto.currency|com.fusionmedia.investing|com.holden.radio|com.memeglish.learn.english.language.words.by.memes|com.openmygame.games.android.jigsawpuzzle|drug.vokrug|monitor.kmv.multinotes|ru.tutu.etrains|ru.yandex.rasp|by.denchik.assyst|ru.profmedia.avtoradio|com.didenko.and.partners.durak|com.vertaler.rues|net.sit30.calories|ferp.android|ru.ideer.android|ru.centerion.fiesta_images|ru.centerion.beloved_man|ru.centerion.favorite_girl|ru.centerion.funny_greetings|org.aastudio.games.backgammon|video.player.videoplayer|su.stations.record|com.swiftsoft.anixartlt|com.tadiuzzz.tadius.mysalary|com.mobile_infographics_tools.mydrive|com.mobile_infographics_tools.patternmaker|com.mobile_infographics_tools.mydrive_ext|ru.sports.serie_a|com.merigotech.fillwords|com.linkdesks.jewellegend|com.linkdesks.slotking|com.linkdeskstudio.popcat|jewelblast.puzzlegame.toycrush.gem|linkdesks.bubblegames.bubbleshooter.run|linkdesks.classic.solitaire.klondike|linkdesks.pop.bubblegames.bubbleshooter|linkdesks.solitaire.ocean.fish|merged.jewels.jewelgames|com.lunappstudio.orderofwords|com.lunappstudio.wordomaze|com.merigotech.fillwordsthemes|com.lunappstudio.crossroyal|com.lunappstudio.squiz|com.lunappstudio.photoelephant|com.merigotech.chestofwords|com.quizuapp.history|com.lunappstudio.shift|com.lunappstudio.partybomb|com.indiez.amaze|com.indiez.monsters.puzzles|com.indiez.nonogram|com.indiez.pet.run|com.indiez.tile.connect|com.nostel.color.page|com.nostel.dot.line.puzzle|com.nostel.parking.car|com.nostel.pikachu|com.nostel.taxi.run|ru.fontanka.client|ru.ngs.app|ru.ngs.news|ru.ngs.news.e1|ru.ngs.news.ngs24|ru.ngs.news.ngs42|ru.ngs.news.ngs55|ru.ngs.news.nn|ru.sgp.news.chita|com.arpaplus.adminhands|com.arpaplus.kontakt|com.lovehoroscope.compatibility|com.temolder.calculator|ru.knnv.geometrycalcfree|ru.knnv.pilomaterial|software.clover.mathformulas
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /^77\.88\./$network,app=software.clover.physicsformulas|kz.kundelik.mobile|com.strict.mkenin.agf.cardgames2|com.Andrey.ElementsofNature|com.strict.mkenin.redball.spikeball2|com.strict.mkenin.spaceattack|com.strict.mkenin.spikeball|com.kaptan.blockpuzzlegame|com.strict.mkenin.angryfarm|com.strict.mkenin.redball.runnerball3|com.AlekseySudakov.LamberMilIdle|com.strict.mkenin.redball.runnerball|com.asmr.relaxing.anti.stress.games|com.GardenofDreams.SpeciesEvolution|com.strict.mkenin.redball.runnerball2|park.car.parking.games.master.mania|com.nektome.chatruletka.voice|com.mobilefootie.wc2010|com.gallery.photosgallery.videogallery.galaxy|com.apkpure.aegon|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|ru.babyk.android|ru.full.khd.app|com.droid27.transparentclockweather|com.candygrill.coinboom|com.electricfoal.buildingsformcpe|ru.mangalib.lite|one.belousov.wordgame|one.track.app|ru.photostrana.mobile|ru.cardsmobile.mw3|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|su.solovey.app|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|com.kursx.booze|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|com.dafftin.android.moon_phase|ru.libappc
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /ads|$app=system
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /app*_banner_*.jsp$app=com.ktcs.whowho
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /cpd|$app=system
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /cps|$app=system
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: /whowho_app/v*/collection/*$app=com.ktcs.whowho
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: 142.250.185.244:80$network,app=com.mobond.mindicator
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: 194.177.23.34$app=com.badmanners.murglar,network
+2025-03-17 12:24:16,187 - WARNING - 未识别的 AdGuard 规则: 8.8.4.4^$network,app=com.zhiliaoapp.musically|com.zhiliao.musically.livewallpaper|com.ss.android.ugc.aweme
+2025-03-17 12:24:16,188 - WARNING - 未识别的 AdGuard 规则: 8.8.8.8^$network,app=com.zhiliaoapp.musically|com.zhiliao.musically.livewallpaper|com.ss.android.ugc.aweme
+2025-03-17 12:24:16,188 - WARNING - 未识别的 AdGuard 规则: ://yandex.ru^$app=com.hb.dialer.free|com.onecwireless.mahjong|com.kostosha.poliglot16.pro|armworkout.armworkoutformen.armexercises|bloodpressuremonitor.bloodpressureapp.bpmonitor|bloodsugartracker.bloodsugartracking.diabetesapp|bmicalculator.bmi.calculator.weightlosstracker|bodyfast.zero.fastingtracker.weightloss|coach.leap.fitness.home.workout.training|com.eyefilter.nightmode.bluelightfilter|com.eyefilter.nightmode.bluelightfilterpro|com.northpark.drinkwater|com.popularapp.thirtydayfitnesschallenge|com.popularapp.thirtydayfitnesschallengepro|downloader.vitmate.downloaderapp|dumbbellworkout.dumbbellapp.homeworkout|fat.burnning.plank.fitness.loseweight|fitnesscoach.workoutplanner.weightloss|gymworkout.gym.gymlog.gymtrainer|habittracker.todolist.tickit.daily.planner|hd.video.downloader.app.hdvideodownloaderapp|heartrate.heartratemonitor.heartrateapp.heartratetracker|homeworkout.homeworkouts.noequipment|increaseheightworkout.heightincreaseexercise.tallerexercise|losebellyfat.flatstomach.absworkout.fatburning|loseweightapp.loseweightappforwomen.womenworkoutathome|menloseweight.loseweightappformen.weightlossformen|nightfilter.bluelightfilter.nightshift|pedometer.steptracker.calorieburner.stepcounter|periodtracker.pregnancy.ovulationtracker|qrcode.reader.qrscanner.barcode.scanner.qrcodereader|running.tracker.gps.map|runningforweightloss.runningapp.runningtracker|sixpack.sixpackabs.absworkout|sleepsounds.relaxandsleep.whitenoise|sleeptrakcer.sleeprecorder.sleepapp.sleep|splits.splitstraining.dothesplits.splitsin30days|steptracker.healthandfitness.walkingtracker.pedometer|stretching.stretch.exercises.back|walking.weightloss.walk.tracker|women.workout.female.fitness|workoutforwomen.femalefitness.womenworkout.loseweight|yogaworkout.dailyyoga.go.weightloss.loseweight|ru.learnwordswithmuttt.multiplicationtable|com.oxothukscan|ru.zen.android|ru.sports.f1|ru.tabor.search|com.balley|flipboard.app|black.wall7Fon|ru.mamba.client|se.scmv.belarus|ru.rp5.rp5weatherhorizontal|com.jagplay.client.android.app.thousand.hd|com.alex_ip.coins|an.osintsev.allcoinrus|an.osintsev.caesar|an.osintsev.flake|an.osintsev.ruscollector|an.osintsev.usaeurocoins|an.osintsev.worldbons|an.osintsev.germany|an.osintsev.bonrus|an.osintsev.sngcoins|an.osintsev.collection|an.osintsev.region|kz.tengrinews|com.DL.war.planes.inc.torpedo.bomber.fighter.aircraft.ww2|com.anyreads.patephone|com.jewels.gems.android|com.petrik.shifshedule|com.droid27.d3flipclockweather|com.infoshell.recradio|ru.topradio|ru.wall7Fon|com.narde.backgammon.game|org.aastudio.games.longnards|com.gazstation|kz.krisha|com.swiftsoft.anixartd|com.sshex.sberometr|com.region|com.metalsoft.trackchecker_mobile|com.indie.bustime|com.WildDrewGames.Galaganoid|com.WildDrewGames.BlockPuzzleClayWorld|com.WildDrewGames.SweetPopIt|ru.innim.my_finance|ru.idaprikol|com.olvic.gigiprikol|ru.yandex.mail|jabi.pdd2|ru.ria.ria|limehd.ru.ctv|ru.swc.yaplakalcom|ru.sports|com.nektome.talk|com.avito.android|ru.gdeposylka.delta|ru.alexeydubinin.holidays|ru.pikabu.android|molokov.TVGuide|com.zigzag_mobile.skorolek|ru.mail.love|ru.sports.primera|ru.sports.spartak|ru.sports.epl|ru.sports.barcelona|ru.sports.real|ru.sports.zenit|ru.sports.manutd|ru.sports.chelsea|ru.hh.android|bubble.shooter.pop.games.pet.rescue|bubble.shooter.pop.puzzle.game|color.sorting.games.ball.sort.puzzle|com.battle.deskmate|conquer.the.city.takeover.battle|sortpuz.water.sort.puzzle.game|tic.tac.toe.xoxo.xo.two.player|two.player.online.games.finger.tap.battle|two.three.four.player.game.mini.games|water.sorting.games.liquid.color.sort.puzzle|com.fingerlab.word.blockpuzzles|com.crypto.currency|com.fusionmedia.investing|com.holden.radio|com.memeglish.learn.english.language.words.by.memes|com.openmygame.games.android.jigsawpuzzle|drug.vokrug|monitor.kmv.multinotes|ru.tutu.etrains|ru.yandex.rasp|by.denchik.assyst|ru.profmedia.avtoradio|com.didenko.and.partners.durak|com.vertaler.rues|net.sit30.calories|ferp.android|ru.ideer.android|ru.centerion.fiesta_images|ru.centerion.beloved_man|ru.centerion.favorite_girl|ru.centerion.funny_greetings|org.aastudio.games.backgammon|video.player.videoplayer|su.stations.record|com.swiftsoft.anixartlt|com.tadiuzzz.tadius.mysalary|com.mobile_infographics_tools.mydrive|com.mobile_infographics_tools.patternmaker|com.mobile_infographics_tools.mydrive_ext|ru.sports.serie_a|com.merigotech.fillwords|com.linkdesks.jewellegend|com.linkdesks.slotking|com.linkdeskstudio.popcat|jewelblast.puzzlegame.toycrush.gem|linkdesks.bubblegames.bubbleshooter.run|linkdesks.classic.solitaire.klondike|linkdesks.pop.bubblegames.bubbleshooter|linkdesks.solitaire.ocean.fish|merged.jewels.jewelgames|com.lunappstudio.orderofwords|com.lunappstudio.wordomaze|com.merigotech.fillwordsthemes|com.lunappstudio.crossroyal|com.lunappstudio.squiz|com.lunappstudio.photoelephant|com.merigotech.chestofwords|com.quizuapp.history|com.lunappstudio.shift|com.lunappstudio.partybomb|com.indiez.amaze|com.indiez.monsters.puzzles|com.indiez.nonogram|com.indiez.pet.run|com.indiez.tile.connect|com.nostel.color.page|com.nostel.dot.line.puzzle|com.nostel.parking.car|com.nostel.pikachu|com.nostel.taxi.run|ru.fontanka.client|ru.ngs.app|ru.ngs.news|ru.ngs.news.e1|ru.ngs.news.ngs24|ru.ngs.news.ngs42|ru.ngs.news.ngs55|ru.ngs.news.nn|ru.sgp.news.chita|com.arpaplus.adminhands|com.arpaplus.kontakt|com.lovehoroscope.compatibility|com.temolder.calculator|ru.knnv.geometrycalcfree|ru.knnv.pilomaterial
+2025-03-17 12:24:16,188 - WARNING - 未识别的 AdGuard 规则: ://yandex.ru^$app=software.clover.mathformulas|software.clover.physicsformulas|kz.kundelik.mobile|com.strict.mkenin.agf.cardgames2|com.Andrey.ElementsofNature|com.strict.mkenin.redball.spikeball2|com.strict.mkenin.spaceattack|com.strict.mkenin.spikeball|com.kaptan.blockpuzzlegame|com.strict.mkenin.angryfarm|com.strict.mkenin.redball.runnerball3|com.AlekseySudakov.LamberMilIdle|com.strict.mkenin.redball.runnerball|com.asmr.relaxing.anti.stress.games|com.GardenofDreams.SpeciesEvolution|com.strict.mkenin.redball.runnerball2|park.car.parking.games.master.mania|com.nektome.chatruletka.voice|com.mobilefootie.wc2010|com.gallery.photosgallery.videogallery.galaxy|com.apkpure.aegon|uz.avtoelon|kz.kolesa|com.byril.alchemy|com.byril.alchemyanimals|com.byril.doodlebasket|com.byril.doodlebasket2|com.byril.doodlejewels|com.byril.dots|com.byril.drawingmaster|com.byril.planes|com.byril.seabattle|com.byril.seabattle2|com.byril.stickmanarcher|com.byril.tictactoe2|ru.babyk.android|ru.full.khd.app|com.droid27.transparentclockweather|com.candygrill.coinboom|com.electricfoal.buildingsformcpe|com.ilyin.alchemy|com.ilyin.foody|com.ilyin.geomi|com.ilyin.horoscope|com.ilyin.materialspacewallpaper|com.ilyin.reflectdefend|com.ilyin.secret_crate2|com.ilyin.solitaire|ru.subprogram.guitarsongs|dimonvideo.beep|ru.thousandcardgame.android|com.transportspb.app|ru.kraist.tvlist|com.fgcos.scanwords|com.BARSinteractive.CodeZDayChronicles|com.BARSinteractive.Crusado|com.BARSinteractive.DeadEvil|com.BARSinteractive.FantasyHeroes|com.BARSinteractive.HungryZombies|com.BARSinteractive.IdleHeroRider|com.HardcoreGamesStudio.DoomZDay|com.HardcoreGamesStudio.Kongardion|com.HardcoreGamesStudio.LineRacer|com.HardcoreGamesStudio.Serious_Game|ru.mangalib.lite|one.belousov.wordgame|one.track.app|ru.photostrana.mobile|com.appsteka.traceroute|ru.cardsmobile.mw3|ab.exchangerate|altergames.intellect_battle|altergames.carlauncher|altergames.strong_link|altergames.recreverse|altergames.recreverse_fortwo|altergames.neurodraw|com.anoshenko.android.solitaires|com.anoshenko.android.fav_solitaires|com.anoshenko.android.mahjong|su.solovey.app|com.maxxt.pcradio|com.vvf.fmcube|com.sneig.livedrama|com.kursx.booze|photo.editor.ai.photoeditor|filemanager.files.fileexplorer|com.applock.applocker.lockapps.password.locker|recovermessages.restoredeleteddata.recoverdata.notifyme|com.shadowbiz.semechki|ru.livelib.client|ru.etalon.mediafootball|ru.yandex.metro|com.adme.android|com.grif.vmp|com.miui.cleaner|com.oxothuk.bridges|com.oxothuk.dominosa|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.erudit|com.oxothuk.eruditeng|com.oxothuk.infection|com.oxothuk.onetwo|com.oxothuk.qgame|com.oxothuk.qgame|com.oxothuk.sudoku|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzle|com.oxothuk.worldpuzzlefull|com.oxothuk.worldpuzzlefull|com.oxothukscan|com.oxothukscan|com.dafftin.android.moon_phase|ru.libappc
+2025-03-17 12:24:16,188 - WARNING - 未识别的 AdGuard 规则: c0server.jags.co.jp/jss/img/banners/$app=jp.co.jags.android.Bokumaka
+2025-03-17 12:24:16,189 - INFO - AdGuard 规则转换完成: /tmp/tmp3j90x8nb/adguard_combined.txt → ./rule/surge/adguard-blocker@mobile.list, ./rule/shadowrocket/adguard-blocker@mobile.list
+2025-03-17 12:24:16,294 - INFO - filter-communicationApp@amos 规则整理完成:
+2025-03-17 12:24:16,294 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 2
 规则分析:
@@ -53,8 +53,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 2
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:50,478 - INFO - geolocation-jp@amos 规则整理完成:
-2025-03-16 12:20:50,478 - INFO - 类型: geoip
+2025-03-17 12:24:16,520 - INFO - geolocation-jp@amos 规则整理完成:
+2025-03-17 12:24:16,520 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 0
 规则分析:
@@ -64,8 +64,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:50,773 - INFO - blocker-rejectApp@amos 规则整理完成:
-2025-03-16 12:20:50,773 - INFO - 类型: process
+2025-03-17 12:24:16,635 - INFO - blocker-rejectApp@amos 规则整理完成:
+2025-03-17 12:24:16,635 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 23
 规则分析:
@@ -75,8 +75,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 23
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:51,144 - INFO - category-nsfw 规则整理完成:
-2025-03-16 12:20:51,144 - INFO - 类型: geosite
+2025-03-17 12:24:16,797 - INFO - category-nsfw 规则整理完成:
+2025-03-17 12:24:16,797 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 6515
 规则分析:
@@ -86,8 +86,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 136
 --------------------------------------------------
-2025-03-16 12:20:51,439 - INFO - category-media 规则整理完成:
-2025-03-16 12:20:51,439 - INFO - 类型: geosite
+2025-03-17 12:24:16,929 - INFO - category-media 规则整理完成:
+2025-03-17 12:24:16,929 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1397
 规则分析:
@@ -97,8 +97,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:51,739 - INFO - category-media@cn 规则整理完成:
-2025-03-16 12:20:51,739 - INFO - 类型: geosite
+2025-03-17 12:24:17,020 - INFO - category-media@cn 规则整理完成:
+2025-03-17 12:24:17,020 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 204
 规则分析:
@@ -108,9 +108,9 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:52,802 - INFO - AdGuard 规则转换完成: /tmp/tmply0fq7th/adguard_combined.txt → ./rule/surge/adguard-blocker@full.list, ./rule/shadowrocket/adguard-blocker@full.list
-2025-03-16 12:20:55,385 - INFO - category-vpn 规则整理完成:
-2025-03-16 12:20:55,385 - INFO - 类型: geosite
+2025-03-17 12:24:18,001 - INFO - AdGuard 规则转换完成: /tmp/tmp2q6wi0be/adguard_combined.txt → ./rule/surge/adguard-blocker@full.list, ./rule/shadowrocket/adguard-blocker@full.list
+2025-03-17 12:24:19,387 - INFO - category-vpn 规则整理完成:
+2025-03-17 12:24:19,387 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 457
 剩余规则总数: 3207
 规则分析:
@@ -120,8 +120,8 @@ domain 被过滤掉的条目数量: 457
   process_name 条目数: 0
   domain_regex 条目数: 5
 --------------------------------------------------
-2025-03-16 12:20:56,366 - INFO - geolocation-!cn 规则整理完成:
-2025-03-16 12:20:56,366 - INFO - 类型: geosite
+2025-03-17 12:24:20,394 - INFO - geolocation-!cn 规则整理完成:
+2025-03-17 12:24:20,394 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 462
 剩余规则总数: 26077
 规则分析:
@@ -131,18 +131,18 @@ domain 被过滤掉的条目数量: 462
   process_name 条目数: 0
   domain_regex 条目数: 149
 --------------------------------------------------
-2025-03-16 12:20:56,366 - INFO - 类型: geoip
+2025-03-17 12:24:20,394 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18446
+剩余规则总数: 18451
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18446
+  ip_cidr 条目数: 18451
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:57,077 - INFO - category-game 规则整理完成:
-2025-03-16 12:20:57,077 - INFO - 类型: geosite
+2025-03-17 12:24:20,899 - INFO - category-game 规则整理完成:
+2025-03-17 12:24:20,899 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 547
 规则分析:
@@ -152,7 +152,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:57,077 - INFO - 类型: geoip
+2025-03-17 12:24:20,899 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 46
 规则分析:
@@ -162,8 +162,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:20:59,747 - INFO - category-download@!cn 规则整理完成:
-2025-03-16 12:20:59,747 - INFO - 类型: geosite
+2025-03-17 12:24:23,166 - INFO - category-download@!cn 规则整理完成:
+2025-03-17 12:24:23,166 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 130
 规则分析:
@@ -173,8 +173,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2025-03-16 12:20:59,841 - INFO - category-vpn@!cn 规则整理完成:
-2025-03-16 12:20:59,841 - INFO - 类型: geosite
+2025-03-17 12:24:23,310 - INFO - category-vpn@!cn 规则整理完成:
+2025-03-17 12:24:23,310 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 2
 剩余规则总数: 92
 规则分析:
@@ -184,8 +184,8 @@ domain 被过滤掉的条目数量: 2
   process_name 条目数: 0
   domain_regex 条目数: 1
 --------------------------------------------------
-2025-03-16 12:21:00,091 - INFO - filter-fakeip 规则整理完成:
-2025-03-16 12:21:00,091 - INFO - 类型: geosite
+2025-03-17 12:24:23,449 - INFO - filter-fakeip 规则整理完成:
+2025-03-17 12:24:23,449 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 117
 规则分析:
@@ -195,8 +195,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 29
 --------------------------------------------------
-2025-03-16 12:21:02,487 - INFO - category-communication@!cn 规则整理完成:
-2025-03-16 12:21:02,487 - INFO - 类型: geosite
+2025-03-17 12:24:24,749 - INFO - category-communication@!cn 规则整理完成:
+2025-03-17 12:24:24,749 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 100
 规则分析:
@@ -206,7 +206,7 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:02,487 - INFO - 类型: geoip
+2025-03-17 12:24:24,749 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 12
 规则分析:
@@ -216,19 +216,19 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:10,515 - INFO - blocker-trash 规则整理完成:
-2025-03-16 12:21:10,515 - INFO - 类型: geosite
+2025-03-17 12:24:32,862 - INFO - blocker-trash 规则整理完成:
+2025-03-17 12:24:32,862 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 98745
-剩余规则总数: 186269
+剩余规则总数: 186325
 规则分析:
   domain 条目数: 33612
-  domain_suffix 条目数: 152657
+  domain_suffix 条目数: 152713
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:12,403 - INFO - category-video@!cn 规则整理完成:
-2025-03-16 12:21:12,403 - INFO - 类型: geosite
+2025-03-17 12:24:34,482 - INFO - category-video@!cn 规则整理完成:
+2025-03-17 12:24:34,482 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 1
 剩余规则总数: 462
 规则分析:
@@ -238,7 +238,7 @@ domain 被过滤掉的条目数量: 1
   process_name 条目数: 0
   domain_regex 条目数: 5
 --------------------------------------------------
-2025-03-16 12:21:12,403 - INFO - 类型: geoip
+2025-03-17 12:24:34,482 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 1120
 规则分析:
@@ -248,8 +248,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:12,713 - INFO - filter-directApp@amos 规则整理完成:
-2025-03-16 12:21:12,714 - INFO - 类型: process
+2025-03-17 12:24:34,596 - INFO - filter-directApp@amos 规则整理完成:
+2025-03-17 12:24:34,596 - INFO - 类型: process
 domain 被过滤掉的条目数量: 0
 剩余规则总数: 18
 规则分析:
@@ -259,86 +259,86 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 18
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: $app=com.fiberhome.wifiserver
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.analytics
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.systemAdSolution
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: $ping,third-party
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: $third-party,xmlhttprequest,domain=opensubtitles.org
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: -client-tracking.goodgamestudios.com/
-2025-03-16 12:21:14,222 - WARNING - 未识别的 AdGuard 规则: -spiky.clevertap-prod.com^$third-party
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: -wrapper-analytics-prod.cloudfunctions.net/
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: .prod.pr.analytics.console.aws.a2z.com
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: .stape.net
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: .tvp.tv^$third-party
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: /.*/$network,app=com.adups.fota.sysoper|com.adups.fota
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: //t100.ru^$third-party
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: /^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,third-party
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: /grabify.link\/[0-9A-Z]{6,8}$/$domain=grabify.link,all
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: /rdir.baur.de/g.html?uid=$image
-2025-03-16 12:21:14,223 - WARNING - 未识别的 AdGuard 规则: ://tru.am^$third-party
-2025-03-16 12:21:14,229 - INFO - AdGuard 规则转换完成: /tmp/tmp7sbdttrm/adguard_combined.txt → ./rule/surge/adguard-blocker@privacy.list, ./rule/shadowrocket/adguard-blocker@privacy.list
-2025-03-16 12:21:21,595 - INFO - category-direct 规则整理完成:
-2025-03-16 12:21:21,595 - INFO - 类型: geosite
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: $app=com.fiberhome.wifiserver
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.analytics
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: $app=com.miui.systemAdSolution
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: $ping,third-party
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: $third-party,xmlhttprequest,domain=opensubtitles.org
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: -client-tracking.goodgamestudios.com/
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: -spiky.clevertap-prod.com^$third-party
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: -wrapper-analytics-prod.cloudfunctions.net/
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: .prod.pr.analytics.console.aws.a2z.com
+2025-03-17 12:24:36,088 - WARNING - 未识别的 AdGuard 规则: .stape.net
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: .tvp.tv^$third-party
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: /.*/$network,app=com.adups.fota.sysoper|com.adups.fota
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: //t100.ru^$third-party
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: /^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,third-party
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: /grabify.link\/[0-9A-Z]{6,8}$/$domain=grabify.link,all
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: /rdir.baur.de/g.html?uid=$image
+2025-03-17 12:24:36,089 - WARNING - 未识别的 AdGuard 规则: ://tru.am^$third-party
+2025-03-17 12:24:36,095 - INFO - AdGuard 规则转换完成: /tmp/tmpn7sm3dbj/adguard_combined.txt → ./rule/surge/adguard-blocker@privacy.list, ./rule/shadowrocket/adguard-blocker@privacy.list
+2025-03-17 12:24:43,455 - INFO - category-direct 规则整理完成:
+2025-03-17 12:24:43,455 - INFO - 类型: geosite
 domain 被过滤掉的条目数量: 104
-剩余规则总数: 99439
+剩余规则总数: 99437
 规则分析:
   domain 条目数: 467
-  domain_suffix 条目数: 98946
+  domain_suffix 条目数: 98944
   ip_cidr 条目数: 0
   process_name 条目数: 0
   domain_regex 条目数: 26
 --------------------------------------------------
-2025-03-16 12:21:21,595 - INFO - 类型: geoip
+2025-03-17 12:24:43,455 - INFO - 类型: geoip
 domain 被过滤掉的条目数量: 0
-剩余规则总数: 18464
+剩余规则总数: 18469
 规则分析:
   domain 条目数: 0
   domain_suffix 条目数: 0
-  ip_cidr 条目数: 18464
+  ip_cidr 条目数: 18469
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-03-16 12:21:21,596 - INFO - 处理类别：geoip-category-direct
-2025-03-16 12:21:21,597 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
-2025-03-16 12:21:21,597 - INFO - 处理类别：geosite-category-media
-2025-03-16 12:21:21,619 - INFO - 处理类别：geosite-category-game
-2025-03-16 12:21:21,624 - INFO - 处理类别：geoip-category-game
-2025-03-16 12:21:21,624 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
-2025-03-16 12:21:21,624 - INFO - 处理类别：geosite-category-nsfw
-2025-03-16 12:21:21,625 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
-2025-03-16 12:21:21,625 - INFO - 处理类别：geoip-category-communication
-2025-03-16 12:21:21,625 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
-2025-03-16 12:21:21,625 - INFO - 处理类别：geosite-category-vpn
-2025-03-16 12:21:21,657 - INFO - 处理类别：geosite-category-communication
-2025-03-16 12:21:21,657 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
-2025-03-16 12:21:21,657 - INFO - 处理类别：geoip-category-video
-2025-03-16 12:21:21,657 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
-2025-03-16 12:21:21,657 - INFO - 处理类别：geosite-category-video
-2025-03-16 12:21:21,657 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
-2025-03-16 12:21:21,657 - INFO - 处理类别：geosite-category-direct
-2025-03-16 12:21:21,664 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
-2025-03-16 12:21:21,665 - INFO - 处理类别：geosite-category-download
-2025-03-16 12:21:21,665 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
-2025-03-16 12:21:24,816 - INFO - 转换完成: ./rule/singbox/geoip-category-direct.json → ./rule/surge/geoip-category-direct.list, ./rule/shadowrocket/geoip-category-direct.list
-2025-03-16 12:21:24,822 - INFO - 转换完成: ./rule/singbox/geosite-geolocation-!cn.json → ./rule/surge/geosite-geolocation-!cn.list, ./rule/shadowrocket/geosite-geolocation-!cn.list
-2025-03-16 12:21:24,822 - INFO - 转换完成: ./rule/singbox/process-filter-directApp@amos.json → ./rule/surge/process-filter-directApp@amos.list, ./rule/shadowrocket/process-filter-directApp@amos.list
-2025-03-16 12:21:24,823 - INFO - 转换完成: ./rule/singbox/geosite-category-media@!cn.json → ./rule/surge/geosite-category-media@!cn.list, ./rule/shadowrocket/geosite-category-media@!cn.list
-2025-03-16 12:21:24,823 - INFO - 转换完成: ./rule/singbox/geosite-filter-fakeip.json → ./rule/surge/geosite-filter-fakeip.list, ./rule/shadowrocket/geosite-filter-fakeip.list
-2025-03-16 12:21:24,823 - INFO - 转换完成: ./rule/singbox/process-blocker-rejectApp@amos.json → ./rule/surge/process-blocker-rejectApp@amos.list, ./rule/shadowrocket/process-blocker-rejectApp@amos.list
-2025-03-16 12:21:24,824 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-jp@amos.json → ./rule/surge/geoip-geolocation-jp@amos.list, ./rule/shadowrocket/geoip-geolocation-jp@amos.list
-2025-03-16 12:21:24,824 - INFO - 转换完成: ./rule/singbox/geosite-category-game@cn.json → ./rule/surge/geosite-category-game@cn.list, ./rule/shadowrocket/geosite-category-game@cn.list
-2025-03-16 12:21:24,828 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-!cn.json → ./rule/surge/geoip-geolocation-!cn.list, ./rule/shadowrocket/geoip-geolocation-!cn.list
-2025-03-16 12:21:24,828 - INFO - 转换完成: ./rule/singbox/geosite-category-media@cn.json → ./rule/surge/geosite-category-media@cn.list, ./rule/shadowrocket/geosite-category-media@cn.list
-2025-03-16 12:21:24,829 - INFO - 转换完成: ./rule/singbox/geoip-category-game.json → ./rule/surge/geoip-category-game.list, ./rule/shadowrocket/geoip-category-game.list
-2025-03-16 12:21:24,829 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@cn.json → ./rule/surge/geosite-category-vpn@cn.list, ./rule/shadowrocket/geosite-category-vpn@cn.list
-2025-03-16 12:21:24,831 - INFO - 转换完成: ./rule/singbox/geosite-category-nsfw.json → ./rule/surge/geosite-category-nsfw.list, ./rule/shadowrocket/geosite-category-nsfw.list
-2025-03-16 12:21:24,831 - INFO - 转换完成: ./rule/singbox/geoip-category-communication@!cn.json → ./rule/surge/geoip-category-communication@!cn.list, ./rule/shadowrocket/geoip-category-communication@!cn.list
-2025-03-16 12:21:24,832 - INFO - 转换完成: ./rule/singbox/process-filter-communicationApp@amos.json → ./rule/surge/process-filter-communicationApp@amos.list, ./rule/shadowrocket/process-filter-communicationApp@amos.list
-2025-03-16 12:21:24,832 - INFO - 转换完成: ./rule/singbox/geosite-category-communication@!cn.json → ./rule/surge/geosite-category-communication@!cn.list, ./rule/shadowrocket/geosite-category-communication@!cn.list
-2025-03-16 12:21:24,832 - INFO - 转换完成: ./rule/singbox/geoip-category-video@!cn.json → ./rule/surge/geoip-category-video@!cn.list, ./rule/shadowrocket/geoip-category-video@!cn.list
-2025-03-16 12:21:24,833 - INFO - 转换完成: ./rule/singbox/geosite-category-video@!cn.json → ./rule/surge/geosite-category-video@!cn.list, ./rule/shadowrocket/geosite-category-video@!cn.list
-2025-03-16 12:21:24,833 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@!cn.json → ./rule/surge/geosite-category-vpn@!cn.list, ./rule/shadowrocket/geosite-category-vpn@!cn.list
-2025-03-16 12:21:24,851 - INFO - 转换完成: ./rule/singbox/geosite-category-direct.json → ./rule/surge/geosite-category-direct.list, ./rule/shadowrocket/geosite-category-direct.list
-2025-03-16 12:21:24,853 - INFO - 转换完成: ./rule/singbox/geosite-category-game@!cn.json → ./rule/surge/geosite-category-game@!cn.list, ./rule/shadowrocket/geosite-category-game@!cn.list
-2025-03-16 12:21:24,854 - INFO - 转换完成: ./rule/singbox/geosite-category-download@!cn.json → ./rule/surge/geosite-category-download@!cn.list, ./rule/shadowrocket/geosite-category-download@!cn.list
-2025-03-16 12:21:24,902 - INFO - 转换完成: ./rule/singbox/geosite-blocker-trash.json → ./rule/surge/geosite-blocker-trash.list, ./rule/shadowrocket/geosite-blocker-trash.list
+2025-03-17 12:24:43,455 - INFO - 处理类别：geoip-category-direct
+2025-03-17 12:24:43,457 - INFO - 跳过处理 geoip-category-direct，因为没有 @cn 或 @!cn 文件
+2025-03-17 12:24:43,457 - INFO - 处理类别：geosite-category-media
+2025-03-17 12:24:43,480 - INFO - 处理类别：geosite-category-game
+2025-03-17 12:24:43,484 - INFO - 处理类别：geoip-category-game
+2025-03-17 12:24:43,484 - INFO - 跳过处理 geoip-category-game，因为没有 @cn 或 @!cn 文件
+2025-03-17 12:24:43,484 - INFO - 处理类别：geosite-category-nsfw
+2025-03-17 12:24:43,485 - INFO - 跳过处理 geosite-category-nsfw，因为没有 @cn 或 @!cn 文件
+2025-03-17 12:24:43,485 - INFO - 处理类别：geoip-category-communication
+2025-03-17 12:24:43,485 - INFO - 跳过处理 geoip-category-communication，因为没有全体文件
+2025-03-17 12:24:43,485 - INFO - 处理类别：geosite-category-vpn
+2025-03-17 12:24:43,518 - INFO - 处理类别：geosite-category-communication
+2025-03-17 12:24:43,518 - INFO - 跳过处理 geosite-category-communication，因为没有全体文件
+2025-03-17 12:24:43,518 - INFO - 处理类别：geoip-category-video
+2025-03-17 12:24:43,518 - INFO - 跳过处理 geoip-category-video，因为没有全体文件
+2025-03-17 12:24:43,518 - INFO - 处理类别：geosite-category-video
+2025-03-17 12:24:43,518 - INFO - 跳过处理 geosite-category-video，因为没有全体文件
+2025-03-17 12:24:43,518 - INFO - 处理类别：geosite-category-direct
+2025-03-17 12:24:43,525 - INFO - 跳过处理 geosite-category-direct，因为没有 @cn 或 @!cn 文件
+2025-03-17 12:24:43,526 - INFO - 处理类别：geosite-category-download
+2025-03-17 12:24:43,526 - INFO - 跳过处理 geosite-category-download，因为没有全体文件
+2025-03-17 12:24:46,769 - INFO - 转换完成: ./rule/singbox/geoip-category-direct.json → ./rule/surge/geoip-category-direct.list, ./rule/shadowrocket/geoip-category-direct.list
+2025-03-17 12:24:46,775 - INFO - 转换完成: ./rule/singbox/geosite-geolocation-!cn.json → ./rule/surge/geosite-geolocation-!cn.list, ./rule/shadowrocket/geosite-geolocation-!cn.list
+2025-03-17 12:24:46,776 - INFO - 转换完成: ./rule/singbox/process-filter-directApp@amos.json → ./rule/surge/process-filter-directApp@amos.list, ./rule/shadowrocket/process-filter-directApp@amos.list
+2025-03-17 12:24:46,776 - INFO - 转换完成: ./rule/singbox/geosite-category-media@!cn.json → ./rule/surge/geosite-category-media@!cn.list, ./rule/shadowrocket/geosite-category-media@!cn.list
+2025-03-17 12:24:46,777 - INFO - 转换完成: ./rule/singbox/geosite-filter-fakeip.json → ./rule/surge/geosite-filter-fakeip.list, ./rule/shadowrocket/geosite-filter-fakeip.list
+2025-03-17 12:24:46,777 - INFO - 转换完成: ./rule/singbox/process-blocker-rejectApp@amos.json → ./rule/surge/process-blocker-rejectApp@amos.list, ./rule/shadowrocket/process-blocker-rejectApp@amos.list
+2025-03-17 12:24:46,777 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-jp@amos.json → ./rule/surge/geoip-geolocation-jp@amos.list, ./rule/shadowrocket/geoip-geolocation-jp@amos.list
+2025-03-17 12:24:46,777 - INFO - 转换完成: ./rule/singbox/geosite-category-game@cn.json → ./rule/surge/geosite-category-game@cn.list, ./rule/shadowrocket/geosite-category-game@cn.list
+2025-03-17 12:24:46,781 - INFO - 转换完成: ./rule/singbox/geoip-geolocation-!cn.json → ./rule/surge/geoip-geolocation-!cn.list, ./rule/shadowrocket/geoip-geolocation-!cn.list
+2025-03-17 12:24:46,782 - INFO - 转换完成: ./rule/singbox/geosite-category-media@cn.json → ./rule/surge/geosite-category-media@cn.list, ./rule/shadowrocket/geosite-category-media@cn.list
+2025-03-17 12:24:46,782 - INFO - 转换完成: ./rule/singbox/geoip-category-game.json → ./rule/surge/geoip-category-game.list, ./rule/shadowrocket/geoip-category-game.list
+2025-03-17 12:24:46,783 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@cn.json → ./rule/surge/geosite-category-vpn@cn.list, ./rule/shadowrocket/geosite-category-vpn@cn.list
+2025-03-17 12:24:46,784 - INFO - 转换完成: ./rule/singbox/geosite-category-nsfw.json → ./rule/surge/geosite-category-nsfw.list, ./rule/shadowrocket/geosite-category-nsfw.list
+2025-03-17 12:24:46,785 - INFO - 转换完成: ./rule/singbox/geoip-category-communication@!cn.json → ./rule/surge/geoip-category-communication@!cn.list, ./rule/shadowrocket/geoip-category-communication@!cn.list
+2025-03-17 12:24:46,785 - INFO - 转换完成: ./rule/singbox/process-filter-communicationApp@amos.json → ./rule/surge/process-filter-communicationApp@amos.list, ./rule/shadowrocket/process-filter-communicationApp@amos.list
+2025-03-17 12:24:46,785 - INFO - 转换完成: ./rule/singbox/geosite-category-communication@!cn.json → ./rule/surge/geosite-category-communication@!cn.list, ./rule/shadowrocket/geosite-category-communication@!cn.list
+2025-03-17 12:24:46,785 - INFO - 转换完成: ./rule/singbox/geoip-category-video@!cn.json → ./rule/surge/geoip-category-video@!cn.list, ./rule/shadowrocket/geoip-category-video@!cn.list
+2025-03-17 12:24:46,786 - INFO - 转换完成: ./rule/singbox/geosite-category-video@!cn.json → ./rule/surge/geosite-category-video@!cn.list, ./rule/shadowrocket/geosite-category-video@!cn.list
+2025-03-17 12:24:46,786 - INFO - 转换完成: ./rule/singbox/geosite-category-vpn@!cn.json → ./rule/surge/geosite-category-vpn@!cn.list, ./rule/shadowrocket/geosite-category-vpn@!cn.list
+2025-03-17 12:24:46,805 - INFO - 转换完成: ./rule/singbox/geosite-category-direct.json → ./rule/surge/geosite-category-direct.list, ./rule/shadowrocket/geosite-category-direct.list
+2025-03-17 12:24:46,808 - INFO - 转换完成: ./rule/singbox/geosite-category-game@!cn.json → ./rule/surge/geosite-category-game@!cn.list, ./rule/shadowrocket/geosite-category-game@!cn.list
+2025-03-17 12:24:46,808 - INFO - 转换完成: ./rule/singbox/geosite-category-download@!cn.json → ./rule/surge/geosite-category-download@!cn.list, ./rule/shadowrocket/geosite-category-download@!cn.list
+2025-03-17 12:24:46,856 - INFO - 转换完成: ./rule/singbox/geosite-blocker-trash.json → ./rule/surge/geosite-blocker-trash.list, ./rule/shadowrocket/geosite-blocker-trash.list
