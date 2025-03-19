@@ -1921,7 +1921,6 @@ DOMAIN-SUFFIX,byteoversea.com/monitor_browser/
 DOMAIN-SUFFIX,bzclk.baidu.com
 DOMAIN-SUFFIX,bzpics.com/jslib/st.js?
 DOMAIN-SUFFIX,c*hit.zerkalo.io
-DOMAIN-SUFFIX,c-api-bit.shopeemobile.com
 DOMAIN-SUFFIX,c-date.com/pixel/
 DOMAIN-SUFFIX,c-o-u-n-t.com
 DOMAIN-SUFFIX,c-rings.net
@@ -2501,6 +2500,7 @@ DOMAIN-SUFFIX,collection-endpoint-prod.herokuapp.com
 DOMAIN-SUFFIX,collection-endpoint-staging.herokuapp.com
 DOMAIN-SUFFIX,collection.e-satisfaction.com
 DOMAIN-SUFFIX,collector*.ex.co
+DOMAIN-SUFFIX,collector-*.px-cdn.net
 DOMAIN-SUFFIX,collector-*.px-client.net
 DOMAIN-SUFFIX,collector-*.tvsquared.com
 DOMAIN-SUFFIX,collector-1.ex.co
@@ -6416,7 +6416,6 @@ DOMAIN-SUFFIX,mon*-misc-lf.fqnovel.com
 DOMAIN-SUFFIX,mon-*.lemon8-app.com
 DOMAIN-SUFFIX,mon-*.lemon8-app.us
 DOMAIN-SUFFIX,mon-*.tiktokv.com
-DOMAIN-SUFFIX,mon-boot.capcutapi.com
 DOMAIN-SUFFIX,mon-va-us-looki.capcutapi.com
 DOMAIN-SUFFIX,mon-va.byteoversea.com
 DOMAIN-SUFFIX,mon-va.capcutapi.com
@@ -10916,6 +10915,7 @@ DOMAIN-SUFFIX,veeseo.com
 DOMAIN-SUFFIX,veeseo.com
 DOMAIN-SUFFIX,veinteractive.com
 DOMAIN-SUFFIX,velaro.com
+DOMAIN-SUFFIX,venatusmedia.com
 DOMAIN-SUFFIX,vendri.io
 DOMAIN-SUFFIX,venetrigni.com
 DOMAIN-SUFFIX,ventivmedia.com
@@ -11417,6 +11417,7 @@ DOMAIN-SUFFIX,x822.mrt.com
 DOMAIN-SUFFIX,x9.shinobi.jp
 DOMAIN-SUFFIX,xclaimwords.net
 DOMAIN-SUFFIX,xcounter.ch
+DOMAIN-SUFFIX,xeno.media-lab.ai/events
 DOMAIN-SUFFIX,xg4ken.com
 DOMAIN-SUFFIX,xhit.com
 DOMAIN-SUFFIX,xiti.com
