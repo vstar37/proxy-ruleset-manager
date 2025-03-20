@@ -1197,6 +1197,7 @@ DOMAIN-SUFFIX,api-analytics.prod.birdapp.com
 DOMAIN-SUFFIX,api-analytics.rozetka.com.ua
 DOMAIN-SUFFIX,api-iam.intercom.io/messenger/web/metrics
 DOMAIN-SUFFIX,api-location-prd.pelcro.com
+DOMAIN-SUFFIX,api-notify.markarch.com
 DOMAIN-SUFFIX,api-track.linke.ai
 DOMAIN-SUFFIX,api-v3.findify.io/v3/feedback
 DOMAIN-SUFFIX,api.abcsinsights.com
@@ -9177,6 +9178,7 @@ DOMAIN-SUFFIX,stats.suite101.com
 DOMAIN-SUFFIX,stats.sxp.smartclip.net
 DOMAIN-SUFFIX,stats.tazeros.com
 DOMAIN-SUFFIX,stats.tehila.gov.il
+DOMAIN-SUFFIX,stats.tiktoker.win
 DOMAIN-SUFFIX,stats.tipser.com
 DOMAIN-SUFFIX,stats.tirexo.blue
 DOMAIN-SUFFIX,stats.topofblogs.com
