@@ -5078,6 +5078,7 @@ DOMAIN-SUFFIX,instadrama.site
 DOMAIN-SUFFIX,instagram.com/logging/
 DOMAIN-SUFFIX,instagram.com/logging_client_events
 DOMAIN-SUFFIX,instagram.com/paid_ads/
+DOMAIN-SUFFIX,install*.zonastat.com
 DOMAIN-SUFFIX,installiq.com/Pixels/
 DOMAIN-SUFFIX,installtracker.com
 DOMAIN-SUFFIX,installtracker.unityads.unity3d.com
@@ -6107,6 +6108,7 @@ DOMAIN-SUFFIX,mc.admetrica.ru
 DOMAIN-SUFFIX,mc.webvisor.com
 DOMAIN-SUFFIX,mc.webvisor.org
 DOMAIN-SUFFIX,mc.yandex.com
+DOMAIN-SUFFIX,mc.yandex.md
 DOMAIN-SUFFIX,mc.yandex.ru
 DOMAIN-SUFFIX,mcdp-*.outbrain.com
 DOMAIN-SUFFIX,mci1.co.kr
@@ -9587,6 +9589,7 @@ DOMAIN-SUFFIX,tags.hilabel.nl
 DOMAIN-SUFFIX,tags.master-perf-tools.com
 DOMAIN-SUFFIX,tags.news.com.au
 DOMAIN-SUFFIX,tags.op-palvelut.fi
+DOMAIN-SUFFIX,tags.pw.adn.cloud
 DOMAIN-SUFFIX,tags.qortex.ai
 DOMAIN-SUFFIX,tags.refinery89.com
 DOMAIN-SUFFIX,tags.soloway.ru
@@ -11508,6 +11511,7 @@ DOMAIN-SUFFIX,yoc.younited-credit.com
 DOMAIN-SUFFIX,yonemoku.rdy.jp
 DOMAIN-SUFFIX,yoochoose.net
 DOMAIN-SUFFIX,yotpo.com/widget-assets/yotpo-pixel/
+DOMAIN-SUFFIX,yotrack.cdn.ybn.io
 DOMAIN-SUFFIX,yottaa.com/rapid.min.js
 DOMAIN-SUFFIX,yottaa.net/log-jh
 DOMAIN-SUFFIX,yottlyscript.com
