@@ -1390,6 +1390,7 @@ DOMAIN-SUFFIX,artfut.com
 DOMAIN-SUFFIX,aruba.it/servlet/counterserver?
 DOMAIN-SUFFIX,as.tarnkappe.info
 DOMAIN-SUFFIX,asadcdn.com
+DOMAIN-SUFFIX,asanalytics.booking.com
 DOMAIN-SUFFIX,asayer.io/tracker.js
 DOMAIN-SUFFIX,ascendeummedia.com
 DOMAIN-SUFFIX,ascpqnj-oam.global.ssl.fastly.net
@@ -2293,6 +2294,7 @@ DOMAIN-SUFFIX,client-telemetry.hingeprod.net
 DOMAIN-SUFFIX,client-telemetry.roblox.com
 DOMAIN-SUFFIX,client.botchk.net
 DOMAIN-SUFFIX,client.perimeterx.net
+DOMAIN-SUFFIX,client.rum.*.amazonaws.com
 DOMAIN-SUFFIX,clientlog.midomi.com
 DOMAIN-SUFFIX,clientlog3.music.163.com
 DOMAIN-SUFFIX,clientlogdep.music.163.com
@@ -2602,6 +2604,7 @@ DOMAIN-SUFFIX,confiant-integrations.global.ssl.fastly.net
 DOMAIN-SUFFIX,confiant-integrations.net
 DOMAIN-SUFFIX,config-api.internet.apps.samsung.com
 DOMAIN-SUFFIX,config-security.com/event
+DOMAIN-SUFFIX,config.emb-api.com
 DOMAIN-SUFFIX,config.jpush.cn
 DOMAIN-SUFFIX,config.safedk.com
 DOMAIN-SUFFIX,config.uca.cloud.unity3d.com
@@ -2793,6 +2796,7 @@ DOMAIN-SUFFIX,countergeo.com
 DOMAIN-SUFFIX,counterland.com
 DOMAIN-SUFFIX,counterlevel.de
 DOMAIN-SUFFIX,counteronline.de
+DOMAIN-SUFFIX,counters.booking.com
 DOMAIN-SUFFIX,counters.freewebs.com
 DOMAIN-SUFFIX,counters4u.com
 DOMAIN-SUFFIX,counterseite.de
@@ -3150,6 +3154,7 @@ DOMAIN-SUFFIX,data.digitalks.az
 DOMAIN-SUFFIX,data.digitalks.az
 DOMAIN-SUFFIX,data.econa.com
 DOMAIN-SUFFIX,data.eetech.com
+DOMAIN-SUFFIX,data.emb-api.com
 DOMAIN-SUFFIX,data.embeddables.com
 DOMAIN-SUFFIX,data.gosquared.com
 DOMAIN-SUFFIX,data.hicloud.com
@@ -4726,6 +4731,7 @@ DOMAIN-SUFFIX,highmetrics.com
 DOMAIN-SUFFIX,highway.cablecar.sph.com.sg
 DOMAIN-SUFFIX,highwebmedia.com/CACHE/js/output.92c98302d256.js
 DOMAIN-SUFFIX,hikari.jiocinema.com
+DOMAIN-SUFFIX,hilton.data.adobedc.net
 DOMAIN-SUFFIX,hindsight.significanceapps.com
 DOMAIN-SUFFIX,hiperstat.com
 DOMAIN-SUFFIX,hirmatrix.hu
@@ -9726,6 +9732,7 @@ DOMAIN-SUFFIX,teljari.is
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tellaparts.com
 DOMAIN-SUFFIX,temp.twicomi.com
+DOMAIN-SUFFIX,tempo-client-metric-prod.s3.amazonaws.com
 DOMAIN-SUFFIX,temptation.ad.nl
 DOMAIN-SUFFIX,tenant-content.apm.appfolio-analytics.com
 DOMAIN-SUFFIX,tenmax.io

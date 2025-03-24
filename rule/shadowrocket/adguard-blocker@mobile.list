@@ -215,6 +215,7 @@ DOMAIN-SUFFIX,appsflyer-report.honkaiimpact3.com
 DOMAIN-SUFFIX,appsupport.qq.com/cgi-bin/appstage/mstats_batch_report
 DOMAIN-SUFFIX,apsrgeo.amap.com
 DOMAIN-SUFFIX,arcspire.io
+DOMAIN-SUFFIX,asanalytics.booking.com
 DOMAIN-SUFFIX,assets.adobedtm.com
 DOMAIN-SUFFIX,assets.sport1.de/imagix/filter2/jpeg/_set=dyn_size_no_crop/imagix/
 DOMAIN-SUFFIX,astat.bugly.qq.com
@@ -321,6 +322,7 @@ DOMAIN-SUFFIX,config2.mparticle.com
 DOMAIN-SUFFIX,consent-manager-events.ogury.io
 DOMAIN-SUFFIX,conversions.appsflyer.com
 DOMAIN-SUFFIX,costco-adbutler.com
+DOMAIN-SUFFIX,counters.booking.com
 DOMAIN-SUFFIX,countly.globaldelight.net
 DOMAIN-SUFFIX,cpx.to
 DOMAIN-SUFFIX,crasheye.cn
@@ -806,6 +808,7 @@ DOMAIN-SUFFIX,h-adashx4ae.ut.taobao.com
 DOMAIN-SUFFIX,helpshift.com/api/lib/2/events/
 DOMAIN-SUFFIX,hibiki-track.logica.bz
 DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,hilton.data.adobedc.net
 DOMAIN-SUFFIX,hit.gemius.pl
 DOMAIN-SUFFIX,hkrpg-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,hotapi*.tiktokv.us
