@@ -1,20 +1,20 @@
 rules:
-- PROCESS-NAME,fdm.exe
+- PROCESS-NAME,Music
+- PROCESS-NAME,vidhub
+- PROCESS-NAME,App Store
+- PROCESS-NAME,WeChat
+- PROCESS-NAME,115Browser Helper
+- PROCESS-NAME,QQ
+- PROCESS-NAME,iCloudDrive.exe
+- PROCESS-NAME,幕布 Helper
+- PROCESS-NAME,StardewModdingAPI
+- PROCESS-NAME,infuse
+- PROCESS-NAME,115Browser
+- PROCESS-NAME,BitComet
 - PROCESS-NAME,WeChatAppEx Helper
 - PROCESS-NAME,cloudd
-- PROCESS-NAME,StardewModdingAPI
-- PROCESS-NAME,vidhub
-- PROCESS-NAME,wegame.exe
-- PROCESS-NAME,115Browser
 - PROCESS-NAME,Eudb_en_free
-- PROCESS-NAME,幕布 Helper
-- PROCESS-NAME,iCloudDrive.exe
-- PROCESS-NAME,infuse
-- PROCESS-NAME,qbittorrent
-- PROCESS-NAME,QQ
-- PROCESS-NAME,115Browser Helper
-- PROCESS-NAME,App Store
-- PROCESS-NAME,BitComet
-- PROCESS-NAME,WeChat
-- PROCESS-NAME,Music
+- PROCESS-NAME,fdm.exe
 - PROCESS-NAME,TencentMeeting
+- PROCESS-NAME,wegame.exe
+- PROCESS-NAME,qbittorrent
