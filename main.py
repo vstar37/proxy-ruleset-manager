@@ -60,9 +60,6 @@ class RuleParser:
             with open(adguard_file_path, "w") as f:
                 f.write("\n".join(sorted(unique_lines)))  # 排序并写入文件
 
-
-
-
             # 执行 sing-box 转换为 srs 格式
             srs_file_path = os.path.join(output_directory, "{}.srs".format(rule_set_name))
             conversion_command = [
@@ -83,6 +80,7 @@ class RuleParser:
 
             # 读取 AdGuard 规则并转换为 Surge/Shadowrocket
             convert_adguard_to_surge(adguard_file_path, rule_set_name)
+            convert_adguard_to_clash(adguard_file_path, rule_set_name)
 
             # 清理临时文件
             os.remove(adguard_file_path)
@@ -602,9 +600,8 @@ class RuleParser:
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
 
         #### 调用工具函数 将 sing-box 规则转化为 Surge/Shadowrocket 规则
-
-
         convert_json_to_surge(output_directory)
+        convert_json_to_clash(output_directory)
 
 
 class ConfigParser:

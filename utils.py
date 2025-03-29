@@ -398,8 +398,8 @@ def convert_json_to_surge(input_dir):
     for filename in os.listdir(input_dir):
         if filename.endswith(".json"):
             input_path = os.path.join(input_dir, filename)
-            surge_output_path = os.path.join(surge_output_dir, filename.replace(".json", ".list"))
-            shadowrocket_output_path = os.path.join(shadowrocket_output_dir, filename.replace(".json", ".list"))
+            surge_output_path = os.path.join(surge_output_dir, filename.replace(".json", ".yaml"))
+            shadowrocket_output_path = os.path.join(shadowrocket_output_dir, filename.replace(".json", ".yaml"))
 
             try:
                 with open(input_path, "r", encoding="utf-8") as f:
@@ -415,11 +415,11 @@ def convert_json_to_surge(input_dir):
                                 surge_rules.append(f"{surge_type},{value}")
 
                 # **写入 Surge & Shadowrocket 规则文件**
-                rule_text = "\n".join(surge_rules)
+                rule_data = {"rules": surge_rules}
                 with open(surge_output_path, "w", encoding="utf-8") as f1, \
                      open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
-                    f1.write(rule_text)
-                    f2.write(rule_text)
+                    yaml.dump(rule_data, f1, allow_unicode=True, default_flow_style=False)
+                    yaml.dump(rule_data, f2, allow_unicode=True, default_flow_style=False)
 
                 logging.info(f"转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
 
@@ -499,3 +499,89 @@ def convert_adguard_to_surge(input_path, rule_set_name):
         f2.write(rule_text)
 
     logging.info(f"AdGuard 规则转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
+
+
+
+
+def clean_comment(value):
+    """ 移除规则后面的注释，避免 YAML 误加引号 """
+    return value.split("#", 1)[0].strip()
+
+def convert_json_to_clash(input_dir):
+    """
+    读取指定目录下的所有 JSON 规则文件，并将其转换为 Clash 规则格式。
+    """
+    output_dir = config.clash_output_directory
+    os.makedirs(output_dir, exist_ok=True)
+
+    for filename in os.listdir(input_dir):
+        if filename.endswith(".json"):
+            input_path = os.path.join(input_dir, filename)
+            output_path = os.path.join(output_dir, filename.replace(".json", ".yaml"))
+
+            try:
+                with open(input_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                clash_rules = []
+                for rule in data.get("rules", []):
+                    for rule_type, values in rule.items():
+                        if rule_type in config.SINGBOX_TO_CLASH_MAP:
+                            clash_type = config.SINGBOX_TO_CLASH_MAP[rule_type]
+                            for value in (values if isinstance(values, list) else [values]):
+                                cleaned_value = clean_comment(value)
+                                clash_rules.append(f"{clash_type},{cleaned_value}")  # **去除 `#` 后的注释**
+
+                clash_config = {"payload": clash_rules}
+
+                with open(output_path, "w", encoding="utf-8") as f:
+                    yaml.dump(clash_config, f, allow_unicode=True, default_flow_style=False)
+
+            except Exception as e:
+                logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")
+
+
+def convert_adguard_to_clash(input_path, rule_set_name):
+    """
+    读取 AdGuard 规则文件，并转换为 Clash 规则格式。
+    """
+
+    # 固定输出目录
+    clash_output_dir = config.clash_output_directory
+
+    os.makedirs(clash_output_dir, exist_ok=True)
+    # 生成输出文件名
+    output_filename = f"{rule_set_name}.yaml"
+    output_path = os.path.join(clash_output_dir, output_filename)
+
+    try:
+        with open(input_path, "r", encoding="utf-8") as f:
+            adguard_rules = f.readlines()
+
+        clash_rules = []
+        for rule in adguard_rules:
+            rule = rule.strip()
+            if rule.startswith("||"):  # 处理 AdGuard DOMAIN-SUFFIX 规则
+                domain = rule[2:].split("^")[0]
+                clash_rules.append(f"- DOMAIN-SUFFIX, {domain}")
+            elif rule.startswith("|"):  # 处理 AdGuard DOMAIN 规则
+                domain = rule[1:].split("^")[0]
+                clash_rules.append(f"- DOMAIN, {domain}")
+            elif rule.startswith("@@||"):  # 处理 AdGuard 允许规则
+                domain = rule[4:].split("^")[0]
+                clash_rules.append(f"- DOMAIN, {domain}, REJECT")
+            elif rule.startswith("/") and rule.endswith("/"):  # 处理 AdGuard 正则规则
+                regex = rule[1:-1]
+                clash_rules.append(f"- DOMAIN-REGEX, {regex}")
+            elif re.match(r"^\d+\.\d+\.\d+\.\d+", rule):  # 处理 IP 规则
+                clash_rules.append(f"- IP-CIDR, {rule}")
+
+        clash_config = {
+            "payload": clash_rules
+        }
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            yaml.dump(clash_config, f, allow_unicode=True, default_flow_style=False)
+
+    except Exception as e:
+        logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")

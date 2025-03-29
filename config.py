@@ -18,6 +18,7 @@ class Config:
         self.singbox_output_directory = os.path.join(self.rule_dir, 'singbox')
         self.surge_output_directory = os.path.join(self.rule_dir, 'surge')
         self.shadowrocket_output_directory = os.path.join(self.rule_dir, 'shadowrocket')
+        self.clash_output_directory = os.path.join(self.rule_dir, 'clash')
 
         self.trust_upstream = False
         self.ls_index = 1
@@ -28,6 +29,19 @@ class Config:
             'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
             'DOMAIN-KEYWORD': 'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
             'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 'IP6-CIDR': 'ip_cidr', 'SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip',
-            'DST-PORT': 'port', 'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex", "DOMAIN-REGEX": "domain_regex"
+            'DST-PORT': 'port', 'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex", "DOMAIN-REGEX": "domain_regex", "PROCESS-NAME": "process_name"
         }
         self.MAP_REVERSE = {v: k for k, v in self.map_dict.items()}
+        self.SINGBOX_TO_CLASH_MAP = {
+                    "domain_suffix": "DOMAIN-SUFFIX",
+                    "domain": "DOMAIN",
+                    "domain_keyword": "DOMAIN-KEYWORD",
+                    "domain_regex": "DOMAIN-REGEX",
+                    "ip_cidr": "IP-CIDR",  # 注意：Clash 仅支持 IPv4，IPv6 可能需要特殊处理
+                    "source_ip_cidr": "SRC-IP-CIDR",
+                    "geoip": "GEOIP",
+                    "port": "DST-PORT",
+                    "source_port": "SRC-PORT",
+                    "process_name": "PROCESS-NAME"
+                }
+

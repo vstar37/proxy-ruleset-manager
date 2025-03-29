@@ -13,6 +13,7 @@ DOMAIN,cdn-settings.appsflyersdk.com
 DOMAIN,conversions.appsflyersdk.com
 DOMAIN,dlsdk.appsflyer.com
 DOMAIN,dlsdk.appsflyersdk.com
+DOMAIN,dynamic-report-api.appsflyersdk.com
 DOMAIN,gcdsdk.appsflyersdk.com
 DOMAIN,inapps.appsflyersdk.com
 DOMAIN,register.appsflyersdk.com
@@ -942,6 +943,7 @@ DOMAIN-SUFFIX,log1.apkomega.com
 DOMAIN-SUFFIX,log1.happymod.com
 DOMAIN-SUFFIX,log5.interactive-circle.jp
 DOMAIN-SUFFIX,loganmedia.mobi
+DOMAIN-SUFFIX,logapi-and.zhipin.com
 DOMAIN-SUFFIX,logbak.hicloud.com
 DOMAIN-SUFFIX,logend.cookpad.com
 DOMAIN-SUFFIX,logger.cloudmobi.net
@@ -1376,6 +1378,7 @@ DOMAIN-SUFFIX,ue.flipboard.com
 DOMAIN-SUFFIX,ug-sg.byteoversea.com
 DOMAIN-SUFFIX,ulog*.kwai-pro.com
 DOMAIN-SUFFIX,ulog*.kwaipros.com
+DOMAIN-SUFFIX,ulogs*.gifshow.com
 DOMAIN-SUFFIX,ulogs.umengcloud.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,umengjmacs.m.taobao.com

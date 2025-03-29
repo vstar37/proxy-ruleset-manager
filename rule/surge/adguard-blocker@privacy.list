@@ -19,6 +19,7 @@ DOMAIN,charlestownwyllie.oaklawnnonantum.com
 DOMAIN,conversions.appsflyersdk.com
 DOMAIN,dlsdk.appsflyer.com
 DOMAIN,dlsdk.appsflyersdk.com
+DOMAIN,dynamic-report-api.appsflyersdk.com
 DOMAIN,gcdsdk.appsflyersdk.com
 DOMAIN,inapps.appsflyersdk.com
 DOMAIN,register.appsflyersdk.com
@@ -645,6 +646,7 @@ DOMAIN-SUFFIX,ams-pageview-public.s3.amazonaws.com
 DOMAIN-SUFFIX,amung.us
 DOMAIN-SUFFIX,amunx.de
 DOMAIN-SUFFIX,an.batmobi.net
+DOMAIN-SUFFIX,an.mail.ru
 DOMAIN-SUFFIX,an.reflektion.com
 DOMAIN-SUFFIX,ana*.inews24.com
 DOMAIN-SUFFIX,ana.3751chat.com
@@ -2418,6 +2420,7 @@ DOMAIN-SUFFIX,cnpapers.com/scripts/library/
 DOMAIN-SUFFIX,cnstats.cdev.eu
 DOMAIN-SUFFIX,cnstats.ru
 DOMAIN-SUFFIX,cnstrc.com/behavior?
+DOMAIN-SUFFIX,cnstrc.com
 DOMAIN-SUFFIX,cnt.3dmy.net
 DOMAIN-SUFFIX,cnt.alawar.com
 DOMAIN-SUFFIX,cnt.hd21.
@@ -3811,6 +3814,7 @@ DOMAIN-SUFFIX,events-api.gazetadopovo.com.br
 DOMAIN-SUFFIX,events-api.soundcloud.com
 DOMAIN-SUFFIX,events-api.towneers.prod.data.krmt.io
 DOMAIN-SUFFIX,events-collector-api.viacom.tech
+DOMAIN-SUFFIX,events-collector-dataplatform.action-media.ru
 DOMAIN-SUFFIX,events-collector.spot.im
 DOMAIN-SUFFIX,events-endpoint.pointandplace.com
 DOMAIN-SUFFIX,events-ingestion.services.gorgias.com
@@ -5777,6 +5781,7 @@ DOMAIN-SUFFIX,log.sina.cn
 DOMAIN-SUFFIX,log.snapdeal.com
 DOMAIN-SUFFIX,log.snow.me
 DOMAIN-SUFFIX,log.snssdk.com
+DOMAIN-SUFFIX,log.strawpoll.com
 DOMAIN-SUFFIX,log.strm.yandex.ru
 DOMAIN-SUFFIX,log.tagtic.cn
 DOMAIN-SUFFIX,log.talkie-ai.com
@@ -5814,6 +5819,7 @@ DOMAIN-SUFFIX,log2.spotify.com
 DOMAIN-SUFFIX,log22.makeshop.co.kr
 DOMAIN-SUFFIX,log5.interactive-circle.jp
 DOMAIN-SUFFIX,logaholic.com
+DOMAIN-SUFFIX,logapi-and.zhipin.com
 DOMAIN-SUFFIX,logapi.kt.com
 DOMAIN-SUFFIX,logapi.tv.naver.com
 DOMAIN-SUFFIX,logapi.zhipin.com
@@ -6497,6 +6503,7 @@ DOMAIN-SUFFIX,mrf.io/statics/marfeel/chunks/metrics-
 DOMAIN-SUFFIX,mrwebmaster.it/work/stats.php?
 DOMAIN-SUFFIX,ms-trackingapi.phenompeople.com
 DOMAIN-SUFFIX,ms.cmcm.com
+DOMAIN-SUFFIX,ms.dzen.ru
 DOMAIN-SUFFIX,msadsscale.azureedge.net
 DOMAIN-SUFFIX,msecnd.net/jscripts/HA-$script
 DOMAIN-SUFFIX,msecnd.net/next/$script
@@ -9992,6 +9999,7 @@ DOMAIN-SUFFIX,tracing-collector.strava.com
 DOMAIN-SUFFIX,tracing.roblox.com
 DOMAIN-SUFFIX,track-aws.notsy.io
 DOMAIN-SUFFIX,track-dark-bz.b-cdn.net
+DOMAIN-SUFFIX,track-events.membrana.media
 DOMAIN-SUFFIX,track-mixer.ru
 DOMAIN-SUFFIX,track-resource.bidease.com
 DOMAIN-SUFFIX,track-srv.vietnamnet.vn
@@ -10771,6 +10779,7 @@ DOMAIN-SUFFIX,ulog*.kwai-pro.com
 DOMAIN-SUFFIX,ulog*.kwaipros.com
 DOMAIN-SUFFIX,ulogin-stats.ru
 DOMAIN-SUFFIX,ulogin.ru/js/stats.js
+DOMAIN-SUFFIX,ulogs*.gifshow.com
 DOMAIN-SUFFIX,ulogs.umengcloud.com
 DOMAIN-SUFFIX,ultraimpression.jp
 DOMAIN-SUFFIX,um-public-panel-prod.s3.amazonaws.com
@@ -11571,6 +11580,7 @@ DOMAIN-SUFFIX,zgsdk.zhugeio.com
 DOMAIN-SUFFIX,zhanzhang.toutiao.com
 DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com
 DOMAIN-SUFFIX,ziffdavisb2b.com
+DOMAIN-SUFFIX,zineone.com
 DOMAIN-SUFFIX,zineone.com
 DOMAIN-SUFFIX,zion-telemetry-nonprod.api.cnn.io
 DOMAIN-SUFFIX,zion-telemetry.api.cnn.io
