@@ -2,7 +2,7 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs"
   - "https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-vpn@amos.json"
-  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-chat-!cn.srs"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs"
 
 
