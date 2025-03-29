@@ -1,20 +1,20 @@
 payload:
-- PROCESS-NAME,WeChatAppEx Helper
-- PROCESS-NAME,cloudd
-- PROCESS-NAME,TencentMeeting
-- PROCESS-NAME,vidhub
-- PROCESS-NAME,Music
-- PROCESS-NAME,Eudb_en_free
-- PROCESS-NAME,fdm.exe
-- PROCESS-NAME,QQ
 - PROCESS-NAME,BitComet
-- PROCESS-NAME,StardewModdingAPI
-- PROCESS-NAME,wegame.exe
 - PROCESS-NAME,App Store
-- PROCESS-NAME,115Browser Helper
-- PROCESS-NAME,infuse
-- PROCESS-NAME,iCloudDrive.exe
+- PROCESS-NAME,StardewModdingAPI
+- PROCESS-NAME,cloudd
+- PROCESS-NAME,Music
+- PROCESS-NAME,wegame.exe
 - PROCESS-NAME,qbittorrent
+- PROCESS-NAME,Eudb_en_free
+- PROCESS-NAME,vidhub
+- PROCESS-NAME,幕布 Helper
+- PROCESS-NAME,infuse
 - PROCESS-NAME,115Browser
 - PROCESS-NAME,WeChat
-- PROCESS-NAME,幕布 Helper
+- PROCESS-NAME,iCloudDrive.exe
+- PROCESS-NAME,WeChatAppEx Helper
+- PROCESS-NAME,115Browser Helper
+- PROCESS-NAME,TencentMeeting
+- PROCESS-NAME,QQ
+- PROCESS-NAME,fdm.exe
