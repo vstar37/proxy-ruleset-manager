@@ -593,11 +593,13 @@ class RuleParser:
         # 生成 SRS 文件
         self.process_category_files(output_directory) # 拆分!cn规则 与 cn规则
         json_files = [f for f in os.listdir(output_directory) if f.endswith('.json')]
+
         for json_file in json_files:
             json_file_path = os.path.join(output_directory, json_file)
             srs_path = json_file_path.replace(".json", ".srs")
             os.system(f"sing-box rule-set compile --output {srs_path} {json_file_path}")
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
+
 
         #### 调用工具函数 将 sing-box 规则转化为 Surge/Shadowrocket 规则
         convert_json_to_surge(output_directory)

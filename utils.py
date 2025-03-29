@@ -501,11 +501,15 @@ def convert_adguard_to_surge(input_path, rule_set_name):
     logging.info(f"AdGuard 规则转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
 
 
-
-
 def clean_comment(value):
-    """ 移除规则后面的注释，避免 YAML 误加引号 """
-    return value.split("#", 1)[0].strip()
+    """ 去除值中的注释（# 之后的内容）"""
+    return value.split("#")[0].strip()
+
+
+def fix_domain_prefix(value):
+    """ 如果是 DOMAIN 相关类型，去除开头的 `.` """
+    return value.lstrip(".") if value.startswith(".") else value
+
 
 def convert_json_to_clash(input_dir):
     """
@@ -530,7 +534,12 @@ def convert_json_to_clash(input_dir):
                             clash_type = config.SINGBOX_TO_CLASH_MAP[rule_type]
                             for value in (values if isinstance(values, list) else [values]):
                                 cleaned_value = clean_comment(value)
-                                clash_rules.append(f"{clash_type},{cleaned_value}")  # **去除 `#` 后的注释**
+
+                                # 只对 DOMAIN-SUFFIX, DOMAIN, DOMAIN-KEYWORD 进行前缀 `.` 处理
+                                if clash_type in {"DOMAIN-SUFFIX", "DOMAIN", "DOMAIN-KEYWORD"}:
+                                    cleaned_value = fix_domain_prefix(cleaned_value)
+
+                                clash_rules.append(f"{clash_type},{cleaned_value}")
 
                 clash_config = {"payload": clash_rules}
 
