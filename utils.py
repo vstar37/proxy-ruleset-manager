@@ -398,8 +398,8 @@ def convert_json_to_surge(input_dir):
     for filename in os.listdir(input_dir):
         if filename.endswith(".json"):
             input_path = os.path.join(input_dir, filename)
-            surge_output_path = os.path.join(surge_output_dir, filename.replace(".json", ".yaml"))
-            shadowrocket_output_path = os.path.join(shadowrocket_output_dir, filename.replace(".json", ".yaml"))
+            surge_output_path = os.path.join(surge_output_dir, filename.replace(".json", ".list"))
+            shadowrocket_output_path = os.path.join(shadowrocket_output_dir, filename.replace(".json", ".list"))
 
             try:
                 with open(input_path, "r", encoding="utf-8") as f:
