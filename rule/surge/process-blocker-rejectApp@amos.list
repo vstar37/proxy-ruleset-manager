@@ -1,24 +1,24 @@
 rules:
-- PROCESS-NAME,BetterDisplay
 - PROCESS-NAME,Shifty
-- PROCESS-NAME,ProcessSpy
+- PROCESS-NAME,Find Any File
+- PROCESS-NAME,Snipaste
+- PROCESS-NAME,Squirrel
+- PROCESS-NAME,MATLABWebUl (Renderer)
 - PROCESS-NAME,Swish
-- PROCESS-NAME,MATLABWebUI (GPU)
-- PROCESS-NAME,Clop
+- PROCESS-NAME,DevToys Networking
 - PROCESS-NAME,Apple Juice
-- PROCESS-NAME,MATLAB
+- PROCESS-NAME,Clop
+- PROCESS-NAME,Snipaste.exe
 - PROCESS-NAME,Ice
 - PROCESS-NAME,Command X
-- PROCESS-NAME,DevToys Networking
-- PROCESS-NAME,BLEUnlock
-- PROCESS-NAME,Squirrel
-- PROCESS-NAME,Snipaste
-- PROCESS-NAME,CodeRunner
+- PROCESS-NAME,MATLABWebUI (GPU)
 - PROCESS-NAME,TextSniper
-- PROCESS-NAME,MATLABWebUl (Renderer)
-- PROCESS-NAME,DevToys
-- PROCESS-NAME,Snipaste.exe
 - PROCESS-NAME,Scroll Reverser
-- PROCESS-NAME,MathWorksService
-- PROCESS-NAME,Find Any File
+- PROCESS-NAME,BLEUnlock
 - PROCESS-NAME,Little Snitch Agent
+- PROCESS-NAME,BetterDisplay
+- PROCESS-NAME,ProcessSpy
+- PROCESS-NAME,CodeRunner
+- PROCESS-NAME,MathWorksService
+- PROCESS-NAME,MATLAB
+- PROCESS-NAME,DevToys

@@ -43,5 +43,18 @@ class Config:
                     "port": "DST-PORT",
                     "source_port": "SRC-PORT",
                     "process_name": "PROCESS-NAME"
-                }
+        }
+
+        self.SINGBOX_TO_SURGE_MAP = {
+                    "domain_suffix": "DOMAIN-SUFFIX",
+                    "domain": "DOMAIN",
+                    "domain_keyword": "DOMAIN-KEYWORD",
+                    "domain_regex": "DOMAIN-REGEX",
+                    "ip_cidr": "IP-CIDR",
+                    "source_ip_cidr": "SRC-IP-CIDR",
+                    "geoip": "GEOIP",
+                    "port": "DST-PORT",
+                    "source_port": "SRC-PORT",
+                    "process_name": "PROCESS-NAME"
+        }
 

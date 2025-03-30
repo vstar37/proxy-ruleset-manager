@@ -409,8 +409,8 @@ def convert_json_to_surge(input_dir):
                 surge_rules = []
                 for rule in data.get("rules", []):
                     for rule_type, values in rule.items():
-                        if rule_type in config.MAP_REVERSE:
-                            surge_type = config.MAP_REVERSE[rule_type]
+                        if rule_type in config.SINGBOX_TO_SURGE_MAP:
+                            surge_type = config.SINGBOX_TO_SURGE_MAP[rule_type]
                             for value in values:
                                 surge_rules.append(f"{surge_type},{value}")
 

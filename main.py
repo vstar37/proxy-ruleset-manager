@@ -79,8 +79,8 @@ class RuleParser:
                 return None
 
             # 读取 AdGuard 规则并转换为 Surge/Shadowrocket
-            convert_adguard_to_surge(adguard_file_path, rule_set_name)
-            convert_adguard_to_clash(adguard_file_path, rule_set_name)
+            #convert_adguard_to_surge(adguard_file_path, rule_set_name)
+            #convert_adguard_to_clash(adguard_file_path, rule_set_name)
 
             # 清理临时文件
             os.remove(adguard_file_path)
