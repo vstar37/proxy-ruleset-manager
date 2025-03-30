@@ -3742,6 +3742,7 @@ DOMAIN-SUFFIX,europuls.eu
 DOMAIN-SUFFIX,europuls.net
 DOMAIN-SUFFIX,ev.api.bdg.com
 DOMAIN-SUFFIX,ev.kck.st
+DOMAIN-SUFFIX,ev.mmin.io/ping
 DOMAIN-SUFFIX,ev.moneymade.io
 DOMAIN-SUFFIX,ev.stellarlabs.ai
 DOMAIN-SUFFIX,ev.tpocdm.com
@@ -8294,6 +8295,7 @@ DOMAIN-SUFFIX,searchcompletion.com/BannerHandler.ashx
 DOMAIN-SUFFIX,searchfeed.com
 DOMAIN-SUFFIX,searchignite.com
 DOMAIN-SUFFIX,searchplow.com
+DOMAIN-SUFFIX,searchrys.com/dot.php
 DOMAIN-SUFFIX,searchunify.com/analytics/suanlytics.png
 DOMAIN-SUFFIX,sec.webeyez.com
 DOMAIN-SUFFIX,secure-stats.pingdom.com
