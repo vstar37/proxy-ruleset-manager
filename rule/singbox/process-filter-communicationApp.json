@@ -3,8 +3,8 @@
     "rules": [
         {
             "process_name": [
-                "Telegram",
-                "Dsicord"
+                "Dsicord",
+                "Telegram"
             ]
         }
     ]
