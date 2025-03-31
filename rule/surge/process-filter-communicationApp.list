@@ -1,3 +1,2 @@
-rules:
-- PROCESS-NAME,Dsicord
-- PROCESS-NAME,Telegram
+PROCESS-NAME,Telegram
+PROCESS-NAME,Dsicord

@@ -405,7 +405,7 @@ def convert_json_to_surge(input_dir):
                 with open(input_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
-                # **计算一次 `surge_rules`**
+                # 计算一次 `surge_rules`
                 surge_rules = []
                 for rule in data.get("rules", []):
                     for rule_type, values in rule.items():
@@ -414,12 +414,13 @@ def convert_json_to_surge(input_dir):
                             for value in values:
                                 surge_rules.append(f"{surge_type},{value}")
 
-                # **写入 Surge & Shadowrocket 规则文件**
-                rule_data = {"rules": surge_rules}
+                # 将规则写入 Surge 和 Shadowrocket 文件
                 with open(surge_output_path, "w", encoding="utf-8") as f1, \
                      open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
-                    yaml.dump(rule_data, f1, allow_unicode=True, default_flow_style=False)
-                    yaml.dump(rule_data, f2, allow_unicode=True, default_flow_style=False)
+                    # 直接写入每个规则
+                    for rule in surge_rules:
+                        f1.write(f"{rule}\n")
+                        f2.write(f"{rule}\n")
 
                 logging.info(f"转换完成: {input_path} → {surge_output_path}, {shadowrocket_output_path}")
 
