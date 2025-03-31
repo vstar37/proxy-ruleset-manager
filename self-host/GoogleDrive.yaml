@@ -15,8 +15,5 @@ payload:
   - DOMAIN-SUFFIX,googledrive.com
   - DOMAIN-SUFFIX,googleusercontent.com
 #  - PROCESS-NAME,BackupandSync
-  - DOMAIN-SUFFIX,nexusmods.com
-  - DOMAIN-SUFFIX,escapefromtarkov.com
-  - DOMAIN,us.nomaba.top
 
 
