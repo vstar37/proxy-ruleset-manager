@@ -1,0 +1,2 @@
+geoip:
+  - "https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geoip-eu@amos.json"
