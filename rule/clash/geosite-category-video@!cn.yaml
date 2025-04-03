@@ -1,463 +1,464 @@
 payload:
-- DOMAIN,d3aqoihi2n8ty8.cloudfront.net
-- DOMAIN,d2aba1wr3818hz.cloudfront.net
-- DOMAIN,d2nvs31859zcd8.cloudfront.net
-- DOMAIN,d3c27h4odz752x.cloudfront.net
-- DOMAIN,espndotcom.tt.omtrdc.net
-- DOMAIN,ds0h3roq6wcgc.cloudfront.net
-- DOMAIN,heads-ak-spotify-com.akamaized.net
-- DOMAIN,audio-ak-spotify-com.akamaized.net
-- DOMAIN,netflix.com.edgesuite.net
-- DOMAIN,d1xhnb4ptk05mw.cloudfront.net
-- DOMAIN,audio4-ak-spotify-com.akamaized.net
-- DOMAIN,d2e2de1etea730.cloudfront.net
-- DOMAIN,espn.hb.omtrdc.net
-- DOMAIN,d36nr0u3xmc4mm.cloudfront.net
-- DOMAIN,d1oca24q5dwo6d.cloudfront.net
-- DOMAIN,d1ymi26ma8va5x.cloudfront.net
-- DOMAIN,heads4-ak-spotify-com.akamaized.net
-- DOMAIN,d2xmjdvx03ij56.cloudfront.net
-- DOMAIN,d6d4ismr40iw.cloudfront.net
-- DOMAIN,d1mhjrowxxagfy.cloudfront.net
-- DOMAIN,hls.itunes.apple.com
-- DOMAIN,dqrpb9wgowsf5.cloudfront.net
-- DOMAIN,d1g1f25tn8m2e6.cloudfront.net
-- DOMAIN,d2um2qdswy1tb0.cloudfront.net
-- DOMAIN,uts-api.itunes.apple.com
-- DOMAIN,spotify.map.fastlylb.net
-- DOMAIN,dykkng5hnh52u.cloudfront.net
-- DOMAIN,np-edge.itunes.apple.com
-- DOMAIN,hls-amt.itunes.apple.com
-- DOMAIN,play-edge.itunes.apple.com
-- DOMAIN,d1w2poirtb3as9.cloudfront.net
-- DOMAIN,d3vd9lfkzbru3h.cloudfront.net
-- DOMAIN,spotify.com.edgesuite.net
-- DOMAIN,dgeft87wbj63p.cloudfront.net
-- DOMAIN,d2vjef5jvl6bfs.cloudfront.net
-- DOMAIN,tv.applemusic.com
-- DOMAIN,ddacn6pr5v0tl.cloudfront.net
-- DOMAIN,spotify.map.fastly.net
-- DOMAIN,d2dylwb3shzel1.cloudfront.net
-- DOMAIN,d1m7jfoe9zdc1j.cloudfront.net
-- DOMAIN,d6tizftlrpuof.cloudfront.net
-- DOMAIN,cdn-spotify-experiments.conductrics.com
-- DOMAIN-SUFFIX,disney.co.kr
-- DOMAIN-SUFFIX,youtube.bh
-- DOMAIN-SUFFIX,disneycruisebrasil.com
-- DOMAIN-SUFFIX,disney-plus.net
-- DOMAIN-SUFFIX,netflixdnstest7.com
-- DOMAIN-SUFFIX,disneyiejobs.com
-- DOMAIN-SUFFIX,youtube.com.gh
-- DOMAIN-SUFFIX,youtube.com.mx
-- DOMAIN-SUFFIX,youtube.com.au
-- DOMAIN-SUFFIX,youtubefanfest.com
-- DOMAIN-SUFFIX,disney.bg
-- DOMAIN-SUFFIX,watchdisneyfe.com
-- DOMAIN-SUFFIX,disney.my
-- DOMAIN-SUFFIX,thestationbymaker.com
-- DOMAIN-SUFFIX,nflxso.net
-- DOMAIN-SUFFIX,disneycareers.com
-- DOMAIN-SUFFIX,youtube.hu
-- DOMAIN-SUFFIX,youtube.com.ng
-- DOMAIN-SUFFIX,youtube.co.za
-- DOMAIN-SUFFIX,youtube.com.ro
-- DOMAIN-SUFFIX,live-video.net
-- DOMAIN-SUFFIX,disney.sg
-- DOMAIN-SUFFIX,youtube.com.ph
-- DOMAIN-SUFFIX,youtube.bg
-- DOMAIN-SUFFIX,youtubemobilesupport.com
-- DOMAIN-SUFFIX,youtube.al
-- DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
-- DOMAIN-SUFFIX,disney.it
-- DOMAIN-SUFFIX,youtube.com.sg
-- DOMAIN-SUFFIX,youtube.ba
-- DOMAIN-SUFFIX,youtube.pk
-- DOMAIN-SUFFIX,disneymagicmoments.co.za
-- DOMAIN-SUFFIX,youtube.co.hu
-- DOMAIN-SUFFIX,primevideo.org
-- DOMAIN-SUFFIX,hbogo.co.th
-- DOMAIN-SUFFIX,nflxvideo.net
-- DOMAIN-SUFFIX,disney.co.za
-- DOMAIN-SUFFIX,youtube.com.az
-- DOMAIN-SUFFIX,youtube.ug
-- DOMAIN-SUFFIX,youtube.com.do
-- DOMAIN-SUFFIX,youtube.co.id
-- DOMAIN-SUFFIX,youtube.com.jo
-- DOMAIN-SUFFIX,youtube.com.kw
-- DOMAIN-SUFFIX,disneyme.com
-- DOMAIN-SUFFIX,shops-disney.com
-- DOMAIN-SUFFIX,youtube.com.uy
-- DOMAIN-SUFFIX,marvelspotlightplays.com
-- DOMAIN-SUFFIX,streamingdisney.net
-- DOMAIN-SUFFIX,youtubekids.com
-- DOMAIN-SUFFIX,starwarskids.com
-- DOMAIN-SUFFIX,disney.io
-- DOMAIN-SUFFIX,netflixdnstest6.com
-- DOMAIN-SUFFIX,amazonprimevideos.com
-- DOMAIN-SUFFIX,amazonprimevideo.com.cn
-- DOMAIN-SUFFIX,youtube.pa
-- DOMAIN-SUFFIX,forthethrone.com
-- DOMAIN-SUFFIX,amazonvideo.com
-- DOMAIN-SUFFIX,youtube.com.gr
-- DOMAIN-SUFFIX,disneyjunior.com
-- DOMAIN-SUFFIX,disney.nl
-- DOMAIN-SUFFIX,star.content.edge.bamgrid.com
-- DOMAIN-SUFFIX,youtube.iq
-- DOMAIN-SUFFIX,youtube.cr
-- DOMAIN-SUFFIX,moviesanywhere.com
-- DOMAIN-SUFFIX,fast.com
-- DOMAIN-SUFFIX,hotstar-cdn.net
-- DOMAIN-SUFFIX,star-brasil.com
-- DOMAIN-SUFFIX,youtube.com.tw
-- DOMAIN-SUFFIX,maxgo.com
-- DOMAIN-SUFFIX,youtubego.co.in
-- DOMAIN-SUFFIX,youtube.ua
-- DOMAIN-SUFFIX,youtube.bo
-- DOMAIN-SUFFIX,youtube.co.th
-- DOMAIN-SUFFIX,youtubeeducation.com
-- DOMAIN-SUFFIX,disneychannelonstage.com
-- DOMAIN-SUFFIX,disneynow.com
-- DOMAIN-SUFFIX,hbogo.com
-- DOMAIN-SUFFIX,youtubego.com
-- DOMAIN-SUFFIX,disney.fr
-- DOMAIN-SUFFIX,spotify.com
-- DOMAIN-SUFFIX,disney.ph
-- DOMAIN-SUFFIX,disney.hu
-- DOMAIN-SUFFIX,disneyplus.bn5x.net
-- DOMAIN-SUFFIX,ngeo.com
-- DOMAIN-SUFFIX,youtube.com.pa
-- DOMAIN-SUFFIX,marvelparty.net
-- DOMAIN-SUFFIX,youtube.ie
-- DOMAIN-SUFFIX,youtube.ni
-- DOMAIN-SUFFIX,dilcdn.com
-- DOMAIN-SUFFIX,20thcenturystudios.com.au
-- DOMAIN-SUFFIX,espncdn.com
-- DOMAIN-SUFFIX,marvelsdoubleagent.com
-- DOMAIN-SUFFIX,netflixdnstest2.com
-- DOMAIN-SUFFIX,youtube.tv
-- DOMAIN-SUFFIX,disney.dk
-- DOMAIN-SUFFIX,disney-studio.net
-- DOMAIN-SUFFIX,disney.com.tw
-- DOMAIN-SUFFIX,amazonprimevideo.cn
-- DOMAIN-SUFFIX,youtubego.com.br
-- DOMAIN-SUFFIX,youtube.co.ke
-- DOMAIN-SUFFIX,youtube.mx
-- DOMAIN-SUFFIX,youtube.mk
-- DOMAIN-SUFFIX,youtube.lu
-- DOMAIN-SUFFIX,shopdisney.com
-- DOMAIN-SUFFIX,youtube.is
-- DOMAIN-SUFFIX,hotstar.com
-- DOMAIN-SUFFIX,disney.pt
-- DOMAIN-SUFFIX,go.com
-- DOMAIN-SUFFIX,youtube.dk
-- DOMAIN-SUFFIX,nationalgeographic.com
-- DOMAIN-SUFFIX,disney.be
-- DOMAIN-SUFFIX,youtube.com.ni
-- DOMAIN-SUFFIX,primevideo.info
-- DOMAIN-SUFFIX,disney.asia
-- DOMAIN-SUFFIX,hbo.com
-- DOMAIN-SUFFIX,disneyinternational.com
-- DOMAIN-SUFFIX,spotifycdn.net
-- DOMAIN-SUFFIX,playmation.com
-- DOMAIN-SUFFIX,disney-asia.com
-- DOMAIN-SUFFIX,youtube.soy
-- DOMAIN-SUFFIX,mickey.tv
-- DOMAIN-SUFFIX,youtube.com.pk
-- DOMAIN-SUFFIX,netflixdnstest5.com
-- DOMAIN-SUFFIX,spotifyjobs.com
-- DOMAIN-SUFFIX,hbogoasia.tw
-- DOMAIN-SUFFIX,hbonow.com
-- DOMAIN-SUFFIX,youtube.co.cr
-- DOMAIN-SUFFIX,youtube.ge
-- DOMAIN-SUFFIX,disney.ru
-- DOMAIN-SUFFIX,youtube.googleapis.com
-- DOMAIN-SUFFIX,hbomax.com
-- DOMAIN-SUFFIX,youtube.sv
-- DOMAIN-SUFFIX,disney.in
-- DOMAIN-SUFFIX,youtube.com.sa
-- DOMAIN-SUFFIX,sorcerersarena.com
-- DOMAIN-SUFFIX,hbomax-images.warnermediacdn.com
-- DOMAIN-SUFFIX,disney.de
-- DOMAIN-SUFFIX,youtube.ee
-- DOMAIN-SUFFIX,disney.fi
-- DOMAIN-SUFFIX,disney.ch
-- DOMAIN-SUFFIX,disney.my.sentry.io
-- DOMAIN-SUFFIX,marvel10thanniversary.com
-- DOMAIN-SUFFIX,youtube.ng
-- DOMAIN-SUFFIX,youtube.com.ee
-- DOMAIN-SUFFIX,max.com
-- DOMAIN-SUFFIX,youtube.uy
-- DOMAIN-SUFFIX,youtubego.id
-- DOMAIN-SUFFIX,netflix.net
-- DOMAIN-SUFFIX,netflixdnstest3.com
-- DOMAIN-SUFFIX,youtube.co.il
-- DOMAIN-SUFFIX,espn.net
-- DOMAIN-SUFFIX,jtvnw.net
-- DOMAIN-SUFFIX,youtube.com.sv
-- DOMAIN-SUFFIX,disney.com.au
-- DOMAIN-SUFFIX,youtube.pr
-- DOMAIN-SUFFIX,youtube.ro
-- DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
-- DOMAIN-SUFFIX,youtube.com.ec
-- DOMAIN-SUFFIX,disneylatino.com
-- DOMAIN-SUFFIX,youtube.com.pe
-- DOMAIN-SUFFIX,youtube.com.eg
-- DOMAIN-SUFFIX,natgeomaps.com
-- DOMAIN-SUFFIX,dtci.technology
-- DOMAIN-SUFFIX,disneytickets.co.uk
-- DOMAIN-SUFFIX,hotstarext.com
-- DOMAIN-SUFFIX,youtube.cl
-- DOMAIN-SUFFIX,disney.ca
-- DOMAIN-SUFFIX,themarvelexperiencetour.com
-- DOMAIN-SUFFIX,disney.no
-- DOMAIN-SUFFIX,withyoutube.com
-- DOMAIN-SUFFIX,youtube.com.hr
-- DOMAIN-SUFFIX,youtube.kz
-- DOMAIN-SUFFIX,disneyworld-go.com
-- DOMAIN-SUFFIX,youtube.com.my
-- DOMAIN-SUFFIX,youtube.me
-- DOMAIN-SUFFIX,disney.co.uk
-- DOMAIN-SUFFIX,dtci.co
-- DOMAIN-SUFFIX,spotify.link
-- DOMAIN-SUFFIX,youtube.com.es
-- DOMAIN-SUFFIX,disneypeoplesurveys.com
-- DOMAIN-SUFFIX,netflixdnstest4.com
-- DOMAIN-SUFFIX,hbomaxdash.s.llnwi.net
-- DOMAIN-SUFFIX,disneymagicmoments.es
-- DOMAIN-SUFFIX,starplus.com
-- DOMAIN-SUFFIX,youtube.com.bo
-- DOMAIN-SUFFIX,youtube.se
-- DOMAIN-SUFFIX,youtube.ae
-- DOMAIN-SUFFIX,youtube.co.ma
-- DOMAIN-SUFFIX,ytimg.com
-- DOMAIN-SUFFIX,disney-studio.com
-- DOMAIN-SUFFIX,disney.com.hk
-- DOMAIN-SUFFIX,youtube.co.kr
-- DOMAIN-SUFFIX,twitchcdn.net
-- DOMAIN-SUFFIX,youtube-ui.l.google.com
-- DOMAIN-SUFFIX,netflix.com
-- DOMAIN-SUFFIX,hbo.map.fastly.net
-- DOMAIN-SUFFIX,hbogoasia.com
-- DOMAIN-SUFFIX,disneymagicmomentsme.com
-- DOMAIN-SUFFIX,thisispolaris.com
-- DOMAIN-SUFFIX,disney.ro
-- DOMAIN-SUFFIX,youtube.ch
-- DOMAIN-SUFFIX,youtube.lv
-- DOMAIN-SUFFIX,disneytvajobs.com
-- DOMAIN-SUFFIX,disneyenconcert.com
-- DOMAIN-SUFFIX,babyzone.com
-- DOMAIN-SUFFIX,disney.co.jp
-- DOMAIN-SUFFIX,nflxsearch.net
-- DOMAIN-SUFFIX,youtube.my
-- DOMAIN-SUFFIX,netflixinvestor.com
-- DOMAIN-SUFFIX,star-latam.com
-- DOMAIN-SUFFIX,starott.com
-- DOMAIN-SUFFIX,disneyarena.com
-- DOMAIN-SUFFIX,disney.se
-- DOMAIN-SUFFIX,disneymagicmoments.it
-- DOMAIN-SUFFIX,hotstar-labs.com
-- DOMAIN-SUFFIX,youtube.cz
-- DOMAIN-SUFFIX,netflixdnstest1.com
-- DOMAIN-SUFFIX,youtube.pt
-- DOMAIN-SUFFIX,youtube.de
-- DOMAIN-SUFFIX,youtube.com.pt
-- DOMAIN-SUFFIX,disneymusicpromotion.com
-- DOMAIN-SUFFIX,disneyturkiye.com.tr
-- DOMAIN-SUFFIX,nomadlandmovie.ch
-- DOMAIN-SUFFIX,disneystreaming.com
-- DOMAIN-SUFFIX,youtube.jo
-- DOMAIN-SUFFIX,youtube.com.ar
-- DOMAIN-SUFFIX,youtube.com.br
-- DOMAIN-SUFFIX,primevideo.cc
-- DOMAIN-SUFFIX,nflximg.net
-- DOMAIN-SUFFIX,youtube.lk
-- DOMAIN-SUFFIX,youtube.co.nz
-- DOMAIN-SUFFIX,disneymovieinsiders.com
-- DOMAIN-SUFFIX,netflixdnstest8.com
-- DOMAIN-SUFFIX,youtube.com.ly
-- DOMAIN-SUFFIX,youtube.sn
-- DOMAIN-SUFFIX,discomax.com
-- DOMAIN-SUFFIX,netflixdnstest10.com
-- DOMAIN-SUFFIX,youtube.no
-- DOMAIN-SUFFIX,abc.com
-- DOMAIN-SUFFIX,twitch.tv
-- DOMAIN-SUFFIX,youtube.es
-- DOMAIN-SUFFIX,youtube.pl
-- DOMAIN-SUFFIX,youtube.lt
-- DOMAIN-SUFFIX,youtube.co
-- DOMAIN-SUFFIX,youtube.com.py
-- DOMAIN-SUFFIX,hbogoasia.sg
-- DOMAIN-SUFFIX,youtube.gr
-- DOMAIN-SUFFIX,googlevideo.com
-- DOMAIN-SUFFIX,youtubei.googleapis.com
-- DOMAIN-SUFFIX,youtube.co.in
-- DOMAIN-SUFFIX,disney-discount.com
-- DOMAIN-SUFFIX,youtube.qa
-- DOMAIN-SUFFIX,pscdn.co
-- DOMAIN-SUFFIX,youtube.co.zw
-- DOMAIN-SUFFIX,cinemax.com
-- DOMAIN-SUFFIX,marveldimensionofheroes.com
-- DOMAIN-SUFFIX,disney.id
-- DOMAIN-SUFFIX,youtube.am
-- DOMAIN-SUFFIX,marvelsuperheroseptember.com
-- DOMAIN-SUFFIX,ggpht.cn
-- DOMAIN-SUFFIX,disney.gr
-- DOMAIN-SUFFIX,youtube-nocookie.com
-- DOMAIN-SUFFIX,disneymagicmoments.fr
-- DOMAIN-SUFFIX,abc-studios.com
-- DOMAIN-SUFFIX,youtube.com.by
-- DOMAIN-SUFFIX,disneychannelroadtrip.com
-- DOMAIN-SUFFIX,disneynewseries.com
-- DOMAIN-SUFFIX,star.connections.edge.bamgrid.com
-- DOMAIN-SUFFIX,youtube.sa
-- DOMAIN-SUFFIX,youtube.com.bh
-- DOMAIN-SUFFIX,disneyinternationalhd.com
-- DOMAIN-SUFFIX,youtube
-- DOMAIN-SUFFIX,youtube.fi
-- DOMAIN-SUFFIX,youtube.com.mk
-- DOMAIN-SUFFIX,edgedatg.com
-- DOMAIN-SUFFIX,spotifycodes.com
-- DOMAIN-SUFFIX,youtube.co.ve
-- DOMAIN-SUFFIX,youtube.in
-- DOMAIN-SUFFIX,amazonvideo.cc
-- DOMAIN-SUFFIX,youtube.com.qa
-- DOMAIN-SUFFIX,hbogoasia.id
-- DOMAIN-SUFFIX,youtube.com.co
-- DOMAIN-SUFFIX,youtube.vn
-- DOMAIN-SUFFIX,scdn.co
-- DOMAIN-SUFFIX,youtube.ma
-- DOMAIN-SUFFIX,star.api.edge.bamgrid.com
-- DOMAIN-SUFFIX,youtube.az
-- DOMAIN-SUFFIX,youtube.com.lv
-- DOMAIN-SUFFIX,netflix.ca
-- DOMAIN-SUFFIX,hbogoasia.ph
-- DOMAIN-SUFFIX,brightline.tv
-- DOMAIN-SUFFIX,youtube.com.hn
-- DOMAIN-SUFFIX,youtube.co.ug
-- DOMAIN-SUFFIX,disney.co.il
-- DOMAIN-SUFFIX,disneyplus.com
-- DOMAIN-SUFFIX,youtube.com.jm
-- DOMAIN-SUFFIX,disney.cz
-- DOMAIN-SUFFIX,disneyjuniortreataday.com
-- DOMAIN-SUFFIX,youtube.com.gt
-- DOMAIN-SUFFIX,youtube.com.mt
-- DOMAIN-SUFFIX,netflixtechblog.com
-- DOMAIN-SUFFIX,dmed.technology
-- DOMAIN-SUFFIX,youtube.co.tz
-- DOMAIN-SUFFIX,disney.co.th
-- DOMAIN-SUFFIX,ggpht.com
-- DOMAIN-SUFFIX,spoti.fi
-- DOMAIN-SUFFIX,spotify-everywhere.com
-- DOMAIN-SUFFIX,youtube.kr
-- DOMAIN-SUFFIX,youtube.la
-- DOMAIN-SUFFIX,netflixdnstest0.com
-- DOMAIN-SUFFIX,ttvnw.net
-- DOMAIN-SUFFIX,youtube.be
-- DOMAIN-SUFFIX,star.playback.edge.bamgrid.com
-- DOMAIN-SUFFIX,aiv-cdn.net
-- DOMAIN-SUFFIX,youtube.hr
-- DOMAIN-SUFFIX,byspotify.com
-- DOMAIN-SUFFIX,20thcenturystudios.com.br
-- DOMAIN-SUFFIX,youtube.nl
-- DOMAIN-SUFFIX,youtube.rs
-- DOMAIN-SUFFIX,youtube.at
-- DOMAIN-SUFFIX,youtube.it
-- DOMAIN-SUFFIX,disneymeetingsandevents.com
-- DOMAIN-SUFFIX,youtube.md
-- DOMAIN-SUFFIX,nflximg.com
-- DOMAIN-SUFFIX,babble.com
-- DOMAIN-SUFFIX,youtube.tn
-- DOMAIN-SUFFIX,youtu.be
-- DOMAIN-SUFFIX,disneymagicmoments.co.il
-- DOMAIN-SUFFIX,wide-youtube.l.google.com
-- DOMAIN-SUFFIX,disneybaby.com
-- DOMAIN-SUFFIX,hbo.com.edgesuite.net
-- DOMAIN-SUFFIX,espnqa.com
-- DOMAIN-SUFFIX,youtubego.co.id
-- DOMAIN-SUFFIX,youtube.mn
-- DOMAIN-SUFFIX,youtube.com.lb
-- DOMAIN-SUFFIX,starwars.com
-- DOMAIN-SUFFIX,nationalgeographicpartners.com
-- DOMAIN-SUFFIX,hbogo.eu
-- DOMAIN-SUFFIX,youtubego.in
-- DOMAIN-SUFFIX,adventuresbydisney.com
-- DOMAIN-SUFFIX,spotifycdn.com
-- DOMAIN-SUFFIX,youtube.ph
-- DOMAIN-SUFFIX,20thcenturystudios.jp
-- DOMAIN-SUFFIX,tv.apple.com
-- DOMAIN-SUFFIX,disney.com
-- DOMAIN-SUFFIX,twitchsvc.net
-- DOMAIN-SUFFIX,go-disneyworldgo.com
-- DOMAIN-SUFFIX,primevideo.tv
-- DOMAIN-SUFFIX,youtube.com.tn
-- DOMAIN-SUFFIX,watchespn.com
-- DOMAIN-SUFFIX,youtube.gt
-- DOMAIN-SUFFIX,marvelsuperwar.com
-- DOMAIN-SUFFIX,bamgrid.com
-- DOMAIN-SUFFIX,youtube.ly
-- DOMAIN-SUFFIX,yt.be
-- DOMAIN-SUFFIX,beautyandthebeastmusical.co.uk
-- DOMAIN-SUFFIX,youtube.co.ae
-- DOMAIN-SUFFIX,disney.es
-- DOMAIN-SUFFIX,youtube.pe
-- DOMAIN-SUFFIX,disneysrivieraresort.com
-- DOMAIN-SUFFIX,disneymagicmoments.gen.tr
-- DOMAIN-SUFFIX,youtube.com.tr
-- DOMAIN-SUFFIX,youtube.com.hk
-- DOMAIN-SUFFIX,youtube.co.jp
-- DOMAIN-SUFFIX,disney-portal.my.onetrust.com
-- DOMAIN-SUFFIX,youtube.jp
-- DOMAIN-SUFFIX,youtube.hk
-- DOMAIN-SUFFIX,disneyadsales.com
-- DOMAIN-SUFFIX,disneyinflight.com
-- DOMAIN-SUFFIX,hbogoasia.hk
-- DOMAIN-SUFFIX,espn.com
-- DOMAIN-SUFFIX,youtube.sk
-- DOMAIN-SUFFIX,youtube.fr
-- DOMAIN-SUFFIX,youtube.ru
-- DOMAIN-SUFFIX,youtube.com.om
-- DOMAIN-SUFFIX,disneyaulani.com
-- DOMAIN-SUFFIX,marvel.com
-- DOMAIN-SUFFIX,hbomaxcdn.com
-- DOMAIN-SUFFIX,disneymagicmoments.pl
-- DOMAIN-SUFFIX,youtube.com
-- DOMAIN-SUFFIX,youtubegaming.com
-- DOMAIN-SUFFIX,youtube.cat
-- DOMAIN-SUFFIX,starwarsgalacticstarcruiser.com
-- DOMAIN-SUFFIX,youtube.ca
-- DOMAIN-SUFFIX,youtube.si
-- DOMAIN-SUFFIX,espn.co.uk
-- DOMAIN-SUFFIX,youtube.co.at
-- DOMAIN-SUFFIX,youtube.com.ua
-- DOMAIN-SUFFIX,disneystore.com
-- DOMAIN-SUFFIX,disney.com.br
-- DOMAIN-SUFFIX,disney.pl
-- DOMAIN-SUFFIX,spotifycharts.com
-- DOMAIN-SUFFIX,dssott.com
-- DOMAIN-SUFFIX,youtube.com.bd
-- DOMAIN-SUFFIX,youtube.by
-- DOMAIN-SUFFIX,hbo.com.c.footprint.net
-- DOMAIN-SUFFIX,ext-twitch.tv
-- DOMAIN-SUFFIX,hsprepack.akamaized.net
-- DOMAIN-SUFFIX,hboasia.com
-- DOMAIN-SUFFIX,primevideo.com
-- DOMAIN-SUFFIX,disneymagicmoments.de
-- DOMAIN-SUFFIX,netflixdnstest9.com
-- DOMAIN-SUFFIX,marvelpinball.com
-- DOMAIN-SUFFIX,youtube.com.ve
-- DOMAIN-SUFFIX,nflxext.com
-- DOMAIN-SUFFIX,spaindisney.com
-- DOMAIN-SUFFIX,youtube.sg
-- DOMAIN-SUFFIX,disneymagicmoments.co.uk
-- DOMAIN-SUFFIX,disneysubscription.com
-- DOMAIN-SUFFIX,prime-video.com
-- DOMAIN-SUFFIX,spotifyforbrands.com
-- DOMAIN-SUFFIX,spotify.design
-- DOMAIN-SUFFIX,youtube.co.uk
-- DOMAIN-SUFFIX,disneyredirects.com
-- DOMAIN-SUFFIX,disneymagicmoments.gr
-- DOMAIN-REGEX,(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
-- DOMAIN-REGEX,^hses[1-7]?\.akamaized\.net$
-- DOMAIN-REGEX,(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
-- DOMAIN-REGEX,(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
-- DOMAIN-REGEX,(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
+  - 'd2nvs31859zcd8.cloudfront.net'
+  - 'd3aqoihi2n8ty8.cloudfront.net'
+  - 'd2e2de1etea730.cloudfront.net'
+  - 'dqrpb9wgowsf5.cloudfront.net'
+  - 'd1m7jfoe9zdc1j.cloudfront.net'
+  - 'ds0h3roq6wcgc.cloudfront.net'
+  - 'hls.itunes.apple.com'
+  - 'd2vjef5jvl6bfs.cloudfront.net'
+  - 'd2dylwb3shzel1.cloudfront.net'
+  - 'd1xhnb4ptk05mw.cloudfront.net'
+  - 'netflix.com.edgesuite.net'
+  - 'spotify.map.fastlylb.net'
+  - 'd2um2qdswy1tb0.cloudfront.net'
+  - 'd2xmjdvx03ij56.cloudfront.net'
+  - 'cdn-spotify-experiments.conductrics.com'
+  - 'audio-ak-spotify-com.akamaized.net'
+  - 'd6tizftlrpuof.cloudfront.net'
+  - 'tv.applemusic.com'
+  - 'dgeft87wbj63p.cloudfront.net'
+  - 'audio4-ak-spotify-com.akamaized.net'
+  - 'apple-tv-plus-press.apple.com'
+  - 'd36nr0u3xmc4mm.cloudfront.net'
+  - 'spotify.map.fastly.net'
+  - 'uts-api.itunes.apple.com'
+  - 'dykkng5hnh52u.cloudfront.net'
+  - 'play-edge.itunes.apple.com'
+  - 'heads-ak-spotify-com.akamaized.net'
+  - 'd1w2poirtb3as9.cloudfront.net'
+  - 'd1oca24q5dwo6d.cloudfront.net'
+  - 'd6d4ismr40iw.cloudfront.net'
+  - 'd1g1f25tn8m2e6.cloudfront.net'
+  - 'hls-amt.itunes.apple.com'
+  - 'd2aba1wr3818hz.cloudfront.net'
+  - 'np-edge.itunes.apple.com'
+  - 'd3c27h4odz752x.cloudfront.net'
+  - 'ddacn6pr5v0tl.cloudfront.net'
+  - 'espndotcom.tt.omtrdc.net'
+  - 'heads4-ak-spotify-com.akamaized.net'
+  - 'd1mhjrowxxagfy.cloudfront.net'
+  - 'd1ymi26ma8va5x.cloudfront.net'
+  - 'd3vd9lfkzbru3h.cloudfront.net'
+  - 'spotify.com.edgesuite.net'
+  - 'espn.hb.omtrdc.net'
+  - '.youtube.be'
+  - '.youtube.com.om'
+  - '.hbomax-images.warnermediacdn.com'
+  - '.youtube.no'
+  - '.netflix.ca'
+  - '.hboasia.com'
+  - '.disney.gr'
+  - '.disney.de'
+  - '.twitchcdn.net'
+  - '.youtube.md'
+  - '.youtube.sn'
+  - '.max.com'
+  - '.amazonprimevideos.com'
+  - '.disney.cz'
+  - '.youtube.ca'
+  - '.youtube.com.jo'
+  - '.youtube.uy'
+  - '.primevideo.tv'
+  - '.disney.se'
+  - '.disney-asia.com'
+  - '.amazonprimevideo.com.cn'
+  - '.youtube.com.sg'
+  - '.youtube.ug'
+  - '.youtube.co.nz'
+  - '.youtube.co.th'
+  - '.youtube.ly'
+  - '.hbomaxcdn.com'
+  - '.hotstar.com'
+  - '.go.com'
+  - '.marvelsdoubleagent.com'
+  - '.disneymusicpromotion.com'
+  - '.nflxsearch.net'
+  - '.disneycruisebrasil.com'
+  - '.disneyme.com'
+  - '.youtube.jp'
+  - '.espncdn.com'
+  - '.youtube.com.ee'
+  - '.disney.com'
+  - '.youtube.co.ae'
+  - '.youtube.com.uy'
+  - '.hsprepack.akamaized.net'
+  - '.youtube.com.es'
+  - '.youtube.com.gr'
+  - '.disneymagicmoments.fr'
+  - '.starplus.com'
+  - '.youtube.sa'
+  - '.youtubefanfest.com'
+  - '.youtube.com.hk'
+  - '.disneystore.com'
+  - '.netflix.net'
+  - '.marvelspotlightplays.com'
+  - '.nationalgeographicpartners.com'
+  - '.googlevideo.com'
+  - '.disney-studio.net'
+  - '.youtube.com.gh'
+  - '.ext-twitch.tv'
+  - '.disneymagicmoments.pl'
+  - '.disneymovieinsiders.com'
+  - '.youtube.co.in'
+  - '.disneyinternational.com'
+  - '.netflixdnstest6.com'
+  - '.netflixinvestor.com'
+  - '.natgeomaps.com'
+  - '.byspotify.com'
+  - '.youtube.ni'
+  - '.youtube.fi'
+  - '.disney-portal.my.onetrust.com'
+  - '.disneytickets.co.uk'
+  - '.spoti.fi'
+  - '.disney.co.th'
+  - '.netflixdnstest7.com'
+  - '.hotstar-labs.com'
+  - '.disney.com.br'
+  - '.youtube.pt'
+  - '.disneynow.com'
+  - '.youtube.kz'
+  - '.youtubegaming.com'
+  - '.netflixdnstest1.com'
+  - '.youtube-nocookie.com'
+  - '.youtube.al'
+  - '.twitch.tv'
+  - '.youtubego.id'
+  - '.shopdisney.com'
+  - '.youtube.com.bd'
+  - '.youtube.com.ly'
+  - '.disneychannelroadtrip.com'
+  - '.youtube.co.ma'
+  - '.youtube.com.qa'
+  - '.aiv-cdn.net'
+  - '.20thcenturystudios.jp'
+  - '.disneychannelonstage.com'
+  - '.youtubego.co.in'
+  - '.disneyplus.com'
+  - '.starwarskids.com'
+  - '.youtube.ng'
+  - '.scdn.co'
+  - '.disneysubscription.com'
+  - '.beautyandthebeastmusical.co.uk'
+  - '.disney.fi'
+  - '.primevideo.com'
+  - '.hbomax.com'
+  - '.youtube.cat'
+  - '.disneyjuniortreataday.com'
+  - '.thestationbymaker.com'
+  - '.youtube.cr'
+  - '.disney.nl'
+  - '.youtube.iq'
+  - '.disneyarena.com'
+  - '.youtube.com.pe'
+  - '.youtube.ba'
+  - '.disney.co.jp'
+  - '.youtubego.com'
+  - '.youtubeeducation.com'
+  - '.netflix.com'
+  - '.youtube.fr'
+  - '.abc-studios.com'
+  - '.espn.net'
+  - '.netflixdnstest10.com'
+  - '.disney.com.tw'
+  - '.twitchsvc.net'
+  - '.fast.com'
+  - '.youtube.com.tw'
+  - '.disney.in'
+  - '.spaindisney.com'
+  - '.sorcerersarena.com'
+  - '.hbo.com.edgesuite.net'
+  - '.spotifycharts.com'
+  - '.spotifyjobs.com'
+  - '.marvel.com'
+  - '.disneyplus.com.ssl.sc.omtrdc.net'
+  - '.youtube.ua'
+  - '.youtube.tv'
+  - '.youtube.com.sa'
+  - '.babyzone.com'
+  - '.bamgrid.com'
+  - '.disneymagicmoments.es'
+  - '.disney.com.hk'
+  - '.youtube.com.pa'
+  - '.youtube.la'
+  - '.disneymagicmoments.gr'
+  - '.spotify.link'
+  - '.20thcenturystudios.com.br'
+  - '.youtube.me'
+  - '.youtube.si'
+  - '.youtube.com.kw'
+  - '.youtube.co.id'
+  - '.youtube.com.bh'
+  - '.yt.be'
+  - '.hbogoasia.sg'
+  - '.youtube.com.mk'
+  - '.disneymagicmoments.it'
+  - '.ggpht.cn'
+  - '.star.api.edge.bamgrid.com'
+  - '.watchespn.com'
+  - '.disneymagicmomentsme.com'
+  - '.youtube.com.py'
+  - '.disneyjunior.com'
+  - '.youtube.com.ar'
+  - '.brightline.tv'
+  - '.disneyenconcert.com'
+  - '.disney.co.uk'
+  - '.youtube.cz'
+  - '.youtube.co.at'
+  - '.nomadlandmovie.ch'
+  - '.disneystreaming.com'
+  - '.babble.com'
+  - '.youtube.com.eg'
+  - '.youtube.com.do'
+  - '.youtube.ie'
+  - '.netflixdnstest0.com'
+  - '.star.content.edge.bamgrid.com'
+  - '.dssott.com'
+  - '.youtube.com.mt'
+  - '.disney.ru'
+  - '.disneylatino.com'
+  - '.disneybaby.com'
+  - '.spotifyforbrands.com'
+  - '.disney.es'
+  - '.marvelsuperheroseptember.com'
+  - '.starwars.com'
+  - '.youtube.qa'
+  - '.disneyturkiye.com.tr'
+  - '.youtube.com.co'
+  - '.youtube.com.ph'
+  - '.youtube.pr'
+  - '.youtube.co.hu'
+  - '.youtube.com.pt'
+  - '.youtube.tn'
+  - '.disneypeoplesurveys.com'
+  - '.spotifycdn.net'
+  - '.youtube.com.au'
+  - '.abc.com'
+  - '.disney.my.sentry.io'
+  - '.youtube.com.ua'
+  - '.espn.com'
+  - '.disneyaulani.com'
+  - '.adventuresbydisney.com'
+  - '.cinemax.com'
+  - '.disney.co.kr'
+  - '.disneyadsales.com'
+  - '.youtube.bo'
+  - '.youtube.ma'
+  - '.playmation.com'
+  - '.nflxvideo.net'
+  - '.youtube.in'
+  - '.youtube.com.mx'
+  - '.hbonow.com'
+  - '.dtci.co'
+  - '.ggpht.com'
+  - '.disneyworld-go.com'
+  - '.maxgo.com'
+  - '.hotstar-cdn.net'
+  - '.disney-discount.com'
+  - '.youtube.at'
+  - '.youtube.ru'
+  - '.disney.my'
+  - '.withyoutube.com'
+  - '.youtube.com.gt'
+  - '.netflixdnstest9.com'
+  - '.youtube.mx'
+  - '.youtube.kr'
+  - '.youtube.co.zw'
+  - '.youtube.sg'
+  - '.spotify.com'
+  - '.disney.ca'
+  - '.nflximg.net'
+  - '.youtube.com.pk'
+  - '.youtube.com.ng'
+  - '.discomax.com'
+  - '.youtube.lk'
+  - '.youtube.pl'
+  - '.youtube'
+  - '.disneyiejobs.com'
+  - '.disney.it'
+  - '.nflximg.com'
+  - '.youtube-ui.l.google.com'
+  - '.youtube.my'
+  - '.star.connections.edge.bamgrid.com'
+  - '.youtube.ph'
+  - '.youtube.ge'
+  - '.disney.hu'
+  - '.youtube.com.tn'
+  - '.disneyinternationalhd.com'
+  - '.youtube.com.ni'
+  - '.youtube.com.ve'
+  - '.dmed.technology'
+  - '.marvelsuperwar.com'
+  - '.youtube.sk'
+  - '.hbo.map.fastly.net'
+  - '.disney.ro'
+  - '.hbogo.co.th'
+  - '.hbogoasia.id'
+  - '.disneysrivieraresort.com'
+  - '.youtube.co.ke'
+  - '.netflixdnstest5.com'
+  - '.dtci.technology'
+  - '.forthethrone.com'
+  - '.youtube.hr'
+  - '.youtube.ro'
+  - '.youtube.com.tr'
+  - '.disneymagicmoments.de'
+  - '.espnqa.com'
+  - '.starwarsgalacticstarcruiser.com'
+  - '.live-video.net'
+  - '.youtube.bg'
+  - '.disney.co.za'
+  - '.hbogo.com'
+  - '.disneymagicmoments.co.za'
+  - '.star-latam.com'
+  - '.youtube.lu'
+  - '.disney-plus.net'
+  - '.youtube.hk'
+  - '.disney.ch'
+  - '.youtubeembeddedplayer.googleapis.com'
+  - '.youtubego.in'
+  - '.spotifycdn.com'
+  - '.20thcenturystudios.com.au'
+  - '.youtube.com.lv'
+  - '.primevideo.info'
+  - '.hbogoasia.tw'
+  - '.youtube.az'
+  - '.disneyredirects.com'
+  - '.disney.asia'
+  - '.youtube.com'
+  - '.hbogoasia.hk'
+  - '.youtube.mn'
+  - '.starott.com'
+  - '.youtube.pe'
+  - '.disneymagicmoments.co.il'
+  - '.youtu.be'
+  - '.youtube.jo'
+  - '.disney.fr'
+  - '.disney.pt'
+  - '.hbo.com'
+  - '.hbo.com.c.footprint.net'
+  - '.hbogoasia.ph'
+  - '.netflixtechblog.com'
+  - '.youtube.lv'
+  - '.youtube.com.az'
+  - '.netflixdnstest3.com'
+  - '.marvelpinball.com'
+  - '.hbomaxdash.s.llnwi.net'
+  - '.amazonprimevideo.cn'
+  - '.streamingdisney.net'
+  - '.disneymagicmoments.gen.tr'
+  - '.youtube.com.ec'
+  - '.mickey.tv'
+  - '.primevideo.org'
+  - '.disneyplus.bn5x.net'
+  - '.youtube.it'
+  - '.nflxext.com'
+  - '.youtube.com.my'
+  - '.youtube.com.bo'
+  - '.spotify.design'
+  - '.youtube.sv'
+  - '.pscdn.co'
+  - '.dilcdn.com'
+  - '.amazonvideo.cc'
+  - '.youtube.hu'
+  - '.nationalgeographic.com'
+  - '.youtube.by'
+  - '.youtube.co.uk'
+  - '.youtube.dk'
+  - '.marvel10thanniversary.com'
+  - '.espn.co.uk'
+  - '.disney.co.il'
+  - '.youtube.soy'
+  - '.disney.com.au'
+  - '.hbogoasia.com'
+  - '.youtube.co.il'
+  - '.youtube.co.tz'
+  - '.youtube.com.jm'
+  - '.primevideo.cc'
+  - '.youtube.co.za'
+  - '.shops-disney.com'
+  - '.youtube.com.ro'
+  - '.youtube.co.kr'
+  - '.star-brasil.com'
+  - '.go-disneyworldgo.com'
+  - '.youtube.pk'
+  - '.disney.bg'
+  - '.disney.pl'
+  - '.disney.dk'
+  - '.youtube.rs'
+  - '.disney.ph'
+  - '.youtube.com.hr'
+  - '.youtube.co.jp'
+  - '.youtube.gr'
+  - '.wide-youtube.l.google.com'
+  - '.ttvnw.net'
+  - '.netflixdnstest2.com'
+  - '.youtubemobilesupport.com'
+  - '.star.playback.edge.bamgrid.com'
+  - '.youtube.gt'
+  - '.disney.id'
+  - '.youtubei.googleapis.com'
+  - '.youtube.nl'
+  - '.disneycareers.com'
+  - '.disneymagicmoments.co.uk'
+  - '.youtube.com.br'
+  - '.disney.no'
+  - '.spotifycodes.com'
+  - '.ngeo.com'
+  - '.hbogo.eu'
+  - '.youtube.com.lb'
+  - '.marvelparty.net'
+  - '.youtube.es'
+  - '.youtubekids.com'
+  - '.amazonvideo.com'
+  - '.youtube.mk'
+  - '.youtube.co.ve'
+  - '.youtube.is'
+  - '.hotstarext.com'
+  - '.moviesanywhere.com'
+  - '.netflixdnstest4.com'
+  - '.youtube.co'
+  - '.disney.be'
+  - '.youtube.com.by'
+  - '.jtvnw.net'
+  - '.disneymeetingsandevents.com'
+  - '.youtube.ee'
+  - '.youtube.com.hn'
+  - '.youtubego.com.br'
+  - '.youtube.com.sv'
+  - '.youtube.bh'
+  - '.disneyinflight.com'
+  - '.disney-studio.com'
+  - '.youtube.vn'
+  - '.netflixdnstest8.com'
+  - '.ytimg.com'
+  - '.youtube.ch'
+  - '.youtube.de'
+  - '.edgedatg.com'
+  - '.youtube.ae'
+  - '.tv.apple.com'
+  - '.youtube.pa'
+  - '.youtube.googleapis.com'
+  - '.youtube.cl'
+  - '.youtube.co.cr'
+  - '.themarvelexperiencetour.com'
+  - '.spotify-everywhere.com'
+  - '.disneynewseries.com'
+  - '.watchdisneyfe.com'
+  - '.nflxso.net'
+  - '.thisispolaris.com'
+  - '.disneytvajobs.com'
+  - '.youtube.co.ug'
+  - '.youtube.se'
+  - '.disney.io'
+  - '.prime-video.com'
+  - '.youtubego.co.id'
+  - '.youtube.am'
+  - '.marveldimensionofheroes.com'
+  - '.youtube.lt'
+  - '.disney.sg'
+  - '(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$'
+  - '(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$'
+  - '(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$'
+  - '^hses[1-7]?\.akamaized\.net$'
+  - '(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$'

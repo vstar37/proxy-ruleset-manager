@@ -1,518 +1,518 @@
 payload:
-- DOMAIN,eaasserts-a.akamaihd.net
-- DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
-- DOMAIN,store-images.s-microsoft.com
-- DOMAIN,originasserts.akamaized.net
-- DOMAIN,login.live.com
-- DOMAIN,logincdn.msauth.net
-- DOMAIN,gog.salesmanago.com
-- DOMAIN-SUFFIX,playoverwatch.com
-- DOMAIN-SUFFIX,needforspeedredline.com
-- DOMAIN-SUFFIX,pogo.com
-- DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
-- DOMAIN-SUFFIX,bnetshopus.akamaized.net
-- DOMAIN-SUFFIX,kyurem.com
-- DOMAIN-SUFFIX,leagueoflegends.com
-- DOMAIN-SUFFIX,steamcommunity.com
-- DOMAIN-SUFFIX,eakorea.co.kr
-- DOMAIN-SUFFIX,battlefrontii.com
-- DOMAIN-SUFFIX,ultimaforever.com
-- DOMAIN-SUFFIX,mirrorsedge.com
-- DOMAIN-SUFFIX,pokemonvgc.com
-- DOMAIN-SUFFIX,mythicentertainment.net
-- DOMAIN-SUFFIX,sony.com
-- DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
-- DOMAIN-SUFFIX,needforspeedtakedown.com
-- DOMAIN-SUFFIX,xbox.eu
-- DOMAIN-SUFFIX,mirrorsedge2d.com
-- DOMAIN-SUFFIX,xboxab.net
-- DOMAIN-SUFFIX,pogobeta.com
-- DOMAIN-SUFFIX,fortnite.com
-- DOMAIN-SUFFIX,uoherald.com
-- DOMAIN-SUFFIX,needforspeedstreetkings.com
-- DOMAIN-SUFFIX,bejewled-stars.com
-- DOMAIN-SUFFIX,leaguehighschool.com
-- DOMAIN-SUFFIX,maddenseason.info
-- DOMAIN-SUFFIX,supermariogalaxy.com
-- DOMAIN-SUFFIX,ubisoft-uplay-savegames.s3.amazonaws.com
-- DOMAIN-SUFFIX,bethesdagamestudios.com
-- DOMAIN-SUFFIX,diablo3.com
-- DOMAIN-SUFFIX,conquerwithcharacter.com
-- DOMAIN-SUFFIX,heroesofdragonage.com
-- DOMAIN-SUFFIX,mariobroswii.com
-- DOMAIN-SUFFIX,playstationnetwork.com
-- DOMAIN-SUFFIX,mariokart8.com
-- DOMAIN-SUFFIX,ruinedking.com
-- DOMAIN-SUFFIX,gloryofheracles.com
-- DOMAIN-SUFFIX,nintendo3ds.com
-- DOMAIN-SUFFIX,100classicbooks.com
-- DOMAIN-SUFFIX,riotgames.info
-- DOMAIN-SUFFIX,xboxservice.com
-- DOMAIN-SUFFIX,steamstat.us
-- DOMAIN-SUFFIX,valvesoftware.com
-- DOMAIN-SUFFIX,needforspeedshowdown.com
-- DOMAIN-SUFFIX,maddenseason.org
-- DOMAIN-SUFFIX,camelotherald.net
-- DOMAIN-SUFFIX,wiivc.net
-- DOMAIN-SUFFIX,underlords.com
-- DOMAIN-SUFFIX,instituteofwar.org
-- DOMAIN-SUFFIX,bnetproduct-a.akamaihd.net
-- DOMAIN-SUFFIX,pokemonbank.com
-- DOMAIN-SUFFIX,dawngate.com
-- DOMAIN-SUFFIX,nintendo.co.uk
-- DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
-- DOMAIN-SUFFIX,battlefield4.com
-- DOMAIN-SUFFIX,steam.naeu.qtlglb.com
-- DOMAIN-SUFFIX,gog.qtlglb.com
-- DOMAIN-SUFFIX,eac-cdn.com
-- DOMAIN-SUFFIX,wiifit.com
-- DOMAIN-SUFFIX,xboxservices.com
-- DOMAIN-SUFFIX,xboxplayanywhere.com
-- DOMAIN-SUFFIX,lolfanart.net
-- DOMAIN-SUFFIX,battlefieldheroes.com
-- DOMAIN-SUFFIX,lcsmerch.com
-- DOMAIN-SUFFIX,paragon.com
-- DOMAIN-SUFFIX,eacodigos.com
-- DOMAIN-SUFFIX,pokemonswordshield.com
-- DOMAIN-SUFFIX,masseffect.com
-- DOMAIN-SUFFIX,lol-europe.com
-- DOMAIN-SUFFIX,battlenet.com
-- DOMAIN-SUFFIX,blizzcon-a.akamaihd.net
-- DOMAIN-SUFFIX,anthemthegame.com
-- DOMAIN-SUFFIX,nintendo.se
-- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
-- DOMAIN-SUFFIX,swtor.net
-- DOMAIN-SUFFIX,teamneedforspeed.com
-- DOMAIN-SUFFIX,blackboxgames.com
-- DOMAIN-SUFFIX,needforspeeddriftkings.com
-- DOMAIN-SUFFIX,lolusercontent.com
-- DOMAIN-SUFFIX,nintendo.ch
-- DOMAIN-SUFFIX,blznav.akamaized.net
-- DOMAIN-SUFFIX,riotgames.jp
-- DOMAIN-SUFFIX,xbox.co
-- DOMAIN-SUFFIX,yoshisnewisland.com
-- DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
-- DOMAIN-SUFFIX,wiipartyu.com
-- DOMAIN-SUFFIX,plantsvszombies2.com
-- DOMAIN-SUFFIX,spearhead.kr
-- DOMAIN-SUFFIX,thewonderful101.com
-- DOMAIN-SUFFIX,dkr.com
-- DOMAIN-SUFFIX,lolstatic-a.akamaihd.net
-- DOMAIN-SUFFIX,nintendo.fr
-- DOMAIN-SUFFIX,needforspeedoverdrive.com
-- DOMAIN-SUFFIX,easyanticheat.net
-- DOMAIN-SUFFIX,seagroup.com
-- DOMAIN-SUFFIX,convrgencegame.com
-- DOMAIN-SUFFIX,xbox.org
-- DOMAIN-SUFFIX,darkageofcamelot.com
-- DOMAIN-SUFFIX,pokemonplatinum.com
-- DOMAIN-SUFFIX,eanordic.com
-- DOMAIN-SUFFIX,nintendo.it
-- DOMAIN-SUFFIX,xbox360.com
-- DOMAIN-SUFFIX,wiisports.com
-- DOMAIN-SUFFIX,easports.com
-- DOMAIN-SUFFIX,chillingo.com
-- DOMAIN-SUFFIX,battlelog.com
-- DOMAIN-SUFFIX,pokemonbw.com
-- DOMAIN-SUFFIX,firesidegatherings.com
-- DOMAIN-SUFFIX,eamythic.net
-- DOMAIN-SUFFIX,needforspeedtherun.com
-- DOMAIN-SUFFIX,lolespor.com
-- DOMAIN-SUFFIX,renovacionxboxlive.com
-- DOMAIN-SUFFIX,miitomo.com
-- DOMAIN-SUFFIX,needforspeedeliminator.com
-- DOMAIN-SUFFIX,needforspeedundergroundeast.com
-- DOMAIN-SUFFIX,flipnotestudio.com
-- DOMAIN-SUFFIX,nintendoeurope.com
-- DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
-- DOMAIN-SUFFIX,wiisportsresort.com
-- DOMAIN-SUFFIX,championshipseriesleague.com
-- DOMAIN-SUFFIX,origin.tv
-- DOMAIN-SUFFIX,leagueoflegends.co.kr
-- DOMAIN-SUFFIX,xboxgamestudios.com
-- DOMAIN-SUFFIX,blzstatic.cn
-- DOMAIN-SUFFIX,pokemonpicross.com
-- DOMAIN-SUFFIX,maxis.com
-- DOMAIN-SUFFIX,worldofwarcraft.com
-- DOMAIN-SUFFIX,riot.com
-- DOMAIN-SUFFIX,projectapex.com
-- DOMAIN-SUFFIX,gateway-hw.maj-soul.com
-- DOMAIN-SUFFIX,humblebundle.com
-- DOMAIN-SUFFIX,steamdeck.com
-- DOMAIN-SUFFIX,steamstatic.com
-- DOMAIN-SUFFIX,lb-hw.maj-soul.com
-- DOMAIN-SUFFIX,thesims.com
-- DOMAIN-SUFFIX,garena.live
-- DOMAIN-SUFFIX,eacashcard.com
-- DOMAIN-SUFFIX,tiberiumalliances.com
-- DOMAIN-SUFFIX,starcraft.com
-- DOMAIN-SUFFIX,wiiugamepad.com
-- DOMAIN-SUFFIX,pokemonhome.com
-- DOMAIN-SUFFIX,lolclub.org
-- DOMAIN-SUFFIX,mariosupersluggers.com
-- DOMAIN-SUFFIX,steampipe-partner.akamaized.net
-- DOMAIN-SUFFIX,mojang.com
-- DOMAIN-SUFFIX,steam-chat.com
-- DOMAIN-SUFFIX,steam.tv
-- DOMAIN-SUFFIX,bnet.163.com
-- DOMAIN-SUFFIX,steampowered.com
-- DOMAIN-SUFFIX,hearthstone.nosdn.127.net
-- DOMAIN-SUFFIX,garena.tw
-- DOMAIN-SUFFIX,eamirrorsedge.com
-- DOMAIN-SUFFIX,nintendo.jp
-- DOMAIN-SUFFIX,battlefieldv.com
-- DOMAIN-SUFFIX,nintendo.es
-- DOMAIN-SUFFIX,easportsactiveonline.com
-- DOMAIN-SUFFIX,riotpoints.com
-- DOMAIN-SUFFIX,starwarstheoldrepublic.com
-- DOMAIN-SUFFIX,tellmewhygame.com
-- DOMAIN-SUFFIX,pokemonchampionships.com
-- DOMAIN-SUFFIX,nintendonetwork.net
-- DOMAIN-SUFFIX,leaguoflegends.com
-- DOMAIN-SUFFIX,mirrorsedge.net
-- DOMAIN-SUFFIX,nintendo.eu
-- DOMAIN-SUFFIX,videos-rockstargames-com.akamaized.net
-- DOMAIN-SUFFIX,yogify.com
-- DOMAIN-SUFFIX,nintendo.ru
-- DOMAIN-SUFFIX,thedreadwolfrises.com
-- DOMAIN-SUFFIX,riotgames.net
-- DOMAIN-SUFFIX,diabloimmortal.com
-- DOMAIN-SUFFIX,pokemongoldsilver.com
-- DOMAIN-SUFFIX,riotgames.tv
-- DOMAIN-SUFFIX,diddykongracing.com
-- DOMAIN-SUFFIX,pokemonwifi.net
-- DOMAIN-SUFFIX,xbox360.org
-- DOMAIN-SUFFIX,eablackbox.com
-- DOMAIN-SUFFIX,sonyentertainmentnetwork.com
-- DOMAIN-SUFFIX,starwarsbattlefront.com
-- DOMAIN-SUFFIX,shadowcomplex.com
-- DOMAIN-SUFFIX,ac-pocketcamp.com
-- DOMAIN-SUFFIX,popcap.com
-- DOMAIN-SUFFIX,pokemon-moon.com
-- DOMAIN-SUFFIX,leagueoflegends.ca
-- DOMAIN-SUFFIX,steampipe-kr.akamaized.net
-- DOMAIN-SUFFIX,nintendo.com
-- DOMAIN-SUFFIX,nintendo.dk
-- DOMAIN-SUFFIX,dialga.com
-- DOMAIN-SUFFIX,playvalorant.com
-- DOMAIN-SUFFIX,futpromos.com
-- DOMAIN-SUFFIX,simcity.com
-- DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
-- DOMAIN-SUFFIX,spore.com
-- DOMAIN-SUFFIX,battlenet.com.cn
-- DOMAIN-SUFFIX,swtor.com
-- DOMAIN-SUFFIX,superpapermario.com
-- DOMAIN-SUFFIX,futunited.com
-- DOMAIN-SUFFIX,gamepass.com
-- DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
-- DOMAIN-SUFFIX,eaaccess.com
-- DOMAIN-SUFFIX,fire-emblem-heroes.com
-- DOMAIN-SUFFIX,blzddistkr1-a.akamaihd.net
-- DOMAIN-SUFFIX,riot.net
-- DOMAIN-SUFFIX,seaofsolitude.com
-- DOMAIN-SUFFIX,visceralgames.com
-- DOMAIN-SUFFIX,garenanow.com
-- DOMAIN-SUFFIX,leagueoflegends.info
-- DOMAIN-SUFFIX,blzmedia-a.akamaihd.net
-- DOMAIN-SUFFIX,leagueoflegends.net
-- DOMAIN-SUFFIX,mariokart7.com
-- DOMAIN-SUFFIX,helpshift.com
-- DOMAIN-SUFFIX,ayudanintendo.com
-- DOMAIN-SUFFIX,xboxab.com
-- DOMAIN-SUFFIX,camelot-europe.com
-- DOMAIN-SUFFIX,pvp.net
-- DOMAIN-SUFFIX,steamunlocked.net
-- DOMAIN-SUFFIX,blz.nosdn.127.net
-- DOMAIN-SUFFIX,deadspacegame.com
-- DOMAIN-SUFFIX,historyofdota.com
-- DOMAIN-SUFFIX,maddenchampionship.com
-- DOMAIN-SUFFIX,ea.com
-- DOMAIN-SUFFIX,darkness-risen.com
-- DOMAIN-SUFFIX,steam-api.com
-- DOMAIN-SUFFIX,pokedex3d.com
-- DOMAIN-SUFFIX,supermario3dworld.com
-- DOMAIN-SUFFIX,rgpub.io
-- DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
-- DOMAIN-SUFFIX,battlefieldbadcompany2.com
-- DOMAIN-SUFFIX,rockstargames.com
-- DOMAIN-SUFFIX,epicgames.com
-- DOMAIN-SUFFIX,heroes.nos.netease.com
-- DOMAIN-SUFFIX,kirbysepicyarn.com
-- DOMAIN-SUFFIX,fifastreet3.com
-- DOMAIN-SUFFIX,thesims3.com
-- DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
-- DOMAIN-SUFFIX,lolshop.co.kr
-- DOMAIN-SUFFIX,lb-sy.maj-soul.com
-- DOMAIN-SUFFIX,skate2.com
-- DOMAIN-SUFFIX,pokemonletsgopikachu.com
-- DOMAIN-SUFFIX,steamgames.com
-- DOMAIN-SUFFIX,fifastreet.com
-- DOMAIN-SUFFIX,gog-statics.com
-- DOMAIN-SUFFIX,ubisoft-orbit-savegames.s3.amazonaws.com
-- DOMAIN-SUFFIX,easportsfootballclub.com
-- DOMAIN-SUFFIX,bowsersinsidestory.com
-- DOMAIN-SUFFIX,xbox360.eu
-- DOMAIN-SUFFIX,maddenseason.net
-- DOMAIN-SUFFIX,steam.cdn.webra.ru
-- DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
-- DOMAIN-SUFFIX,wowchina.com
-- DOMAIN-SUFFIX,dice.se
-- DOMAIN-SUFFIX,apexlegends.com
-- DOMAIN-SUFFIX,dungeonkeeper.com.cn
-- DOMAIN-SUFFIX,supremacy.com
-- DOMAIN-SUFFIX,wiifitu.com
-- DOMAIN-SUFFIX,mirrorsedge2.com
-- DOMAIN-SUFFIX,swjfo.com
-- DOMAIN-SUFFIX,forzamotorsport.net
-- DOMAIN-SUFFIX,forzarc.com
-- DOMAIN-SUFFIX,giratina.com
-- DOMAIN-SUFFIX,riotforgegames.com
-- DOMAIN-SUFFIX,battlebreakers.com
-- DOMAIN-SUFFIX,xdsummit.com
-- DOMAIN-SUFFIX,omotenashi.cygames.jp
-- DOMAIN-SUFFIX,drmario-world.com
-- DOMAIN-SUFFIX,xboxlive.com
-- DOMAIN-SUFFIX,excitebots.com
-- DOMAIN-SUFFIX,cncrivals.com
-- DOMAIN-SUFFIX,mythicgames.com
-- DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
-- DOMAIN-SUFFIX,battlefront2.com
-- DOMAIN-SUFFIX,xbox.com
-- DOMAIN-SUFFIX,playstation.net
-- DOMAIN-SUFFIX,blizzardgearstore.com
-- DOMAIN-SUFFIX,nentindo.net
-- DOMAIN-SUFFIX,dungeonkeeper.com
-- DOMAIN-SUFFIX,riotgames.co.kr
-- DOMAIN-SUFFIX,daoc.net
-- DOMAIN-SUFFIX,pokemonultrasunmoon.com
-- DOMAIN-SUFFIX,diablo3.nosdn.127.net
-- DOMAIN-SUFFIX,garena.co.id
-- DOMAIN-SUFFIX,steam.eca.qtlglb.com
-- DOMAIN-SUFFIX,fanatical.com
-- DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
-- DOMAIN-SUFFIX,starwarsfallenorder.com
-- DOMAIN-SUFFIX,donkeykongcountryreturns.com
-- DOMAIN-SUFFIX,gateway-v2.maj-soul.com
-- DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
-- DOMAIN-SUFFIX,nintendo.co.jp
-- DOMAIN-SUFFIX,play4free.com
-- DOMAIN-SUFFIX,electronicarts.fr
-- DOMAIN-SUFFIX,hackyourconsole.com
-- DOMAIN-SUFFIX,easy.ac
-- DOMAIN-SUFFIX,op.gg
-- DOMAIN-SUFFIX,needforspeedproven.com
-- DOMAIN-SUFFIX,supermariorun.com
-- DOMAIN-SUFFIX,pokemonblackwhite.com
-- DOMAIN-SUFFIX,gog.com
-- DOMAIN-SUFFIX,pokemonmysterydungeon.com
-- DOMAIN-SUFFIX,sc2.nosdn.127.net
-- DOMAIN-SUFFIX,nintendo.nl
-- DOMAIN-SUFFIX,leagueoflegendsscripts.com
-- DOMAIN-SUFFIX,supermario.com
-- DOMAIN-SUFFIX,nintendo.com.pt
-- DOMAIN-SUFFIX,needforspeedboost.com
-- DOMAIN-SUFFIX,playartifact.com
-- DOMAIN-SUFFIX,bethsoft.com
-- DOMAIN-SUFFIX,commandandconquer.com
-- DOMAIN-SUFFIX,unravel2.com
-- DOMAIN-SUFFIX,steam.apac.qtlglb.com
-- DOMAIN-SUFFIX,cdngarenanow-a.akamaihd.net
-- DOMAIN-SUFFIX,beth.games
-- DOMAIN-SUFFIX,anthemgame.com
-- DOMAIN-SUFFIX,masseffectarchives.com
-- DOMAIN-SUFFIX,maddenrewards.com
-- DOMAIN-SUFFIX,thesimssocial.com
-- DOMAIN-SUFFIX,media-rockstargames-com.akamaized.net
-- DOMAIN-SUFFIX,starcraft2.com
-- DOMAIN-SUFFIX,ubisoft.com
-- DOMAIN-SUFFIX,opgg-static.akamaized.net
-- DOMAIN-SUFFIX,biowarestore.com
-- DOMAIN-SUFFIX,mythicentertainment.com
-- DOMAIN-SUFFIX,steamstore-a.akamaihd.net
-- DOMAIN-SUFFIX,riotgames.com
-- DOMAIN-SUFFIX,battlefield.com
-- DOMAIN-SUFFIX,lb-v2.maj-soul.com
-- DOMAIN-SUFFIX,crysis.jp
-- DOMAIN-SUFFIX,nintendo.de
-- DOMAIN-SUFFIX,steamcontent.tnkjmec.com
-- DOMAIN-SUFFIX,callersbane.com
-- DOMAIN-SUFFIX,forzaracingchampionship.com
-- DOMAIN-SUFFIX,supremacy.net
-- DOMAIN-SUFFIX,garena.tv
-- DOMAIN-SUFFIX,xboxstudios.com
-- DOMAIN-SUFFIX,xbx.lv
-- DOMAIN-SUFFIX,xboxone.com
-- DOMAIN-SUFFIX,wariolandshakeit.com
-- DOMAIN-SUFFIX,riot-games.com
-- DOMAIN-SUFFIX,nintendoswitch.com
-- DOMAIN-SUFFIX,ghostgames.com
-- DOMAIN-SUFFIX,garena.vn
-- DOMAIN-SUFFIX,starwarsbattlefront2.com
-- DOMAIN-SUFFIX,kirbysuperstarultra.com
-- DOMAIN-SUFFIX,nintendoswitch.net
-- DOMAIN-SUFFIX,pokemonsunmoon.com
-- DOMAIN-SUFFIX,pvzheroes.com
-- DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
-- DOMAIN-SUFFIX,lolpcs.com
-- DOMAIN-SUFFIX,xboxone.co
-- DOMAIN-SUFFIX,bejeweledstars.com
-- DOMAIN-SUFFIX,marioandluigidreamteam.com
-- DOMAIN-SUFFIX,xenoblade.com
-- DOMAIN-SUFFIX,easports.jp
-- DOMAIN-SUFFIX,garena.co.th
-- DOMAIN-SUFFIX,capitalgames.com
-- DOMAIN-SUFFIX,uo.com
-- DOMAIN-SUFFIX,nintendo.be
-- DOMAIN-SUFFIX,playapex.com
-- DOMAIN-SUFFIX,garena.ph
-- DOMAIN-SUFFIX,wariowarediy.com
-- DOMAIN-SUFFIX,nintendostore.com
-- DOMAIN-SUFFIX,s.team
-- DOMAIN-SUFFIX,eamobile.com
-- DOMAIN-SUFFIX,ultimaonline.com
-- DOMAIN-SUFFIX,brawlstarsgame.com
-- DOMAIN-SUFFIX,learnwithleague.com
-- DOMAIN-SUFFIX,nintendo.co.kr
-- DOMAIN-SUFFIX,nfsworld.com
-- DOMAIN-SUFFIX,pvzgw2.com
-- DOMAIN-SUFFIX,nintendo.com.au
-- DOMAIN-SUFFIX,bethesda.net
-- DOMAIN-SUFFIX,pokemonletsgoeevee.com
-- DOMAIN-SUFFIX,minecraftshop.com
-- DOMAIN-SUFFIX,amiibo.com
-- DOMAIN-SUFFIX,garena.sg
-- DOMAIN-SUFFIX,blizzard.cn
-- DOMAIN-SUFFIX,pokemon-sun.com
-- DOMAIN-SUFFIX,tiburon.com
-- DOMAIN-SUFFIX,mysims.com
-- DOMAIN-SUFFIX,unraveltwo.com
-- DOMAIN-SUFFIX,nintendowii.com
-- DOMAIN-SUFFIX,splatoon2tournament.com
-- DOMAIN-SUFFIX,easportsmma.com
-- DOMAIN-SUFFIX,epicgames.dev
-- DOMAIN-SUFFIX,nintendo.no
-- DOMAIN-SUFFIX,spyjinx.com
-- DOMAIN-SUFFIX,dicela.net
-- DOMAIN-SUFFIX,nintendo.pt
-- DOMAIN-SUFFIX,miiverse.com
-- DOMAIN-SUFFIX,battlefield1943.com
-- DOMAIN-SUFFIX,leagueoflegends.org
-- DOMAIN-SUFFIX,frostbite.com
-- DOMAIN-SUFFIX,pokemon.com
-- DOMAIN-SUFFIX,dragonagekeep.com
-- DOMAIN-SUFFIX,heroesofthestorm.com
-- DOMAIN-SUFFIX,molesports.com
-- DOMAIN-SUFFIX,pvp.tv
-- DOMAIN-SUFFIX,electronicarts.com
-- DOMAIN-SUFFIX,xbox360.co
-- DOMAIN-SUFFIX,dawngatechronicles.com
-- DOMAIN-SUFFIX,orithegame.com
-- DOMAIN-SUFFIX,eaplay.com
-- DOMAIN-SUFFIX,speedhunters.com
-- DOMAIN-SUFFIX,nintendo-europe-sales.com
-- DOMAIN-SUFFIX,pokemonrubysapphire.com
-- DOMAIN-SUFFIX,origin.com
-- DOMAIN-SUFFIX,nintendo.at
-- DOMAIN-SUFFIX,needforspeedlightning.com
-- DOMAIN-SUFFIX,playparagon.com
-- DOMAIN-SUFFIX,dungeonkeeper.cn
-- DOMAIN-SUFFIX,riotcdn.net
-- DOMAIN-SUFFIX,needforspeed.com
-- DOMAIN-SUFFIX,brawlstars.com
-- DOMAIN-SUFFIX,lordofultima.com
-- DOMAIN-SUFFIX,lb-cdn.maj-soul.com
-- DOMAIN-SUFFIX,nintendo.com.hk
-- DOMAIN-SUFFIX,battle.net
-- DOMAIN-SUFFIX,eamythic.com
-- DOMAIN-SUFFIX,steam.ru.qtlglb.com
-- DOMAIN-SUFFIX,roborecall.com
-- DOMAIN-SUFFIX,starwarsjedifallenorder.com
-- DOMAIN-SUFFIX,cloudsync-prod.s3.amazonaws.com
-- DOMAIN-SUFFIX,easportsactive.com
-- DOMAIN-SUFFIX,swjedifallenorder.com
-- DOMAIN-SUFFIX,thelegendarystarfy.com
-- DOMAIN-SUFFIX,minecraft.net
-- DOMAIN-SUFFIX,playhearthstone.com
-- DOMAIN-SUFFIX,ssx3.com
-- DOMAIN-SUFFIX,lolstatic.com
-- DOMAIN-SUFFIX,fireemblemawakening.com
-- DOMAIN-SUFFIX,leaguesharp.info
-- DOMAIN-SUFFIX,dragonage.com
-- DOMAIN-SUFFIX,steambroadcast.akamaized.net
-- DOMAIN-SUFFIX,unrealtournament.com
-- DOMAIN-SUFFIX,uplay.com
-- DOMAIN-SUFFIX,awayoutgame.com
-- DOMAIN-SUFFIX,thesims4.com
-- DOMAIN-SUFFIX,gateway-sy.catmjstudio.com
-- DOMAIN-SUFFIX,blz-contentstack.com
-- DOMAIN-SUFFIX,blizzard.nefficient.co.kr
-- DOMAIN-SUFFIX,xboxgamepass.com
-- DOMAIN-SUFFIX,bnetcmsus-a.akamaihd.net
-- DOMAIN-SUFFIX,ulol.com
-- DOMAIN-SUFFIX,easportsworld.com
-- DOMAIN-SUFFIX,playnintendo.com
-- DOMAIN-SUFFIX,steammobile.akamaized.net
-- DOMAIN-SUFFIX,nintendo.net
-- DOMAIN-SUFFIX,nintendodsi.com
-- DOMAIN-SUFFIX,wii-u.com
-- DOMAIN-SUFFIX,unrealengine.com
-- DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net
-- DOMAIN-SUFFIX,msgamestudios.com
-- DOMAIN-SUFFIX,battlefield5.com
-- DOMAIN-SUFFIX,game.maj-soul.com
-- DOMAIN-SUFFIX,garena.com
-- DOMAIN-SUFFIX,ea.tt.omtrdc.net
-- DOMAIN-SUFFIX,eaassets-a.akamaihd.net
-- DOMAIN-SUFFIX,xboxone.eu
-- DOMAIN-SUFFIX,overwatch.nosdn.127.net
-- DOMAIN-SUFFIX,ea-anz-press.com
-- DOMAIN-SUFFIX,bioware.com
-- DOMAIN-SUFFIX,mysimsracing.com
-- DOMAIN-SUFFIX,titanfall.com
-- DOMAIN-SUFFIX,leagueoflegends.kr
-- DOMAIN-SUFFIX,origin-a.akamaihd.net
-- DOMAIN-SUFFIX,nintendonyc.com
-- DOMAIN-SUFFIX,steam.cdn.on.net
-- DOMAIN-SUFFIX,nintendoswitchtogether.com
-- DOMAIN-SUFFIX,riotgames.zendesk.com
-- DOMAIN-SUFFIX,nintendo.fi
-- DOMAIN-SUFFIX,simcity-buildit.com
-- DOMAIN-SUFFIX,wow.nosdn.127.net
-- DOMAIN-SUFFIX,di.res.netease.com
-- DOMAIN-SUFFIX,personaltrainermath.com
-- DOMAIN-SUFFIX,riotpin.com
-- DOMAIN-SUFFIX,nintendo-europe.com
-- DOMAIN-SUFFIX,dragonagemovie.com
-- DOMAIN-SUFFIX,playstation.com
-- DOMAIN-SUFFIX,blizzard.com
-- DOMAIN-SUFFIX,dicela.com
-- DOMAIN-SUFFIX,historyofdota.net
-- DOMAIN-SUFFIX,lolesports.com
-- DOMAIN-SUFFIX,ubi.com
-- DOMAIN-SUFFIX,nintendo.co.za
-- DOMAIN-SUFFIX,industrialtoys.com
-- DOMAIN-SUFFIX,pokemon-sunmoon.com
-- DOMAIN-SUFFIX,playwarcraft3.com
-- DOMAIN-SUFFIX,camelotherald.com
-- DOMAIN-SUFFIX,nintendo.tw
-- DOMAIN-SUFFIX,eastore.com
-- DOMAIN-SUFFIX,battlefield3.com
-- DOMAIN-SUFFIX,historyofdota.org
-- DOMAIN-SUFFIX,starfox.com
-- DOMAIN-SUFFIX,tnt-ea.com
-- DOMAIN-SUFFIX,rsg.sc
-- DOMAIN-SUFFIX,gateway-cdn.maj-soul.com
-- DOMAIN-SUFFIX,easportsfootball.com
-- DOMAIN-SUFFIX,rstatic.net
-- DOMAIN-SUFFIX,nintendowifi.net
-- DOMAIN-SUFFIX,eafootballworld.com
-- DOMAIN-SUFFIX,newsupermariobrosu.com
-- DOMAIN-SUFFIX,steampipe.akamaized.net
-- DOMAIN-SUFFIX,cdp.cloud.unity3d.com
-- DOMAIN-SUFFIX,mirrorsedge.jp
-- DOMAIN-SUFFIX,blizzardgames.cn
-- DOMAIN-SUFFIX,hutpromos.com
-- DOMAIN-SUFFIX,garena.my
-- DOMAIN-SUFFIX,gateway-sy.maj-soul.com
-- DOMAIN-SUFFIX,needforspeedtimeattack.com
-- DOMAIN-SUFFIX,blzddist1-a.akamaihd.net
+  - 'eaasserts-a.akamaihd.net'
+  - 'gog.salesmanago.com'
+  - 'img-prod-cms-rt-microsoft-com.akamaized.net'
+  - 'logincdn.msauth.net'
+  - 'originasserts.akamaized.net'
+  - 'store-images.s-microsoft.com'
+  - 'login.live.com'
+  - '.leagueoflegends.info'
+  - '.xboxgamepass.com'
+  - '.crysis.jp'
+  - '.playartifact.com'
+  - '.starwarsbattlefront.com'
+  - '.leaguoflegends.com'
+  - '.nintendo.co.za'
+  - '.brawlstarsgame.com'
+  - '.eaassets-a.akamaihd.net'
+  - '.deadspacegame.com'
+  - '.pvzheroes.com'
+  - '.lb-v2.maj-soul.com'
+  - '.mysims.com'
+  - '.nintendo.com.pt'
+  - '.diabloimmortal.com'
+  - '.needforspeedshowdown.com'
+  - '.ea.tt.omtrdc.net'
+  - '.needforspeedtakedown.com'
+  - '.wii-u.com'
+  - '.opgg-static.akamaized.net'
+  - '.speedhunters.com'
+  - '.leagueoflegends.ca'
+  - '.biowarestore.com'
+  - '.playparagon.com'
+  - '.unrealtournament.com'
+  - '.steam.apac.qtlglb.com'
+  - '.steammobile.akamaized.net'
+  - '.chillingo.com'
+  - '.steam.cdn.orcon.net.nz'
+  - '.riotgames.zendesk.com'
+  - '.battlefieldbadcompany2.com'
+  - '.starwarsfallenorder.com'
+  - '.darkageofcamelot.com'
+  - '.xboxone.co'
+  - '.mythicentertainment.net'
+  - '.nintendo.se'
+  - '.nintendoswitch.net'
+  - '.dawngate.com'
+  - '.eamirrorsedge.com'
+  - '.instituteofwar.org'
+  - '.steampipe-partner.akamaized.net'
+  - '.xboxservice.com'
+  - '.nfsworld.com'
+  - '.miiverse.com'
+  - '.dragonage.com'
+  - '.100classicbooks.com'
+  - '.needforspeedtherun.com'
+  - '.lb-sy.maj-soul.com'
+  - '.easyanticheat.net'
+  - '.hearthstone.nosdn.127.net'
+  - '.ayudanintendo.com'
+  - '.battlefield1943.com'
+  - '.ulol.com'
+  - '.starwarsjedifallenorder.com'
+  - '.pokemonwifi.net'
+  - '.pogobeta.com'
+  - '.nintendoswitchtogether.com'
+  - '.steam.cdn.slingshot.co.nz'
+  - '.steamuserimages-a.akamaihd.net'
+  - '.leagueoflegends.co.kr'
+  - '.s.team'
+  - '.eablackbox.com'
+  - '.ac-pocketcamp.com'
+  - '.forzamotorsport.net'
+  - '.battlenet.com'
+  - '.api-priconne-redive.cygames.jp'
+  - '.eastore.com'
+  - '.ghostgames.com'
+  - '.omotenashi.cygames.jp'
+  - '.playhearthstone.com'
+  - '.xboxone.eu'
+  - '.pokemon-sun.com'
+  - '.lolespor.com'
+  - '.eacashcard.com'
+  - '.kyurem.com'
+  - '.pokemonletsgopikachu.com'
+  - '.easports.jp'
+  - '.garena.com'
+  - '.capitalgames.com'
+  - '.needforspeedstreetkings.com'
+  - '.riot-games.com'
+  - '.blznav.akamaized.net'
+  - '.donkeykongcountryreturns.com'
+  - '.pokemon-moon.com'
+  - '.garena.tv'
+  - '.majsoul-hk-client.cn-hongkong.log.aliyuncs.com'
+  - '.needforspeedundergroundeast.com'
+  - '.pokemonchampionships.com'
+  - '.videos-rockstargames-com.akamaized.net'
+  - '.blz-contentstack.com'
+  - '.lb-hw.maj-soul.com'
+  - '.nintendo.net'
+  - '.gateway-sy.catmjstudio.com'
+  - '.frostbite.com'
+  - '.easportsmma.com'
+  - '.nintendo.pt'
+  - '.epicgames.dev'
+  - '.gog.com'
+  - '.garena.sg'
+  - '.xboxgamestudios.com'
+  - '.ultimaforever.com'
+  - '.hackyourconsole.com'
+  - '.pokemonvgc.com'
+  - '.dkr.com'
+  - '.origin.tv'
+  - '.sc2.nosdn.127.net'
+  - '.lolesports.com'
+  - '.seagroup.com'
+  - '.orithegame.com'
+  - '.gateway-hw.maj-soul.com'
+  - '.mirrorsedge2d.com'
+  - '.thewonderful101.com'
+  - '.nintendo.nl'
+  - '.pokemonbw.com'
+  - '.nintendo.ch'
+  - '.pokemon.com'
+  - '.teamneedforspeed.com'
+  - '.uplay.com'
+  - '.hutpromos.com'
+  - '.fireemblemawakening.com'
+  - '.battlefield.com'
+  - '.diablo3.com'
+  - '.nintendo.fi'
+  - '.visceralgames.com'
+  - '.needforspeeddriftkings.com'
+  - '.mirrorsedge2.com'
+  - '.mysimsracing.com'
+  - '.nintendo-europe-sales.com'
+  - '.ubi.com'
+  - '.electronicarts.fr'
+  - '.steam-chat.com'
+  - '.bnet.163.com'
+  - '.needforspeedredline.com'
+  - '.dice.se'
+  - '.superpapermario.com'
+  - '.gateway-sy.maj-soul.com'
+  - '.blzddistkr1-a.akamaihd.net'
+  - '.bioware.com'
+  - '.mythicentertainment.com'
+  - '.darkness-risen.com'
+  - '.supremacy.com'
+  - '.riot.com'
+  - '.nintendo.com'
+  - '.msgamestudios.com'
+  - '.battlefield3.com'
+  - '.pvzgw2.com'
+  - '.amiibo.com'
+  - '.pokemonletsgoeevee.com'
+  - '.playstation.net'
+  - '.unraveltwo.com'
+  - '.renovacionxboxlive.com'
+  - '.mariosupersluggers.com'
+  - '.starwarsbattlefront2.com'
+  - '.swtor.com'
+  - '.forzarc.com'
+  - '.steam.eca.qtlglb.com'
+  - '.dragonagekeep.com'
+  - '.masseffectarchives.com'
+  - '.blizzardgames.cn'
+  - '.humblebundle.com'
+  - '.steam.tv'
+  - '.playnintendo.com'
+  - '.di.res.netease.com'
+  - '.needforspeedtimeattack.com'
+  - '.titanfall.com'
+  - '.xboxstudios.com'
+  - '.nintendoswitch.com'
+  - '.pokemonultrasunmoon.com'
+  - '.gog.qtlglb.com'
+  - '.thesims3.com'
+  - '.roborecall.com'
+  - '.playstation.com'
+  - '.blizzardgearstore.com'
+  - '.f3b7q2p3.ssl.hwcdn.net'
+  - '.sony.com'
+  - '.anthemgame.com'
+  - '.paragon.com'
+  - '.steampipe-kr.akamaized.net'
+  - '.eac-cdn.com'
+  - '.maddenrewards.com'
+  - '.skate2.com'
+  - '.tnt-ea.com'
+  - '.nintendo.ru'
+  - '.leagueoflegendsscripts.com'
+  - '.tiburon.com'
+  - '.pokedex3d.com'
+  - '.riotcdn.net'
+  - '.rstatic.net'
+  - '.nentindo.net'
+  - '.mojang.com'
+  - '.nintendo.at'
+  - '.riotgames.tv'
+  - '.cncrivals.com'
+  - '.origin-a.akamaihd.net'
+  - '.excitebots.com'
+  - '.leagueoflegends.net'
+  - '.wiifit.com'
+  - '.lb-cdn.maj-soul.com'
+  - '.xbox.eu'
+  - '.nintendo3ds.com'
+  - '.xbox.com'
+  - '.leagueoflegends.org'
+  - '.mariokart7.com'
+  - '.steam-api.com'
+  - '.plantsvszombies2.com'
+  - '.xenoblade.com'
+  - '.battlebreakers.com'
+  - '.steam.ru.qtlglb.com'
+  - '.riotgames.jp'
+  - '.xbx.lv'
+  - '.fortnite.com'
+  - '.xbox.co'
+  - '.origin.com'
+  - '.yogify.com'
+  - '.supermario3dworld.com'
+  - '.pokemonswordshield.com'
+  - '.easportsactiveonline.com'
+  - '.swtor.net'
+  - '.lcsmerch.com'
+  - '.helpshift.com'
+  - '.riotgames.co.kr'
+  - '.steamvideo-a.akamaihd.net'
+  - '.rsg.sc'
+  - '.bethesda.net'
+  - '.steamcontent.tnkjmec.com'
+  - '.playapex.com'
+  - '.blizzard.nefficient.co.kr'
+  - '.lolclub.org'
+  - '.steamusercontent-a.akamaihd.net'
+  - '.blizzcon-a.akamaihd.net'
+  - '.yoshisnewisland.com'
+  - '.learnwithleague.com'
+  - '.maddenseason.org'
+  - '.steamstat.us'
+  - '.battlenet.com.cn'
+  - '.leagueoflegends.com'
+  - '.starfox.com'
+  - '.garena.my'
+  - '.battlelog.com'
+  - '.nintendodsi.com'
+  - '.bejewled-stars.com'
+  - '.historyofdota.net'
+  - '.heroesofthestorm.com'
+  - '.bnetproduct-a.akamaihd.net'
+  - '.bejeweledstars.com'
+  - '.nintendo.es'
+  - '.wariowarediy.com'
+  - '.xboxab.com'
+  - '.forzaracingchampionship.com'
+  - '.xbox360.co'
+  - '.xdsummit.com'
+  - '.nintendo.fr'
+  - '.playstationnetwork.com'
+  - '.garena.vn'
+  - '.maddenseason.net'
+  - '.wiiugamepad.com'
+  - '.mirrorsedge.com'
+  - '.lolpcs.com'
+  - '.lol-europe.com'
+  - '.maxis.com'
+  - '.uoherald.com'
+  - '.xn--mts47c3w9b1qr.net'
+  - '.callersbane.com'
+  - '.camelot-europe.com'
+  - '.bnetshopus.akamaized.net'
+  - '.futpromos.com'
+  - '.xboxone.com'
+  - '.industrialtoys.com'
+  - '.kirbysuperstarultra.com'
+  - '.marioandluigidreamteam.com'
+  - '.eamobile.com'
+  - '.mariokart8.com'
+  - '.steamcommunity-a.akamaihd.net'
+  - '.supermariogalaxy.com'
+  - '.playoverwatch.com'
+  - '.minecraftshop.com'
+  - '.historyofdota.org'
+  - '.eamythic.com'
+  - '.easportsfootballclub.com'
+  - '.drmario-world.com'
+  - '.bowsersinsidestory.com'
+  - '.pokemonplatinum.com'
+  - '.championshipseriesleague.com'
+  - '.battlefront2.com'
+  - '.xbox.org'
+  - '.swjfo.com'
+  - '.nintendo.co.uk'
+  - '.conquerwithcharacter.com'
+  - '.riotpoints.com'
+  - '.easports.com'
+  - '.heroesofdragonage.com'
+  - '.supermariorun.com'
+  - '.bnetcmsus-a.akamaihd.net'
+  - '.lolstatic-a.akamaihd.net'
+  - '.battlefield5.com'
+  - '.riotgames.net'
+  - '.cdngarenanow-a.akamaihd.net'
+  - '.unrealengine.com'
+  - '.nintendo.jp'
+  - '.pogo.com'
+  - '.camelotherald.com'
+  - '.mariobroswii.com'
+  - '.pokemonhome.com'
+  - '.mirrorsedge.net'
+  - '.commandandconquer.com'
+  - '.pokemonsunmoon.com'
+  - '.ea-anz-press.com'
+  - '.gamedownloads-rockstargames-com.akamaized.net'
+  - '.eakorea.co.kr'
+  - '.nintendowifi.net'
+  - '.epicgames.com'
+  - '.op.gg'
+  - '.steampipe.akamaized.net'
+  - '.steamunlocked.net'
+  - '.xboxservices.com'
+  - '.blzmedia-a.akamaihd.net'
+  - '.easportsworld.com'
+  - '.battlefrontii.com'
+  - '.avatargarenanow-a.akamaihd.net'
+  - '.pokemonrubysapphire.com'
+  - '.lolusercontent.com'
+  - '.projectapex.com'
+  - '.gamepass.com'
+  - '.wiisportsresort.com'
+  - '.uo.com'
+  - '.simcity.com'
+  - '.newsupermariobrosu.com'
+  - '.bethsoft.com'
+  - '.prd-priconne-redive.akamaized.net'
+  - '.sonyentertainmentnetwork.com'
+  - '.xbox360.eu'
+  - '.ubisoft-uplay-savegames.s3.amazonaws.com'
+  - '.eacodigos.com'
+  - '.nintendoeurope.com'
+  - '.rockstargames.com'
+  - '.ubisoft-orbit-savegames.s3.amazonaws.com'
+  - '.wariolandshakeit.com'
+  - '.maddenchampionship.com'
+  - '.pokemongoldsilver.com'
+  - '.wiisports.com'
+  - '.wiivc.net'
+  - '.supermario.com'
+  - '.steambroadcast.akamaized.net'
+  - '.dragonagemovie.com'
+  - '.easportsfootball.com'
+  - '.starwarstheoldrepublic.com'
+  - '.eamythic.net'
+  - '.nintendo.no'
+  - '.nintendowii.com'
+  - '.nintendo-europe.com'
+  - '.garenanow.com'
+  - '.steamstatic.com'
+  - '.nintendo.eu'
+  - '.wiifitu.com'
+  - '.dialga.com'
+  - '.thesims4.com'
+  - '.lolstatic.com'
+  - '.battlefieldheroes.com'
+  - '.underlords.com'
+  - '.cdp.cloud.unity3d.com'
+  - '.needforspeedproven.com'
+  - '.historyofdota.com'
+  - '.wiipartyu.com'
+  - '.eanordic.com'
+  - '.steam.naeu.qtlglb.com'
+  - '.steam.cdn.webra.ru'
+  - '.apexlegends.com'
+  - '.eaaccess.com'
+  - '.garena.live'
+  - '.garena.co.id'
+  - '.mythicgames.com'
+  - '.spyjinx.com'
+  - '.pokemonpicross.com'
+  - '.mirrorsedge.jp'
+  - '.steamcdn-a.akamaihd.net'
+  - '.diddykongracing.com'
+  - '.steamstore-a.akamaihd.net'
+  - '.leaguehighschool.com'
+  - '.gateway-v2.maj-soul.com'
+  - '.miitomo.com'
+  - '.steamcommunity.com'
+  - '.dawngatechronicles.com'
+  - '.nintendonyc.com'
+  - '.dicela.net'
+  - '.pokemonbank.com'
+  - '.wow.nosdn.127.net'
+  - '.riotgames.info'
+  - '.garena.tw'
+  - '.needforspeedoverdrive.com'
+  - '.dlmobilegarena-a.akamaihd.net'
+  - '.thedreadwolfrises.com'
+  - '.steampowered.com'
+  - '.ruinedking.com'
+  - '.valvesoftware.com'
+  - '.xboxplayanywhere.com'
+  - '.needforspeedboost.com'
+  - '.shadowcomplex.com'
+  - '.simcity-buildit.com'
+  - '.nintendo.de'
+  - '.firesidegatherings.com'
+  - '.fifastreet3.com'
+  - '.play4free.com'
+  - '.cloudsync-prod.s3.amazonaws.com'
+  - '.steamdeck.com'
+  - '.giratina.com'
+  - '.minecraft.net'
+  - '.easportsactive.com'
+  - '.riotpin.com'
+  - '.blizzard.com'
+  - '.camelotherald.net'
+  - '.thesimssocial.com'
+  - '.splatoon2tournament.com'
+  - '.dungeonkeeper.com'
+  - '.pokemonblackwhite.com'
+  - '.fifastreet.com'
+  - '.battle.net'
+  - '.nintendo.tw'
+  - '.worldofwarcraft.com'
+  - '.maddenseason.info'
+  - '.nintendo.com.au'
+  - '.playvalorant.com'
+  - '.nintendo.it'
+  - '.edge.steam-dns.top.comcast.net'
+  - '.flipnotestudio.com'
+  - '.needforspeed.com'
+  - '.nintendo.com.hk'
+  - '.heroes.nos.netease.com'
+  - '.spearhead.kr'
+  - '.gateway-cdn.maj-soul.com'
+  - '.electronicarts.com'
+  - '.gog-statics.com'
+  - '.blizzard.cn'
+  - '.nintendo.dk'
+  - '.anthemthegame.com'
+  - '.kirbysepicyarn.com'
+  - '.garena.co.th'
+  - '.game.maj-soul.com'
+  - '.blz.nosdn.127.net'
+  - '.garena.ph'
+  - '.tellmewhygame.com'
+  - '.riot.net'
+  - '.overwatch.nosdn.127.net'
+  - '.seaofsolitude.com'
+  - '.dungeonkeeper.com.cn'
+  - '.diablo3.nosdn.127.net'
+  - '.ubisoft.com'
+  - '.nintendostore.com'
+  - '.ea.com'
+  - '.xbox360.com'
+  - '.dicela.com'
+  - '.beth.games'
+  - '.lolshop.co.kr'
+  - '.thesims.com'
+  - '.wowchina.com'
+  - '.steam.cdn.on.net'
+  - '.awayoutgame.com'
+  - '.lordofultima.com'
+  - '.leagueoflegends.kr'
+  - '.fire-emblem-heroes.com'
+  - '.xboxab.net'
+  - '.masseffect.com'
+  - '.molesports.com'
+  - '.pvp.tv'
+  - '.eafootballworld.com'
+  - '.tiberiumalliances.com'
+  - '.ultimaonline.com'
+  - '.rgpub.io'
+  - '.nintendo.co.jp'
+  - '.ssx3.com'
+  - '.eaplay.com'
+  - '.needforspeedlightning.com'
+  - '.nintendo.co.kr'
+  - '.battlefieldv.com'
+  - '.nintendonetwork.net'
+  - '.lolfanart.net'
+  - '.unravel2.com'
+  - '.steamgames.com'
+  - '.pokemon-sunmoon.com'
+  - '.blackboxgames.com'
+  - '.popcap.com'
+  - '.personaltrainermath.com'
+  - '.starcraft2.com'
+  - '.easy.ac'
+  - '.nintendo.be'
+  - '.convrgencegame.com'
+  - '.playwarcraft3.com'
+  - '.leaguesharp.info'
+  - '.riotgames.com'
+  - '.futunited.com'
+  - '.needforspeedeliminator.com'
+  - '.pvp.net'
+  - '.blzstatic.cn'
+  - '.riotforgegames.com'
+  - '.brawlstars.com'
+  - '.media-rockstargames-com.akamaized.net'
+  - '.spore.com'
+  - '.battlefield4.com'
+  - '.gloryofheracles.com'
+  - '.thelegendarystarfy.com'
+  - '.dungeonkeeper.cn'
+  - '.pokemonmysterydungeon.com'
+  - '.blzddist1-a.akamaihd.net'
+  - '.swjedifallenorder.com'
+  - '.bethesdagamestudios.com'
+  - '.supremacy.net'
+  - '.xbox360.org'
+  - '.daoc.net'
+  - '.fanatical.com'
+  - '.starcraft.com'
+  - '.xboxlive.com'

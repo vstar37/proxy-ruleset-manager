@@ -1,159 +1,159 @@
 payload:
-- DOMAIN,gog-cdn-fastly.gog.com
-- DOMAIN,epicgames-download1-1251447533.file.myqcloud.com
-- DOMAIN,xz.pphimalayanrt.com
-- DOMAIN,tlu.dl.delivery.mp.microsoft.com
-- DOMAIN,menu-static.gog-statics.com
-- DOMAIN,gog.qtlglb.com
-- DOMAIN,www4-static.gog-statics.com
-- DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
-- DOMAIN,trts.baishancdnx.cn
-- DOMAIN,dl.delivery.mp.microsoft.com
-- DOMAIN,uplaypc-s-ubisoft.cdn.ubionline.com.cn
-- DOMAIN,gogalaxy.gog-statics.com
-- DOMAIN,static-login.gog-statics.com
-- DOMAIN,productcard.gog-statics.com
-- DOMAIN,gog-cdn.akamaized.net
-- DOMAIN-SUFFIX,mszdld.com
-- DOMAIN-SUFFIX,hkgcloudcs.com
-- DOMAIN-SUFFIX,nintendoswitch.cn
-- DOMAIN-SUFFIX,nextworkshop.net
-- DOMAIN-SUFFIX,mihayo.com
-- DOMAIN-SUFFIX,scid.cn
-- DOMAIN-SUFFIX,gstore.val.manlaxy.com
-- DOMAIN-SUFFIX,codm.com
-- DOMAIN-SUFFIX,gotolink.net
-- DOMAIN-SUFFIX,gouhuo.qq.com
-- DOMAIN-SUFFIX,mihoyo.com
-- DOMAIN-SUFFIX,biligame.com
-- DOMAIN-SUFFIX,mahjongcup.cn
-- DOMAIN-SUFFIX,texasholdemcup.com
-- DOMAIN-SUFFIX,miyoushe.com
-- DOMAIN-SUFFIX,csgo.wmsj.cn
-- DOMAIN-SUFFIX,ihappystudio.cn
-- DOMAIN-SUFFIX,hdyxgame.com
-- DOMAIN-SUFFIX,syxlgame.com
-- DOMAIN-SUFFIX,cm.steampowered.com
-- DOMAIN-SUFFIX,gclouddolphin.com
-- DOMAIN-SUFFIX,steamchina.com
-- DOMAIN-SUFFIX,rmwxgame.com
-- DOMAIN-SUFFIX,haydaypop.cn
-- DOMAIN-SUFFIX,steampipe.steamcontent.tnkjmec.com
-- DOMAIN-SUFFIX,gameloop.com
-- DOMAIN-SUFFIX,wcbygame.com
-- DOMAIN-SUFFIX,supersmashbros.com.cn
-- DOMAIN-SUFFIX,bilibiligame.cn
-- DOMAIN-SUFFIX,pubgtool.com
-- DOMAIN-SUFFIX,ihappystudio.com
-- DOMAIN-SUFFIX,bluearchive-cn.com
-- DOMAIN-SUFFIX,17roco.com
-- DOMAIN-SUFFIX,labycore.cn
-- DOMAIN-SUFFIX,videoxiaoyouxi.com
-- DOMAIN-SUFFIX,yxwsgame.com
-- DOMAIN-SUFFIX,supermariobros.com.cn
-- DOMAIN-SUFFIX,legendofzelda.com.cn
-- DOMAIN-SUFFIX,gcloudcs.com
-- DOMAIN-SUFFIX,in.th
-- DOMAIN-SUFFIX,bcfmglobal.com
-- DOMAIN-SUFFIX,leagueoflegends.cn
-- DOMAIN-SUFFIX,yximg.cn
-- DOMAIN-SUFFIX,sccreators.cn
-- DOMAIN-SUFFIX,tencentstart.com
-- DOMAIN-SUFFIX,robloxdev.cn
-- DOMAIN-SUFFIX,mihoyogift.com
-- DOMAIN-SUFFIX,timibase.com
-- DOMAIN-SUFFIX,skydweller.cn
-- DOMAIN-SUFFIX,dl.steam.clngaa.com
-- DOMAIN-SUFFIX,gdtimg.com
-- DOMAIN-SUFFIX,aki-game.com
-- DOMAIN-SUFFIX,mhyurl.cn
-- DOMAIN-SUFFIX,mahjongcup.com
-- DOMAIN-SUFFIX,scsentry.cn
-- DOMAIN-SUFFIX,texasholdemcup.cn
-- DOMAIN-SUFFIX,lpl.com.cn
-- DOMAIN-SUFFIX,tcfmglobal.com
-- DOMAIN-SUFFIX,nintendolabo.cn
-- DOMAIN-SUFFIX,mhystatic.com
-- DOMAIN-SUFFIX,mariokart.com.cn
-- DOMAIN-SUFFIX,xboxlive.cn
-- DOMAIN-SUFFIX,mahjongcup.net
-- DOMAIN-SUFFIX,gcloudcstestonly.com
-- DOMAIN-SUFFIX,happyhlddz.com
-- DOMAIN-SUFFIX,goto-game.com
-- DOMAIN-SUFFIX,biligame.net
-- DOMAIN-SUFFIX,sccreator.cn
-- DOMAIN-SUFFIX,legendofzelda.cn
-- DOMAIN-SUFFIX,wegame.com
-- DOMAIN-SUFFIX,nintendoswitch.com.cn
-- DOMAIN-SUFFIX,proximabeta.com
-- DOMAIN-SUFFIX,mihoyocg.com
-- DOMAIN-SUFFIX,mariokart.cn
-- DOMAIN-SUFFIX,nagcloudcs.com
-- DOMAIN-SUFFIX,mihayou.com
-- DOMAIN-SUFFIX,tencent-gcloud.com
-- DOMAIN-SUFFIX,gamebonfire.com
-- DOMAIN-SUFFIX,st.dl.eccdnx.com
-- DOMAIN-SUFFIX,goto-game.net.cn
-- DOMAIN-SUFFIX,ludoworld.net
-- DOMAIN-SUFFIX,biligame.co
-- DOMAIN-SUFFIX,gameitop.com
-- DOMAIN-SUFFIX,bilibiligame.co
-- DOMAIN-SUFFIX,brawlstars.cn
-- DOMAIN-SUFFIX,wegameplus.com
-- DOMAIN-SUFFIX,bilibiligame.net
-- DOMAIN-SUFFIX,wegame.com.cn
-- DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
-- DOMAIN-SUFFIX,mszdld.cn
-- DOMAIN-SUFFIX,yzyxgame.com
-- DOMAIN-SUFFIX,gcloudcstest.com
-- DOMAIN-SUFFIX,kurogames.com
-- DOMAIN-SUFFIX,battlecare.net
-- DOMAIN-SUFFIX,bh3.com
-- DOMAIN-SUFFIX,juequling.com
-- DOMAIN-SUFFIX,goto-game.org
-- DOMAIN-SUFFIX,pubgno1.cn
-- DOMAIN-SUFFIX,qqgameapp.com
-- DOMAIN-SUFFIX,steamcontent.com
-- DOMAIN-SUFFIX,zhuoyuegame.com
-- DOMAIN-SUFFIX,ludosuperstar.cn
-- DOMAIN-SUFFIX,metalrevolution.com
-- DOMAIN-SUFFIX,supersmashbros.cn
-- DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
-- DOMAIN-SUFFIX,mihoyomall.com
-- DOMAIN-SUFFIX,benghuai.com
-- DOMAIN-SUFFIX,bhsr.com
-- DOMAIN-SUFFIX,miitomo.com.cn
-- DOMAIN-SUFFIX,themisweeps.com
-- DOMAIN-SUFFIX,gcloudsdk.com
-- DOMAIN-SUFFIX,roblox.cn
-- DOMAIN-SUFFIX,roblox.qq.com
-- DOMAIN-SUFFIX,xn--owtw8cc49ajfl.cn
-- DOMAIN-SUFFIX,mahjongai.net
-- DOMAIN-SUFFIX,wmsjsteam.com
-- DOMAIN-SUFFIX,roco.qq.com
-- DOMAIN-SUFFIX,dl.steam.ksyna.com
-- DOMAIN-SUFFIX,gtgres.com
-- DOMAIN-SUFFIX,pubghelper.com
-- DOMAIN-SUFFIX,yxdmgame.com
-- DOMAIN-SUFFIX,nextstudios.com
-- DOMAIN-SUFFIX,zcjbgame.com
-- DOMAIN-SUFFIX,ffbuddy.com
-- DOMAIN-SUFFIX,texasholdemcup.net
-- DOMAIN-SUFFIX,goto-game.mobi
-- DOMAIN-SUFFIX,supercellcommunity.cn
-- DOMAIN-SUFFIX,steamusercontent.com
-- DOMAIN-SUFFIX,sl916.com
-- DOMAIN-SUFFIX,anticheatexpert.com
-- DOMAIN-SUFFIX,scescdn.cn
-- DOMAIN-SUFFIX,steamstatic.com.8686c.com
-- DOMAIN-SUFFIX,werepository.com.cn
-- DOMAIN-SUFFIX,yuanshen.com
-- DOMAIN-SUFFIX,supercellsupport.cn
-- DOMAIN-SUFFIX,steampowered.com.8686c.com
-- DOMAIN-SUFFIX,st.dl.pinyuncloud.com
-- DOMAIN-SUFFIX,steamserver.net
-- DOMAIN-SUFFIX,st.dl.bscstorage.net
-- DOMAIN-SUFFIX,midasbuy.com
-- DOMAIN-SUFFIX,dota2.wmsj.cn
-- DOMAIN-SUFFIX,mszdld.net
-- DOMAIN-SUFFIX,realcybertron.com
+  - 'gog.qtlglb.com'
+  - 'productcard.gog-statics.com'
+  - 'uplaypc-s-ubisoft.cdn.ubionline.com.cn'
+  - 'tlu.dl.delivery.mp.microsoft.com'
+  - 'gog-cdn-fastly.gog.com'
+  - 'menu-static.gog-statics.com'
+  - 'xz.pphimalayanrt.com'
+  - 'dl.delivery.mp.microsoft.com'
+  - 'gog-cdn.akamaized.net'
+  - 'gogalaxy.gog-statics.com'
+  - 'trts.baishancdnx.cn'
+  - 'uplaypc-s-ubisoft.cdn.ubi.com'
+  - 'www4-static.gog-statics.com'
+  - 'epicgames-download1-1251447533.file.myqcloud.com'
+  - 'static-login.gog-statics.com'
+  - '.haydaypop.cn'
+  - '.17roco.com'
+  - '.mahjongcup.com'
+  - '.supercellcommunity.cn'
+  - '.gcloudcstestonly.com'
+  - '.mszdld.com'
+  - '.yzyxgame.com'
+  - '.csgo.wmsj.cn'
+  - '.nextworkshop.net'
+  - '.miyoushe.com'
+  - '.nintendoswitch.com.cn'
+  - '.roco.qq.com'
+  - '.in.th'
+  - '.xboxlive.cn'
+  - '.juequling.com'
+  - '.realcybertron.com'
+  - '.mihoyocg.com'
+  - '.pubghelper.com'
+  - '.bilibiligame.cn'
+  - '.steamusercontent.com'
+  - '.ihappystudio.cn'
+  - '.happyhlddz.com'
+  - '.nintendoswitch.cn'
+  - '.aki-game.com'
+  - '.legendofzelda.cn'
+  - '.legendofzelda.com.cn'
+  - '.mariokart.com.cn'
+  - '.mszdld.cn'
+  - '.scescdn.cn'
+  - '.scsentry.cn'
+  - '.gcloudcs.com'
+  - '.dl.steam.clngaa.com'
+  - '.gdtimg.com'
+  - '.steamcontent.com'
+  - '.werepository.com.cn'
+  - '.sccreators.cn'
+  - '.mhystatic.com'
+  - '.gameitop.com'
+  - '.gamebonfire.com'
+  - '.themisweeps.com'
+  - '.gstore.val.manlaxy.com'
+  - '.tencentstart.com'
+  - '.midasbuy.com'
+  - '.steamstatic.com.8686c.com'
+  - '.roblox.cn'
+  - '.st.dl.eccdnx.com'
+  - '.sccreator.cn'
+  - '.zcjbgame.com'
+  - '.proximabeta.com'
+  - '.texasholdemcup.com'
+  - '.goto-game.net.cn'
+  - '.wegame.com'
+  - '.benghuai.com'
+  - '.zhuoyuegame.com'
+  - '.pdl.wow.battlenet.com.cn'
+  - '.goto-game.com'
+  - '.brawlstars.cn'
+  - '.texasholdemcup.net'
+  - '.roblox.qq.com'
+  - '.steampipe.steamcontent.tnkjmec.com'
+  - '.supersmashbros.cn'
+  - '.labycore.cn'
+  - '.yxwsgame.com'
+  - '.dota2.wmsj.cn'
+  - '.mariokart.cn'
+  - '.wcbygame.com'
+  - '.mahjongai.net'
+  - '.hkgcloudcs.com'
+  - '.skydweller.cn'
+  - '.ihappystudio.com'
+  - '.gcloudsdk.com'
+  - '.cm.steampowered.com'
+  - '.mihayo.com'
+  - '.mihoyomall.com'
+  - '.hdyxgame.com'
+  - '.lpl.com.cn'
+  - '.scid.cn'
+  - '.xn--mts47c3w9b1qr.cn'
+  - '.robloxdev.cn'
+  - '.mihoyogift.com'
+  - '.gcloudcstest.com'
+  - '.pubgno1.cn'
+  - '.wegameplus.com'
+  - '.videoxiaoyouxi.com'
+  - '.goto-game.org'
+  - '.yximg.cn'
+  - '.ludoworld.net'
+  - '.wegame.com.cn'
+  - '.dl.steam.ksyna.com'
+  - '.biligame.com'
+  - '.bluearchive-cn.com'
+  - '.gotolink.net'
+  - '.pubgtool.com'
+  - '.biligame.co'
+  - '.mihayou.com'
+  - '.qqgameapp.com'
+  - '.steamchina.com'
+  - '.syxlgame.com'
+  - '.battlecare.net'
+  - '.tencent-gcloud.com'
+  - '.bilibiligame.co'
+  - '.codm.com'
+  - '.ffbuddy.com'
+  - '.gtgres.com'
+  - '.leagueoflegends.cn'
+  - '.mahjongcup.net'
+  - '.supercellsupport.cn'
+  - '.yxdmgame.com'
+  - '.supersmashbros.com.cn'
+  - '.ludosuperstar.cn'
+  - '.sl916.com'
+  - '.bh3.com'
+  - '.xn--owtw8cc49ajfl.cn'
+  - '.miitomo.com.cn'
+  - '.yuanshen.com'
+  - '.rmwxgame.com'
+  - '.bilibiligame.net'
+  - '.mihoyo.com'
+  - '.biligame.net'
+  - '.bhsr.com'
+  - '.steampowered.com.8686c.com'
+  - '.supermariobros.com.cn'
+  - '.st.dl.bscstorage.net'
+  - '.anticheatexpert.com'
+  - '.bcfmglobal.com'
+  - '.texasholdemcup.cn'
+  - '.wmsjsteam.com'
+  - '.mszdld.net'
+  - '.gameloop.com'
+  - '.mhyurl.cn'
+  - '.nextstudios.com'
+  - '.kurogames.com'
+  - '.st.dl.pinyuncloud.com'
+  - '.nagcloudcs.com'
+  - '.goto-game.mobi'
+  - '.gouhuo.qq.com'
+  - '.tcfmglobal.com'
+  - '.metalrevolution.com'
+  - '.mahjongcup.cn'
+  - '.steamserver.net'
+  - '.timibase.com'
+  - '.nintendolabo.cn'
+  - '.gclouddolphin.com'

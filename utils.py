@@ -536,19 +536,63 @@ def convert_json_to_clash(input_dir):
                             for value in (values if isinstance(values, list) else [values]):
                                 cleaned_value = clean_comment(value)
 
-                                # 只对 DOMAIN-SUFFIX, DOMAIN, DOMAIN-KEYWORD 进行前缀 `.` 处理
-                                if clash_type in {"DOMAIN-SUFFIX", "DOMAIN", "DOMAIN-KEYWORD"}:
-                                    cleaned_value = fix_domain_prefix(cleaned_value)
-
-                                clash_rules.append(f"{clash_type},{cleaned_value}")
+                                if clash_type == "IP-CIDR":
+                                    # **去除关键词 IP-CIDR，直接存储**
+                                    clash_rules.append(f"'{cleaned_value}'")
+                                elif clash_type == "DOMAIN-SUFFIX":
+                                    # **确保 DOMAIN-SUFFIX 以 '.' 开头**
+                                    formatted_value = cleaned_value if cleaned_value.startswith('.') else f".{cleaned_value}"
+                                    clash_rules.append(f"'{formatted_value}'")
+                                elif clash_type in {"DOMAIN", "DOMAIN-KEYWORD", "DOMAIN-REGEX"}:
+                                    # **去除关键词，直接存储**
+                                    clash_rules.append(f"'{cleaned_value}'")
+                                else:
+                                    # **正常格式化规则**
+                                    clash_rules.append(f"{clash_type},{cleaned_value}")
 
                 clash_config = {"payload": clash_rules}
 
+                # **手动写入 YAML，避免 yaml.dump 额外加引号**
                 with open(output_path, "w", encoding="utf-8") as f:
-                    yaml.dump(clash_config, f, allow_unicode=True, default_flow_style=False)
+                    f.write("payload:\n")
+                    for rule in clash_rules:
+                        f.write(f"  - {rule}\n")
 
             except Exception as e:
                 logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")
+    convert_yaml_to_mrs(output_dir)
+
+def clean_comment(value):
+    """ 去除规则中的注释内容（如果有）"""
+    return value.split("#")[0].strip()
+
+
+def convert_yaml_to_mrs(output_directory):
+    """
+    遍历指定目录下的 YAML 文件：
+    - geosite 开头的文件使用 `mihomo convert-ruleset domain yaml`
+    - geoip 开头的文件使用 `mihomo convert-ruleset ipcidr yaml`
+    生成对应的 .mrs 规则文件
+    """
+    yaml_files = [f for f in os.listdir(output_directory) if f.endswith('.yaml')]
+
+    for yaml_file in yaml_files:
+        yaml_file_path = os.path.join(output_directory, yaml_file)
+        mrs_path = yaml_file_path.replace(".yaml", ".mrs")
+
+        try:
+            if yaml_file.startswith("geosite"):
+                command = f"mihomo convert-ruleset domain yaml {yaml_file_path} {mrs_path}"
+            elif yaml_file.startswith("geoip"):
+                command = f"mihomo convert-ruleset ipcidr yaml {yaml_file_path} {mrs_path}"
+            else:
+                continue  # 跳过不符合规则的文件
+
+            os.system(command)
+            logging.debug(f"成功生成 MRS 文件: {mrs_path}")
+
+        except Exception as e:
+            logging.error(f"转换 {yaml_file_path} 到 MRS 文件时出错：{e}")
 
 
 def convert_adguard_to_clash(input_path, rule_set_name):

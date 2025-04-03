@@ -1,130 +1,130 @@
 payload:
-- DOMAIN,s3-eu-west-1.amazonaws.com
-- DOMAIN,www.googleapis.com
-- DOMAIN,o4504926511693824.ingest.sentry.io
-- DOMAIN,download-cdn.jetbrains.com
-- DOMAIN,huggingface.co
-- DOMAIN,drive.usercontent.google.com
-- DOMAIN,wallhaven.cc
-- DOMAIN,canonical-lgw01.cdn.snapcraftcontent.com
-- DOMAIN,us.nomaba.top
-- DOMAIN,github-cloud.s3.amazonaws.com
-- DOMAIN,psv4.userapi.com
-- DOMAIN,nvidia.tt.omtrdc.net
-- DOMAIN,formulae.brew.sh
-- DOMAIN-SUFFIX,githubassets.com
-- DOMAIN-SUFFIX,github.blog
-- DOMAIN-SUFFIX,nvidia.asia
-- DOMAIN-SUFFIX,tegrazone.jp
-- DOMAIN-SUFFIX,nvidia.com.pe
-- DOMAIN-SUFFIX,googleusercontent.com
-- DOMAIN-SUFFIX,nvidia.ru
-- DOMAIN-SUFFIX,thegithubshop.com
-- DOMAIN-SUFFIX,geforce.com
-- DOMAIN-SUFFIX,githubcopilot.com
-- DOMAIN-SUFFIX,nvidia.at
-- DOMAIN-SUFFIX,nvidia.com.tw
-- DOMAIN-SUFFIX,npmjs.com
-- DOMAIN-SUFFIX,nvidia.lu
-- DOMAIN-SUFFIX,nvidia.nl
-- DOMAIN-SUFFIX,pycon.org
-- DOMAIN-SUFFIX,shotwithgeforce.com
-- DOMAIN-SUFFIX,nvidia.jp
-- DOMAIN-SUFFIX,nvidia.mx
-- DOMAIN-SUFFIX,ghcr.io
-- DOMAIN-SUFFIX,ubuntu.com
-- DOMAIN-SUFFIX,nvidia.com.br
-- DOMAIN-SUFFIX,gputechconf.com.au
-- DOMAIN-SUFFIX,gputechconf.in
-- DOMAIN-SUFFIX,mega.io
-- DOMAIN-SUFFIX,gputechconf.jp
-- DOMAIN-SUFFIX,pikpakdrive.com
-- DOMAIN-SUFFIX,npmjs.org
-- DOMAIN-SUFFIX,googledrive.com
-- DOMAIN-SUFFIX,nvidia.es
-- DOMAIN-SUFFIX,pypi.org
-- DOMAIN-SUFFIX,nvidia.co.in
-- DOMAIN-SUFFIX,nvidia.co.kr
-- DOMAIN-SUFFIX,nvidia.se
-- DOMAIN-SUFFIX,git.io
-- DOMAIN-SUFFIX,atom.io
-- DOMAIN-SUFFIX,tegrazone.kr
-- DOMAIN-SUFFIX,npm.community
-- DOMAIN-SUFFIX,gputechconf.cn
-- DOMAIN-SUFFIX,tegrazone.co
-- DOMAIN-SUFFIX,anaconda.cloud
-- DOMAIN-SUFFIX,nvidiagrid.net
-- DOMAIN-SUFFIX,anaconda.com
-- DOMAIN-SUFFIX,nexus-cdn.com
-- DOMAIN-SUFFIX,repo.new
-- DOMAIN-SUFFIX,nvidia.it
-- DOMAIN-SUFFIX,geforce.co.kr
-- DOMAIN-SUFFIX,github.community
-- DOMAIN-SUFFIX,geforce.com.tw
-- DOMAIN-SUFFIX,nvidia.eu
-- DOMAIN-SUFFIX,opensource.guide
-- DOMAIN-SUFFIX,conda.io
-- DOMAIN-SUFFIX,githubpreview.dev
-- DOMAIN-SUFFIX,dependabot.com
-- DOMAIN-SUFFIX,nvidia.pl
-- DOMAIN-SUFFIX,gputechconf.com
-- DOMAIN-SUFFIX,nvidia.in
-- DOMAIN-SUFFIX,pypa.io
-- DOMAIN-SUFFIX,nvidia.cn
-- DOMAIN-SUFFIX,nvidia.ch
-- DOMAIN-SUFFIX,blob.core.windows.net
-- DOMAIN-SUFFIX,mypikpak.com
-- DOMAIN-SUFFIX,ubuntu-touch.io
-- DOMAIN-SUFFIX,nvidia.de
-- DOMAIN-SUFFIX,gputechconf.co.kr
-- DOMAIN-SUFFIX,docs.google.com
-- DOMAIN-SUFFIX,nvidia.fr
-- DOMAIN-SUFFIX,github.dev
-- DOMAIN-SUFFIX,drive.google.com
-- DOMAIN-SUFFIX,nvidia.co.at
-- DOMAIN-SUFFIX,pythonhosted.org
-- DOMAIN-SUFFIX,myoctocat.com
-- DOMAIN-SUFFIX,nvidia.com.mx
-- DOMAIN-SUFFIX,ubuntu.net
-- DOMAIN-SUFFIX,nvidia.co.uk
-- DOMAIN-SUFFIX,gputechconf.com.tw
-- DOMAIN-SUFFIX,githubhackathon.com
-- DOMAIN-SUFFIX,gputechconf.eu
-- DOMAIN-SUFFIX,nvidia.ro
-- DOMAIN-SUFFIX,nvidia.com.au
-- DOMAIN-SUFFIX,nvidia.com.ua
-- DOMAIN-SUFFIX,python.org
-- DOMAIN-SUFFIX,githubnext.com
-- DOMAIN-SUFFIX,geforce.co.uk
-- DOMAIN-SUFFIX,githubuniverse.com
-- DOMAIN-SUFFIX,nvidia.no
-- DOMAIN-SUFFIX,mega.nz
-- DOMAIN-SUFFIX,nvidia.tw
-- DOMAIN-SUFFIX,anaconda.org
-- DOMAIN-SUFFIX,ubuntuforums.org
-- DOMAIN-SUFFIX,githubstatus.com
-- DOMAIN-SUFFIX,escapefromtarkov.com
-- DOMAIN-SUFFIX,githubusercontent.com
-- DOMAIN-SUFFIX,nvidia.com.pl
-- DOMAIN-SUFFIX,tegrazone.com
-- DOMAIN-SUFFIX,nvidia.com.ve
-- DOMAIN-SUFFIX,pikpak.me
-- DOMAIN-SUFFIX,geforce.cn
-- DOMAIN-SUFFIX,mypikpak.net
-- DOMAIN-SUFFIX,tegrazone.co.kr
-- DOMAIN-SUFFIX,sharepoint.com
-- DOMAIN-SUFFIX,nvidia.cz
-- DOMAIN-SUFFIX,pypi.io
-- DOMAIN-SUFFIX,nvidia.com.tr
-- DOMAIN-SUFFIX,mediafire.com
-- DOMAIN-SUFFIX,githubapp.com
-- DOMAIN-SUFFIX,nvidiaforhp.com
-- DOMAIN-SUFFIX,github.io
-- DOMAIN-SUFFIX,nvidia.fi
-- DOMAIN-SUFFIX,nvidia.be
-- DOMAIN-SUFFIX,github.com
-- DOMAIN-SUFFIX,mega.co.nz
-- DOMAIN-SUFFIX,nvidia.com
-- DOMAIN-SUFFIX,nvidia.co.jp
-- DOMAIN-SUFFIX,nvidia.dk
-- DOMAIN-REGEX,^github-production-release-asset-[0-9a-za-z]{6}\.s3\.amazonaws\.com$
+  - 'huggingface.co'
+  - 'us.nomaba.top'
+  - 'wallhaven.cc'
+  - 's3-eu-west-1.amazonaws.com'
+  - 'psv4.userapi.com'
+  - 'www.googleapis.com'
+  - 'download-cdn.jetbrains.com'
+  - 'github-cloud.s3.amazonaws.com'
+  - 'formulae.brew.sh'
+  - 'o4504926511693824.ingest.sentry.io'
+  - 'canonical-lgw01.cdn.snapcraftcontent.com'
+  - 'drive.usercontent.google.com'
+  - 'nvidia.tt.omtrdc.net'
+  - '.nvidia.ch'
+  - '.nvidia.com.ve'
+  - '.thegithubshop.com'
+  - '.nvidia.no'
+  - '.githubcopilot.com'
+  - '.tegrazone.com'
+  - '.mega.co.nz'
+  - '.nvidia.es'
+  - '.nvidia.co.uk'
+  - '.nvidia.com.tr'
+  - '.gputechconf.jp'
+  - '.shotwithgeforce.com'
+  - '.python.org'
+  - '.nvidia.be'
+  - '.googleusercontent.com'
+  - '.googledrive.com'
+  - '.mega.nz'
+  - '.nvidia.de'
+  - '.githubassets.com'
+  - '.githubapp.com'
+  - '.conda.io'
+  - '.nvidia.asia'
+  - '.nvidia.ro'
+  - '.atom.io'
+  - '.geforce.cn'
+  - '.gputechconf.cn'
+  - '.githubuniverse.com'
+  - '.gputechconf.eu'
+  - '.githubnext.com'
+  - '.nvidia.ru'
+  - '.nvidia.pl'
+  - '.nvidia.se'
+  - '.githubhackathon.com'
+  - '.nvidia.com.pe'
+  - '.nvidia.fi'
+  - '.nvidia.com.mx'
+  - '.mypikpak.net'
+  - '.sharepoint.com'
+  - '.anaconda.cloud'
+  - '.nvidia.it'
+  - '.myoctocat.com'
+  - '.docs.google.com'
+  - '.pycon.org'
+  - '.nvidiaforhp.com'
+  - '.nvidia.in'
+  - '.dependabot.com'
+  - '.nvidia.com.br'
+  - '.mypikpak.com'
+  - '.nvidia.dk'
+  - '.nvidia.cz'
+  - '.geforce.com'
+  - '.nvidia.nl'
+  - '.gputechconf.co.kr'
+  - '.nvidia.eu'
+  - '.geforce.co.kr'
+  - '.nvidia.cn'
+  - '.pypi.io'
+  - '.repo.new'
+  - '.nvidia.com.pl'
+  - '.nvidia.fr'
+  - '.nvidia.jp'
+  - '.githubstatus.com'
+  - '.gputechconf.in'
+  - '.nvidia.co.jp'
+  - '.ubuntuforums.org'
+  - '.mediafire.com'
+  - '.github.blog'
+  - '.tegrazone.jp'
+  - '.pypi.org'
+  - '.npm.community'
+  - '.gputechconf.com.au'
+  - '.anaconda.com'
+  - '.nvidia.co.in'
+  - '.tegrazone.co.kr'
+  - '.nexus-cdn.com'
+  - '.github.community'
+  - '.githubusercontent.com'
+  - '.nvidia.com.au'
+  - '.anaconda.org'
+  - '.nvidiagrid.net'
+  - '.github.dev'
+  - '.nvidia.lu'
+  - '.npmjs.org'
+  - '.nvidia.at'
+  - '.blob.core.windows.net'
+  - '.tegrazone.co'
+  - '.tegrazone.kr'
+  - '.git.io'
+  - '.escapefromtarkov.com'
+  - '.nvidia.com'
+  - '.nvidia.co.kr'
+  - '.nvidia.com.tw'
+  - '.mega.io'
+  - '.nvidia.mx'
+  - '.pikpak.me'
+  - '.gputechconf.com'
+  - '.geforce.com.tw'
+  - '.ubuntu.com'
+  - '.gputechconf.com.tw'
+  - '.pythonhosted.org'
+  - '.github.com'
+  - '.drive.google.com'
+  - '.geforce.co.uk'
+  - '.pypa.io'
+  - '.opensource.guide'
+  - '.githubpreview.dev'
+  - '.ubuntu-touch.io'
+  - '.pikpakdrive.com'
+  - '.nvidia.com.ua'
+  - '.nvidia.tw'
+  - '.npmjs.com'
+  - '.github.io'
+  - '.ubuntu.net'
+  - '.nvidia.co.at'
+  - '.ghcr.io'
+  - '^github-production-release-asset-[0-9a-za-z]{6}\.s3\.amazonaws\.com$'
