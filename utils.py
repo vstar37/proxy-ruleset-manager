@@ -560,7 +560,7 @@ def convert_json_to_clash(input_dir):
 
             except Exception as e:
                 logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")
-    convert_yaml_to_mrs(output_dir)
+    # convert_yaml_to_mrs(output_dir)
 
 def clean_comment(value):
     """ 去除规则中的注释内容（如果有）"""

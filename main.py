@@ -572,7 +572,6 @@ class RuleParser:
         except OSError as e:
             logging.error(f"删除全体文件 {general_files[0]} 失败: {e}")
 
-
     def main(self):
         #### 解析规则，生成sing-box规则集
         source_directory = config.source_dir
@@ -600,10 +599,11 @@ class RuleParser:
             os.system(f"sing-box rule-set compile --output {srs_path} {json_file_path}")
             logging.debug(f"成功生成 SRS 文件 {srs_path}")
 
-
         #### 调用工具函数 将 sing-box 规则转化为 Surge/Shadowrocket 规则
         convert_json_to_surge(output_directory)
         convert_json_to_clash(output_directory)
+
+        convert_yaml_to_mrs(config.clash_output_directory)
 
 
 class ConfigParser:
