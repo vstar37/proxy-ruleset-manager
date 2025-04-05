@@ -22,7 +22,7 @@ jobs:
           sudo dpkg -i sing-box.deb
     - name: "Setup mihomo"
       env:
-        MIHOMO_DEB_URL: "https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-323973f.deb"
+        MIHOMO_DEB_URL: "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.4/mihomo-linux-amd64-v1.19.4.deb"
       run: |
           set -Eeuo pipefail
           wget -O mihomo.deb $MIHOMO_DEB_URL
