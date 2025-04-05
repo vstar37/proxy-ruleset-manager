@@ -1,3 +1,4 @@
 geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs"
+  - "https://raw.githubusercontent.com/vstar37/sing-box-ruleset/refs/heads/main/self-host/geosite-geolocation-!cn.json"
 
