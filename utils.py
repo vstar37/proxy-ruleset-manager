@@ -589,7 +589,7 @@ def convert_yaml_to_mrs(output_directory):
                 continue  # 跳过不符合规则的文件
 
             os.system(command)
-            logging.debug(f"成功生成 MRS 文件: {mrs_path}")
+            logging.info(f"成功生成 MRS 文件: {mrs_path}")
 
         except Exception as e:
             logging.error(f"转换 {yaml_file_path} 到 MRS 文件时出错：{e}")
