@@ -10,6 +10,7 @@ import logging
 import os
 
 from config import Config
+
 config = Config()
 
 
@@ -34,9 +35,10 @@ def merge_rules(existing_data, new_data):
         "ip_cidr": (existing_data.get("ip_cidr", []) if isinstance(existing_data, dict) else [])
                    + (new_data.get("ip_cidr", []) if isinstance(new_data, dict) else []),
         "domain_regex": (existing_data.get("domain_regex", []) if isinstance(existing_data, dict) else [])
-                         + (new_data.get("domain_regex", []) if isinstance(new_data, dict) else [])
+                        + (new_data.get("domain_regex", []) if isinstance(new_data, dict) else [])
     }
     return merged_data
+
 
 def read_yaml_from_url(url):
     response = requests.get(url)
@@ -217,10 +219,12 @@ def subtract_rules(base_data, subtract_data):
     # 返回最终处理后的数据
     return deduplicated_data
 
+
 def load_json(filepath):
     """加载 JSON 文件"""
     with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def save_json(data, filepath):
     """保存 JSON 文件"""
@@ -234,6 +238,7 @@ def save_json(data, filepath):
             json.dump(result, f, ensure_ascii=False, indent=4)
     except Exception as e:
         logging.error(f"保存 JSON 文件时出错: {e}")
+
 
 def deduplicate_json(data):
     """
@@ -292,6 +297,7 @@ def deduplicate_json(data):
 
     return final_rules
 
+
 def convert_sets_to_lists(data):
     """递归地将字典中的所有 set 转换为 list"""
     if isinstance(data, dict):
@@ -302,6 +308,7 @@ def convert_sets_to_lists(data):
         return list(data)
     else:
         return data
+
 
 def match_domain_regex(domain, regex):
     """
@@ -323,6 +330,7 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.is_end = False
+
 
 class Trie:
     def __init__(self):
@@ -361,6 +369,7 @@ class Trie:
         # 完全匹配一个后缀时，结束条件
         return node.is_end
 
+
 def filter_domains_with_trie(domains, domain_suffixes):
     """
     使用 Trie 过滤掉被 domain_suffix 覆盖的 domain。
@@ -384,6 +393,7 @@ def filter_domains_with_trie(domains, domain_suffixes):
             filtered_domains.add(domain)  # 将没有匹配到后缀的域名保留
 
     return filtered_domains, filtered_count
+
 
 def convert_json_to_surge(input_dir):
     """
@@ -416,7 +426,7 @@ def convert_json_to_surge(input_dir):
 
                 # 将规则写入 Surge 和 Shadowrocket 文件
                 with open(surge_output_path, "w", encoding="utf-8") as f1, \
-                     open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
+                        open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
                     # 直接写入每个规则
                     for rule in surge_rules:
                         f1.write(f"{rule}\n")
@@ -495,7 +505,7 @@ def convert_adguard_to_surge(input_path, rule_set_name):
     # **写入 Surge & Shadowrocket 规则文件**
     rule_text = "\n".join(surge_rules)
     with open(surge_output_path, "w", encoding="utf-8") as f1, \
-         open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
+            open(shadowrocket_output_path, "w", encoding="utf-8") as f2:
         f1.write(rule_text)
         f2.write(rule_text)
 
@@ -541,7 +551,8 @@ def convert_json_to_clash(input_dir):
                                     clash_rules.append(f"'{cleaned_value}'")
                                 elif clash_type == "DOMAIN-SUFFIX":
                                     # **确保 DOMAIN-SUFFIX 以 '.' 开头**
-                                    formatted_value = cleaned_value if cleaned_value.startswith('.') else f".{cleaned_value}"
+                                    formatted_value = cleaned_value if cleaned_value.startswith(
+                                        '.') else f".{cleaned_value}"
                                     clash_rules.append(f"'{formatted_value}'")
                                 elif clash_type in {"DOMAIN", "DOMAIN-KEYWORD", "DOMAIN-REGEX"}:
                                     # **去除关键词，直接存储**
@@ -561,6 +572,7 @@ def convert_json_to_clash(input_dir):
             except Exception as e:
                 logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")
     # convert_yaml_to_mrs(output_dir)
+
 
 def clean_comment(value):
     """ 去除规则中的注释内容（如果有）"""

@@ -13,8 +13,6 @@ from collections import defaultdict
 import tempfile
 import shutil
 
-
-
 config = Config()
 
 
@@ -79,8 +77,8 @@ class RuleParser:
                 return None
 
             # 读取 AdGuard 规则并转换为 Surge/Shadowrocket
-            #convert_adguard_to_surge(adguard_file_path, rule_set_name)
-            #convert_adguard_to_clash(adguard_file_path, rule_set_name)
+            # convert_adguard_to_surge(adguard_file_path, rule_set_name)
+            # convert_adguard_to_clash(adguard_file_path, rule_set_name)
 
             # 清理临时文件
             os.remove(adguard_file_path)
@@ -297,7 +295,7 @@ class RuleParser:
                 "ip_cidr_count": ip_cidr_count,
                 "process_name_count": process_name_count,
                 "domain_regex_count": domain_regex_count
-                }
+            }
 
             try:
                 with open(output_file, 'w', encoding='utf-8') as file:
@@ -503,7 +501,7 @@ class RuleParser:
 
         # 加载全体文件
         general_file_path = os.path.join(directory, general_files[0])
-        general_data = load_json(general_file_path).get("rules",[])
+        general_data = load_json(general_file_path).get("rules", [])
 
         # 如果同时有 @cn 和 @!cn 文件
         if cn_files and non_cn_files:
@@ -511,13 +509,13 @@ class RuleParser:
             cn_path = os.path.join(directory, cn_files[0])
             non_cn_path = os.path.join(directory, non_cn_files[0])
 
-            cn_data = load_json(cn_path).get("rules",[])
+            cn_data = load_json(cn_path).get("rules", [])
 
             # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
             updated_non_cn_data = subtract_rules(general_data, cn_data)
 
             # @!cn 文件已存在，增量更新.
-            non_cn_data = load_json(non_cn_path).get("rules",[])
+            non_cn_data = load_json(non_cn_path).get("rules", [])
             updated_non_cn_data = merge_rules(non_cn_data, updated_non_cn_data)
 
             # !cn 增量更新，cn不变
@@ -534,7 +532,7 @@ class RuleParser:
         # 只有 @cn 文件
         elif cn_files and not non_cn_files:
             cn_path = os.path.join(directory, cn_files[0])
-            cn_data = load_json(cn_path).get("rules",[])
+            cn_data = load_json(cn_path).get("rules", [])
 
             # 从全体文件中剔除 cn 文件的规则，剩余部分保存到 非cn 文件
             non_cn_data = subtract_rules(general_data, cn_data)
@@ -550,7 +548,7 @@ class RuleParser:
         # 只有 @!cn 文件
         elif non_cn_files and not cn_files:
             non_cn_path = os.path.join(directory, non_cn_files[0])
-            non_cn_data = load_json(non_cn_path).get("rules",[])
+            non_cn_data = load_json(non_cn_path).get("rules", [])
 
             # 从全体文件中剔除 非cn 文件的规则，更新 cn 文件
             cn_data = subtract_rules(general_data, non_cn_data)
@@ -590,7 +588,7 @@ class RuleParser:
                 self.parse_yaml_file(yaml_file_path, output_directory)
 
         # 生成 SRS 文件
-        self.process_category_files(output_directory) # 拆分!cn规则 与 cn规则
+        self.process_category_files(output_directory)  # 拆分!cn规则 与 cn规则
         json_files = [f for f in os.listdir(output_directory) if f.endswith('.json')]
 
         for json_file in json_files:
@@ -654,7 +652,8 @@ class ConfigParser:
                     if match:
                         process_tag = match.group(1)  # 提取的部分是 'communicationApp'
                         # 提取 'communication' 作为关键词
-                        process_keyword = process_tag.lower().replace('app', '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
+                        process_keyword = process_tag.lower().replace('app',
+                                                                      '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
                         # 根据关键字确定outbound
                         outbound = self.determine_outbound(process_keyword)
 
@@ -782,6 +781,7 @@ class ConfigParser:
             # 可以添加更多国家映射
         }
         return geolocation_map.get(country_code, "Other")
+
 
 if __name__ == "__main__":
     # 使用类的实例
