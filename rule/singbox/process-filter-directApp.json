@@ -3,28 +3,28 @@
     "rules": [
         {
             "process_name": [
-                "iCloudDrive.exe",
-                "TencentMeeting",
-                "WeChat",
-                "Thunder",
-                "115Browser Helper",
-                "115Browser",
-                "BaiduNetdisk_mac",
-                "cloudd",
-                "wegame.exe",
-                "infuse",
-                "WeChatAppEx Helper",
-                "BitComet",
                 "ThunderVIP",
                 "qbittorrent",
-                "App Store",
-                "QQ",
-                "幕布 Helper",
                 "Eudb_en_free",
+                "QQ",
+                "App Store",
+                "WeChatAppEx Helper",
+                "幕布 Helper",
+                "WeChat",
+                "BitComet",
+                "TencentMeeting",
+                "BaiduNetdisk_mac",
+                "115Browser",
+                "infuse",
+                "wegame.exe",
                 "fdm.exe",
-                "vidhub",
                 "Music",
-                "fdm"
+                "fdm",
+                "vidhub",
+                "115Browser Helper",
+                "cloudd",
+                "Thunder",
+                "iCloudDrive.exe"
             ]
         }
     ]
