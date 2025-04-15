@@ -8,8 +8,9 @@
           "wallhaven.cc",
           "psv4.userapi.com",
           "s3-eu-west-1.amazonaws.com",
-          "canonical-lgw01.cdn.snapcraftcontent.com",
-          "us.nomaba.top"
+          "canonical-lgw01.cdn.snapcraftcontent.com",    
+          "us.nomaba.top",
+          "installer.teams.static.microsoft"
       ]
     },
     {
