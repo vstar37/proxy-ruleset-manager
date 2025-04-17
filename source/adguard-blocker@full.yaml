@@ -10,4 +10,3 @@ adguard:
   - "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/specific_app.txt"  # 第一个 geosite 链接
   - "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt"
 
-
