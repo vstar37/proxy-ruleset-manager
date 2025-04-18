@@ -3,31 +3,31 @@
     "rules": [
         {
             "process_name": [
-                "MATLABWebUI (GPU)",
-                "Scroll Reverser",
-                "Apple Juice",
                 "Clop",
-                "BetterDisplay",
+                "Stats",
+                "Command X",
+                "Scroll Reverser",
+                "MATLABWebUl (Renderer)",
+                "Little Snitch Agent",
+                "Ice",
+                "DevToys Networking",
+                "MATLAB",
                 "TextSniper",
                 "CodeRunner",
-                "KeKa",
-                "DevToys",
-                "Stats",
-                "MATLABWebUl (Renderer)",
-                "ProcessSpy",
-                "MATLAB",
-                "DevToys Networking",
-                "MathWorksService",
-                "Ice",
                 "Snipaste",
-                "Command X",
                 "Find Any File",
-                "Squirrel",
                 "Shifty",
-                "Little Snitch Agent",
+                "MATLABWebUI (GPU)",
+                "KeKa",
+                "ProcessSpy",
+                "DevToys",
+                "MathWorksService",
                 "Swish",
+                "Snipaste.exe",
                 "BLEUnlock",
-                "Snipaste.exe"
+                "Apple Juice",
+                "Squirrel",
+                "BetterDisplay"
             ]
         }
     ]
