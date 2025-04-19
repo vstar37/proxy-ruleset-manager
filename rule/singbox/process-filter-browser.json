@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "chrome.exe",
+                "Safari",
+                "Firefox",
+                "Chrome",
+                "Google Chrome Helper",
+                "com.apple.WebKit.Networking",
+                "firefox.exe"
+            ]
+        }
+    ]
+}
