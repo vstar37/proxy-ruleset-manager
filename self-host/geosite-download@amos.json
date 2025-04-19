@@ -19,7 +19,8 @@
         ".nexus-cdn.com",
         ".sharepoint.com",
         ".mediafire.com",
-        ".escapefromtarkov.com"
+        ".escapefromtarkov.com",
+        ".content-storage-upload.googleapis.com"
     ]
     }
   ]
