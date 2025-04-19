@@ -1,7 +1,7 @@
 PROCESS-NAME,chrome.exe
-PROCESS-NAME,com.apple.WebKit.Networking
 PROCESS-NAME,Firefox
-PROCESS-NAME,firefox.exe
-PROCESS-NAME,Safari
 PROCESS-NAME,Chrome
+PROCESS-NAME,com.apple.WebKit.Networking
+PROCESS-NAME,Safari
+PROCESS-NAME,firefox.exe
 PROCESS-NAME,Google Chrome Helper
