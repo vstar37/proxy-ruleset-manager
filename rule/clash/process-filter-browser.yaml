@@ -1,8 +1,8 @@
 payload:
   - PROCESS-NAME,chrome.exe
-  - PROCESS-NAME,Safari
+  - PROCESS-NAME,com.apple.WebKit.Networking
   - PROCESS-NAME,Firefox
+  - PROCESS-NAME,firefox.exe
+  - PROCESS-NAME,Safari
   - PROCESS-NAME,Chrome
   - PROCESS-NAME,Google Chrome Helper
-  - PROCESS-NAME,com.apple.WebKit.Networking
-  - PROCESS-NAME,firefox.exe
