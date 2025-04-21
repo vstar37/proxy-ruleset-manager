@@ -9,7 +9,8 @@
         "chrome.exe",
         "Google Chrome Helper",
         "Firefox",
-        "firefox.exe"
+        "firefox.exe",
+        "AdGuard for Safari"
       ]
     }
   ]
