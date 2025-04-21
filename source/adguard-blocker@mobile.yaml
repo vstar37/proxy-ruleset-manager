@@ -1,4 +1,5 @@
 adguard:
   - "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/SpywareFilter/sections/mobile.txt"  # 第一个 geosite 链接
   - "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/specific_app.txt"  # 第一个 geosite 链接
+  - "https://raw.githubusercontent.com/ph00lt0/blocklist/master/blocklist.txt"
 
