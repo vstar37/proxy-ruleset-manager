@@ -3,12 +3,12 @@
   "rules": [
     {
       "domain": [
-          "www.littlecreekhosting.com", 
-          "yxvm.com", 
-          "hellogithub.com",
-          "weekly.tw93.fun",
-          "app.alice.ws",
-          "p19-buy.itunes.apple.com"
+        "www.littlecreekhosting.com",
+        "yxvm.com",
+        "hellogithub.com",
+        "weekly.tw93.fun",
+        "app.alice.ws",
+        "p19-buy.itunes.apple.com"
       ]
     },
     {
@@ -27,7 +27,7 @@
         ".mail.me.com",
         ".clarivate.com",
         ".tlscontact.com"
-    ]
+      ]
     }
   ]
 }
