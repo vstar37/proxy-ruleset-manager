@@ -1,25 +1,25 @@
 payload:
-  - PROCESS-NAME,115chrome.exe
-  - PROCESS-NAME,WeChatAppEx Helper
+  - PROCESS-NAME,Eudb_en_free
+  - PROCESS-NAME,fdm
   - PROCESS-NAME,Music
+  - PROCESS-NAME,115Browser Helper
+  - PROCESS-NAME,115Browser
+  - PROCESS-NAME,幕布 Helper
+  - PROCESS-NAME,TencentMeeting
+  - PROCESS-NAME,infuse
+  - PROCESS-NAME,ThunderVIP
   - PROCESS-NAME,ToDesk_Service
   - PROCESS-NAME,BitComet
-  - PROCESS-NAME,infuse
+  - PROCESS-NAME,115chrome.exe
   - PROCESS-NAME,cloudd
-  - PROCESS-NAME,115Browser
   - PROCESS-NAME,QQ
-  - PROCESS-NAME,qbittorrent
-  - PROCESS-NAME,幕布 Helper
-  - PROCESS-NAME,BaiduNetdisk_mac
-  - PROCESS-NAME,ThunderVIP
-  - PROCESS-NAME,TencentMeeting
-  - PROCESS-NAME,Eudb_en_free
-  - PROCESS-NAME,vidhub
-  - PROCESS-NAME,fdm
-  - PROCESS-NAME,iCloudDrive.exe
-  - PROCESS-NAME,Thunder
-  - PROCESS-NAME,WeChat
-  - PROCESS-NAME,fdm.exe
   - PROCESS-NAME,wegame.exe
+  - PROCESS-NAME,Thunder
   - PROCESS-NAME,App Store
-  - PROCESS-NAME,115Browser Helper
+  - PROCESS-NAME,fdm.exe
+  - PROCESS-NAME,WeChatAppEx Helper
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,BaiduNetdisk_mac
+  - PROCESS-NAME,WeChat
+  - PROCESS-NAME,iCloudDrive.exe
+  - PROCESS-NAME,vidhub
