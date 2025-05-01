@@ -1,27 +1,27 @@
 payload:
+  - PROCESS-NAME,Music
+  - PROCESS-NAME,Eudb_en_free
+  - PROCESS-NAME,infuse
+  - PROCESS-NAME,幕布 Helper
+  - PROCESS-NAME,hydra-python-rpc.exe
+  - PROCESS-NAME,App Store
+  - PROCESS-NAME,iCloudDrive.exe
+  - PROCESS-NAME,BaiduNetdisk_mac
+  - PROCESS-NAME,BitComet
+  - PROCESS-NAME,fdm
+  - PROCESS-NAME,TencentMeeting
+  - PROCESS-NAME,115Browser
+  - PROCESS-NAME,cloudd
+  - PROCESS-NAME,QQ
+  - PROCESS-NAME,115Browser Helper
+  - PROCESS-NAME,wegame.exe
   - PROCESS-NAME,ThunderVIP
+  - PROCESS-NAME,ToDesk_Service
+  - PROCESS-NAME,115chrome.exe
   - PROCESS-NAME,qbittorrent
   - PROCESS-NAME,Thunder
-  - PROCESS-NAME,幕布 Helper
-  - PROCESS-NAME,115Browser Helper
-  - PROCESS-NAME,WeChat
-  - PROCESS-NAME,ToDesk_Service
-  - PROCESS-NAME,cloudd
-  - PROCESS-NAME,TencentMeeting
-  - PROCESS-NAME,Eudb_en_free
-  - PROCESS-NAME,iCloudDrive.exe
-  - PROCESS-NAME,wegame.exe
-  - PROCESS-NAME,fdm
-  - PROCESS-NAME,QQ
-  - PROCESS-NAME,vidhub
-  - PROCESS-NAME,115chrome.exe
-  - PROCESS-NAME,fdm.exe
-  - PROCESS-NAME,App Store
-  - PROCESS-NAME,115Browser
-  - PROCESS-NAME,hydra-python-rpc.exe
-  - PROCESS-NAME,BitComet
-  - PROCESS-NAME,aria2c.exe
-  - PROCESS-NAME,BaiduNetdisk_mac
   - PROCESS-NAME,WeChatAppEx Helper
-  - PROCESS-NAME,Music
-  - PROCESS-NAME,infuse
+  - PROCESS-NAME,fdm.exe
+  - PROCESS-NAME,aria2c.exe
+  - PROCESS-NAME,vidhub
+  - PROCESS-NAME,WeChat
