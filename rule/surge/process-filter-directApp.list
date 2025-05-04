@@ -1,26 +1,26 @@
-PROCESS-NAME,Thunder
-PROCESS-NAME,hydra-python-rpc.exe
 PROCESS-NAME,WeChatAppEx Helper
+PROCESS-NAME,Thunder
+PROCESS-NAME,fdm
+PROCESS-NAME,cloudd
 PROCESS-NAME,QQ
-PROCESS-NAME,WeChat
-PROCESS-NAME,App Store
-PROCESS-NAME,infuse
-PROCESS-NAME,TencentMeeting
+PROCESS-NAME,幕布 Helper
+PROCESS-NAME,vidhub
 PROCESS-NAME,fdm.exe
-PROCESS-NAME,BitComet
-PROCESS-NAME,ToDesk_Service
 PROCESS-NAME,qbittorrent
-PROCESS-NAME,115chrome.exe
-PROCESS-NAME,iCloudDrive.exe
-PROCESS-NAME,BaiduNetdisk_mac
-PROCESS-NAME,Eudb_en_free
-PROCESS-NAME,wegame.exe
-PROCESS-NAME,115Browser
-PROCESS-NAME,ThunderVIP
 PROCESS-NAME,115Browser Helper
 PROCESS-NAME,Music
-PROCESS-NAME,幕布 Helper
-PROCESS-NAME,cloudd
+PROCESS-NAME,ToDesk_Service
 PROCESS-NAME,aria2c.exe
-PROCESS-NAME,fdm
-PROCESS-NAME,vidhub
+PROCESS-NAME,TencentMeeting
+PROCESS-NAME,115chrome.exe
+PROCESS-NAME,115Browser
+PROCESS-NAME,hydra-python-rpc.exe
+PROCESS-NAME,App Store
+PROCESS-NAME,BitComet
+PROCESS-NAME,iCloudDrive.exe
+PROCESS-NAME,Eudb_en_free
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,infuse
+PROCESS-NAME,wegame.exe
+PROCESS-NAME,WeChat
+PROCESS-NAME,BaiduNetdisk_mac
