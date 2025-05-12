@@ -3,7 +3,40 @@
     "rules": [
         {
             "process_name": [
-                "curl"
+                "Transmission.exe",
+                "uTorrent",
+                "DownloadService",
+                "Thunder.exe",
+                "WebTorrentHelper",
+                "Folx",
+                "WebTorrent",
+                "BitComet.exe",
+                "Thunder",
+                "WebTorrentHelper.exe",
+                "WebTorrent.exe",
+                "aria2c.exe",
+                "aria2c",
+                "Weiyun.exe",
+                "fdm.exe",
+                "Folx.exe",
+                "curl",
+                "NetTransport",
+                "Weiyun",
+                "DownloadService.exe",
+                "baidunetdisk.exe",
+                "uTorrent.exe",
+                "fdm",
+                "BitComet_x64.exe",
+                "BitComet",
+                "Transmission",
+                "NetTransport.exe",
+                "qbittorrent.exe",
+                "qbittorrent"
+            ]
+        },
+        {
+            "domain_suffix": [
+                "qbittorrent.org"
             ]
         }
     ]
