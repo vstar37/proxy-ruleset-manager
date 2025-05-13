@@ -25,7 +25,8 @@
         ".mediafire.com",
         ".escapefromtarkov.com",
         ".content-storage-upload.googleapis.com",
-        ".pixeldrain.com"
+        ".pixeldrain.com",
+        ".pytorch.org"
     ]
     }
   ]
