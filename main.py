@@ -623,7 +623,7 @@ class ConfigParser:
         rules = []
         rule_set = []
 
-        for file in os.listdir('./rule'):
+        for file in os.listdir('./rule/singbox'):
             if file.endswith('.srs'):
                 tag = os.path.splitext(file)[0]
                 # 添加规则集
@@ -631,7 +631,7 @@ class ConfigParser:
                     "tag": tag,
                     "type": "remote",
                     "format": "binary",
-                    "url": f"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/{file}",
+                    "url": f"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/singbox/{file}",
                     "download_detour": "VPN"
                 })
 
