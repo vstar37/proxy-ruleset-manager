@@ -684,8 +684,8 @@ class ConfigParser:
         }
 
         # 写入带换行的紧凑 JSON
-        with open('route.json', 'w') as f:
-            json.dump(route_config, f, separators=(',', ':'), indent=2)
+        with open('route.json', 'w', encoding='utf-8') as f:
+            json.dump(route_config, f, ensure_ascii=False, separators=(',', ':'), indent=2)
 
     def merge_geosite_geoip_rules(self, rules):
         """检查并合并 geosite 和 geoip 规则"""
