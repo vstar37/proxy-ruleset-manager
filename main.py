@@ -614,7 +614,7 @@ class ConfigParser:
             {"inbound": ["tun-in", "mixed-in"], "action": "sniff", "timeout": "1s"},
             {"clash_mode": "全局代理", "action": "route", "outbound": "默认代理"},
             {"clash_mode": "全局直连", "action": "route", "outbound": "直连"},
-            {"type": "logical", "mode": "or", "rules": [{"protocol": "dns"}, {"port": 53}], "action": "hijack-dns"},
+            {"protocol": "dns", "action": "hijack-dns"},
             {"port": 853, "network": "tcp", "action": "reject", "method": "default", "no_drop": False},
             {"port": 443, "network": "udp", "action": "reject", "method": "default", "no_drop": False}
         ]
@@ -644,20 +644,11 @@ class ConfigParser:
                     rules.append({"rule_set": [tag], "action": "reject", "method": "default", "no_drop": False})
                 elif 'direct' in tag or '@cn' in tag:
                     rules.append({"rule_set": [tag], "action": "route", "outbound": "直连"})
-                elif 'category' in tag:
+                elif 'category' in tag or 'process' in tag:
                     outbound = self.determine_outbound(tag)
-                    rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
-                elif 'process' in tag:
-                    match = re.search(r'process-filter-([^@]+)', tag)  # 匹配 'process-' 后的部分，直到遇到 '@'
-                    if match:
-                        process_tag = match.group(1)  # 提取的部分是 'communicationApp'
-                        # 提取 'communication' 作为关键词
-                        process_keyword = process_tag.lower().replace('app',
-                                                                      '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
-                        # 根据关键字确定outbound
-                        outbound = self.determine_outbound(process_keyword)
-                        # 将生成的规则添加到规则列表
+                    if outbound:  # 只在命中时添加
                         rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
+
                 elif 'geoip-geolocation' in tag:
                     match = re.search(r'geoip-geolocation-(\w+)', tag)  # 匹配 'geoip-geolocation-' 后的国家代码
                     if match:
@@ -735,14 +726,16 @@ class ConfigParser:
         if 'game' in tag and '!cn' in tag:
             return  "游戏 (海外服务)"
         if 'vpn' in tag and '!cn' in tag:
-            return "VPN"
+            return "VPN (区域伪装)"
         if 'media' in tag and '!cn' in tag:
             return  "媒体 (海外服务)"
         if 'nsfw' in tag and '!cn' in tag:
             return "成人 (过滤服务)"
         if 'direct' in tag:
             return "直连"
-        return "直连"
+        else:
+            return None
+
 
     def rule_priority(self, rule):
         # 定义规则的优先级
@@ -750,10 +743,8 @@ class ConfigParser:
             return 0
         if "clash_mode" in rule:
             return 1
-        if "type" in rule and rule["type"] == "logical":
+        if "protocol" in rule:
             return 2
-        if "port" in rule:
-            return 3
         if "rule_set" in rule:
             if 'blocker' in rule["rule_set"][0] and 'process' not in rule["rule_set"][0]:
                 return 4
