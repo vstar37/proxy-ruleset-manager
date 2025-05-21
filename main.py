@@ -632,7 +632,7 @@ class SB_ConfigParser:
                     "type": "remote",
                     "format": "binary",
                     "url": f"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/singbox/{file}",
-                    "download_detour": "VPN"
+                    "download_detour": "下载 (海外服务)"
                 })
 
                 # 排除 fakeip 和 @cn规则
