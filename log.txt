@@ -53,13 +53,13 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-05-21 11:58:24,353 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs
-2025-05-21 11:58:24,354 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs
+2025-05-21 11:58:24,353 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs
+2025-05-21 11:58:24,354 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs
 2025-05-21 11:58:25,507 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-05-21 11:58:26,839 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/privateip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/privateip.srs
-2025-05-21 11:58:26,839 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/privateip.srs
-2025-05-21 11:58:27,225 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/cnip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/cnip.srs
-2025-05-21 11:58:27,226 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/cnip.srs
+2025-05-21 11:58:26,839 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/privateip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/privateip.srs
+2025-05-21 11:58:26,839 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/privateip.srs
+2025-05-21 11:58:27,225 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/cnip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/cnip.srs
+2025-05-21 11:58:27,226 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/cnip.srs
 2025-05-21 11:58:27,226 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:27,226 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:27,226 - INFO - category-direct 规则整理完成:
@@ -170,8 +170,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 25
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-05-21 11:58:31,076 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs
-2025-05-21 11:58:31,076 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs
+2025-05-21 11:58:31,076 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs
+2025-05-21 11:58:31,076 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/games-cn.srs
 2025-05-21 11:58:31,184 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:31,184 - INFO - category-game@cn 规则整理完成:
 2025-05-21 11:58:31,184 - INFO - 类型: geosite
@@ -184,8 +184,8 @@ domain 被过滤掉的条目数量: 3
   process_name 条目数: 0
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-05-21 11:58:46,108 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/telegramip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/telegramip.srs
-2025-05-21 11:58:46,108 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/telegramip.srs
+2025-05-21 11:58:46,108 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/telegramip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/telegramip.srs
+2025-05-21 11:58:46,108 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/telegramip.srs
 2025-05-21 11:58:46,108 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:46,109 - INFO - category-communication@!cn 规则整理完成:
 2025-05-21 11:58:46,109 - INFO - 类型: geosite
@@ -230,8 +230,8 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 2
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-05-21 11:58:47,104 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/fakeip-filter.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/fakeip-filter.srs
-2025-05-21 11:58:47,104 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/fakeip-filter.srs
+2025-05-21 11:58:47,104 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/fakeip-filter.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/fakeip-filter.srs
+2025-05-21 11:58:47,104 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/fakeip-filter.srs
 2025-05-21 11:58:47,104 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:47,104 - INFO - filter-fakeip 规则整理完成:
 2025-05-21 11:58:47,104 - INFO - 类型: geosite
@@ -266,11 +266,11 @@ domain 被过滤掉的条目数量: 0
   process_name 条目数: 2
   domain_regex 条目数: 0
 --------------------------------------------------
-2025-05-21 11:58:54,773 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/appletv.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/appletv.srs
-2025-05-21 11:58:54,774 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/appletv.srs
+2025-05-21 11:58:54,773 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/appletv.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/appletv.srs
+2025-05-21 11:58:54,774 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/appletv.srs
 2025-05-21 11:58:55,793 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
-2025-05-21 11:58:55,954 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/netflixip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/netflixip.srs
-2025-05-21 11:58:55,954 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/netflixip.srs
+2025-05-21 11:58:55,954 - ERROR - 下载 https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/netflixip.srs 时出错: 404 Client Error: Not Found for url: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/netflixip.srs
+2025-05-21 11:58:55,954 - ERROR - 下载 .srs 文件失败: https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/netflixip.srs
 2025-05-21 11:58:55,955 - ERROR - 解析 JSON 数据时出错: 'NoneType' object has no attribute 'get'
 2025-05-21 11:58:55,955 - INFO - category-video@!cn 规则整理完成:
 2025-05-21 11:58:55,955 - INFO - 类型: geosite

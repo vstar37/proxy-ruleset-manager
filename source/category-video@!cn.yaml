@@ -5,7 +5,7 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-disney.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hbo.srs"
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/appletv.srs"
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/appletv.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify.srs"
 geoip:
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/netflixip.srs"  # 第一个 geosip 链接
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/netflixip.srs"  # 第一个 geosip 链接

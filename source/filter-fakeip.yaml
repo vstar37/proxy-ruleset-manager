@@ -1,3 +1,3 @@
 geosite:
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/fakeip-filter.srs"  # 第一个 geosite 链接
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/fakeip-filter.srs"  # 第一个 geosite 链接
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/filter-fakeip.json"  # 第一个 geosite 链接

@@ -7,4 +7,4 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-line.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-signal.srs"
 geoip:
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/telegramip.srs"
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/telegramip.srs"
