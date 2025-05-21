@@ -56,11 +56,11 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-private.srs"
   - "https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/SteamCN/SteamCN_OCD_Domain.yaml"
   - "https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/refs/heads/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN_OCD_Domain.yaml"
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.srs"
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/games-cn.srs"
 
 geoip:
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
-  - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/cnip.srs"
+  - "https://github.com/DustinWin/ruleset_geodata/releases/download/proxy-ruleset-manager/privateip.srs"
 ```
 
 执行后，将生成两个文件：**`geosite-category-direct.json`** 和 **`geoip-category-direct.json`**。

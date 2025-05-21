@@ -631,7 +631,7 @@ class SB_ConfigParser:
                     "tag": tag,
                     "type": "remote",
                     "format": "binary",
-                    "url": f"https://raw.githubusercontent.com/vstar37/sing-box-ruleset/main/rule/singbox/{file}",
+                    "url": f"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/{file}",
                     "download_detour": "下载 (海外服务)"
                 })
 

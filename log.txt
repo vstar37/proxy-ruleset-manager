@@ -359,4 +359,4 @@ domain 被过滤掉的条目数量: 0
 2025-05-21 11:49:25,046 - INFO - 成功生成 MRS 文件: ./rule/clash/geosite-category-vpn@cn.mrs
 2025-05-21 11:49:25,302 - INFO - 成功生成 MRS 文件: ./rule/clash/geosite-geolocation-!cn.mrs
 2025-05-21 11:49:25,320 - INFO - ✅ sing-box 配置合并成功
-2025-05-21 11:49:25,320 - INFO - ✅ 已将配置文件移动至: /home/runner/work/sing-box-ruleset/sing-box-ruleset/template/singbox/config.json
+2025-05-21 11:49:25,320 - INFO - ✅ 已将配置文件移动至: /home/runner/work/proxy-ruleset-manager/proxy-ruleset-manager/template/singbox/config.json
