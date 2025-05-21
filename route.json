@@ -10,14 +10,14 @@
         "timeout":"1s"
       },
       {
-        "clash_mode":"\u5168\u5c40\u4ee3\u7406",
+        "clash_mode":"全局代理",
         "action":"route",
-        "outbound":"\u9ed8\u8ba4\u4ee3\u7406"
+        "outbound":"默认代理"
       },
       {
-        "clash_mode":"\u5168\u5c40\u76f4\u8fde",
+        "clash_mode":"全局直连",
         "action":"route",
-        "outbound":"\u76f4\u8fde"
+        "outbound":"直连"
       },
       {
         "type":"logical",
@@ -59,14 +59,14 @@
           "geoip-geolocation-jp"
         ],
         "action":"route",
-        "outbound":"\u65e5\u672c\u7ebf\u8def"
+        "outbound":"日本线路"
       },
       {
         "rule_set":[
           "geoip-geolocation-eu"
         ],
         "action":"route",
-        "outbound":"\u6b27\u6d32\u7ebf\u8def"
+        "outbound":"欧洲线路"
       },
       {
         "rule_set":[
@@ -74,35 +74,35 @@
           "geosite-category-video@!cn"
         ],
         "action":"route",
-        "outbound":"\u5f71\u97f3 (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"影音 (海外服务)"
       },
       {
         "rule_set":[
           "geoip-category-game"
         ],
         "action":"route",
-        "outbound":"\u6e38\u620f (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"游戏 (海外服务)"
       },
       {
         "rule_set":[
           "geosite-category-download@!cn"
         ],
         "action":"route",
-        "outbound":"\u4e0b\u8f7d (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"下载 (海外服务)"
       },
       {
         "rule_set":[
           "geosite-category-nsfw"
         ],
         "action":"route",
-        "outbound":"\u6210\u4eba (\u8fc7\u6ee4\u670d\u52a1)"
+        "outbound":"成人 (过滤服务)"
       },
       {
         "rule_set":[
           "geosite-category-game@!cn"
         ],
         "action":"route",
-        "outbound":"\u6e38\u620f (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"游戏 (海外服务)"
       },
       {
         "rule_set":[
@@ -110,14 +110,14 @@
           "geosite-category-communication@!cn"
         ],
         "action":"route",
-        "outbound":"\u901a\u4fe1 (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"通信 (海外服务)"
       },
       {
         "rule_set":[
           "geosite-category-media@!cn"
         ],
         "action":"route",
-        "outbound":"\u5a92\u4f53 (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"媒体 (海外服务)"
       },
       {
         "rule_set":[
@@ -132,28 +132,28 @@
           "geoip-category-direct"
         ],
         "action":"route",
-        "outbound":"\u76f4\u8fde"
+        "outbound":"直连"
       },
       {
         "rule_set":[
           "process-filter-directApp"
         ],
         "action":"route",
-        "outbound":"\u76f4\u8fde"
+        "outbound":"直连"
       },
       {
         "rule_set":[
           "process-filter-communicationApp"
         ],
         "action":"route",
-        "outbound":"\u901a\u4fe1 (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"通信 (海外服务)"
       },
       {
         "rule_set":[
           "process-filter-browser"
         ],
         "action":"route",
-        "outbound":"\u76f4\u8fde"
+        "outbound":"直连"
       },
       {
         "rule_set":[
@@ -167,7 +167,7 @@
           "process-filter-downloadApp@!cn"
         ],
         "action":"route",
-        "outbound":"\u4e0b\u8f7d (\u6d77\u5916\u670d\u52a1)"
+        "outbound":"下载 (海外服务)"
       }
     ],
     "rule_set":[
@@ -397,6 +397,6 @@
       }
     ],
     "auto_detect_interface":true,
-    "final":"\u9ed8\u8ba4\u4ee3\u7406"
+    "final":"默认代理"
   }
 }
