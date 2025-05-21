@@ -10,14 +10,14 @@
         "timeout":"1s"
       },
       {
-        "clash_mode":"Global",
+        "clash_mode":"\u5168\u5c40\u4ee3\u7406",
         "action":"route",
-        "outbound":"GLOBAL"
+        "outbound":"\u9ed8\u8ba4\u4ee3\u7406"
       },
       {
-        "clash_mode":"Direct",
+        "clash_mode":"\u5168\u5c40\u76f4\u8fde",
         "action":"route",
-        "outbound":"Direct-Out"
+        "outbound":"\u76f4\u8fde"
       },
       {
         "type":"logical",
@@ -48,55 +48,7 @@
       },
       {
         "rule_set":[
-          "adguard-blocker@router"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "adguard-blocker@official"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "adguard-blocker@pc"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
           "adguard-blocker@default"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "adguard-blocker@mobile"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "geosite-blocker-trash"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
-      },
-      {
-        "rule_set":[
-          "adguard-blocker@privacy"
         ],
         "action":"reject",
         "method":"default",
@@ -107,14 +59,14 @@
           "geoip-geolocation-jp"
         ],
         "action":"route",
-        "outbound":"JP Proxy"
+        "outbound":"\u65e5\u672c\u7ebf\u8def"
       },
       {
         "rule_set":[
           "geoip-geolocation-eu"
         ],
         "action":"route",
-        "outbound":"Other"
+        "outbound":"\u6b27\u6d32\u7ebf\u8def"
       },
       {
         "rule_set":[
@@ -122,35 +74,35 @@
           "geosite-category-video@!cn"
         ],
         "action":"route",
-        "outbound":"Video Service"
+        "outbound":"\u5f71\u97f3 (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
           "geoip-category-game"
         ],
         "action":"route",
-        "outbound":"Game Service"
+        "outbound":"\u6e38\u620f (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
           "geosite-category-download@!cn"
         ],
         "action":"route",
-        "outbound":"Download Service"
+        "outbound":"\u4e0b\u8f7d (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
           "geosite-category-nsfw"
         ],
         "action":"route",
-        "outbound":"NSFW Content"
+        "outbound":"\u6210\u4eba (\u8fc7\u6ee4\u670d\u52a1)"
       },
       {
         "rule_set":[
           "geosite-category-game@!cn"
         ],
         "action":"route",
-        "outbound":"Game Service"
+        "outbound":"\u6e38\u620f (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
@@ -158,14 +110,14 @@
           "geosite-category-communication@!cn"
         ],
         "action":"route",
-        "outbound":"Communication Service"
+        "outbound":"\u901a\u4fe1 (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
           "geosite-category-media@!cn"
         ],
         "action":"route",
-        "outbound":"Media Service"
+        "outbound":"\u5a92\u4f53 (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
@@ -180,36 +132,28 @@
           "geoip-category-direct"
         ],
         "action":"route",
-        "outbound":"Direct-Out"
-      },
-      {
-        "rule_set":[
-          "process-blocker-rejectApp@amos"
-        ],
-        "action":"reject",
-        "method":"default",
-        "no_drop":false
+        "outbound":"\u76f4\u8fde"
       },
       {
         "rule_set":[
           "process-filter-directApp"
         ],
         "action":"route",
-        "outbound":"Direct-Out"
+        "outbound":"\u76f4\u8fde"
       },
       {
         "rule_set":[
           "process-filter-communicationApp"
         ],
         "action":"route",
-        "outbound":"Communication Service"
+        "outbound":"\u901a\u4fe1 (\u6d77\u5916\u670d\u52a1)"
       },
       {
         "rule_set":[
           "process-filter-browser"
         ],
         "action":"route",
-        "outbound":"Direct-Out"
+        "outbound":"\u76f4\u8fde"
       },
       {
         "rule_set":[
@@ -223,7 +167,7 @@
           "process-filter-downloadApp@!cn"
         ],
         "action":"route",
-        "outbound":"Download Service"
+        "outbound":"\u4e0b\u8f7d (\u6d77\u5916\u670d\u52a1)"
       }
     ],
     "rule_set":[
@@ -453,6 +397,6 @@
       }
     ],
     "auto_detect_interface":true,
-    "final":"Others"
+    "final":"\u9ed8\u8ba4\u4ee3\u7406"
   }
 }

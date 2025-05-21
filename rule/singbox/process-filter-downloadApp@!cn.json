@@ -3,7 +3,8 @@
     "rules": [
         {
             "process_name": [
-                "curl"
+                "curl",
+                "Applite"
             ]
         }
     ]
