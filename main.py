@@ -726,19 +726,19 @@ class ConfigParser:
 
     def determine_outbound(self, tag):
         # 根据tag关键字确定outbound
-        if 'video' in tag:
+        if 'video' in tag and '!cn' in tag:
             return "影音 (海外服务)"
-        if 'download' in tag:
+        if 'download' in tag and '!cn' in tag:
             return "下载 (海外服务)"
-        if 'communication' in tag:
+        if 'communication' in tag and '!cn' in tag:
             return "通信 (海外服务)"
-        if 'game' in tag:
+        if 'game' in tag and '!cn' in tag:
             return  "游戏 (海外服务)"
-        if 'vpn' in tag:
+        if 'vpn' in tag and '!cn' in tag:
             return "VPN"
-        if 'media' in tag:
+        if 'media' in tag and '!cn' in tag:
             return  "媒体 (海外服务)"
-        if 'nsfw' in tag:
+        if 'nsfw' in tag and '!cn' in tag:
             return "成人 (过滤服务)"
         if 'direct' in tag:
             return "直连"
