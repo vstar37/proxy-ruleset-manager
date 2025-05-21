@@ -612,8 +612,8 @@ class ConfigParser:
         # 固定字段
         fixed_rules = [
             {"inbound": ["tun-in", "mixed-in"], "action": "sniff", "timeout": "1s"},
-            {"clash_mode": "Global", "action": "route", "outbound": "GLOBAL"},
-            {"clash_mode": "Direct", "action": "route", "outbound": "Direct-Out"},
+            {"clash_mode": "全局代理", "action": "route", "outbound": "默认代理"},
+            {"clash_mode": "全局直连", "action": "route", "outbound": "直连"},
             {"type": "logical", "mode": "or", "rules": [{"protocol": "dns"}, {"port": 53}], "action": "hijack-dns"},
             {"port": 853, "network": "tcp", "action": "reject", "method": "default", "no_drop": False},
             {"port": 443, "network": "udp", "action": "reject", "method": "default", "no_drop": False}
@@ -639,11 +639,11 @@ class ConfigParser:
                 if 'fakeip' in tag or 'geolocation-!cn' in tag or '@cn' in tag:
                     continue
 
-                # 判断规则类型并生成相应的动作
-                if 'blocker' in tag:
+                # 判断规则类型并生成相应的动作, blocker 默认使用 adguard-blocker@default
+                if 'adguard-blocker@default' in tag:
                     rules.append({"rule_set": [tag], "action": "reject", "method": "default", "no_drop": False})
                 elif 'direct' in tag or '@cn' in tag:
-                    rules.append({"rule_set": [tag], "action": "route", "outbound": "Direct-Out"})
+                    rules.append({"rule_set": [tag], "action": "route", "outbound": "直连"})
                 elif 'category' in tag:
                     outbound = self.determine_outbound(tag)
                     rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
@@ -656,7 +656,6 @@ class ConfigParser:
                                                                       '')  # 去掉 'App'，例如 'communicationApp' -> 'communication'
                         # 根据关键字确定outbound
                         outbound = self.determine_outbound(process_keyword)
-
                         # 将生成的规则添加到规则列表
                         rules.append({"rule_set": [tag], "action": "route", "outbound": outbound})
                 elif 'geoip-geolocation' in tag:
@@ -680,7 +679,7 @@ class ConfigParser:
                 "rules": all_rules,
                 "rule_set": rule_set,
                 "auto_detect_interface": True,
-                "final": "Others"
+                "final": "默认代理"
             }
         }
 
@@ -728,22 +727,22 @@ class ConfigParser:
     def determine_outbound(self, tag):
         # 根据tag关键字确定outbound
         if 'video' in tag:
-            return "Video Service"
+            return "影音 (海外服务)"
         if 'download' in tag:
-            return "Download Service"
+            return "下载 (海外服务)"
         if 'communication' in tag:
-            return "Communication Service"
+            return "通信 (海外服务)"
         if 'game' in tag:
-            return "Game Service"
+            return  "游戏 (海外服务)"
         if 'vpn' in tag:
             return "VPN"
         if 'media' in tag:
-            return "Media Service"
+            return  "媒体 (海外服务)"
         if 'nsfw' in tag:
-            return "NSFW Content"
+            return "成人 (过滤服务)"
         if 'direct' in tag:
-            return "Direct-Out"
-        return "Direct-Out"
+            return "直连"
+        return "直连"
 
     def rule_priority(self, rule):
         # 定义规则的优先级
@@ -774,10 +773,14 @@ class ConfigParser:
     def determine_geolocation_outbound(self, country_code):
         # 根据国家编号确定outbound
         geolocation_map = {
-            'jp': 'JP Proxy',
-            'us': 'US Proxy',
-            'cn': 'CN Proxy',
-            'uk': 'UK Proxy',
+            'jp': '日本线路',
+            'us': '美国线路',
+            'cn': '大陆线路',
+            'uk': '香港线路',
+            'eu': '欧洲线路',
+            'hk': '香港线路',
+            'kr': '韩国线路',
+            'tw': '台湾线路'
             # 可以添加更多国家映射
         }
         return geolocation_map.get(country_code, "Other")
