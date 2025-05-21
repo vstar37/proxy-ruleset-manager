@@ -604,7 +604,7 @@ class RuleParser:
         convert_yaml_to_mrs(config.clash_output_directory)
 
 
-class ConfigParser:
+class SB_ConfigParser:
     def __init__(self):
         self.config = config
 
@@ -673,10 +673,37 @@ class ConfigParser:
                 "final": "默认代理"
             }
         }
-
         # 写入带换行的紧凑 JSON
-        with open('route.json', 'w', encoding='utf-8') as f:
+        with open('./src/config/singbox/sb_route.json', 'w', encoding='utf-8') as f:
             json.dump(route_config, f, ensure_ascii=False, separators=(',', ':'), indent=2)
+
+        config_dir = os.path.abspath("./src/config/singbox")
+        output_dir = os.path.abspath("./template/singbox")
+        output_file = os.path.join(config_dir, "config.json")
+        target_file = os.path.join(output_dir, "config.json")
+
+        conversion_command = [
+            "sing-box", "merge", "config.json", "-C",
+             config_dir , "-D", config_dir
+        ]
+        logging.debug(f"生成 singbox 配置文件: {' '.join(conversion_command)}")
+
+        # 运行命令
+        result = subprocess.run(conversion_command, capture_output=True, text=True)
+        # 检查执行结果
+        if result.returncode == 0:
+            logging.info("✅ sing-box 配置合并成功")
+            try:
+                # 确保目标目录存在
+                os.makedirs(output_dir, exist_ok=True)
+                # 移动 config.json 文件
+                shutil.move(output_file, target_file)
+                logging.info(f"✅ 已将配置文件移动至: {target_file}")
+            except Exception as e:
+                logging.error(f"❌ 移动配置文件失败: {e}")
+        else:
+            logging.error(f"❌ sing-box 配置合并失败，错误码 {result.returncode}")
+            logging.error(f"stderr: {result.stderr}")
 
     def merge_geosite_geoip_rules(self, rules):
         """检查并合并 geosite 和 geoip 规则"""
@@ -736,7 +763,6 @@ class ConfigParser:
         else:
             return None
 
-
     def rule_priority(self, rule):
         # 定义规则的优先级
         if "inbound" in rule:
@@ -745,14 +771,16 @@ class ConfigParser:
             return 1
         if "protocol" in rule:
             return 2
+        if "port" in rule:
+            return 3
         if "rule_set" in rule:
             if 'blocker' in rule["rule_set"][0] and 'process' not in rule["rule_set"][0]:
                 return 4
-            if 'geolocation' in rule["rule_set"][0]:
-                return 5
             if '@cn' in rule["rule_set"][0]:
-                return 6
+                return 5
             if 'category' in rule["rule_set"][0] and 'direct' not in rule["rule_set"][0]:
+                return 6
+            if 'geolocation' in rule["rule_set"][0]:
                 return 7
             if 'direct' in rule["rule_set"][0] and 'process' not in rule["rule_set"][0]:
                 return 8
@@ -782,5 +810,5 @@ if __name__ == "__main__":
     rule_parser = RuleParser()
     rule_parser.main()
 
-    ConfigParser = ConfigParser()
-    ConfigParser.generate_singbox_route()
+    SB_ConfigParser = SB_ConfigParser()
+    SB_ConfigParser.generate_singbox_route()

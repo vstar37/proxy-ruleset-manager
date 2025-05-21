@@ -4,14 +4,14 @@
         {
             "process_name": [
                 "com.apple.WebKit.Networking",
-                "firefox.exe",
-                "Firefox",
-                "Google Chrome Helper",
                 "Chrome",
-                "wBlock Filters",
+                "Firefox",
                 "Safari",
+                "chrome.exe",
                 "AdGuard for Safari",
-                "chrome.exe"
+                "firefox.exe",
+                "Google Chrome Helper",
+                "wBlock Filters"
             ]
         }
     ]
