@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "MATLABWebUI (GPU)",
+                "CodeRunner",
+                "Little Snitch Agent",
+                "ProcessSpy",
+                "Find Any File",
+                "MATLAB",
+                "MATLABWebUl (Renderer)",
+                "Shifty",
+                "Apple Juice",
+                "Squirrel",
+                "MathWorksService",
+                "Swish",
+                "Scroll Reverser",
+                "Snipaste",
+                "BLEUnlock",
+                "DevToys",
+                "Command X",
+                "Snipaste.exe",
+                "Stats",
+                "Ice",
+                "DevToys Networking",
+                "KeKa",
+                "TextSniper",
+                "Clop",
+                "BetterDisplay"
+            ]
+        }
+    ]
+}

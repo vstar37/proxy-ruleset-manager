@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "WebTorrent.exe",
+                "115Browser",
+                "Music",
+                "ThunderVIP",
+                "fdm.exe",
+                "WebTorrentHelper.exe",
+                "qbittorrent",
+                "Thunder",
+                "WeChat",
+                "幕布 Helper",
+                "aria2c",
+                "hydra-python-rpc.exe",
+                "WeChatAppEx Helper",
+                "Weiyun",
+                "NetTransport",
+                "fdm",
+                "BitComet",
+                "BitComet.exe",
+                "Transmission",
+                "115Browser Helper",
+                "cloudd",
+                "baidunetdisk.exe",
+                "App Store",
+                "vidhub",
+                "uTorrent.exe",
+                "aria2c.exe",
+                "uTorrent",
+                "iCloudDrive.exe",
+                "WebTorrentHelper",
+                "infuse",
+                "WebTorrent",
+                "TencentMeeting",
+                "qbittorrent.exe",
+                "Folx",
+                "Eudb_en_free",
+                "BitComet_x64.exe",
+                "Weiyun.exe",
+                "wegame.exe",
+                "DownloadService.exe",
+                "BaiduNetdisk_mac",
+                "115chrome.exe",
+                "Thunder.exe",
+                "QQ",
+                "DownloadService",
+                "Transmission.exe",
+                "Folx.exe",
+                "NetTransport.exe",
+                "ToDesk_Service"
+            ]
+        },
+        {
+            "domain_suffix": [
+                "qbittorrent.org"
+            ]
+        }
+    ]
+}
