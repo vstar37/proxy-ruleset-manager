@@ -177,13 +177,6 @@
         "download_detour":"下载 (海外服务)"
       },
       {
-        "tag":"adguard-blocker@official",
-        "type":"remote",
-        "format":"binary",
-        "url":"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/adguard-blocker@official.srs",
-        "download_detour":"下载 (海外服务)"
-      },
-      {
         "tag":"geoip-category-video@!cn",
         "type":"remote",
         "format":"binary",

@@ -454,13 +454,6 @@
       },
       {
         "type": "remote",
-        "tag": "adguard-blocker@official",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/adguard-blocker@official.srs",
-        "download_detour": "下载 (海外服务)"
-      },
-      {
-        "type": "remote",
         "tag": "geoip-category-video@!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geoip-category-video@!cn.srs",

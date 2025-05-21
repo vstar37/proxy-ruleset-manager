@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "Find Any File",
+                "ProcessSpy",
+                "Clop",
+                "BLEUnlock",
+                "Command X",
+                "Swish",
+                "MathWorksService",
+                "Squirrel",
+                "Apple Juice",
+                "MATLABWebUl (Renderer)",
+                "Little Snitch Agent",
+                "CodeRunner",
+                "Stats",
+                "TextSniper",
+                "Scroll Reverser",
+                "BetterDisplay",
+                "Ice",
+                "Shifty",
+                "KeKa",
+                "DevToys",
+                "MATLABWebUI (GPU)",
+                "DevToys Networking",
+                "Snipaste.exe",
+                "MATLAB",
+                "Snipaste"
+            ]
+        }
+    ]
+}
