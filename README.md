@@ -1,15 +1,46 @@
 # sing-box-ruleset self-host manager  
 **个人使用，请勿推广**
 
-## 功能概述  
-本仓库用于自托管 sing-box 规则集，适合用于定制自己的规则集，有**规则转换，规则合并，规则去重**功能。
-根据 **给定的上游规则文件链接**，自动对规则进行批处理合并和去重，生成 **sing-box** 支持的 **Source Format** 文件，与便于检查的 **json** 文件到 rule 文件夹下。  
-输入的上游文件链接格式支持sing-box 原生规则 `srs`、`json` 及其他工具 (Clash, Loon, QX, Surge, Little Snitch)规则文件。  
-使用者可自行 fork 本仓库，并在 `./source/xx.yaml` 中添加需要转换的上游规则集链接，每日自动从上游更新构建。  
+## 🧩功能概述  
+
+本项目用于自托管并管理 sing-box 多格式规则集，具备以下核心功能：
+
+✅ 多格式输入支持
+	•	支持常见代理工具规则格式作为上游输入，包括：
+	•	sing-box（原生 .srs, .json）
+	•	Clash
+	•	Surge
+	•	Quantumult X (QX)
+	•	Loon
+	•	Little Snitch
+
+🔄 规则统一与转换
+	•	将主流规则格式统一转换为 sing-box 的规则集 Source Format。
+	•	支持：
+	•	✅ 规则格式标准化
+	•	✅ 规则合并
+	•	✅ 重复项去除
+	•	✅ 格式校验
+
+📤 多格式输出支持
+	•	在转换为 sing-box 格式后，还可反向生成以下格式规则文件，方便多工具间通用：
+	•	Clash 兼容格式
+	•	Surge 规则文件
+	•	Shadowrocket 规则集
+
+🗂️ 输出文件结构
+	•	转换后的规则文件会统一输出至 rule/ 目录中，包括：
+	•	Sing-box 格式规则文件（.srs / .json）
+	•	各平台反向导出规则文件（如 Clash, Surge 等）
+
+🧰 配置模板支持
+	•	预定义的配置文件模板保存在 template/ 目录中，可按需修改，快速生成适配的配置。
 
 ---
 
-## 使用说明  
+## 使用说明
+使用者可自行 fork 本仓库，并在 `./source/xx.yaml` 中添加需要转换/管理的上游规则集链接，每日自动从上游更新构建。 
+
 1. 在 `./source/xx.yaml` 中添加规则集源文件链接。  
 2. 源文件链接需遵循 `geosite` , `geoip`与 `process` 进行分类。
 4. 遵循 **仓库配置** 赋予 Action 读写权限，手动启动 Action，或者等待自动生成配置文件到 rule 文件夹下。
