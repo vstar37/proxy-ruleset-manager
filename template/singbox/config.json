@@ -548,6 +548,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-geolocation-jp",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-geolocation-jp.srs",
+        "download_detour": "下载 (海外服务)"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-game@!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-category-game@!cn.srs",
