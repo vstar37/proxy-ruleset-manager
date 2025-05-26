@@ -373,6 +373,13 @@
         "outbound": "成人 (过滤服务)"
       },
       {
+        "rule_set": [
+          "geoip-category-vpn@!cn",
+          "geosite-category-vpn@!cn"
+        ],
+        "outbound": "VPN (区域伪装)"
+      },
+      {
         "rule_set": "geosite-category-game@!cn",
         "outbound": "游戏 (海外服务)"
       },
@@ -386,10 +393,6 @@
       {
         "rule_set": "geosite-category-media@!cn",
         "outbound": "媒体 (海外服务)"
-      },
-      {
-        "rule_set": "geosite-category-vpn@!cn",
-        "outbound": "VPN (区域伪装)"
       },
       {
         "rule_set": "geoip-geolocation-jp",
@@ -531,6 +534,13 @@
       },
       {
         "type": "remote",
+        "tag": "geoip-category-vpn@!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geoip-category-vpn@!cn.srs",
+        "download_detour": "下载 (海外服务)"
+      },
+      {
+        "type": "remote",
         "tag": "process-filter-browser",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/process-filter-browser.srs",
@@ -611,13 +621,6 @@
         "tag": "geosite-blocker-trash",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-blocker-trash.srs",
-        "download_detour": "下载 (海外服务)"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-vpn@cn",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-category-vpn@cn.srs",
         "download_detour": "下载 (海外服务)"
       },
       {
