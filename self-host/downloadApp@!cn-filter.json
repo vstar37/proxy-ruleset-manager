@@ -4,6 +4,9 @@
     {
       "process_name": [
         "curl",
+        "git",
+        "python3",
+        "ruby",
         "Applite"
       ]
     }
