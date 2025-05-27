@@ -4,13 +4,13 @@
         {
             "process_name": [
                 "Google Chrome Helper",
-                "firefox.exe",
-                "Firefox",
-                "chrome.exe",
-                "Chrome",
-                "wBlock Filters",
                 "AdGuard for Safari",
+                "chrome.exe",
+                "wBlock Filters",
+                "firefox.exe",
                 "com.apple.WebKit.Networking",
+                "Firefox",
+                "Chrome",
                 "Safari"
             ]
         }
