@@ -1,50 +1,50 @@
 payload:
-  - PROCESS-NAME,iCloudDrive.exe
-  - PROCESS-NAME,fdm
-  - PROCESS-NAME,BitComet_x64.exe
-  - PROCESS-NAME,幕布 Helper
-  - PROCESS-NAME,Folx
-  - PROCESS-NAME,Folx.exe
-  - PROCESS-NAME,baidunetdisk.exe
-  - PROCESS-NAME,wegame.exe
-  - PROCESS-NAME,ToDesk_Service
-  - PROCESS-NAME,115chrome.exe
-  - PROCESS-NAME,BaiduNetdisk_mac
-  - PROCESS-NAME,Thunder.exe
-  - PROCESS-NAME,WebTorrent
-  - PROCESS-NAME,qbittorrent
-  - PROCESS-NAME,115Browser Helper
-  - PROCESS-NAME,infuse
-  - PROCESS-NAME,WeChatAppEx Helper
-  - PROCESS-NAME,vidhub
-  - PROCESS-NAME,WeChat
-  - PROCESS-NAME,Transmission.exe
-  - PROCESS-NAME,DownloadService.exe
-  - PROCESS-NAME,WebTorrentHelper
   - PROCESS-NAME,Weiyun.exe
-  - PROCESS-NAME,Thunder
-  - PROCESS-NAME,aria2c.exe
-  - PROCESS-NAME,uTorrent.exe
-  - PROCESS-NAME,WebTorrent.exe
-  - PROCESS-NAME,Weiyun
-  - PROCESS-NAME,WebTorrentHelper.exe
-  - PROCESS-NAME,DownloadService
-  - PROCESS-NAME,uTorrent
-  - PROCESS-NAME,NetTransport
-  - PROCESS-NAME,NetTransport.exe
-  - PROCESS-NAME,Eudb_en_free
-  - PROCESS-NAME,cloudd
   - PROCESS-NAME,aria2c
-  - PROCESS-NAME,qbittorrent.exe
-  - PROCESS-NAME,Music
-  - PROCESS-NAME,QQ
-  - PROCESS-NAME,BitComet
+  - PROCESS-NAME,Transmission.exe
+  - PROCESS-NAME,WebTorrent
   - PROCESS-NAME,115Browser
-  - PROCESS-NAME,hydra-python-rpc.exe
-  - PROCESS-NAME,fdm.exe
-  - PROCESS-NAME,BitComet.exe
-  - PROCESS-NAME,App Store
-  - PROCESS-NAME,TencentMeeting
+  - PROCESS-NAME,vidhub
+  - PROCESS-NAME,Folx.exe
   - PROCESS-NAME,Transmission
+  - PROCESS-NAME,QQ
+  - PROCESS-NAME,wegame.exe
+  - PROCESS-NAME,BitComet
+  - PROCESS-NAME,幕布 Helper
+  - PROCESS-NAME,ToDesk_Service
+  - PROCESS-NAME,iCloudDrive.exe
+  - PROCESS-NAME,Folx
+  - PROCESS-NAME,baidunetdisk.exe
+  - PROCESS-NAME,Eudb_en_free
+  - PROCESS-NAME,WebTorrent.exe
+  - PROCESS-NAME,NetTransport
+  - PROCESS-NAME,Thunder.exe
+  - PROCESS-NAME,infuse
+  - PROCESS-NAME,TencentMeeting
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,aria2c.exe
+  - PROCESS-NAME,cloudd
+  - PROCESS-NAME,DownloadService
+  - PROCESS-NAME,115Browser Helper
+  - PROCESS-NAME,DownloadService.exe
+  - PROCESS-NAME,hydra-python-rpc.exe
+  - PROCESS-NAME,BitComet.exe
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,Music
+  - PROCESS-NAME,fdm.exe
+  - PROCESS-NAME,WeChat
+  - PROCESS-NAME,WeChatAppEx Helper
+  - PROCESS-NAME,Thunder
+  - PROCESS-NAME,WebTorrentHelper.exe
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,App Store
+  - PROCESS-NAME,BitComet_x64.exe
+  - PROCESS-NAME,fdm
+  - PROCESS-NAME,Weiyun
+  - PROCESS-NAME,qbittorrent.exe
   - PROCESS-NAME,ThunderVIP
+  - PROCESS-NAME,BaiduNetdisk_mac
+  - PROCESS-NAME,115chrome.exe
+  - PROCESS-NAME,NetTransport.exe
+  - PROCESS-NAME,WebTorrentHelper
   - '.qbittorrent.org'
