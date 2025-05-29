@@ -1,0 +1,11 @@
+adguard-blocker 仅用于singbox，由 adblock 规则直接转换而来的二进制规则文件(srs)，高效。
+  default   适用于大部分设备 标准
+  mobile   适用于移动设备  轻量化
+  pc       适用于台式机    标准+
+  privacy   无广告拦截，只屏蔽信息收集  轻量化
+  router   适用于路由器    沉重
+
+category-vpn@!cn 根据IP所在不同区域，提供不用服务的域名。或者可疑，不安全的域名。建议使用原生IP访问。
+
+process-blocker-rejectAPP 可以离线运行的APP
+  
