@@ -4,3 +4,7 @@ payload:
   - PROCESS-NAME,git
   - PROCESS-NAME,Applite
   - PROCESS-NAME,curl
+  - PROCESS-NAME,python.exe
+  - PROCESS-NAME,ruby.exe
+  - PROCESS-NAME,git.exe
+  - PROCESS-NAME,curl.exe
