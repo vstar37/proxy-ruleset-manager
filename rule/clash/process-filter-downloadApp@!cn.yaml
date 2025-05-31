@@ -1,10 +1,6 @@
 payload:
-  - PROCESS-NAME,python3
-  - PROCESS-NAME,ruby
-  - PROCESS-NAME,git
-  - PROCESS-NAME,Applite
   - PROCESS-NAME,curl
-  - PROCESS-NAME,python.exe
-  - PROCESS-NAME,ruby.exe
-  - PROCESS-NAME,git.exe
-  - PROCESS-NAME,curl.exe
+  - PROCESS-NAME,Applite
+  - PROCESS-NAME,git
+  - PROCESS-NAME,ruby
+  - PROCESS-NAME,python3
