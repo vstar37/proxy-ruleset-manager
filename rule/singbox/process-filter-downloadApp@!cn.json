@@ -4,10 +4,10 @@
         {
             "process_name": [
                 "curl",
-                "Applite",
                 "git",
-                "ruby",
-                "python3"
+                "python3",
+                "Applite",
+                "ruby"
             ]
         }
     ]
