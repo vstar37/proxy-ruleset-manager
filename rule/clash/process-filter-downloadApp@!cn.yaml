@@ -1,6 +1,6 @@
 payload:
-  - PROCESS-NAME,curl
-  - PROCESS-NAME,git
-  - PROCESS-NAME,python3
   - PROCESS-NAME,Applite
+  - PROCESS-NAME,python3
+  - PROCESS-NAME,git
+  - PROCESS-NAME,curl
   - PROCESS-NAME,ruby
