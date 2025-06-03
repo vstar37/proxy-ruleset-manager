@@ -14,7 +14,8 @@
         "ruby",
         "powershell",
         "powershell.exe",
-        "Applite"
+        "Applite",
+        "Texifier"
       ]
     }
   ]
