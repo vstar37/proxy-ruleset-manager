@@ -3,11 +3,11 @@
     "rules": [
         {
             "process_name": [
-                "ruby",
                 "Applite",
+                "ruby",
+                "git",
                 "curl",
-                "python3",
-                "git"
+                "python3"
             ]
         }
     ]
