@@ -1,5 +1,12 @@
+PROCESS-NAME,python
+PROCESS-NAME,python.exe
 PROCESS-NAME,Applite
-PROCESS-NAME,ruby
+PROCESS-NAME,powershell
 PROCESS-NAME,git
+PROCESS-NAME,powershell.exe
+PROCESS-NAME,ruby
 PROCESS-NAME,curl
+PROCESS-NAME,wget
 PROCESS-NAME,python3
+PROCESS-NAME,curl.exe
+PROCESS-NAME,wget.exe
