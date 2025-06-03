@@ -4,9 +4,16 @@
     {
       "process_name": [
         "curl",
+        "curl.exe",
+        "wget",
+        "wget.exe",
         "git",
+        "python",
+        "python.exe",
         "python3",
         "ruby",
+        "powershell",
+        "powershell.exe",
         "Applite"
       ]
     }
