@@ -1,10 +1,10 @@
 payload:
-  - PROCESS-NAME,Chrome
-  - PROCESS-NAME,wBlock Filters
-  - PROCESS-NAME,chrome.exe
   - PROCESS-NAME,Safari
   - PROCESS-NAME,com.apple.WebKit.Networking
-  - PROCESS-NAME,Firefox
+  - PROCESS-NAME,Chrome
   - PROCESS-NAME,AdGuard for Safari
-  - PROCESS-NAME,firefox.exe
+  - PROCESS-NAME,Firefox
+  - PROCESS-NAME,wBlock Filters
   - PROCESS-NAME,Google Chrome Helper
+  - PROCESS-NAME,chrome.exe
+  - PROCESS-NAME,firefox.exe
