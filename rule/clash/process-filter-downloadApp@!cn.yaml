@@ -1,14 +1,14 @@
 payload:
-  - PROCESS-NAME,wget
-  - PROCESS-NAME,python.exe
-  - PROCESS-NAME,ruby
-  - PROCESS-NAME,python
-  - PROCESS-NAME,curl.exe
-  - PROCESS-NAME,Texifier
-  - PROCESS-NAME,git
   - PROCESS-NAME,Applite
-  - PROCESS-NAME,wget.exe
+  - PROCESS-NAME,ruby
+  - PROCESS-NAME,wget
   - PROCESS-NAME,powershell
-  - PROCESS-NAME,curl
+  - PROCESS-NAME,python
+  - PROCESS-NAME,Texifier
   - PROCESS-NAME,python3
+  - PROCESS-NAME,python.exe
+  - PROCESS-NAME,curl
+  - PROCESS-NAME,curl.exe
+  - PROCESS-NAME,git
   - PROCESS-NAME,powershell.exe
+  - PROCESS-NAME,wget.exe
