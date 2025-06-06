@@ -185,7 +185,7 @@ class RuleParser:
 
         # 处理 process
         if process_links:
-            process_result = self.generate_json_file(process_links, process_file, rule_set_name)
+            process_result = self.generate_json_file(process_links, process_file, rule_set_name, type='process')
             final_results.append(("process", process_result))
 
         # 输出最终处理结果
@@ -262,7 +262,7 @@ class RuleParser:
 
         return None
 
-    def generate_json_file(self, links, output_file, rule_set_name):
+    def generate_json_file(self, links, output_file, rule_set_name, type='geosite'):
         """
         生成合并后的 JSON 文件并返回处理统计信息。
         """
@@ -278,6 +278,13 @@ class RuleParser:
         if len(json_file_list) == 1 and config.trust_upstream:
             single_file_stats = json_file_list[0]
             final_rules = single_file_stats
+
+            # 如果 type 不是 'process'，则去除 process_name 条目 (debug)
+            if type != 'process':
+                final_rules["rules"] = [
+                    rule for rule in final_rules.get("rules", [])
+                    if 'process_name' not in rule
+                ]
 
             # 统计信息
             domain_count = len(single_file_stats.get("domain", []))
@@ -364,6 +371,13 @@ class RuleParser:
             for category, values in merged_rules.items()
             if values
         ]
+
+        # 如果 type 不是 'process'，则去除 process_name 条目 (debug)
+        if type != 'process':
+            final_rules["rules"] = [
+                rule for rule in final_rules.get("rules", [])
+                if 'process_name' not in rule
+            ]
 
         # 保存结果
         try:
