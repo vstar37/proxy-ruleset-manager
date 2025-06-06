@@ -281,8 +281,8 @@ class RuleParser:
 
             # 如果 type 不是 'process'，则去除 process_name 条目 (debug)
             if type != 'process':
-                final_rules["rules"] = [
-                    rule for rule in final_rules.get("rules", [])
+                final_rules = [
+                    rule for rule in final_rules
                     if 'process_name' not in rule
                 ]
 
@@ -374,8 +374,8 @@ class RuleParser:
 
         # 如果 type 不是 'process'，则去除 process_name 条目 (debug)
         if type != 'process':
-            final_rules["rules"] = [
-                rule for rule in final_rules.get("rules", [])
+            final_rules = [
+                rule for rule in final_rules
                 if 'process_name' not in rule
             ]
 
