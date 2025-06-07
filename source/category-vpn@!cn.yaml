@@ -1,9 +1,9 @@
 geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-icloudprivaterelay.srs"
+  - "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tiktok@!cn.srs"
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/geosite-vpn@amos.json"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs"
-  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple-intelligence.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-reddit.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-vpnservices.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ctrip@!cn.srs"
@@ -17,6 +17,7 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bilibili@!cn.srs"
   # - "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml"
+
 geoip:
   - "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/netflixip.srs"  # 第一个 geosip 链接
 

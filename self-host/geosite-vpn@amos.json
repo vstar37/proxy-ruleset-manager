@@ -7,21 +7,12 @@
         "ipv6check-udp.steamserver.net",
         "greencloudvps.com",
         "v3.paddleapi.com",
-        "www.google.com",
-        "tv.apple.com",
-        "news-assets.apple.com",
-        "news-events.apple.com",
-        "news-client.apple.com",
-        "news-edge.apple.com"
+        "www.google.com"
       ]
     },
     {
       "domain_suffix": [
-        ".steamserver.net",
-        "mask-api.icloud.com",
-        "mask.icloud.com",
-        "apple.news",
-        "tv.apple.com"
+        ".steamserver.net"
       ]
     }
   ]
