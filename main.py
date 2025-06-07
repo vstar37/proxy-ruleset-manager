@@ -175,12 +175,12 @@ class RuleParser:
 
         # 处理 geosite
         if geosite_links:
-            geosite_result = self.generate_json_file(geosite_links, geosite_file, rule_set_name)
+            geosite_result = self.generate_json_file(geosite_links, geosite_file, rule_set_name, type='geosite')
             final_results.append(("geosite", geosite_result))
 
         # 处理 geoip
         if geoip_links:
-            geoip_result = self.generate_json_file(geoip_links, geoip_file, rule_set_name)
+            geoip_result = self.generate_json_file(geoip_links, geoip_file, rule_set_name, type='geoip')
             final_results.append(("geoip", geoip_result))
 
         # 处理 process
@@ -315,10 +315,10 @@ class RuleParser:
             return statistics
         # 否则调用 merge_json
         else:
-            return self.merge_json(json_file_list, output_file, rule_set_name=rule_set_name)
+            return self.merge_json(json_file_list, output_file, rule_set_name=rule_set_name, type=type)
 
     def merge_json(self, json_file_list, output_file, rule_set_name,
-                   enable_trie_filtering=config.enable_trie_filtering):
+                   enable_trie_filtering=config.enable_trie_filtering, type='geosite'):
         """
         合并 JSON 文件并返回规则统计信息。
         """
