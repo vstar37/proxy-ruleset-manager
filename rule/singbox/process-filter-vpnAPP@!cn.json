@@ -1,4 +1,10 @@
 {
     "version": 1,
-    "rules": []
+    "rules": [
+        {
+            "process_name": [
+                "ChatGPT"
+            ]
+        }
+    ]
 }

@@ -1,4 +1,22 @@
 {
     "version": 1,
-    "rules": []
+    "rules": [
+        {
+            "process_name": [
+                "Texifier",
+                "git",
+                "python3",
+                "python",
+                "curl.exe",
+                "powershell.exe",
+                "wget",
+                "curl",
+                "Applite",
+                "python.exe",
+                "powershell",
+                "wget.exe",
+                "ruby"
+            ]
+        }
+    ]
 }
