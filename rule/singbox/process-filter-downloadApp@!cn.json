@@ -3,19 +3,19 @@
     "rules": [
         {
             "process_name": [
-                "Applite",
-                "wget",
-                "powershell.exe",
-                "powershell",
-                "python3",
                 "curl.exe",
-                "wget.exe",
+                "git",
+                "wget",
                 "ruby",
                 "Texifier",
+                "python3",
+                "powershell.exe",
                 "python",
+                "Applite",
+                "powershell",
+                "wget.exe",
                 "curl",
-                "python.exe",
-                "git"
+                "python.exe"
             ]
         }
     ]
