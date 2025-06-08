@@ -1,9 +1,9 @@
-PROCESS-NAME,Google Chrome Helper
-PROCESS-NAME,Firefox
-PROCESS-NAME,AdGuard for Safari
-PROCESS-NAME,firefox.exe
-PROCESS-NAME,chrome.exe
 PROCESS-NAME,wBlock Filters
+PROCESS-NAME,Google Chrome Helper
 PROCESS-NAME,Chrome
+PROCESS-NAME,Firefox
+PROCESS-NAME,chrome.exe
 PROCESS-NAME,Safari
 PROCESS-NAME,com.apple.WebKit.Networking
+PROCESS-NAME,firefox.exe
+PROCESS-NAME,AdGuard for Safari
