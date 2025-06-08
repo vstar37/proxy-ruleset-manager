@@ -4,18 +4,18 @@
         {
             "process_name": [
                 "curl.exe",
-                "git",
-                "wget",
-                "ruby",
-                "Texifier",
                 "python3",
-                "powershell.exe",
-                "python",
-                "Applite",
-                "powershell",
-                "wget.exe",
                 "curl",
-                "python.exe"
+                "powershell",
+                "python",
+                "git",
+                "Applite",
+                "Texifier",
+                "python.exe",
+                "powershell.exe",
+                "ruby",
+                "wget",
+                "wget.exe"
             ]
         }
     ]
