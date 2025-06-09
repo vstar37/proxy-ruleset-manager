@@ -597,6 +597,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-antip@cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-category-antip@cn.srs",
+        "download_detour": "下载 (海外服务)"
+      },
+      {
+        "type": "remote",
         "tag": "adguard-blocker@default",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/adguard-blocker@default.srs",
