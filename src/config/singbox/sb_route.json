@@ -199,6 +199,13 @@
         "download_detour":"下载 (海外服务)"
       },
       {
+        "tag":"geosite-category-antip@dev",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-category-antip@dev.srs",
+        "download_detour":"下载 (海外服务)"
+      },
+      {
         "tag":"geosite-category-game@cn",
         "type":"remote",
         "format":"binary",
