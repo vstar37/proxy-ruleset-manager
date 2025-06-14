@@ -11,7 +11,6 @@
           "canonical-lgw01.cdn.snapcraftcontent.com",
           "us.nomaba.top",
           "installer.teams.static.microsoft",
-          "www.pinterest.com",
           "autoupdate.termius.com",
           "dl.google.com",
           "desktop.docker.com",
@@ -23,6 +22,7 @@
     },
     {
       "domain_suffix": [
+        ".pinterest.com",
         ".nexus-cdn.com",
         ".sharepoint.com",
         ".mediafire.com",
