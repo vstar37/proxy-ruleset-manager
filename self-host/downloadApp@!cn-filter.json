@@ -15,7 +15,8 @@
         "powershell",
         "powershell.exe",
         "Applite",
-        "Texifier"
+        "Texifier",
+        "OrbStack Helper"
       ]
     }
   ]
