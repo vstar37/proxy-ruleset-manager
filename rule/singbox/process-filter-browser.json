@@ -6,12 +6,12 @@
                 "chrome.exe",
                 "firefox.exe",
                 "AdGuard for Safari",
+                "wBlock Filters",
+                "Google Chrome Helper",
+                "Chrome",
                 "com.apple.WebKit.Networking",
                 "Safari",
-                "Firefox",
-                "wBlock Filters",
-                "Chrome",
-                "Google Chrome Helper"
+                "Firefox"
             ]
         }
     ]
