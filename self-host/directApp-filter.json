@@ -30,7 +30,8 @@
         "ThunderVIP",
         "Transmission",
         "fdm",
-        "ToDesk_Service"
+        "ToDesk_Service",
+        "frpc"
       ]
     }
   ]
