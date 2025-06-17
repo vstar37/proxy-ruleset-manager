@@ -1,50 +1,50 @@
+PROCESS-NAME,cloudd
 PROCESS-NAME,Thunder.exe
-PROCESS-NAME,WebTorrent.exe
-PROCESS-NAME,WeChatAppEx Helper
-PROCESS-NAME,Eudb_en_free
-PROCESS-NAME,BitComet_x64.exe
-PROCESS-NAME,Transmission
-PROCESS-NAME,TencentMeeting
-PROCESS-NAME,115chrome.exe
-PROCESS-NAME,115Browser Helper
-PROCESS-NAME,iCloudDrive.exe
-PROCESS-NAME,BitComet
-PROCESS-NAME,infuse
-PROCESS-NAME,WebTorrentHelper
-PROCESS-NAME,App Store
-PROCESS-NAME,NetTransport.exe
 PROCESS-NAME,Folx.exe
-PROCESS-NAME,NetTransport
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,115Browser
-PROCESS-NAME,BaiduNetdisk_mac
-PROCESS-NAME,qbittorrent.exe
-PROCESS-NAME,幕布 Helper
-PROCESS-NAME,fdm
+PROCESS-NAME,fdm.exe
 PROCESS-NAME,vidhub
 PROCESS-NAME,WebTorrentHelper.exe
-PROCESS-NAME,ThunderVIP
-PROCESS-NAME,BitComet.exe
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,NetTransport
+PROCESS-NAME,WeChatAppEx Helper
+PROCESS-NAME,iCloudDrive.exe
+PROCESS-NAME,BitComet_x64.exe
+PROCESS-NAME,TencentMeeting
 PROCESS-NAME,Thunder
-PROCESS-NAME,fdm.exe
-PROCESS-NAME,QQ
-PROCESS-NAME,cloudd
-PROCESS-NAME,aria2c.exe
-PROCESS-NAME,wegame.exe
-PROCESS-NAME,aria2c
-PROCESS-NAME,ToDesk_Service
-PROCESS-NAME,Weiyun
+PROCESS-NAME,NetTransport.exe
 PROCESS-NAME,Weiyun.exe
-PROCESS-NAME,uTorrent.exe
-PROCESS-NAME,DownloadService
-PROCESS-NAME,baidunetdisk.exe
-PROCESS-NAME,frpc
-PROCESS-NAME,hydra-python-rpc.exe
+PROCESS-NAME,Weiyun
+PROCESS-NAME,115Browser Helper
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,115chrome.exe
+PROCESS-NAME,WeChat
+PROCESS-NAME,幕布 Helper
+PROCESS-NAME,QQ
+PROCESS-NAME,BitComet
+PROCESS-NAME,WebTorrent.exe
 PROCESS-NAME,Music
 PROCESS-NAME,Folx
-PROCESS-NAME,uTorrent
-PROCESS-NAME,Transmission.exe
+PROCESS-NAME,fdm
 PROCESS-NAME,qbittorrent
-PROCESS-NAME,WeChat
+PROCESS-NAME,App Store
+PROCESS-NAME,infuse
+PROCESS-NAME,ToDesk_Service
+PROCESS-NAME,DownloadService
+PROCESS-NAME,Transmission.exe
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,Transmission
+PROCESS-NAME,aria2c
+PROCESS-NAME,uTorrent.exe
+PROCESS-NAME,hydra-python-rpc.exe
+PROCESS-NAME,uTorrent
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,Eudb_en_free
+PROCESS-NAME,frpc
+PROCESS-NAME,wegame.exe
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,115Browser
+PROCESS-NAME,ThunderVIP
 PROCESS-NAME,DownloadService.exe
 DOMAIN-SUFFIX,qbittorrent.org
