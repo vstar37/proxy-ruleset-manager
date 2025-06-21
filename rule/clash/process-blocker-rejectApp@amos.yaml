@@ -1,29 +1,29 @@
 payload:
-  - PROCESS-NAME,Ice
-  - PROCESS-NAME,CodeRunner
-  - PROCESS-NAME,Scroll Reverser
-  - PROCESS-NAME,MATLAB
-  - PROCESS-NAME,Snipaste
-  - PROCESS-NAME,TextSniper
-  - PROCESS-NAME,FlowVision
   - PROCESS-NAME,BetterDisplay
-  - PROCESS-NAME,DevToys Networking
-  - PROCESS-NAME,Little Snitch Agent
-  - PROCESS-NAME,Command X
-  - PROCESS-NAME,DevToys
-  - PROCESS-NAME,Mac Mouse Fix
-  - PROCESS-NAME,MATLABWebUl (Renderer)
+  - PROCESS-NAME,Squirrel
+  - PROCESS-NAME,Shifty
+  - PROCESS-NAME,Scroll Reverser
+  - PROCESS-NAME,FlowVision
   - PROCESS-NAME,Find Any File
-  - PROCESS-NAME,Apple Juice
+  - PROCESS-NAME,MATLAB
+  - PROCESS-NAME,Ice
+  - PROCESS-NAME,KeKa
   - PROCESS-NAME,Swish
+  - PROCESS-NAME,TextSniper
+  - PROCESS-NAME,MathWorksService
+  - PROCESS-NAME,Apple Juice
+  - PROCESS-NAME,DevToys
+  - PROCESS-NAME,Little Snitch Agent
+  - PROCESS-NAME,Clop
+  - PROCESS-NAME,CodeRunner
+  - PROCESS-NAME,MATLABWebUI (GPU)
+  - PROCESS-NAME,Command X
+  - PROCESS-NAME,Stats
+  - PROCESS-NAME,Snipaste.exe
+  - PROCESS-NAME,Mac Mouse Fix
+  - PROCESS-NAME,DevToys Networking
+  - PROCESS-NAME,BLEUnlock
+  - PROCESS-NAME,Snipaste
+  - PROCESS-NAME,MATLABWebUl (Renderer)
   - PROCESS-NAME,ProcessSpy
   - PROCESS-NAME,Pixelmator Pro
-  - PROCESS-NAME,MathWorksService
-  - PROCESS-NAME,Stats
-  - PROCESS-NAME,KeKa
-  - PROCESS-NAME,MATLABWebUI (GPU)
-  - PROCESS-NAME,Clop
-  - PROCESS-NAME,Squirrel
-  - PROCESS-NAME,BLEUnlock
-  - PROCESS-NAME,Shifty
-  - PROCESS-NAME,Snipaste.exe
