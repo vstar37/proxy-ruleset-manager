@@ -4,18 +4,18 @@
         {
             "process_name": [
                 "wget",
-                "OrbStack Helper",
-                "python.exe",
-                "powershell.exe",
-                "python3",
-                "ruby",
-                "Applite",
-                "powershell",
-                "curl",
-                "python",
                 "Texifier",
+                "powershell",
+                "powershell.exe",
+                "python",
+                "curl",
                 "git",
+                "python.exe",
+                "ruby",
                 "curl.exe",
+                "python3",
+                "OrbStack Helper",
+                "Applite",
                 "wget.exe"
             ]
         }
