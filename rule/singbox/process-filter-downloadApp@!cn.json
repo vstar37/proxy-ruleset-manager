@@ -3,20 +3,20 @@
     "rules": [
         {
             "process_name": [
-                "wget",
-                "Texifier",
-                "powershell",
-                "powershell.exe",
-                "python",
-                "curl",
                 "git",
                 "python.exe",
                 "ruby",
-                "curl.exe",
-                "python3",
+                "Texifier",
+                "powershell",
+                "wget.exe",
                 "OrbStack Helper",
                 "Applite",
-                "wget.exe"
+                "python",
+                "powershell.exe",
+                "curl.exe",
+                "python3",
+                "curl",
+                "wget"
             ]
         }
     ]
