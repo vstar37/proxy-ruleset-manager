@@ -10,26 +10,26 @@
         },
         {
             "domain_suffix": [
-                "akamaized.net",
-                "hls3a-akm.douyucdn.cn",
-                "akm-tct.douyucdn.cn",
                 "zijieapi.com",
-                "ws-tct.douyucdn.cn",
-                "bilivideo.com",
-                "hls1a-akm.douyucdn.cn",
-                "vplay1a.douyucdn.cn",
-                "hdslb.com",
-                "tc-tct1.douyucdn.cn",
-                "tx2play1.douyucdn.cn",
-                "danmuproxy.douyu.com",
-                "hls3-akm.douyucdn.cn",
-                "vplay3a.douyucdn.cn",
-                "ecombdapi.com",
-                "wsproxy.douyu.com",
                 "hlsa-akm.douyucdn.cn",
-                "img.douyucdn.cn",
+                "hls3-akm.douyucdn.cn",
+                "szbdyd.com",
                 "lf127.net",
-                "szbdyd.com"
+                "akamaized.net",
+                "bilivideo.com",
+                "hls3a-akm.douyucdn.cn",
+                "tx2play1.douyucdn.cn",
+                "akm-tct.douyucdn.cn",
+                "tc-tct1.douyucdn.cn",
+                "ecombdapi.com",
+                "vplay3a.douyucdn.cn",
+                "img.douyucdn.cn",
+                "ws-tct.douyucdn.cn",
+                "hdslb.com",
+                "danmuproxy.douyu.com",
+                "hls1a-akm.douyucdn.cn",
+                "wsproxy.douyu.com",
+                "vplay1a.douyucdn.cn"
             ]
         }
     ]
