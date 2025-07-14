@@ -8,14 +8,14 @@
         "greencloudvps.com",
         "v3.paddleapi.com",
         "www.google.com",
-        "scholar.google.com"
+        "scholar.google.com",
+        "chatgpt.com"
         
       ]
     },
     {
       "domain_suffix": [
-        ".steamserver.net",
-        "chatgpt.com"
+        ".steamserver.net"
       ]
     }
   ]
