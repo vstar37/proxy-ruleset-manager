@@ -5,17 +5,16 @@
       "domain": [
         "cmp2-hkg1.steamserver.net",
         "ipv6check-udp.steamserver.net",
-        "greencloudvps.com",
         "v3.paddleapi.com",
         "www.google.com",
-        "scholar.google.com",
-        "chatgpt.com"
+        "scholar.google.com"
         
       ]
     },
     {
       "domain_suffix": [
-        ".steamserver.net"
+        ".steamserver.net",
+        ".greencloudvps.com"
       ]
     }
   ]
