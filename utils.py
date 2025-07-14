@@ -547,23 +547,24 @@ def convert_json_to_clash(input_dir):
                                 cleaned_value = clean_comment(value)
 
                                 if clash_type == "IP-CIDR":
-                                    # **去除关键词 IP-CIDR，直接存储**
                                     clash_rules.append(f"'{cleaned_value}'")
+
                                 elif clash_type == "DOMAIN-SUFFIX":
-                                    # **确保 DOMAIN-SUFFIX 以 '.' 开头**
-                                    formatted_value = cleaned_value if cleaned_value.startswith(
-                                        '.') else f".{cleaned_value}"
-                                    clash_rules.append(f"'{formatted_value}'")
+                                    if cleaned_value.startswith('.'):
+                                        # 仅匹配子域
+                                        clash_rules.append(f"'{cleaned_value}'")
+                                    else:
+                                        # 同时生成子域和根域匹配
+                                        clash_rules.append(f"'.{cleaned_value}'")           # 子域
+                                        clash_rules.append(f"'DOMAIN,{cleaned_value}'")     # 根域
+
                                 elif clash_type in {"DOMAIN", "DOMAIN-KEYWORD", "DOMAIN-REGEX"}:
-                                    # **去除关键词，直接存储**
                                     clash_rules.append(f"'{cleaned_value}'")
+
                                 else:
-                                    # **正常格式化规则**
                                     clash_rules.append(f"{clash_type},{cleaned_value}")
 
-                clash_config = {"payload": clash_rules}
-
-                # **手动写入 YAML，避免 yaml.dump 额外加引号**
+                # 手动写入 YAML，避免 yaml.dump 额外加引号
                 with open(output_path, "w", encoding="utf-8") as f:
                     f.write("payload:\n")
                     for rule in clash_rules:
@@ -571,7 +572,6 @@ def convert_json_to_clash(input_dir):
 
             except Exception as e:
                 logging.error(f"转换 {input_path} 到 Clash 规则时出错：{e}")
-    # convert_yaml_to_mrs(output_dir)
 
 
 def clean_comment(value):
