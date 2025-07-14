@@ -9,11 +9,13 @@
         "v3.paddleapi.com",
         "www.google.com",
         "scholar.google.com"
+        
       ]
     },
     {
       "domain_suffix": [
-        ".steamserver.net"
+        ".steamserver.net",
+        "chatgpt.com"
       ]
     }
   ]
