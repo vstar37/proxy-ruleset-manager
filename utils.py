@@ -548,13 +548,16 @@ def convert_json_to_clash(input_dir):
 
                                 if clash_type == "IP-CIDR":
                                     clash_rules.append(f"'{cleaned_value}'")
-                                    
-                                #elif clash_type == "DOMAIN-SUFFIX":
-                                    # 原始值保留
-                                   # clash_rules.append(f"'{cleaned_value}'")
 
+                                elif clash_type == "DOMAIN-SUFFIX":
+                                    # 添加 +. 前缀，确保同时匹配根域和子域
+                                    if cleaned_value.startswith('+'):
+                                        clash_rules.append(f"'{cleaned_value}'")
+                                    else:
+                                        domain_part = cleaned_value.lstrip('.')  # 去掉原有点
+                                        clash_rules.append(f"'+.{domain_part}'")
 
-                                elif clash_type in {"DOMAIN-SUFFIX", "DOMAIN", "DOMAIN-KEYWORD", "DOMAIN-REGEX"}:
+                                elif clash_type in {"DOMAIN", "DOMAIN-KEYWORD", "DOMAIN-REGEX"}:
                                     clash_rules.append(f"'{cleaned_value}'")
 
                                 else:
