@@ -1,15 +1,15 @@
 payload:
-  - PROCESS-NAME,curl
-  - PROCESS-NAME,git
-  - PROCESS-NAME,ruby
-  - PROCESS-NAME,Texifier
-  - PROCESS-NAME,wget.exe
-  - PROCESS-NAME,python
-  - PROCESS-NAME,powershell
-  - PROCESS-NAME,Applite
-  - PROCESS-NAME,OrbStack Helper
   - PROCESS-NAME,python3
-  - PROCESS-NAME,wget
-  - PROCESS-NAME,powershell.exe
-  - PROCESS-NAME,python.exe
   - PROCESS-NAME,curl.exe
+  - PROCESS-NAME,python.exe
+  - PROCESS-NAME,OrbStack Helper
+  - PROCESS-NAME,powershell
+  - PROCESS-NAME,wget.exe
+  - PROCESS-NAME,curl
+  - PROCESS-NAME,powershell.exe
+  - PROCESS-NAME,Texifier
+  - PROCESS-NAME,wget
+  - PROCESS-NAME,git
+  - PROCESS-NAME,python
+  - PROCESS-NAME,Applite
+  - PROCESS-NAME,ruby
