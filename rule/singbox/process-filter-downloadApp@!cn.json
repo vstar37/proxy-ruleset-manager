@@ -4,19 +4,19 @@
         {
             "process_name": [
                 "python3",
-                "curl.exe",
-                "python.exe",
-                "OrbStack Helper",
-                "powershell",
-                "wget.exe",
                 "curl",
-                "powershell.exe",
-                "Texifier",
                 "wget",
-                "git",
+                "curl.exe",
+                "powershell.exe",
                 "python",
+                "ruby",
                 "Applite",
-                "ruby"
+                "OrbStack Helper",
+                "wget.exe",
+                "python.exe",
+                "powershell",
+                "Texifier",
+                "git"
             ]
         }
     ]
