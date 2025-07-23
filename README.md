@@ -3,7 +3,7 @@
 
 ## 🧩 功能概述  
 
-本项目旨在将上游的各种不同格式规则，统一起来进行 转化，去重，最后生成 Clash (.mrs/.yaml)、Surge、Shadowrocket 支持的 ruleset。主要功能包括：
+本项目旨在将上游的各种不同格式规则，统一起来进行 转化，去重，最后生成 sing-box(.srs/.json)、Clash Meta (.mrs/.yaml)、Surge、Shadowrocket 支持的 ruleset。主要功能包括：
 
 - 🗂️ 支持多种规则作为输入：sing-box（.srs/.json）、Clash、Surge、Quantumult X、Loon、Little Snitch, Adblock(仅可转化为singbox规则)  
 - 🔄 对所有上游规则统一管理，进行格式标准化、合并、去重及校验。  
