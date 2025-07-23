@@ -9,6 +9,7 @@ geosite:
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mega.srs"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-github.srs"
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/GoogleDrive.yaml"
+  - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-play.srs"
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/geosite-download@amos.json"
 
 
