@@ -3,7 +3,7 @@
 
 ## 🧩 功能概述  
 
-本项目旨在将上游的各种不同格式规则，统一起来进行 转化，去重，最后生成 sing-box(.srs/.json)、Clash Meta (.mrs/.yaml)、Surge、Shadowrocket 支持的 ruleset。主要功能包括：
+将用于不同代理软件的各种规则集(clash规则,singbox规则等等...)，统一起来进行 转化，去重，最后生成 sing-box(.srs/.json)、Clash Meta (.mrs/.yaml)、Surge、Shadowrocket 支持的规则集。主要功能包括：
 
 - 🗂️ 支持多种规则作为输入：sing-box（.srs/.json）、Clash、Surge、Quantumult X、Loon、Little Snitch, Adblock(仅可转化为singbox规则)  
 - 🔄 对所有上游规则统一管理，进行格式标准化、合并、去重及校验。  
@@ -13,7 +13,8 @@
 ---
 
 ## 使用说明  
-用户可以直接使用此项目 rules 文件夹下的规则。
+用户可以直接使用此项目 rule 文件夹下的规则。并参考 template 文件夹内的配置模板构建适用于本规则集的配置文件。
+
 如果有自定义规则列表需求，可 fork 本仓库，并在 `./source/xx.yaml` 添加上游规则集链接，系统将每日自动更新并构建规则。
 
 1. 在 `./source/xx.yaml` 添加规则集链接。  
