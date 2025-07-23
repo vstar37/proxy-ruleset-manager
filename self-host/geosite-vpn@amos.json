@@ -14,7 +14,9 @@
     {
       "domain_suffix": [
         ".steamserver.net",
-        ".greencloudvps.com"
+        ".greencloudvps.com",
+        ".googleapis.cn"
+
       ]
     }
   ]
