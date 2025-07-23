@@ -1,14 +1,14 @@
-PROCESS-NAME,Applite
-PROCESS-NAME,curl
-PROCESS-NAME,python.exe
-PROCESS-NAME,wget.exe
-PROCESS-NAME,OrbStack Helper
-PROCESS-NAME,python
-PROCESS-NAME,git
+PROCESS-NAME,curl.exe
 PROCESS-NAME,Texifier
 PROCESS-NAME,python3
-PROCESS-NAME,powershell.exe
+PROCESS-NAME,curl
+PROCESS-NAME,git
+PROCESS-NAME,powershell
 PROCESS-NAME,wget
 PROCESS-NAME,ruby
-PROCESS-NAME,curl.exe
-PROCESS-NAME,powershell
+PROCESS-NAME,Applite
+PROCESS-NAME,OrbStack Helper
+PROCESS-NAME,powershell.exe
+PROCESS-NAME,wget.exe
+PROCESS-NAME,python.exe
+PROCESS-NAME,python
