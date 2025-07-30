@@ -1,50 +1,50 @@
-PROCESS-NAME,NetTransport
-PROCESS-NAME,fdm.exe
-PROCESS-NAME,uTorrent
-PROCESS-NAME,infuse
-PROCESS-NAME,Thunder.exe
-PROCESS-NAME,uTorrent.exe
-PROCESS-NAME,hydra-python-rpc.exe
-PROCESS-NAME,BitComet.exe
-PROCESS-NAME,WeChat
-PROCESS-NAME,115Browser
-PROCESS-NAME,BaiduNetdisk_mac
-PROCESS-NAME,DownloadService.exe
-PROCESS-NAME,baidunetdisk.exe
-PROCESS-NAME,NetTransport.exe
-PROCESS-NAME,iCloudDrive.exe
-PROCESS-NAME,Folx
-PROCESS-NAME,aria2c
-PROCESS-NAME,WeChatAppEx Helper
-PROCESS-NAME,ThunderVIP
-PROCESS-NAME,幕布 Helper
-PROCESS-NAME,App Store
-PROCESS-NAME,aria2c.exe
-PROCESS-NAME,Thunder
-PROCESS-NAME,WebTorrentHelper
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,Transmission.exe
-PROCESS-NAME,BitComet
-PROCESS-NAME,Weiyun
-PROCESS-NAME,fdm
 PROCESS-NAME,WebTorrent.exe
-PROCESS-NAME,Weiyun.exe
-PROCESS-NAME,Music
-PROCESS-NAME,Eudb_en_free
-PROCESS-NAME,Folx.exe
-PROCESS-NAME,WebTorrentHelper.exe
-PROCESS-NAME,wegame.exe
-PROCESS-NAME,Transmission
-PROCESS-NAME,TencentMeeting
-PROCESS-NAME,frpc
-PROCESS-NAME,DownloadService
-PROCESS-NAME,qbittorrent.exe
-PROCESS-NAME,115Browser Helper
+PROCESS-NAME,NetTransport.exe
+PROCESS-NAME,DownloadService.exe
 PROCESS-NAME,115chrome.exe
 PROCESS-NAME,cloudd
+PROCESS-NAME,fdm
+PROCESS-NAME,WeChatAppEx Helper
+PROCESS-NAME,aria2c.exe
 PROCESS-NAME,BitComet_x64.exe
-PROCESS-NAME,qbittorrent
+PROCESS-NAME,BitComet
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,uTorrent.exe
+PROCESS-NAME,hydra-python-rpc.exe
 PROCESS-NAME,vidhub
+PROCESS-NAME,frpc
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,WebTorrentHelper.exe
+PROCESS-NAME,WeChat
+PROCESS-NAME,Transmission.exe
+PROCESS-NAME,115Browser
+PROCESS-NAME,Weiyun.exe
+PROCESS-NAME,Music
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,Folx
+PROCESS-NAME,幕布 Helper
+PROCESS-NAME,App Store
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,Folx.exe
+PROCESS-NAME,115Browser Helper
+PROCESS-NAME,Thunder
+PROCESS-NAME,wegame.exe
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,Transmission
+PROCESS-NAME,Weiyun
+PROCESS-NAME,aria2c
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,ThunderVIP
 PROCESS-NAME,ToDesk_Service
+PROCESS-NAME,infuse
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,uTorrent
+PROCESS-NAME,TencentMeeting
+PROCESS-NAME,Eudb_en_free
+PROCESS-NAME,DownloadService
 PROCESS-NAME,QQ
+PROCESS-NAME,iCloudDrive.exe
+PROCESS-NAME,NetTransport
 DOMAIN-SUFFIX,qbittorrent.org
