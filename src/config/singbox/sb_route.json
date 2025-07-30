@@ -304,6 +304,13 @@
         "download_detour":"下载 (海外服务)"
       },
       {
+        "tag":"geosite-category-proxy@dns",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geosite-category-proxy@dns.srs",
+        "download_detour":"下载 (海外服务)"
+      },
+      {
         "tag":"geosite-category-antip@cn",
         "type":"remote",
         "format":"binary",
