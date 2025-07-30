@@ -31,7 +31,9 @@
         ".content-storage-upload.googleapis.com",
         ".pixeldrain.com",
         ".pytorch.org",
-        ".snapcraftcontent.com"
+        ".snapcraftcontent.com",
+        ".googleapis.cn",
+        ".xn--ngstr-lra8j.com"
     ]
     }
   ]
