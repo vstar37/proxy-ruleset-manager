@@ -4,8 +4,7 @@
     {
       "domain": [
           "download-cdn.jetbrains.com", 
-          "huggingface.co", 
-          "wallhaven.cc",
+          "huggingface.co",
           "psv4.userapi.com",
           "s3-eu-west-1.amazonaws.com",
           "canonical-lgw01.cdn.snapcraftcontent.com",
@@ -31,6 +30,7 @@
         ".content-storage-upload.googleapis.com",
         ".pixeldrain.com",
         ".pytorch.org",
+        ".wallhaven.cc",
         ".snapcraftcontent.com",
         ".googleapis.cn"
     ]
