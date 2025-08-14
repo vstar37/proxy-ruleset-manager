@@ -4,22 +4,22 @@
         {
             "process_name": [
                 "Texifier",
-                "Applite",
-                "powershell",
-                "powershell.exe",
-                "wget",
-                "OrbStack Helper",
-                "SkyrimSE.exe",
-                "ruby",
                 "ModOrganizer.exe",
-                "python.exe",
-                "git",
+                "powershell.exe",
+                "SkyrimSE.exe",
                 "wget.exe",
-                "python3",
+                "Wabbajack.exe",
                 "curl.exe",
-                "python",
+                "wget",
                 "curl",
-                "Wabbajack.exe"
+                "git",
+                "ruby",
+                "Applite",
+                "OrbStack Helper",
+                "python.exe",
+                "powershell",
+                "python",
+                "python3"
             ]
         }
     ]
