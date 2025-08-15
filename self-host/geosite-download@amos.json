@@ -32,7 +32,9 @@
         ".pytorch.org",
         ".wallhaven.cc",
         ".snapcraftcontent.com",
-        ".googleapis.cn"
+        ".googleapis.cn",
+        ".themoviedb.org",
+        ".tmdb.org"
     ]
     }
   ]
