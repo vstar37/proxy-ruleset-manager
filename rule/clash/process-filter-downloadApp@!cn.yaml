@@ -1,18 +1,18 @@
 payload:
-  - PROCESS-NAME,curl
-  - PROCESS-NAME,Texifier
-  - PROCESS-NAME,powershell.exe
-  - PROCESS-NAME,curl.exe
-  - PROCESS-NAME,Applite
   - PROCESS-NAME,ruby
-  - PROCESS-NAME,SkyrimSE.exe
-  - PROCESS-NAME,ModOrganizer.exe
-  - PROCESS-NAME,wget
-  - PROCESS-NAME,git
-  - PROCESS-NAME,python.exe
   - PROCESS-NAME,python3
-  - PROCESS-NAME,python
-  - PROCESS-NAME,wget.exe
-  - PROCESS-NAME,powershell
   - PROCESS-NAME,Wabbajack.exe
+  - PROCESS-NAME,wget.exe
+  - PROCESS-NAME,wget
+  - PROCESS-NAME,python.exe
+  - PROCESS-NAME,powershell.exe
+  - PROCESS-NAME,ModOrganizer.exe
   - PROCESS-NAME,OrbStack Helper
+  - PROCESS-NAME,curl
+  - PROCESS-NAME,powershell
+  - PROCESS-NAME,Texifier
+  - PROCESS-NAME,Applite
+  - PROCESS-NAME,python
+  - PROCESS-NAME,SkyrimSE.exe
+  - PROCESS-NAME,curl.exe
+  - PROCESS-NAME,git
