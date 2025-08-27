@@ -8,6 +8,7 @@
         "wget",
         "wget.exe",
         "git",
+        "git-remote-http",
         "python",
         "python.exe",
         "python3",
