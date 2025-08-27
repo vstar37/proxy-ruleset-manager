@@ -285,7 +285,6 @@ class RuleParser:
                     rule for rule in final_rules
                     if 'process_name' not in rule
                 ]
-
             # 统计信息
             domain_count = len(single_file_stats.get("domain", []))
             domain_suffix_count = len(single_file_stats.get("domain_suffix", []))
@@ -303,14 +302,12 @@ class RuleParser:
                 "process_name_count": process_name_count,
                 "domain_regex_count": domain_regex_count
             }
-
             try:
                 with open(output_file, 'w', encoding='utf-8') as file:
                     json.dump(final_rules, file, ensure_ascii=False, indent=4)
             except Exception as e:
                 logging.error(f"保存 JSON 文件时出错: {e}")
                 return {"error": str(e)}
-
             # 返回统计信息
             return statistics
         # 否则调用 merge_json
