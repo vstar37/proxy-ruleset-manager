@@ -70,7 +70,8 @@
       },
       {
         "rule_set":[
-          "geosite-category-download@!cn"
+          "geosite-category-download@!cn",
+          "geoip-category-download@!cn"
         ],
         "action":"route",
         "outbound":"下载 (海外服务)"
@@ -364,6 +365,13 @@
         "type":"remote",
         "format":"binary",
         "url":"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/process-filter-communicationApp@!cn.srs",
+        "download_detour":"下载 (海外服务)"
+      },
+      {
+        "tag":"geoip-category-download@!cn",
+        "type":"remote",
+        "format":"binary",
+        "url":"https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/main/rule/singbox/geoip-category-download@!cn.srs",
         "download_detour":"下载 (海外服务)"
       },
       {
