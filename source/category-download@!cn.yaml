@@ -12,5 +12,7 @@ geosite:
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/GoogleDrive.yaml"
   - "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-play.srs"
   - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/geosite-download@amos.json"
+geoip:
+  - "https://raw.githubusercontent.com/vstar37/proxy-ruleset-manager/refs/heads/main/self-host/geoip-download@amos.json"
 
 
