@@ -5,22 +5,22 @@
             "process_name": [
                 "powershell",
                 "git-remote-http",
-                "OrbStack Helper",
-                "SkyrimSE.exe",
                 "Applite",
-                "curl.exe",
-                "Wabbajack.exe",
-                "python.exe",
-                "python",
-                "wget",
-                "powershell.exe",
-                "wget.exe",
-                "python3",
-                "Texifier",
                 "ModOrganizer.exe",
+                "curl.exe",
+                "wget",
                 "ruby",
+                "SkyrimSE.exe",
+                "git",
                 "curl",
-                "git"
+                "python",
+                "python.exe",
+                "python3",
+                "powershell.exe",
+                "Texifier",
+                "OrbStack Helper",
+                "wget.exe",
+                "Wabbajack.exe"
             ]
         }
     ]
