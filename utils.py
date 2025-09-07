@@ -391,14 +391,17 @@ def filter_domains_with_trie(domains, domain_suffixes):
     for domain in domains:
         reversed_domain = ".".join(domain.split(".")[::-1])
 
-        # has_suffix 返回匹配的最长后缀
-        matched_suffix = trie.has_suffix(reversed_domain)
-        if matched_suffix:
+        # 原来的 has_suffix 返回 True/False
+        if trie.has_suffix(reversed_domain):
             # 只删除严格子域名
-            original_suffix = ".".join(matched_suffix.split(".")[::-1])
-            if domain != original_suffix:
-                filtered_count += 1
-            else:
+            keep = True
+            for suffix in domain_suffixes:
+                clean_suffix = suffix.lstrip(".")
+                if domain != clean_suffix and domain.endswith("." + clean_suffix):
+                    keep = False
+                    filtered_count += 1
+                    break
+            if keep:
                 filtered_domains.add(domain)
         else:
             filtered_domains.add(domain)
