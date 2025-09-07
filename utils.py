@@ -372,25 +372,36 @@ class Trie:
 
 def filter_domains_with_trie(domains, domain_suffixes):
     """
-    使用 Trie 过滤掉被 domain_suffix 覆盖的 domain。
+    使用 Trie 过滤掉被 domain_suffix 覆盖的子域名，但保留根域名。
     :param domains: 需要去重的 domain 集合
-    :param domain_suffixes: domain_suffix 集合
+    :param domain_suffixes: domain_suffix 集合，例如 ".example.com"
     :return: 过滤后的 domains 和被过滤的数量
     """
     trie = Trie()
 
-    # 统一插入 domain_suffix，去除前导 .
+    # 将 domain_suffix 逆序插入 Trie，去掉前导点
     for suffix in domain_suffixes:
-        trie.insert(suffix)
+        clean_suffix = suffix.lstrip(".")
+        reversed_suffix = ".".join(clean_suffix.split(".")[::-1])
+        trie.insert(reversed_suffix)
 
-    filtered_domains = set()  # 存储未被匹配的域名
+    filtered_domains = set()
     filtered_count = 0
 
     for domain in domains:
-        if trie.has_suffix(domain):
-            filtered_count += 1  # 被过滤的数量增加
+        reversed_domain = ".".join(domain.split(".")[::-1])
+
+        # has_suffix 返回匹配的最长后缀
+        matched_suffix = trie.has_suffix(reversed_domain)
+        if matched_suffix:
+            # 只删除严格子域名
+            original_suffix = ".".join(matched_suffix.split(".")[::-1])
+            if domain != original_suffix:
+                filtered_count += 1
+            else:
+                filtered_domains.add(domain)
         else:
-            filtered_domains.add(domain)  # 将没有匹配到后缀的域名保留
+            filtered_domains.add(domain)
 
     return filtered_domains, filtered_count
 
