@@ -371,29 +371,27 @@ class Trie:
 
 
 def filter_domains_with_trie(domains, domain_suffixes):
-    """
-    使用 Trie 过滤掉被 domain_suffix 覆盖的 domain。
-    :param domains: 需要去重的 domain 集合
-    :param domain_suffixes: domain_suffix 集合
-    :return: 过滤后的 domains 和被过滤的数量
-    """
     trie = Trie()
-
-    # 统一插入 domain_suffix，去除前导 .
     for suffix in domain_suffixes:
         trie.insert(suffix)
 
-    filtered_domains = set()  # 存储未被匹配的域名
+    filtered_domains = set()
     filtered_count = 0
+
+    # 预处理：把所有后缀规范化为不含前导点的形式，放在集合里（便于快速比对）
+    clean_suffixes = {s.lstrip('.') for s in domain_suffixes}
 
     for domain in domains:
         if trie.has_suffix(domain):
-            filtered_count += 1  # 被过滤的数量增加
+            # 如果 domain 恰好等于某个后缀（根域名），则保留
+            if domain in clean_suffixes:
+                filtered_domains.add(domain)
+            else:
+                filtered_count += 1
         else:
-            filtered_domains.add(domain)  # 将没有匹配到后缀的域名保留
+            filtered_domains.add(domain)
 
     return filtered_domains, filtered_count
-
 
 def convert_json_to_surge(input_dir):
     """
