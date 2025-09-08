@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "Little Snitch Agent",
+                "MATLABWebUl (Renderer)",
+                "Apple Juice",
+                "BetterDisplay",
+                "Ice",
+                "BLEUnlock",
+                "Clop",
+                "Swish",
+                "Stats",
+                "ProcessSpy",
+                "DevToys",
+                "DevToys Networking",
+                "CodeRunner",
+                "Squirrel",
+                "Mac Mouse Fix",
+                "MathWorksService",
+                "Shifty",
+                "Pixelmator Pro",
+                "FlowVision",
+                "MATLABWebUI (GPU)",
+                "Command X",
+                "Find Any File",
+                "TextSniper",
+                "Snipaste.exe",
+                "MATLAB",
+                "Scroll Reverser",
+                "Snipaste",
+                "KeKa"
+            ]
+        }
+    ]
+}

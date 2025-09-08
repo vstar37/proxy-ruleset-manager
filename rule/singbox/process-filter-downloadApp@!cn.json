@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "process_name": [
+                "ruby",
+                "OrbStack Helper",
+                "Texifier",
+                "ModOrganizer.exe",
+                "powershell.exe",
+                "curl.exe",
+                "Applite",
+                "wget",
+                "git",
+                "git-remote-http",
+                "python",
+                "wget.exe",
+                "SkyrimSE.exe",
+                "python3",
+                "python.exe",
+                "Wabbajack.exe",
+                "powershell",
+                "curl"
+            ]
+        }
+    ]
+}
