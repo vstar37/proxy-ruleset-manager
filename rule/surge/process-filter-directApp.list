@@ -1,50 +1,50 @@
-PROCESS-NAME,BaiduNetdisk_mac
-PROCESS-NAME,aria2c
-PROCESS-NAME,Folx
-PROCESS-NAME,BitComet.exe
-PROCESS-NAME,Thunder.exe
-PROCESS-NAME,Music
-PROCESS-NAME,Thunder
-PROCESS-NAME,baidunetdisk.exe
-PROCESS-NAME,qbittorrent.exe
-PROCESS-NAME,DownloadService
-PROCESS-NAME,Transmission.exe
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,TencentMeeting
-PROCESS-NAME,hydra-python-rpc.exe
-PROCESS-NAME,vidhub
-PROCESS-NAME,115chrome.exe
+PROCESS-NAME,Weiyun
+PROCESS-NAME,幕布 Helper
 PROCESS-NAME,cloudd
-PROCESS-NAME,frpc
-PROCESS-NAME,Transmission
+PROCESS-NAME,qbittorrent.exe
 PROCESS-NAME,fdm.exe
+PROCESS-NAME,uTorrent
+PROCESS-NAME,QQ
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,frpc
 PROCESS-NAME,WebTorrent
 PROCESS-NAME,WeChat
-PROCESS-NAME,Weiyun.exe
-PROCESS-NAME,QQ
-PROCESS-NAME,115Browser
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,hydra-python-rpc.exe
+PROCESS-NAME,115chrome.exe
+PROCESS-NAME,Transmission
 PROCESS-NAME,wegame.exe
-PROCESS-NAME,BitComet_x64.exe
-PROCESS-NAME,Weiyun
-PROCESS-NAME,aria2c.exe
-PROCESS-NAME,WeChatAppEx Helper
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,115Browser
+PROCESS-NAME,Folx
+PROCESS-NAME,Thunder
 PROCESS-NAME,infuse
-PROCESS-NAME,BitComet
-PROCESS-NAME,uTorrent.exe
-PROCESS-NAME,ToDesk_Service
-PROCESS-NAME,uTorrent
-PROCESS-NAME,NetTransport
+PROCESS-NAME,vidhub
+PROCESS-NAME,Transmission.exe
 PROCESS-NAME,WebTorrentHelper.exe
-PROCESS-NAME,iCloudDrive.exe
-PROCESS-NAME,ThunderVIP
-PROCESS-NAME,WebTorrentHelper
-PROCESS-NAME,Folx.exe
 PROCESS-NAME,fdm
-PROCESS-NAME,DownloadService.exe
-PROCESS-NAME,115Browser Helper
-PROCESS-NAME,幕布 Helper
-PROCESS-NAME,App Store
-PROCESS-NAME,WebTorrent.exe
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Weiyun.exe
+PROCESS-NAME,BitComet
 PROCESS-NAME,NetTransport.exe
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,App Store
+PROCESS-NAME,aria2c
+PROCESS-NAME,ToDesk_Service
+PROCESS-NAME,WeChatAppEx Helper
+PROCESS-NAME,DownloadService
+PROCESS-NAME,BitComet_x64.exe
+PROCESS-NAME,Music
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,115Browser Helper
+PROCESS-NAME,DownloadService.exe
+PROCESS-NAME,uTorrent.exe
+PROCESS-NAME,iCloudDrive.exe
+PROCESS-NAME,WebTorrent.exe
 PROCESS-NAME,Eudb_en_free
+PROCESS-NAME,TencentMeeting
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,Folx.exe
 DOMAIN-SUFFIX,qbittorrent.org
