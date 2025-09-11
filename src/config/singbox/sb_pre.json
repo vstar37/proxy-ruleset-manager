@@ -1,24 +1,27 @@
 {
-  "log": { "level": "debug", "timestamp": true },
+  "log": { "level": "info", "timestamp": true },
   "experimental": {
     "cache_file": { "enabled": true, "store_fakeip": true, "store_rdrc": true },
     "clash_api": { "external_controller": "127.0.0.1:9090", "external_ui": "Yacd-meta-gh-pages", "external_ui_download_url": "https://github.com/MetaCubeX/yacd/archive/gh-pages.zip", "external_ui_download_detour": "下载 (海外服务)", "secret": "", "default_mode": "海外代理" }
   },
   "dns": {
     "independent_cache": true,
-    "servers":
-    [
-        {"tag": "dns_resolver", "address": "223.5.5.5", "detour": "直连"},
-        {"tag": "dns_proxy", "address": "https://dns.google/dns-query", "address_resolver": "dns_resolver", "strategy": "ipv4_only", "detour": "下载 (海外服务)"},
-        {"tag": "dns_direct", "address": "https://120.53.53.53/dns-query", "address_resolver": "dns_resolver", "strategy": "ipv4_only", "detour": "直连"}
+    "servers": [
+      { "tag": "dns_proxy", "address": "https://dns.google/dns-query", "address_resolver": "proxy_resolver", "strategy": "ipv4_only", "detour": "download-out"},
+      { "tag": "dns_direct", "address": "https://120.53.53.53/dns-query", "address_resolver": "direct_resolver", "strategy": "ipv4_only", "detour": "direct-out"},
+      { "tag": "proxy_resolver", "address": "1.1.1.1"},
+      { "tag": "direct_resolver", "address": "223.5.5.5"},
+      { "tag": "dns_fakeip", "address": "fakeip"}
     ],
     "rules": 
     [
-        {"outbound": "any","server": "dns_resolver", "rewrite_ttl": 3600},
+        {"outbound": "any","server": "direct_resolver", "rewrite_ttl": 3600},
         {"clash_mode": "全局直连", "query_type": [ "A", "AAAA" ], "action": "route","server": "dns_direct"},
         {"clash_mode": "全局代理", "query_type": [ "A", "AAAA" ], "action": "route","server": "dns_proxy"},
+        {"rule_set": ["adguard-blocker@default"], "action": "reject"},
         {"rule_set": ["geosite-category-direct"], "query_type": [ "A", "AAAA" ], "action": "route", "server": "dns_direct"},
-        {"type": "logical", "mode": "and", "rules": [{ "rule_set": "geosite-filter-fakeip", "invert": true }, { "query_type": ["A", "AAAA"] }], "action": "route", "server": "dns_fakeip" }
+        {"type": "logical", "mode": "and", "rules": [{ "rule_set": "geosite-filter-fakeip", "invert": true }, { "query_type": ["A", "AAAA"] }], "action": "route", "server": "dns_fakeip"},
+        {"query_type": ["A", "AAAA", "CNAME"], "invert": true, "action": "reject", "method": "default"}
     ],
     "fakeip": {"enabled": true,"inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
     "final": "dns_proxy"
