@@ -1,34 +1,41 @@
 {
   "log": {
-    "level": "debug",
+    "level": "info",
     "timestamp": true
   },
   "dns": {
     "servers": [
       {
-        "tag": "dns_resolver",
-        "address": "223.5.5.5",
-        "detour": "直连"
-      },
-      {
         "tag": "dns_proxy",
         "address": "https://dns.google/dns-query",
-        "address_resolver": "dns_resolver",
+        "address_resolver": "proxy_resolver",
         "strategy": "ipv4_only",
-        "detour": "下载 (海外服务)"
+        "detour": "download-out"
       },
       {
         "tag": "dns_direct",
         "address": "https://120.53.53.53/dns-query",
-        "address_resolver": "dns_resolver",
+        "address_resolver": "direct_resolver",
         "strategy": "ipv4_only",
-        "detour": "直连"
+        "detour": "direct-out"
+      },
+      {
+        "tag": "proxy_resolver",
+        "address": "1.1.1.1"
+      },
+      {
+        "tag": "direct_resolver",
+        "address": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "address": "fakeip"
       }
     ],
     "rules": [
       {
         "outbound": "any",
-        "server": "dns_resolver",
+        "server": "direct_resolver",
         "rewrite_ttl": 3600
       },
       {
@@ -46,6 +53,11 @@
         ],
         "clash_mode": "全局代理",
         "server": "dns_proxy"
+      },
+      {
+        "rule_set": "adguard-blocker@default",
+        "action": "reject",
+        "method": "default"
       },
       {
         "query_type": [
@@ -71,6 +83,16 @@
           }
         ],
         "server": "dns_fakeip"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA",
+          "CNAME"
+        ],
+        "invert": true,
+        "action": "reject",
+        "method": "default"
       }
     ],
     "final": "dns_proxy",
@@ -91,7 +113,7 @@
       ],
       "auto_route": true,
       "strict_route": true,
-      "stack": "mixed"
+      "stack": "gvisor"
     },
     {
       "type": "mixed",
