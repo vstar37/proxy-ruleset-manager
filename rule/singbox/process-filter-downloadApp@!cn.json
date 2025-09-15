@@ -4,23 +4,23 @@
         {
             "process_name": [
                 "curl",
-                "python",
-                "Texifier",
-                "python3",
-                "ruby",
-                "OrbStack Helper",
-                "ModOrganizer.exe",
-                "python.exe",
-                "SkyrimSE.exe",
                 "powershell",
-                "curl.exe",
-                "wget.exe",
-                "wget",
-                "Wabbajack.exe",
-                "git",
-                "powershell.exe",
                 "Applite",
-                "git-remote-http"
+                "Wabbajack.exe",
+                "python",
+                "ruby",
+                "wget.exe",
+                "git",
+                "git-remote-http",
+                "python3",
+                "wget",
+                "python.exe",
+                "ModOrganizer.exe",
+                "curl.exe",
+                "powershell.exe",
+                "OrbStack Helper",
+                "SkyrimSE.exe",
+                "Texifier"
             ]
         }
     ]
