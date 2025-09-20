@@ -6,7 +6,18 @@ adguard-blocker 仅用于singbox，由 adblock 规则直接转换而来的二进
   router   适用于路由器    标准++
   aio      可以用于路由器   沉重
 
+geosite-blocker-trash 可用于任何客户端的垃圾规则，合并自 adguard-cn:adrules + littlesnitch, 适合笔记本，pc机器
+
 category-vpn@!cn 根据IP所在不同区域，提供不同服务的域名。或者可疑，不安全的域名。建议使用原生IP访问。
 
 process-blocker-rejectAPP 可以离线运行的APP
+
+
+
+基础说明：
+filter 过滤器，用于选定目标进程/域名，以执行逻辑分流
+blocker，拦截器，用于选定目标进程/域名，以执行出站拦截
+geosite 纯域名
+geoip 纯ip
+process 纯进程
   
