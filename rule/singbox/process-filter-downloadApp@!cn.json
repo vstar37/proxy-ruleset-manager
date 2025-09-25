@@ -3,24 +3,24 @@
     "rules": [
         {
             "process_name": [
-                "Wabbajack.exe",
-                "curl.exe",
-                "git",
-                "ruby",
-                "python.exe",
-                "wget.exe",
-                "curl",
-                "powershell.exe",
-                "python",
-                "ModOrganizer.exe",
-                "git-remote-http",
-                "python3",
+                "Texifier",
+                "OrbStack Helper",
                 "wget",
                 "Applite",
-                "OrbStack Helper",
+                "python3",
+                "powershell.exe",
+                "curl.exe",
+                "git",
                 "SkyrimSE.exe",
+                "ModOrganizer.exe",
+                "Wabbajack.exe",
                 "powershell",
-                "Texifier"
+                "wget.exe",
+                "curl",
+                "python",
+                "python.exe",
+                "ruby",
+                "git-remote-http"
             ]
         }
     ]
