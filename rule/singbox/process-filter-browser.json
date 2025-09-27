@@ -4,14 +4,14 @@
         {
             "process_name": [
                 "wBlock Filters",
-                "Google Chrome Helper",
-                "AdGuard for Safari",
-                "Firefox",
                 "firefox.exe",
-                "Safari",
-                "Chrome",
+                "Firefox",
                 "com.apple.WebKit.Networking",
-                "chrome.exe"
+                "Chrome",
+                "chrome.exe",
+                "AdGuard for Safari",
+                "Google Chrome Helper",
+                "Safari"
             ]
         }
     ]
